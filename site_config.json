@@ -11,7 +11,8 @@
             "/get_started/zh/": "docs/get_started/zh"
         },
         "pages": {
-            "/": "pages/index/zh"
+            "/": "pages/index/zh",
+            "/en/": "pages/index/en"
         },
         "assets": {
             "/static/": "static",
