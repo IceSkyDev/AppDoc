@@ -11,7 +11,9 @@
 可以用于学前及小学初级阶段的启蒙教育，进行早教及兴趣培养
 
 * [汉语拼音](https://apps.microsoft.com/detail/9MZX6CQ10SW7?hl=zh-cn&gl=CN) 
-  <a href="ms-windows-store://pdp?hl=zh-cn&gl=cn&productid=9MZX6CQ10SW7"> ![Static Badge](https://img.shields.io/badge/%E5%95%86%E5%BA%97%E4%B8%8B%E8%BD%BD-darkgreen?logo=microsoftstore)</a>
+  <a href="ms-windows-store://pdp?hl=zh-cn&gl=cn&productid=9MZX6CQ10SW7" >
+  <img alt="Microsoft Store" src="https://img.shields.io/badge/-1?logo=microsoftstore&color=blue">
+  </a>
   
   包含声母、韵母、整体认读的介绍、发音、书写笔顺、记忆方法等
 
@@ -425,11 +427,11 @@
 -----
 
 
-<center>
+<div align="center">
 
   *扫描下方二维码关注微信公众号
   **【IceSky】**
   ，获取更多开发技术和工具软件介绍及技巧。*
 
-  <img src="./static/image/qr.png" width="200" height="200" class="center-block" style="margin:auto"></img>
-<center>
+  <img src="./static/image/qr.png" width="200" height="200"></img>
+<div>

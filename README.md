@@ -73,7 +73,7 @@ It can be used for Chinese preschool and primary school enlightenment education,
   It contains more than 160 classic English nursery rhymes, with audio and annotations
 
 ### Knowledge expansion and improvement 
-可以作为课外知识进行拓展提高
+It can be used as extracurricular knowledge to expand and improve
 
 * [诗词散文](https://apps.microsoft.com/detail/9NBLGGH42RL7?hl=zh-cn&gl=CN)
    <a href="ms-windows-store://pdp?hl=zh-cn&gl=cn&productid=9NBLGGH42RL7"> ![Static Badge](https://img.shields.io/badge/%E5%95%86%E5%BA%97%E4%B8%8B%E8%BD%BD-darkgreen?logo=microsoftstore)</a>
@@ -428,11 +428,11 @@ Learn about the traditional culture that has been summarized and inherited by th
 -----
 
 
-<center>
+<div align="center">
 
   *Scan the QR code below to follow and subscribe Wechat official account
   **【IceSky】**
   , to get more development techniques and tools, software introductions and tips.*
 
-  <img src="./static/image/qr.png" width="200" height="200" class="center-block" style="margin:auto"></img>
-<center>
+  <img src="./static/image/qr.png" width="200" height="200"></img>
+<div>
