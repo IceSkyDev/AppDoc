@@ -12,7 +12,7 @@
 
 * [汉语拼音](https://apps.microsoft.com/detail/9MZX6CQ10SW7?hl=zh-cn&gl=CN) 
   <a href="ms-windows-store://pdp?hl=zh-cn&gl=cn&productid=9MZX6CQ10SW7" >
-  <img alt="Microsoft Store" src="https://img.shields.io/badge/-1?logo=microsoftstore&color=blue">
+  商店下载
   </a>
   
   包含声母、韵母、整体认读的介绍、发音、书写笔顺、记忆方法等
