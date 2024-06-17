@@ -11,9 +11,7 @@
 可以用于学前及小学初级阶段的启蒙教育，进行早教及兴趣培养
 
 * [汉语拼音](https://apps.microsoft.com/detail/9MZX6CQ10SW7?hl=zh-cn&gl=CN) 
-  <a href="ms-windows-store://pdp?hl=zh-cn&gl=cn&productid=9MZX6CQ10SW7" >
-  商店下载
-  </a>
+  [商店下载]("ms-windows-store://pdp?hl=zh-cn&gl=cn&productid=9MZX6CQ10SW7")
   
   包含声母、韵母、整体认读的介绍、发音、书写笔顺、记忆方法等
 
