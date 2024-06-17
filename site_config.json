@@ -1,14 +1,17 @@
 {
-    "site_name": "mysite",
+    "site_name": "IceSky",
     "site_slogon": "",
     "site_root_url": "/",
-    "site_domain": "my_name.github.io",
+    "site_domain": "IceSkyDev.github.io",
     "site_protocol": "https",
     "config_template_dir": "config",
-    "source": "https://github.com/my_name/my_name.github.io/blob/main",
+    "source": "https://github.com/IceSkyDev/IceSkyDev.github.io/blob/main",
     "route": {
         "docs": {
-            "/get_started/zh/": "docs/get_started/zh"
+            "/get_started/zh/": "docs/get_started/zh",
+            "/uwp/zh/": "docs/uwp/zh",
+            "/tools/zh/": "docs/tools/zh",
+            "/games/zh/": "docs/games/zh"
         },
         "pages": {
             "/": "pages/index/zh",
@@ -17,9 +20,6 @@
         "assets": {
             "/static/": "static",
             "/get_started/assets/": "docs/get_started/assets"
-        },
-        "blog": {
-            "/blog/": "blog"
         }
     },
     "translate": {
@@ -28,6 +28,24 @@
                 {
                     "url": "/get_started/en/",
                     "src": "docs/get_started/en"
+                }
+            ],
+            "/uwp/zh/": [
+                {
+                    "url": "/uwp/en/",
+                    "src": "docs/uwp/en"
+                }
+            ],
+            "/tools/zh/": [
+                {
+                    "url": "/tools/en/",
+                    "src": "docs/tools/en"
+                }
+            ],
+            "/games/zh/": [
+                {
+                    "url": "/games/en/",
+                    "src": "docs/games/en"
                 }
             ]
         },
