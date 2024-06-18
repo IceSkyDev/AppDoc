@@ -104,7 +104,7 @@
                 ],
                 "footer_items": [
                     "/static/js/custom.js",
-                    "easing.min.js"
+                    "/static/js/easing.min.js"
                 ],
                 "env":{
                     "main_color": "#228FF5",

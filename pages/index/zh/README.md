@@ -14,7 +14,7 @@ id: home_page
 </div>
 <div class="row justify-content-center g-4">
     <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="bg-light blog-item rounded p-4" style="background-image: url(../../../AppDoc/static/image/edu/00.png);width:400px;height:300px;background-size: cover;">
+        <div class="bg-light blog-item rounded p-4" style="background-image: url(../../../AppDoc/static/image/edu/00.png);background-size: cover;">
             <div class="mb-4">
                 <h4 class="text-primary mb-2">教育类应用</h4>
             </div>
@@ -22,7 +22,7 @@ id: home_page
         </div>
     </div>
     <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
-        <div class="bg-light blog-item rounded p-4" style="background-image: url(../../../AppDoc/static/image/edu/00.png);width:400px;height:300px;background-size: cover;">
+        <div class="bg-light blog-item rounded p-4" style="background-image: url(../../../AppDoc/static/image/edu/00.png);background-size: cover;">
             <div class="mb-4">
                 <h4 class="text-primary mb-2">工具类应用</h4>
             </div>
@@ -30,7 +30,7 @@ id: home_page
         </div>
     </div>
     <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
-        <div class="bg-light blog-item rounded p-4" style="background-image: url(../../../AppDoc/static/image/edu/00.png);width:400px;height:300px;background-size: cover;">
+        <div class="bg-light blog-item rounded p-4" style="background-image: url(../../../AppDoc/static/image/edu/00.png);background-size: cover;">
             <div class="mb-4">
                 <h4 class="text-primary mb-2">游戏</h4>
             </div>  
