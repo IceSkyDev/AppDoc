@@ -9,8 +9,8 @@
         "home_url": "/en/",
         "items": [
             {
-                "url": "/uwp/en/",
-                "label": "UWP App",
+                "url": "/edu/en/",
+                "label": "Edu Apps",
                 "position": "left"
             },
             {

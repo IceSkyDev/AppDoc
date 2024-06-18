@@ -320,7 +320,7 @@ Learn about the traditional culture that has been summarized and inherited by th
    ![Static Badge](https://img.shields.io/badge/WPF-Free-darkgreen?logo=microsoftstore)
 
   [随机选择工具PWA](https://apps.microsoft.com/detail/9PMKD8SSQZH7?hl=zh-cn&gl=CN)
-  ![Static Badge](https://img.shields.io/badge/PWA-Free-darkgreen?logo=microsoftstore)</a>
+  ![Static Badge](https://img.shields.io/badge/PWA-Free-darkgreen?logo=microsoftstore)
 
   Provide a variety of random selection methods
   [在线使用](https://makedecision.azurewebsites.net)
