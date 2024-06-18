@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-            <loc>https://IceSkyDev.github.io/AppDoc/get_started/zh/index.html</loc>
+            <loc>https://IceSkyDev.github.io/AppDoc/home/zh/index.html</loc>
             <lastmod>2022-09-01</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://IceSkyDev.github.io/AppDoc/uwp/zh/index.html</loc>
+            <loc>https://IceSkyDev.github.io/AppDoc/edu/zh/index.html</loc>
             <lastmod>2022-09-01</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
@@ -31,25 +31,25 @@
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://IceSkyDev.github.io/AppDoc/get_started/en/index.html</loc>
+            <loc>https://IceSkyDev.github.io/AppDoc/home/en/index.html</loc>
             <lastmod>2022-09-01</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://IceSkyDev.github.io/AppDoc/get_started/en/no_translate.html</loc>
+            <loc>https://IceSkyDev.github.io/AppDoc/home/en/no_translate.html</loc>
             <lastmod>2024-06-18</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://IceSkyDev.github.io/AppDoc/uwp/en/index.html</loc>
+            <loc>https://IceSkyDev.github.io/AppDoc/edu/en/index.html</loc>
             <lastmod>2022-09-01</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://IceSkyDev.github.io/AppDoc/uwp/en/no_translate.html</loc>
+            <loc>https://IceSkyDev.github.io/AppDoc/edu/en/no_translate.html</loc>
             <lastmod>2024-06-18</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
