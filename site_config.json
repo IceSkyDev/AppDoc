@@ -11,7 +11,8 @@
             "/get_started/zh/": "docs/get_started/zh",
             "/uwp/zh/": "docs/uwp/zh",
             "/tools/zh/": "docs/tools/zh",
-            "/games/zh/": "docs/games/zh"
+            "/game/zh/": "docs/game/zh",
+            "/usage/zh/": "docs/usage/zh"
         },
         "pages": {
             "/": "pages/index/zh",
@@ -45,10 +46,16 @@
                     "src": "docs/tools/en"
                 }
             ],
-            "/games/zh/": [
+            "/game/zh/": [
                 {
-                    "url": "/games/en/",
-                    "src": "docs/games/en"
+                    "url": "/game/en/",
+                    "src": "docs/game/en"
+                }
+            ],
+            "/usage/zh/": [
+                {
+                    "url": "/usage/en/",
+                    "src": "docs/usage/en"
                 }
             ]
         },
