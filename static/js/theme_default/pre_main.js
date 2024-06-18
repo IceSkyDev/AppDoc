@@ -39,16 +39,16 @@ function setTheme(theme){
         }
         document.getElementsByTagName("html")[0].classList.add("dark");
         // load dark and light togher, distingush by .dark class instead use single css file
-        // removejscssfile("/static/css/theme_default/light.css", "css");
-        // addCss("/static/css/theme_default/dark.css");
+        // removejscssfile("/AppDoc/static/css/theme_default/light.css", "css");
+        // addCss("/AppDoc/static/css/theme_default/dark.css");
     }else{
         if(obj){
             obj.classList.remove("dark");
             obj.classList.add("light");
         }
         document.getElementsByTagName("html")[0].classList.remove("dark");
-        // removejscssfile("/static/css/theme_default/dark.css", "css");
-        // addCss("/static/css/theme_default/light.css");
+        // removejscssfile("/AppDoc/static/css/theme_default/dark.css", "css");
+        // addCss("/AppDoc/static/css/theme_default/light.css");
     }
     localStorage.setItem("theme", theme);
 }

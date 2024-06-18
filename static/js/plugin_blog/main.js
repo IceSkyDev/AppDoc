@@ -88,7 +88,7 @@ $(document).ready(function(){
         });
     }
     if(isBlog){
-        downloadJson("/static/blog_index/index.json", onDownloadOk);
+        downloadJson("/AppDoc/static/blog_index/index.json", onDownloadOk);
     }
 });
 
