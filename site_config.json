@@ -9,7 +9,7 @@
     "route": {
         "docs": {
             "/home/zh/": "docs/home/zh",
-            "/uwp/zh/": "docs/uwp/zh",
+            "/edu/zh/": "docs/edu/zh",
             "/tools/zh/": "docs/tools/zh",
             "/game/zh/": "docs/game/zh",
             "/usage/zh/": "docs/usage/zh"
