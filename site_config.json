@@ -20,6 +20,9 @@
         "assets": {
             "/static/": "static",
             "/get_started/assets/": "docs/get_started/assets"
+        },
+        "blog": {
+            "/blog/": "blog"
         }
     },
     "translate": {
