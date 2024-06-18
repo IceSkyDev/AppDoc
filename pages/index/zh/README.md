@@ -18,7 +18,7 @@ id: home_page
             <div class="mb-4">
                 <h4 class="text-primary mb-2">教育类应用</h4>
             </div>
-            <a class="btn btn-primary rounded-pill py-2 px-4" role="button" href="../../../docs/edu/zh/">Explore More</a>
+            <a class="btn btn-primary rounded-pill py-2 px-4" role="button" href="../../../edu/zh/">Explore More</a>
         </div>
     </div>
     <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
@@ -26,7 +26,7 @@ id: home_page
             <div class="mb-4">
                 <h4 class="text-primary mb-2">工具类应用</h4>
             </div>
-            <a class="btn btn-primary rounded-pill py-2 px-4" role="button" href="../../../docs/tools/zh/">Explore More</a>
+            <a class="btn btn-primary rounded-pill py-2 px-4" role="button" href="../../../tools/zh/">Explore More</a>
         </div>
     </div>
     <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
@@ -34,7 +34,7 @@ id: home_page
             <div class="mb-4">
                 <h4 class="text-primary mb-2">游戏</h4>
             </div>  
-            <a class="btn btn-primary rounded-pill py-2 px-4" role="button" href="../../../docs/tools/zh/">Explore More</a>
+            <a class="btn btn-primary rounded-pill py-2 px-4" role="button" href="../../../tools/zh/">Explore More</a>
         </div>
     </div>
 </div>

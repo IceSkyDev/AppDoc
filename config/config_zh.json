@@ -2,7 +2,7 @@
     "locale": "zh_CN",
     "class": "language_zh",
     "navbar": {
-        "title": "IceSky",
+        "title": "",
         "logo": {
             "alt": "IceSky Logo",
             "src": "/static/image/logo.png"
@@ -10,7 +10,7 @@
         "home_url": "/",
         "items": [
             {
-                "url": "/uwp/zh/",
+                "url": "/edu/zh/",
                 "label": "教育类应用",
                 "position": "left"
             },
