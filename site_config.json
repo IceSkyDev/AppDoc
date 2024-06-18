@@ -1,11 +1,11 @@
 {
     "site_name": "IceSky",
     "site_slogon": "",
-    "site_root_url": "/",
+    "site_root_url": "/AppDoc/",
     "site_domain": "IceSkyDev.github.io",
     "site_protocol": "https",
     "config_template_dir": "config",
-    "source": "https://github.com/IceSkyDev/IceSkyDev.github.io/blob/main",
+    "source": "",
     "route": {
         "docs": {
             "/get_started/zh/": "docs/get_started/zh",
