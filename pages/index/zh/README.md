@@ -1,7 +1,7 @@
 ---
 title: IceSky
-keywords: Windows App, Tools, UWP, WPF, Game
-desc: Windows App, Tools, UWP, WPF, Game
+keywords: Windows App, Tools, UWP, WPF, Game, 应用, 工具
+desc: Windows 应用推荐及介绍, 工具使用方法介绍, 游戏介绍
 id: home_page
 ---
 

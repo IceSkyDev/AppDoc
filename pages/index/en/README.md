@@ -1,7 +1,7 @@
 ---
 title: IceSky
 keywords: Windows App, Tools, UWP, WPF, Game
-desc: Windows App, Tools, UWP, WPF, Game
+desc: Windows App Introduce and Recommend, useful Tools Recommend, Game Recommend
 id: home_page
 ---
 
