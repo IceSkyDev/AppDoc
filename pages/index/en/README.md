@@ -8,8 +8,10 @@ id: home_page
 
 <div>
     <h1><span>IceSky App</span></h1>
-    <h3>Show and Introduce Windows App</h3>
 </div>
+
+### Show and Introduce Windows App ###
+
 <br/>
 <div class="row justify-content-center g-4">
     <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
@@ -31,7 +33,7 @@ id: home_page
                 <h4 class="text-primary mb-2">Tools</h4>
             </div>
             <div class="project-img">
-            <img class="rounded img-fluid w-100" src="../../../AppDoc/static/image/edu/00.png" alt="Image" />
+            <img class="rounded img-fluid w-100" src="../../../AppDoc/static/image/tools/00.png" alt="Image" />
             </div>
             <div class="my-4">
             <a class="btn btn-primary rounded-pill py-2 px-4" role="button" href="../../../AppDoc/tools/zh/">Explore More</a>
@@ -44,7 +46,7 @@ id: home_page
                 <h4 class="text-primary mb-2">Games</h4>
             </div>
             <div class="project-img">
-            <img class="rounded img-fluid w-100" src="../../../AppDoc/static/image/edu/00.png" alt="Image" />
+            <img class="rounded img-fluid w-100" src="../../../AppDoc/static/image/game/00.png" alt="Image" />
             </div>
             <div class="my-4">
             <a class="btn btn-primary rounded-pill py-2 px-4" role="button" href="../../../AppDoc/game/zh/">Explore More</a>

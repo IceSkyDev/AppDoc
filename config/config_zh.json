@@ -32,12 +32,13 @@
             }
         ]
     },
-    "footer":{
-        "top":[            
-        ],
+    "footer": {
+        "top": [],
         "bottom": [
+            {
+                "label": "IceSky"
+            }
         ]
     },
-    "plugins": {
-    }
+    "plugins": {}
 }

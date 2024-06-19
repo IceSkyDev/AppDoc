@@ -39,14 +39,20 @@
   background-color: #0062be;
 }
 
+#to_top{
+  display: flex;
+  float: right;
+}
 .md_page #page_content > div {
   max-width: 80%;
 }
 .blog-item{
   border: #228ff566 solid 1px;
+  overflow: hidden;
 }
-.blog-item .project-img img {
+.blog-item .project-img {
   transition: 0.5s;
+  overflow: hidden;
 }
 .blog-item:hover .project-img img {
   transform: scale(1.2);

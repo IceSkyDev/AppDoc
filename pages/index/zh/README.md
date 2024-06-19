@@ -7,7 +7,8 @@ id: home_page
 
 <div>
     <h1><span>IceSky App</span></h1>
-    <h3>各类 Windows 应用展示及介绍</h3>
+    
+### 各类 Windows 应用展示及介绍 ###
 </div>
 <br/>
 <div class="row justify-content-center g-4">
@@ -30,7 +31,7 @@ id: home_page
                 <h4 class="text-primary mb-2">工具类应用</h4>
             </div>
             <div class="project-img">
-            <img class="rounded img-fluid w-100" src="../../../AppDoc/static/image/edu/00.png" alt="Image" />
+            <img class="rounded img-fluid w-100" src="../../../AppDoc/static/image/tools/00.png" alt="Image" />
             </div>
             <div class="my-4">
             <a class="btn btn-primary rounded-pill py-2 px-4" role="button" href="../../../AppDoc/tools/zh/">了解更多</a>
@@ -43,7 +44,7 @@ id: home_page
                 <h4 class="text-primary mb-2">游戏</h4>
             </div>
             <div class="project-img">
-            <img class="rounded img-fluid w-100" src="../../../AppDoc/static/image/edu/00.png" alt="Image" />
+            <img class="rounded img-fluid w-100" src="../../../AppDoc/static/image/game/00.png" alt="Image" />
             </div>
             <div class="my-4">
             <a class="btn btn-primary rounded-pill py-2 px-4" role="button" href="../../../AppDoc/game/zh/">了解更多</a>
