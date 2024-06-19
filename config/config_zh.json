@@ -33,6 +33,10 @@
         ]
     },
     "footer":{
+        "top":[            
+        ],
+        "bottom": [
+        ]
     },
     "plugins": {
     }
