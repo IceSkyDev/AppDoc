@@ -30,5 +30,7 @@
                 "type": "language"
             }
         ]
+    },
+    "footer":{
     }
 }
