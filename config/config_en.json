@@ -24,11 +24,6 @@
                 "position": "left"
             },
             {
-                "url": "/usage/en/",
-                "label": "Usage",
-                "position": "left"
-            },
-            {
                 "id": "language",
                 "label": "Language: ",
                 "position": "right",

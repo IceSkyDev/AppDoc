@@ -25,11 +25,6 @@
                 "position": "left"
             },
             {
-                "url": "/usage/zh/",
-                "label": "使用说明",
-                "position": "left"
-            },
-            {
                 "id": "language",
                 "label": "Language: ",
                 "position": "right",
