@@ -1,46 +1,51 @@
-
 #navbar h2 {
-    color: #228FF5;
+  color: #228ff5;
 }
 
 #home_page h1 {
-    width: 100%;
-    font-size: 6em;
-    text-align: center;
-    font-family: sans-serif;
-    color: #228FF5;
+  width: 100%;
+  font-size: 6em;
+  text-align: center;
+  font-family: sans-serif;
+  color: #228ff5;
 }
 #home_page h3 {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 #big_btn_wrapper {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 5em 1em;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5em 1em;
 }
 #home_page .big_btn a {
-    padding: 2em;
-    background-color: #228FF5;
-    font-size: 1.3em;
-    border-radius: 10px;
-    transition: 0.4s;
-    display: flex;
-    color: white;
+  padding: 2em;
+  background-color: #228ff5;
+  font-size: 1.3em;
+  border-radius: 10px;
+  transition: 0.4s;
+  display: flex;
+  color: white;
 }
 #home_page .big_btn a:hover {
-    box-shadow: 6px 4px 20px #0000002e;
+  box-shadow: 6px 4px 20px #0000002e;
 }
 .dark #home_page .big_btn a {
-    background-color: #195893;
-    color: #d2f9e5;
+  background-color: #195893;
+  color: #d2f9e5;
 }
 .dark #home_page .big_btn a:hover {
-    box-shadow: 6px 4px 20px #000000;
-    background-color: #0062be;
+  box-shadow: 6px 4px 20px #000000;
+  background-color: #0062be;
+}
+
+#page_content > div {
+  max-width: 80%;
+}
+.project-img img {
+  transition: 0.5s;
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 900px) {
-    
 }
-
