@@ -19,7 +19,9 @@ id: home_page
             <div class="project-img">
             <img class="rounded img-fluid w-100" src="../../../AppDoc/static/image/edu/00.png" alt="Image" />
             </div>
+            <div class="my-4">
             <a class="btn btn-primary rounded-pill py-2 px-4" role="button" href="../../../AppDoc/edu/zh/">了解更多</a>
+            </div>
         </div>
     </div>
     <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
@@ -30,7 +32,9 @@ id: home_page
             <div class="project-img">
             <img class="rounded img-fluid w-100" src="../../../AppDoc/static/image/edu/00.png" alt="Image" />
             </div>
+            <div class="my-4">
             <a class="btn btn-primary rounded-pill py-2 px-4" role="button" href="../../../AppDoc/tools/zh/">了解更多</a>
+            </div>
         </div>
     </div>
     <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
@@ -41,7 +45,9 @@ id: home_page
             <div class="project-img">
             <img class="rounded img-fluid w-100" src="../../../AppDoc/static/image/edu/00.png" alt="Image" />
             </div>
+            <div class="my-4">
             <a class="btn btn-primary rounded-pill py-2 px-4" role="button" href="../../../AppDoc/game/zh/">了解更多</a>
+            </div>
         </div>
     </div>
 </div>
@@ -50,9 +56,7 @@ id: home_page
 
 <div align="center">
 
-_扫描下方二维码关注微信公众号
-**【IceSky】**
-，获取更多开发技术和工具软件介绍及技巧。_
+_扫描下方二维码关注微信公众号 **【IceSky】**，获取更多开发技术和工具软件介绍及技巧。_
 
 <img src="../../../AppDoc/static/image/qr.png" width="200" height="200"></img>
 

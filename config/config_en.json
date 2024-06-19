@@ -30,11 +30,5 @@
                 "type": "language"
             }
         ]
-    },
-    "footer":{
-        "top":[
-        ],
-        "bottom": [
-        ]
     }
 }

@@ -32,12 +32,6 @@
             }
         ]
     },
-    "footer":{
-        "top":[            
-        ],
-        "bottom": [
-        ]
-    },
     "plugins": {
     }
 }

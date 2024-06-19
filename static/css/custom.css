@@ -39,11 +39,16 @@
   background-color: #0062be;
 }
 
-#page_content > div {
+.md_page #page_content > div {
   max-width: 80%;
 }
-.project-img img {
+.blog-item{
+  border: #228ff566 solid 1px;
+}
+.blog-item .project-img img {
   transition: 0.5s;
+}
+.blog-item:hover .project-img img {
   transform: scale(1.2);
 }
 
