@@ -1,11 +1,11 @@
 items:
 - label: General Information
-    file: README.md
+  file: README.md
 - label: Enlightenment education
-    file: enlighten.md
+  file: enlighten.md
 - label: Knowledge expansion and improvement
-    file: improve.md
+  file: improve.md
 - label: Language learning
-    file: language.md
+  file: language.md
 - label: Ancient Chinese Literature
-    file: chinese.md
+  file: chinese.md
