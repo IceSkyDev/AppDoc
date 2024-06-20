@@ -1,7 +1,7 @@
 ---
 title: IceSky
 keywords: Windows App, Tools, UWP, WPF, Game
-desc: Windows App Introduce and Recommend, useful Tools Recommend, Game Recommend
+desc: Windows App Introduce and Recommend, useful Tools Recommend, Game Recommends
 id: home_page
 ---
 
@@ -15,7 +15,7 @@ id: home_page
 <br/>
 <div class="row justify-content-center g-4">
     <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="bg-light blog-item rounded p-4">
+        <div class="blog-item rounded p-4" style="background-color: #8CCBE033;">
             <div class="mb-4">
                 <h4 class="text-primary mb-2">Edu Apps</h4>
             </div>
@@ -28,7 +28,7 @@ id: home_page
         </div>
     </div>
     <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
-        <div class="bg-light blog-item rounded p-4">
+        <div class="blog-item rounded p-4" style="background-color: #8CCBE033;">
             <div class="mb-4">
                 <h4 class="text-primary mb-2">Tools</h4>
             </div>
@@ -41,7 +41,7 @@ id: home_page
         </div>
     </div>
     <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
-        <div class="bg-light blog-item rounded p-4">
+        <div class="blog-item rounded p-4" style="background-color: #8CCBE033;">
             <div class="mb-4">
                 <h4 class="text-primary mb-2">Games</h4>
             </div>

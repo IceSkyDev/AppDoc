@@ -13,7 +13,7 @@ id: home_page
 <br/>
 <div class="row justify-content-center g-4">
     <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="bg-light blog-item rounded p-4">
+        <div class="blog-item rounded p-4" style="background-color: #8CCBE033;">
             <div class="mb-4">
                 <h4 class="text-primary mb-2">教育类应用</h4>
             </div>
@@ -26,7 +26,7 @@ id: home_page
         </div>
     </div>
     <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
-        <div class="bg-light blog-item rounded p-4">
+        <div class="blog-item rounded p-4" style="background-color: #8CCBE033;">
             <div class="mb-4">
                 <h4 class="text-primary mb-2">工具类应用</h4>
             </div>
@@ -39,7 +39,7 @@ id: home_page
         </div>
     </div>
     <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
-        <div class="bg-light blog-item rounded p-4">
+        <div class="blog-item rounded p-4" style="background-color: #8CCBE033;">
             <div class="mb-4">
                 <h4 class="text-primary mb-2">游戏</h4>
             </div>
