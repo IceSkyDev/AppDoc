@@ -1,4 +1,11 @@
 items:
--   label: Introduction to teedoc
-    file: README.md
-
+- label: General Information
+  file: README.md
+- label: Enlightenment education
+  file: enlighten.md
+- label: Knowledge expansion and improvement
+  file: improve.md
+- label: Language learning
+  file: language.md
+- label: Ancient Chinese Literature
+  file: chinese.md

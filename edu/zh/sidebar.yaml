@@ -1,3 +1,11 @@
 items:
--   label: 简介
-    file: README.md
+- label: 通用说明
+  file: README.md
+- label: 启蒙教育
+  file: enlighten.md
+- label: 拓展提高
+  file: improve.md
+- label: 语言学习
+  file: language.md
+- label: 经典国学
+  file: chinese.md

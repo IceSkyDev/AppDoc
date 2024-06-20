@@ -31,7 +31,7 @@ $(document).ready(function(){
     registerOnWindowResize(has_sidebar);
     hello();
     imageViewer();
-    if(true){
+    if(false){
         addPrintPage();
     }
     addTocMobileListener();

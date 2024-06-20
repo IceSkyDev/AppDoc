@@ -7,20 +7,44 @@
             <priority>1.0</priority>
         </url>
         <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/edu/zh/improve.html</loc>
+            <lastmod>2024-06-20</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
             <loc>https://IceSkyDev.github.io/AppDoc/edu/zh/index.html</loc>
-            <lastmod>2022-09-01</lastmod>
+            <lastmod>2024-06-20</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/edu/zh/language.html</loc>
+            <lastmod>2024-06-20</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/edu/zh/chinese.html</loc>
+            <lastmod>2024-06-20</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/edu/zh/enlighten.html</loc>
+            <lastmod>2024-06-20</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/index.html</loc>
-            <lastmod>2022-09-01</lastmod>
+            <lastmod>2024-06-20</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/game/zh/index.html</loc>
-            <lastmod>2022-09-01</lastmod>
+            <lastmod>2024-06-20</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
@@ -38,43 +62,67 @@
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/home/en/no_translate.html</loc>
-            <lastmod>2024-06-19</lastmod>
+            <lastmod>2024-06-20</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/edu/en/improve.html</loc>
+            <lastmod>2024-06-20</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/edu/en/index.html</loc>
-            <lastmod>2022-09-01</lastmod>
+            <lastmod>2024-06-20</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/edu/en/language.html</loc>
+            <lastmod>2024-06-20</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/edu/en/chinese.html</loc>
+            <lastmod>2024-06-20</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/edu/en/enlighten.html</loc>
+            <lastmod>2024-06-20</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/edu/en/no_translate.html</loc>
-            <lastmod>2024-06-19</lastmod>
+            <lastmod>2024-06-20</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/en/index.html</loc>
-            <lastmod>2022-09-01</lastmod>
+            <lastmod>2024-06-20</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/en/no_translate.html</loc>
-            <lastmod>2024-06-19</lastmod>
+            <lastmod>2024-06-20</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/game/en/index.html</loc>
-            <lastmod>2022-09-01</lastmod>
+            <lastmod>2024-06-20</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/game/en/no_translate.html</loc>
-            <lastmod>2024-06-19</lastmod>
+            <lastmod>2024-06-20</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
@@ -86,7 +134,7 @@
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/usage/en/no_translate.html</loc>
-            <lastmod>2024-06-19</lastmod>
+            <lastmod>2024-06-20</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>

@@ -39,14 +39,18 @@
   background-color: #0062be;
 }
 
-#to_top{
+#to_top {
   display: flex;
   float: right;
+}
+img {
+  max-width: 50em;
+  align-self: center;
 }
 .md_page #page_content > div {
   max-width: 80%;
 }
-.blog-item{
+.blog-item {
   border: #228ff566 solid 1px;
   overflow: hidden;
 }
