@@ -5,10 +5,10 @@ desc: 教育类应用介绍，包含四书五经、启蒙教育、语言学习�
 ---
 
 此类应用包含一系列教育类应用，可以分为四大类：
-* [启蒙教育](/docs/edu/zh/enlighten.md)
-* [拓展提高](/docs/edu/zh/improve.md)
-* [语言学习](/docs/edu/zh/language.md)
-* [经典国学](/docs/edu/zh/chinese.md)
+* [启蒙教育](./enlighten.md)
+* [拓展提高](./improve.md)
+* [语言学习](./language.md)
+* [经典国学](./chinese.md)
   
 每类都包含十余个应用，内容涵盖国学启蒙、四书五经、儿歌童谣、英日韩语学习、百科知识等。
 

@@ -5,10 +5,10 @@ desc: Educational App, include Enlightenment education, Knowledge expansion and 
 ---
 
 These apps include a range of educational apps that can be grouped into four categories:
-* [Enlightenment education](/docs/edu/zh/enlighten.md)
-* [Knowledge expansion and improvement](/docs/edu/zh/improve.md)
-* [Language learning](/docs/edu/zh/language.md)
-* [Ancient Chinese Literature](/docs/edu/zh/chinese.md)
+* [Enlightenment education](./enlighten.md)
+* [Knowledge expansion and improvement](./improve.md)
+* [Language learning](./language.md)
+* [Ancient Chinese Literature](./chinese.md)
   
 Each category contains more than a dozen applications.
 

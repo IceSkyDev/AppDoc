@@ -20,7 +20,11 @@
         },
         "assets": {
             "/static/": "static",
-            "/home/assets/": "docs/home/assets"
+            "/home/assets/": "docs/home/assets",
+            "/tools/assets/": "docs/tools/assets",
+            "/usage/assets/": "docs/usage/assets",
+            "/edu/assets/": "docs/edu/assets",
+            "/game/assets/": "docs/game/assets"
         },
         "blog": {
             "/blog/": "blog"
@@ -69,23 +73,22 @@
         }
     },
     "plugins": {
-        "teedoc-plugin-markdown-parser":{
+        "teedoc-plugin-markdown-parser": {
             "from": "pypi",
-            "config": {
-            }
+            "config": {}
         },
-        "teedoc-plugin-theme-default":{
+        "teedoc-plugin-theme-default": {
             "from": "pypi",
             "config": {
                 "dark": true,
                 "default_dark": true,
                 "show_print_page": false,
-                "env":{
+                "env": {
                     "main_color": "#228FF5"
                 }
             }
         },
-        "teedoc-plugin-search":{
+        "teedoc-plugin-search": {
             "from": "pypi",
             "config": {
                 "search_hint": "Search"
@@ -93,8 +96,7 @@
         },
         "teedoc-plugin-blog": {
             "from": "pypi",
-            "config": {
-            }
+            "config": {}
         },
         "teedoc-plugin-assets": {
             "from": "pypi",
@@ -108,7 +110,7 @@
                     "/static/js/easing.min.js",
                     "/static/js/custom.js"
                 ],
-                "env":{
+                "env": {
                     "main_color": "#228FF5",
                     "second_color": "#195893"
                 }
@@ -116,7 +118,7 @@
         }
     },
     "rebuild_changes_delay": 1,
-    "robots":{
+    "robots": {
         "User-agent": "*"
     },
     "layout_root_dir": "layout"
