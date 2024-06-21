@@ -1,4 +1,12 @@
 items:
--   label: Game
+-   label: Game Introduce
     file: README.md
+-   label: Word Guessing Games
+    file: WordGame.md
+-   label: Minesweeper
+    file: Minesweeper.md
+-   label: Sudoku
+    file: Sudoku.md
+-   label: Nonograms
+    file: Nonograms.md
 

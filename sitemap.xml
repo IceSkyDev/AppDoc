@@ -43,7 +43,31 @@
             <priority>1.0</priority>
         </url>
         <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/game/zh/Nonograms.html</loc>
+            <lastmod>2024-06-21</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/game/zh/WordGame.html</loc>
+            <lastmod>2024-06-21</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/game/zh/Sudoku.html</loc>
+            <lastmod>2024-06-21</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
             <loc>https://IceSkyDev.github.io/AppDoc/game/zh/index.html</loc>
+            <lastmod>2024-06-21</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/game/zh/Minesweeper.html</loc>
             <lastmod>2024-06-21</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
@@ -115,7 +139,19 @@
             <priority>1.0</priority>
         </url>
         <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/game/en/WordGame.html</loc>
+            <lastmod>2024-06-21</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
             <loc>https://IceSkyDev.github.io/AppDoc/game/en/index.html</loc>
+            <lastmod>2024-06-21</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/game/en/Minesweeper.html</loc>
             <lastmod>2024-06-21</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
