@@ -1,5 +1,6 @@
 ---
 title: 教育类应用介绍
+class: heading_no_counter
 keywords: 教育类应用, 英语学习, 日语五十音图, 日语, 韩语
 desc: 语言学习类应用介绍，包含英语学习、日语五十音图、韩语字母表等
 ---

@@ -1,5 +1,6 @@
 ---
 title: Educational App
+class: heading_no_counter
 keywords: Educational Applications, Periodic Table, Tang and Song Poetry, Ancient Chinese Poetry, Stick Figures, Encyclopedic Knowledge
 desc: Expand and improve the introduction of educational applications, including the periodic table, Tang and Song poems, ancient Chinese poems, encyclopedic knowledge, stick figures, etc
 ---
@@ -10,7 +11,7 @@ desc: Expand and improve the introduction of educational applications, including
 It contains more than 140 classic Chinese ancient poems, with reading and children's songs.
 ![](../assets/images/shicisanwen.png)
 
-### [唐诗300首+](https://apps.microsoft.com/detail/9NWSJ79860Q0?hl=zh-cn&gl=CN)+ ###
+### [唐诗300首+](https://apps.microsoft.com/detail/9NWSJ79860Q0?hl=zh-cn&gl=CN) ###
 Provide 《唐诗三百首》 with audio, pinyin, annotations and translations, you can view the author's introduction, creative background and poetry appreciation.
 ![](../assets/images/tangshi300.png)
 
@@ -43,7 +44,7 @@ Click on an idiom in the list on the left to view the idiom information, includi
 
 #### Idiom Search ####
 The search function supports query by text or pinyin, fuzzy matching, and wildcards ‘\_’ and ‘\*’.
-> [!NOTE]
+
 > '\_' and '\*' have the same effect, and each '\_' or '\*' represents a Chinese character or the pinyin of a Chinese character
 >
 > You can filter common idioms by selecting the Common Idioms check box.
@@ -52,7 +53,7 @@ The search function supports query by text or pinyin, fuzzy matching, and wildca
 * Text location query, you can query idioms for a specific location of a specified text. For example, if you enter "\*一", you can query all idioms whose second character is "一";
 * Pinyin query, which can query all idioms that contain the specified pronunciation, including homophones. For example, enter "li" to query the idioms containing "li" in pinyin, and the position is arbitrary;
 * Pinyin position query, you can query all idioms, including homophones, that the package specifies the pronunciation in a specific position. For example, if you enter "yi * yi", you will search for idioms that are pinyin "yi" in the second and fourth positions, such as "不以为意", "时移世异", etc.
-  > [!NOTE]
+
   > Pinyin queries do not contain tones, and pinyin is separated by spaces
 
 ![](../assets/images/chengyudaquan1.png)
@@ -70,12 +71,12 @@ Select the special menu below to query idioms with different char types, includi
 * Solitaire Steps:
   * Forward connection: Click on the last word as the beginning to select the next idiom
   * Reverse connection: Click on the first word as the last word to select the next idiom
-  > [!NOTE]
+
   > Actions on the last idiom can be added later, and if the operation is on the previous idiom, the following idioms will be cleared and re-added.
   
 * End method: Click the [End] button to clear the solitaire result, and you can start again.
 
-> [!TIP]
+
 > You can choose to search for all idioms or commonly used idioms.
 >
 > You can select an idiom to view pinyin, source, explanation, and examples.
@@ -128,7 +129,7 @@ In the steps or artwork interface, you can view the simple steps of painting or 
 [高级简笔画](https://apps.microsoft.com/detail/9NBVHHCS2GWW?hl=zh-cn&gl=CN)
 [简笔画大师](https://apps.microsoft.com/detail/9NRLNP19TV4R?hl=zh-cn&gl=CN)
 
-> [!TIP]
+
 > The open/save button for children's and beginner stick figures is in the middle menu below, other apps are in the lower left corner of the interface, and other apps have a canvas zoom button in the bottom right corner.
 
 ### [填色](https://apps.microsoft.com/detail/9PP861LBHWDB?hl=zh-cn&gl=CN) ###
@@ -270,7 +271,7 @@ The menu bar allows you to switch to memorization mode to recite poems, or check
 In memorization mode, you need to complete each verse word by word by selecting each character in the correct position from the options below, and each completed sentence will be displayed on the left side and automatically switch to the next sentence until the entire poem is completed.
 
 #### Desktop notification settings
-> [!NOTE]
+
 > If desktop notifications are not turned on initially, you can enable the automatic notification feature through [Auto Start] in the configuration interface.
 
 Settings include:
@@ -284,8 +285,8 @@ Settings include:
 * Click [Apply] to save the settings, and [Close] to close the dialog box but not save the settings.  
 * Play/Stop button to preview settings and also control the current desktop notification.
 
-> [!TIP]
-> Settings when you don't click Apply will not be saved, and you can preview the changes when you click the play button, but they will be lost when you reopen the configuration screen or app.
+
+>! Settings when you don't click Apply will not be saved, and you can preview the changes when you click the play button, but they will be lost when you reopen the configuration screen or app.
 
 
 Desktop Notification:
@@ -295,7 +296,7 @@ Desktop Notification:
 When you close a window, you can choose to hide it to the taskbar icon, left-click the taskbar icon to restore the window, and click the context menu of icon to start or stop desktop notifications.
 
 
-### [元素周期表+](https://apps.microsoft.com/detail/9NJKL858L4VS?hl=zh-cn&gl=CN) ###
+### [元素周期表 +](https://apps.microsoft.com/detail/9NJKL858L4VS?hl=zh-cn&gl=CN) ###
 It contains the basic information of all 118 elements that have been discovered, and the basic information is displayed by default: atomic number, element symbol, and different categories are distinguished by different colors.
 After hovering the mouse, the Chinese name and atomic weight are displayed.
 When hovering over the family and period numbers and classifications, the elements of the corresponding categories will be highlighted.
@@ -308,8 +309,8 @@ After clicking, you can view the detailed information of the element, including:
 
 #### Elements Compare
 After view by group, you can select 2-4 elements to compare the information of them
-> [!NOTE]
-> Only [元素周期表 +] supports group view and comparison
+
+>! Only [元素周期表 +] supports group view and comparison
 
 ![](../assets/images/zhouqibiao2.png)
 

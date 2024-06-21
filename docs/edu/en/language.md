@@ -1,5 +1,6 @@
 ---
 title: Educational App
+class: heading_no_counter
 keywords: Educational App, English, Japanese Fifty Syllables, Japanese, Korean
 desc: Introduction to language learning applications, including English learning, Japanese 50-syllable charts, Korean alphabet, etc
 ---

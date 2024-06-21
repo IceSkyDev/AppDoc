@@ -1,5 +1,6 @@
 ---
 title: 教育类应用介绍
+class: heading_no_counter
 keywords: 教育类应用, 四书五经, 兵法, 诗歌散文, 经典国学
 desc: 经典国学应用介绍，包含四书五经、兵法、中国古代诗歌散文等
 ---

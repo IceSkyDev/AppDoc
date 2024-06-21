@@ -1,5 +1,6 @@
 ---
 title: Educational App
+class: heading_no_counter
 keywords: Educational, Enlightenment, language learning, Chinese Literature, Chinese Poems
 desc: Educational App, include Enlightenment education, Knowledge expansion and improvement, language learning, Ancient Chinese Literature
 ---

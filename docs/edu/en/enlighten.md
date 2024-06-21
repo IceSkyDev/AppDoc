@@ -1,5 +1,6 @@
 ---
 title: Educational App
+class: heading_no_counter
 keywords: Educational Applications, Enlightenment Education, Tang Poetry and Song Lyrics, Poetry, Children's Songs, English Nursery Rhymes, Pinyin
 desc: Enlightenment education applications, including Tang and Song poems, poems, children's songs, pinyin, English enlightenment, etc
 ---

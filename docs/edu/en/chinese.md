@@ -1,5 +1,6 @@
 ---
 title: Educational App
+class: heading_no_counter
 keywords: Educational Applications, Four Books and Five Classics, The Art of War, Poetry and Prose, Classical Chinese Studies
 desc: Introduction to the application of classic Chinese culture, including the Four Books and Five Classics, the Art of War, ancient Chinese poetry and prose, etc
 ---
