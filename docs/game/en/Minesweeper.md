@@ -10,7 +10,7 @@ This app implements the classic Minesweeper gameplay, with 3 predefined styles t
 ### How to play 
 
 1. On the home page, select the difficulty level, you can choose from 3 predefined levels, or you can choose to customize to set the number of rows, columns and mines.
-![扫雷1](../assets/images/mine1.png)
+![扫雷1](../assets/images/Mine1.png)
 
 2. You can choose one of the three predefined styles and click Start Game to enter the game.
 3. Mode switching: After entering the game, the button on the right side of the [New Game] in the top menu bar can switch between the flip mode and the flag mode.
@@ -23,12 +23,12 @@ This app implements the classic Minesweeper gameplay, with 3 predefined styles t
 
 
 ### Style 1
-![扫雷1](../assets/images/mine2.png)
+![扫雷1](../assets/images/Mine2.png)
 
 
 ### Style 2
-![扫雷2](../assets/images/mine3.png)
+![扫雷2](../assets/images/Mine3.png)
 
 
 ### Style 3
-![扫雷3](../assets/images/mine4.png)
+![扫雷3](../assets/images/Mine4.png)
