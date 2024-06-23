@@ -12,7 +12,7 @@ Casual puzzle games are a class of games designed for recreational entertainment
 
 IceSky offers four games of this type in the Windows Store:
 
-* [Word Guessing Games(./WordGame.md)
+* [Word Guessing Games](./WordGame.md)
   
   Word guessing games were first introduced in the mid-20th century as number guessing games, and later developed in several variants.
 

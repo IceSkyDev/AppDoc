@@ -7,9 +7,14 @@ id: home_page
 
 <div>
     <h1><span>IceSky App</span></h1>
+</div>
+
+<div style="position:absolute; right:20px">
+<a href="https://info.flagcounter.com/ah2P"><img src="https://s01.flagcounter.com/count2/ah2P/bg_363636/txt_DEDEDE/border_3BB0FF/columns_2/maxflags_10/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" alt="Visitor Counter" border="0"></a>
+</div>
+
     
 ### 各类 Windows 应用展示及介绍 ###
-</div>
 <br/>
 <div class="row justify-content-center g-4">
     <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">

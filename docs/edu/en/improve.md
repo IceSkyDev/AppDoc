@@ -7,35 +7,35 @@ desc: Expand and improve the introduction of educational applications, including
 
 ## Knowledge expansion and improvement
 
-### [诗词散文](https://apps.microsoft.com/detail/9NBLGGH42RL7?hl=zh-cn&gl=CN) ###
+### [诗词散文](https://apps.microsoft.com/detail/9NBLGGH42RL7) ###
 It contains more than 140 classic Chinese ancient poems, with reading and children's songs.
 ![](../assets/images/shicisanwen.png)
 
-### [唐诗300首+](https://apps.microsoft.com/detail/9NWSJ79860Q0?hl=zh-cn&gl=CN) ###
+### [唐诗300首+](https://apps.microsoft.com/detail/9NWSJ79860Q0) ###
 Provide 《唐诗三百首》 with audio, pinyin, annotations and translations, you can view the author's introduction, creative background and poetry appreciation.
 ![](../assets/images/tangshi300.png)
 
-### [宋词300首+](https://apps.microsoft.com/detail/9N80M3VMVBXK?hl=zh-cn&gl=CN) ###
+### [宋词300首+](https://apps.microsoft.com/detail/9N80M3VMVBXK) ###
 Provide 《宋词三百首》 with audio, pinyin, annotations and translations, you can view the author's introduction, creative background and poetry appreciation.
 ![](../assets/images/songci300.png)
 
-### [元曲300首](https://apps.microsoft.com/detail/9NBLGGH42JP4?hl=zh-cn&gl=CN) ###
+### [元曲300首](https://apps.microsoft.com/detail/9NBLGGH42JP4) ###
 Provide 《元曲三百首》 audio and searching by author and title.
 ![](../assets/images/yuanqu.png)
 
-### [小学必背古诗文](https://apps.microsoft.com/detail/9NCJSGBVLWWT?hl=zh-cn&gl=CN) ###
+### [小学必背古诗文](https://apps.microsoft.com/detail/9NCJSGBVLWWT) ###
 Provide ancient poems that need to be memorized in Chinese primary school, with audio, pinyin, annotations, and translations.
 ![](../assets/images/xiaoxuebibei.png)
 
-### [中学必背古诗文](https://apps.microsoft.com/detail/9P5B3C3R6GHP?hl=zh-cn&gl=CN) ###
+### [中学必背古诗文](https://apps.microsoft.com/detail/9P5B3C3R6GHP) ###
 Provide ancient poems that need to be memorized in Chinese middle school, with audio, pinyin, annotations, and translations.
 ![](../assets/images/zhongxuebibei.png)
 
-### [高中必背古诗文](https://apps.microsoft.com/detail/9PCD7LCS18DK?hl=zh-cn&gl=CN) ###
+### [高中必背古诗文](https://apps.microsoft.com/detail/9PCD7LCS18DK) ###
 Provide ancient poems that need to be memorized in Chinese high school, with audio, pinyin, annotations, and translations.
 ![](../assets/images/gaozhongbibei.png)
 
-### [成语大全](https://apps.microsoft.com/detail/9P8DZNDDBTR4?hl=zh-cn&gl=CN) ###
+### [成语大全](https://apps.microsoft.com/detail/9P8DZNDDBTR4) ###
 This app contains more than 30,000 idioms, of which nearly 4,000 are tagged as commonly used idioms.
 
 #### View Info ####
@@ -83,7 +83,7 @@ Select the special menu below to query idioms with different char types, includi
 
 ![](../assets/images/chengyudaquan3.png)
 
-### [成语接龙诵读](https://apps.microsoft.com/detail/9NP4LCJPZNNM?hl=zh-cn&gl=CN) ###
+### [成语接龙诵读](https://apps.microsoft.com/detail/9NP4LCJPZNNM) ###
 Provide adult and children's pronunciation and follow-read functions of Chinese idiom.
 ![](../assets/images/chengyujielong.png)
 
@@ -123,21 +123,21 @@ Click the second button in the middle menu below to switch to the fill mode.
 In the steps or artwork interface, you can view the simple steps of painting or enjoy the artwork, click the picture to view the larger picture, and click again to close it.
 ![](../assets/images/shaoerjianbihua.png)
 
-[少儿简笔画](https://apps.microsoft.com/detail/9MSNH6TTWMHT?hl=zh-cn&gl=CN)
-[初级简笔画](https://apps.microsoft.com/detail/9NB3LRCRQ36G?hl=zh-cn&gl=CN)
-[中级简笔画](https://apps.microsoft.com/detail/9NDDFLMN19H6?hl=zh-cn&gl=CN)
-[高级简笔画](https://apps.microsoft.com/detail/9NBVHHCS2GWW?hl=zh-cn&gl=CN)
-[简笔画大师](https://apps.microsoft.com/detail/9NRLNP19TV4R?hl=zh-cn&gl=CN)
+[少儿简笔画](https://apps.microsoft.com/detail/9MSNH6TTWMHT)
+[初级简笔画](https://apps.microsoft.com/detail/9NB3LRCRQ36G)
+[中级简笔画](https://apps.microsoft.com/detail/9NDDFLMN19H6)
+[高级简笔画](https://apps.microsoft.com/detail/9NBVHHCS2GWW)
+[简笔画大师](https://apps.microsoft.com/detail/9NRLNP19TV4R)
 
 
 > The open/save button for children's and beginner stick figures is in the middle menu below, other apps are in the lower left corner of the interface, and other apps have a canvas zoom button in the bottom right corner.
 
-### [填色](https://apps.microsoft.com/detail/9PP861LBHWDB?hl=zh-cn&gl=CN) ###
+### [填色](https://apps.microsoft.com/detail/9PP861LBHWDB) ###
 Contains more than 100 line drawing pictures, supports opening local files to fill in and export coloring pictures.
 The operation is similar to that of stick figures.
 ![](../assets/images/tianse.png)
 
-### [中国百科](https://apps.microsoft.com/detail/9NHFV6M0VMX3?hl=zh-cn&gl=CN) ###
+### [中国百科](https://apps.microsoft.com/detail/9NHFV6M0VMX3) ###
 It contains knowledge of the 12 zodiac signs, 24 solar terms, hours, dynasties, traditional festivals, etc., which can help understand traditional Chinese culture and understand Chinese history.
 
 On the left side of the application is the function menu, which can be clicked to switch to different knowledge interfaces:
@@ -178,7 +178,7 @@ On the left side of the application is the function menu, which can be clicked t
 
   Click on the name of the festival to view the detailed description of the festival's English name, time, nickname and customs.
 
-### [中国省级地图](https://apps.microsoft.com/detail/9P1WCC4N8ZLT?hl=zh-cn&gl=CN) ###
+### [中国省级地图](https://apps.microsoft.com/detail/9P1WCC4N8ZLT) ###
 It can be used to learn and memorize the shape and location of China's provincial-level administrative regions, including map memory, province profile, map and name correspondence test, etc.
 
 ![](../assets/images/shengjiditu.png)
@@ -209,7 +209,7 @@ The correct area will be filled with green, otherwise it will be filled with red
 
 ![](../assets/images/shengjiditu3.png)
 
-### [世界各国概况](https://apps.microsoft.com/detail/9P65BSZH61RM?hl=zh-cn&gl=CN) ###
+### [世界各国概况](https://apps.microsoft.com/detail/9P65BSZH61RM) ###
 This app can be used to learn about maps and basic fact sheets of countries around the world, and can help memorize flags and capitals.
 
 ![](../assets/images/shijiegaikuang.png)
@@ -233,7 +233,7 @@ For each of the above questions, you need to select the correct country name bel
 
 ![](../assets/images/shijiegaikuang2.png)
 
-### [中国诗词大全](https://apps.microsoft.com/detail/9P3432W9K924?hl=zh-cn&gl=CN) ###
+### [中国诗词大全](https://apps.microsoft.com/detail/9P3432W9K924) ###
 This app contains more than 330,000 ancient Chinese poems from the pre-Qin to the Qing Dynasty, and supports querying and memorizing.
 
 By default, the homepage displays a page of random poems, and you can switch between random poems by clicking the green button. Enter the name, author, word brand name or content in the query condition according to the combination of the conditions, the home page display content is the first 2~4 lines of the poem, you can click the poem to view the complete content.
@@ -255,7 +255,7 @@ During verification, it will be automatically filled in and compared from the fi
 ![](../assets/images/shicidaquan2.png)
 
 
-### [古诗文背诵](https://apps.microsoft.com/detail/9NSJ6FNW6F8N?hl=zh-cn&gl=CN) ###
+### [古诗文背诵](https://apps.microsoft.com/detail/9NSJ6FNW6F8N) ###
 It contains more than 1,500 ancient poems such as Tang poems, Song poems, and Yuan songs, and supports desktop notification mode.
 The homepage of the app will initially display all starred poems, and the initial star categories are "seven-character quatrains" and "five-character quatrains", and all starred poems will be added to the desktop notification.
 
@@ -296,7 +296,7 @@ Desktop Notification:
 When you close a window, you can choose to hide it to the taskbar icon, left-click the taskbar icon to restore the window, and click the context menu of icon to start or stop desktop notifications.
 
 
-### [元素周期表 +](https://apps.microsoft.com/detail/9NJKL858L4VS?hl=zh-cn&gl=CN) ###
+### [元素周期表 +](https://apps.microsoft.com/detail/9NJKL858L4VS) ###
 It contains the basic information of all 118 elements that have been discovered, and the basic information is displayed by default: atomic number, element symbol, and different categories are distinguished by different colors.
 After hovering the mouse, the Chinese name and atomic weight are displayed.
 When hovering over the family and period numbers and classifications, the elements of the corresponding categories will be highlighted.
@@ -315,7 +315,7 @@ After view by group, you can select 2-4 elements to compare the information of t
 ![](../assets/images/zhouqibiao2.png)
 
 
-[元素周期表PWA](https://apps.microsoft.com/detail/9PCQBHB8R04G?hl=zh-cn&gl=CN)
+[元素周期表PWA](https://apps.microsoft.com/detail/9PCQBHB8R04G)
 
 [Use it online](https://periodictableblazor.azurewebsites.net)
 

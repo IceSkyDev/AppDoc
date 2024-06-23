@@ -4,6 +4,8 @@
 
 **中文 README | [English README](./README.md)**
 
+<a href="https://info.flagcounter.com/ah2P"><img src="https://s01.flagcounter.com/count2/ah2P/bg_363636/txt_DEDEDE/border_3BB0FF/columns_2/maxflags_10/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" alt="Visitor Counter" border="0"></a>
+
 
 ## 教育类应用 
 
@@ -416,7 +418,7 @@
   
   包含随机关卡和数百预定义关卡的数织游戏
 
-  [数织 解题版](https://apps.microsoft.com/detail/9NP8GH864JTW?hl=zh-cn&gl=CN)
+  [数织 解题版](https://apps.microsoft.com/detail/9P9938FPD2MM?hl=zh-cn&gl=CN)
    ![Static Badge](https://img.shields.io/badge/WPF-blue?logo=microsoftstore)
   
   包含随机关卡和上千预定义关卡的数织游戏，支持解迷功能

@@ -9,7 +9,7 @@ desc: 扫雷，支持自定义数量，包含三种样式
 ### 操作方法 
 
 1. 在首页选择难度级别，难度可选预定义的3个级别，也可以选择自定义，自定义可以设置行列数和雷数。
-![扫雷1](../assets/images/mine1.png)
+![扫雷1](../assets/images/Mine1.png)
 
 2. 可以选择三种预定义风格中的一种，点击开始游戏进入游戏。
 3. 模式切换：进入游戏后，上方菜单栏【新游戏】右侧按钮可以切换翻开模式和标记模式。
@@ -22,12 +22,15 @@ desc: 扫雷，支持自定义数量，包含三种样式
 
 
 ### 样式1
-![扫雷1](../assets/images/mine2.png)
+![扫雷1](../assets/images/Mine2.png)
 
 
 ### 样式2
-![扫雷2](../assets/images/mine3.png)
+![扫雷2](../assets/images/Mine3.png)
 
 
 ### 样式3
-![扫雷3](../assets/images/mine4.png)
+![扫雷3](../assets/images/Mine4.png)
+
+
+[商店下载](https://apps.microsoft.com/detail/9NCS89MQ8P5N)

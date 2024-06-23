@@ -52,7 +52,7 @@ desc: 语言学习类应用介绍，包含英语学习、日语五十音图、�
 提供《英语口语3000句》的音频及单词注释。
 ![](../assets/images/language/kouyu3000.png)
 
-### 英语日常口语 ###
+### [英语日常口语](https://apps.microsoft.com/detail/9PJJKSL3FZS1?hl=zh-cn&gl=CN) ###
 提供《英语日常口语》的音频及单词注释，包括家庭生活、日常生活、餐厅用餐、美容美发、恋爱婚姻和节日庆祝的6大场景口语对话及句子表达。
 ![](../assets/images/language/richangkouyu.png)
 

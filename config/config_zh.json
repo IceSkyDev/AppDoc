@@ -33,10 +33,14 @@
         ]
     },
     "footer": {
-        "top": [],
+        "top": [
+            {
+                "label": "微信公众号：IceSky"
+            }
+        ],
         "bottom": [
             {
-                "label": "IceSky"
+                "label": "Windows 个人独立开发者 - IceSky"
             }
         ]
     },

@@ -10,6 +10,10 @@ id: home_page
     <h1><span>IceSky App</span></h1>
 </div>
 
+<div style="position:absolute; right:20px">
+<a href="https://info.flagcounter.com/ah2P"><img src="https://s01.flagcounter.com/count2/ah2P/bg_363636/txt_DEDEDE/border_3BB0FF/columns_2/maxflags_10/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" alt="Visitor Counter" border="0"></a>
+</div>
+
 ### Show and Introduce Windows App ###
 
 <br/>

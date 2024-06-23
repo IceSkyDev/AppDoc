@@ -33,10 +33,13 @@
     },
     "footer":{
         "top":[
+            {
+                "label": "WeChat Official Account: IceSky"
+            }
         ],
         "bottom": [
             {
-                "label": "IceSky"
+                "label": "Individual developer on Windows - IceSky"
             }
         ]
     }

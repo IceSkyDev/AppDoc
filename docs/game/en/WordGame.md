@@ -6,7 +6,7 @@ desc: Word guessing game, including guessing numbers, words, letters, Japanese, 
 ---
 
 This app is a collection of urls for dozens of word guessing games, including guessing numbers, English words, Chinese characters, Chinese idioms, Japanese and Korean word guessing, and more.
-![猜词游戏](../assets/images/xxxxleGame.png)
+![WordGame](../assets/images/xxxxleGame.png)
 
 ### How to play
 1. Select a category
@@ -28,7 +28,7 @@ This app is a collection of urls for dozens of word guessing games, including gu
    The category shows the name of the game in the form of a card, with the icon on the right indicating the feature of the game. Click on these cards to access the corresponding game.
    >! Some games may be inaccessible due to shutdowns or network issues
    
-   ![猜词游戏](../assets/images/xxxxleGame2.png)
+   ![WordGame](../assets/images/xxxxleGame2.png)
 
 3. Play the game
    
@@ -42,5 +42,9 @@ This app is a collection of urls for dozens of word guessing games, including gu
    
    The first category on the homepage is the Favourite list, which can be used to quickly enter the game. The way to add is: After entering the game, click the third "♡" button on the left menu. If you want to remove it, you can click the delete button on the right side of the Favourite list, or you can click the third "♡" button in the menu again in the game page.
 
+
+[Microsoft Store](https://apps.microsoft.com/detail/9NLX9V1X4MRL)
+
+[PWA](https://apps.microsoft.com/detail/9N61ZN52ZCWC)
 
 This app is also available on the web and can be used [online](https://xxxxlegame.azurewebsites.net)

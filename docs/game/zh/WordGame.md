@@ -46,4 +46,8 @@ desc: 猜词游戏，包含猜数字、单词、字母、日语、汉字、成�
    首页第一个类别就是Favourite列表，可以将游戏添加到此列表的来快速进入。添加方式为：进入游戏后，点击左侧菜单的第三个“♡”按钮即可。想要移除时在Favourite列表点击右侧删除按钮即可，也可以在游戏界面再次点击菜单的第三个“♡”按钮。
 
 
+[商店下载](https://apps.microsoft.com/detail/9NLX9V1X4MRL)
+
+[PWA版](https://apps.microsoft.com/detail/9N61ZN52ZCWC)
+
 此应用也有网页版，可以[在线使用](https://xxxxlegame.azurewebsites.net)
