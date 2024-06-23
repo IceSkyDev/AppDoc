@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 
-<html lang="en"  class=" md_page ">
+<html lang="en"  class=" heading_no_counter ">
 
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="keywords" content="">
+    <meta name="keywords" content="Sudoku, solving, difficulty to choose">
     
     
-    <meta name="description" content="">
+    <meta name="description" content="Classic Sudoku game with 9 levels of difficulty to choose。">
     
     <meta name="generator" content="teedoc">
     <meta name="theme" content="teedoc-plugin-theme-default">
@@ -50,10 +50,10 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
         
     
     
-    <title>no translation - IceSky App</title>
+    <title>Sudoku - IceSky App</title>
     
     <script type="text/javascript">js_vars = {}</script>
-    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "md_page"}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
 </head>
 
 
@@ -74,14 +74,14 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                 <ul id="nav_left">
 <li class=""><a  href="/AppDoc/edu/en/">Edu Apps</a></li>
 <li class=""><a  href="/AppDoc/tools/en/">Tools</a></li>
-<li class=""><a  href="/AppDoc/game/en/">Games</a></li>
+<li class="active"><a  href="/AppDoc/game/en/">Games</a></li>
 </ul>
 
             </div>
             <div>
                 <ul id="nav_right">
-<li class="sub_items "><a  >Language: English</a><ul><li class="active"><a  href="/AppDoc/home/en/no_translate.html">English</a></li>
-<li class=""><a  href="/AppDoc/home/zh/no_translate.html">中文 简体</a></li>
+<li class="sub_items "><a  >Language: English</a><ul><li class="active"><a  href="/AppDoc/game/en/Sudoku.html">English</a></li>
+<li class=""><a  href="/AppDoc/game/zh/Sudoku.html">中文 简体</a></li>
 </ul></li>
 </ul>
 
@@ -103,8 +103,12 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                 <div id="sidebar_title">
                     
                 </div>
-                <ul class="">
-<li class="not_active with_link"><a href="/AppDoc/home/en/index.html"><span class="label">Introduction to teedoc</span><span class=""></span></a></li>
+                <ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/game/en/index.html"><span class="label">Game Introduce</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/game/en/WordGame.html"><span class="label">Word Guessing Games</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/game/en/Minesweeper.html"><span class="label">Minesweeper</span><span class=""></span></a></li>
+<li class="active with_link"><a href="/AppDoc/game/en/Sudoku.html"><span class="label">Sudoku</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/game/en/Nonograms.html"><span class="label">Nonograms</span><span class=""></span></a></li>
 </ul>
 
             </div>
@@ -119,7 +123,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_head">
                         <div id="article_title">
                             
-                            <h1>no translation</h1>
+                            <h1>Sudoku</h1>
                             
                         </div>
                         <div id="article_tags">
@@ -148,33 +152,38 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     </div>
                     <div id="article_content">
                         
-                            <div id="visit_from"></div>
-<div id="no_translate_hint">This page not translated yet</div>
-<div>
-    <span id="visit_hint">Please visit</span>
-    <a id="translate_src"></a>
-</div>
-<div>
-    <script>
-        function getQueryVariable(variable)
-        {
-            var query = window.location.search.substring(1);
-            var vars = query.split("&");
-            for (var i=0;i<vars.length;i++) {
-                    var pair = vars[i].split("=");
-                    if(pair[0] == variable){return pair[1];}
-            }
-            return(false);
-        }
-        var ref = getQueryVariable("ref");
-        var from = getQueryVariable("from");
-        var link = document.getElementById("translate_src");
-        var fromDis = document.getElementById("visit_from");
-        link.href = ref;
-        link.text = ref;
-        fromDis.innerHTML = from;
-    </script>
-</div>
+                            <p>This is a classic Sudoku game that supports 9 levels of difficulty selection and can automatically solve questions.</p>
+<h3 id="How-to-play">How to play</h3>
+<ol>
+<li>Choose difficulty level, with each higher level decreasing the number of preset numbers.</li>
+</ol>
+<p><img src="../assets/images/sudoku1.png" alt="Sudoku" /><br />
+2. Click [Start] to generate random questions.</p>
+<ol start="3">
+<li><p>Answer: select a cell and then select the number below to fill in, click &quot;x&quot; to clear the number.</p>
+<blockquote>
+<p>Turn on [Count Hint] to prompt the count of numbers that can be filled in the cell and the times of options can be used</p>
+<p>Turn on [Auto Exclude] to automatically exclude unavailable items from the options</p>
+</blockquote>
+<p><img src="../assets/images/sudoku2.png" alt="Sudoku1" /></p>
+</li>
+<li><p>Exit &amp; Restart:</p>
+</li>
+</ol>
+<p>Click the [Home] button to return to the home page, and click [Restart] to clear the current number and start again.</p>
+<h3 id="Solve-automatically">Solve automatically</h3>
+<ol>
+<li><p>On the home page, click [Solve] to enter the problem solving mode.</p>
+</li>
+<li><p>The grid is blank by default, fill in the known value by selecting the position and then clicking on the number, and the number that cannot be filled in will be automatically excluded when filling in the preset numbers.</p>
+<p><img src="../assets/images/sudoku3.png" alt="Sudoku2" /></p>
+</li>
+<li><p>Click [AutoSolve] to automatically fill in the answer (Auto Solve only supports one answer).</p>
+</li>
+<li><p>Click [Restart] to clear the grid and start again.</p>
+</li>
+</ol>
+<p><a href="https://apps.microsoft.com/detail/9PJXNP3T8V00"  target="_blank">Microsoft Store</a></p>
 
                         
                     </div>
@@ -182,8 +191,18 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                 <div id="previous_next">
                     <div id="previous">
                         
+                        <a href="/AppDoc/game/en/Minesweeper.html">
+                            <span class="icon"></span>
+                            <span class="label">Minesweeper</span>
+                        </a>
+                        
                     </div>
                     <div id="next">
+                        
+                        <a href="/AppDoc/game/en/Nonograms.html">
+                            <span class="label">Nonograms</span>
+                            <span class="icon"></span>
+                        </a>
                         
                     </div>
                 </div>

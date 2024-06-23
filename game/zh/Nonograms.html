@@ -10,7 +10,7 @@
     <meta name="keywords" content="数织, 解题, 随机题目, 自定义数量">
     
     
-    <meta name="description" content="数织游戏，自定义行列数量，支持自动求解">
+    <meta name="description" content="数织游戏，支持自定义行列数量，最大50*50，支持自动求解">
     
     <meta name="generator" content="teedoc">
     <meta name="theme" content="teedoc-plugin-theme-default">
@@ -152,13 +152,73 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     </div>
                     <div id="article_content">
                         
-                            <h2 id="%E4%BB%8B%E7%BB%8D">介绍</h2>
-<p><img src="../assets/images/nonogram1.png" alt="数织1" /></p>
+                            <p>分为普通版和解题版，支持自定义行列数量，范围为3*3~50*50，解题版具备自动求解功能，以及更多的关卡和专业模式。</p>
 <h3 id="%E6%93%8D%E4%BD%9C%E6%96%B9%E6%B3%95">操作方法</h3>
+<ol>
+<li>选择游戏模式，游戏包含随机模式、闯关模式、文字模式、符号模式、专业模式（<strong>解题版特有</strong>）。</li>
+</ol>
+<p><img src="../assets/images/nonogram1.png" alt="数织1" /></p>
+<ol>
+<li>随机模式可以选择行数和列数，其他模式可以选择关卡。</li>
+<li>点击“Start”进入游戏。<br />
+游戏中单元格有三种状态：<ul>
+<li>空白状态：即初始状态，没有填充也没有被标记，无背景色</li>
+<li>填充状态：左侧和上方数字计算的为此状态，背景为蓝色</li>
+<li>标记状态：标记非填充单元格，背景为白色</li>
+</ul>
+</li>
+</ol>
 <p><img src="../assets/images/nonogram2.png" alt="数织2" /></p>
+<ol start="4">
+<li><p>切换操作模式：点击上方工具栏中间的切换按钮可以切换绘制模式和清除模式。<br />
+绘制模式下左键切换单元格填充和空白状态，右键切换标记和空白状态。<br />
+清除模式下左右键功能交换。</p>
+<blockquote>
+<p>操作时支持按下拖动时连续绘制或清除</p>
+</blockquote>
+</li>
+<li><p>重新开始：点击【Restart】按钮可以清空界面重新开始本局游戏。</p>
+</li>
+<li><p>新游戏：点击【New Game】可以开始一局新游戏。</p>
+<blockquote class="spoiler warning">
+<p> 只有随机模式下可以开始新游戏</p>
+</blockquote>
+</li>
+<li><p>自动解题：随机模式下点击上方工具栏右侧的【Resolve】按钮可以直接显示结果。</p>
+</li>
+<li><p>退出游戏：点击上方工具栏的【Home】按钮返回到首页。</p>
+</li>
+</ol>
 <h3 id="%E8%87%AA%E5%8A%A8%E6%B1%82%E8%A7%A3">自动求解</h3>
+<blockquote class="spoiler warning">
+<p> 解题版特有功能</p>
+</blockquote>
+<ol>
+<li>在首页点击【Solve Puzzle】进入解题设置界面。</li>
+</ol>
 <p><img src="../assets/images/nonogram3.png" alt="数织3" /></p>
+<ol start="2">
+<li><p>选择行数和列数，最小值为3x3，最多支持50x50</p>
+</li>
+<li><p>输入行列提示：</p>
+<p>行提示即网格左侧数字，按照从上到下的顺序输入每行提示，每行的数字用“,”分隔，行之间用空格分隔。</p>
+<p>列提示即网格上方数字，按照从左到右的顺序输入每列提示，每列的数字用“,”分隔，列之间用空格分隔。</p>
+</li>
+<li><p>点击【Solve】按钮会对输入的提示进行验证，包括验证行列数量和格式。</p>
+<p>验证通过后会尝试进行解题，解题成功后会显示结果。</p>
+<p>点击【Cancel】按钮可以返回首页。</p>
+</li>
+</ol>
 <p><img src="../assets/images/nonogram4.png" alt="数织4" /></p>
+
+<pre class="language-none"><code class="language-none">&gt;! 答案不唯一的谜题会弹出错误信息，需要修改提示数值才能继续。
+
+</code></pre>
+<ol start="5">
+<li>在解题结果界面点击【Home】按钮返回首页。</li>
+</ol>
+<p><a href="https://apps.microsoft.com/detail/9NP8GH864JTW"  target="_blank">商店下载</a></p>
+<p><a href="https://apps.microsoft.com/detail/9P9938FPD2MM"  target="_blank">解题版</a></p>
 
                         
                     </div>
@@ -192,12 +252,14 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
         <div id="footer">
             <div id="footer_top">
                 <ul>
+<li><a>微信公众号：IceSky</a>
+</li>
 </ul>
 
             </div>
             <div id="footer_bottom">
                 <ul>
-<li><a>IceSky</a>
+<li><a>Windows 个人独立开发者 - IceSky</a>
 </li>
 </ul>
 

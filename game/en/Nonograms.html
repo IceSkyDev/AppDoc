@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 
-<html lang="en"  class=" md_page ">
+<html lang="en"  class=" heading_no_counter ">
 
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="keywords" content="">
+    <meta name="keywords" content="Nonagrams, solve, random, custom quantities">
     
     
-    <meta name="description" content="">
+    <meta name="description" content="supports custom number of rows and columns up to has automatic solving function">
     
     <meta name="generator" content="teedoc">
     <meta name="theme" content="teedoc-plugin-theme-default">
@@ -50,10 +50,10 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
         
     
     
-    <title>no translation - IceSky App</title>
+    <title>Nonagrams - IceSky App</title>
     
     <script type="text/javascript">js_vars = {}</script>
-    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "md_page"}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
 </head>
 
 
@@ -74,14 +74,14 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                 <ul id="nav_left">
 <li class=""><a  href="/AppDoc/edu/en/">Edu Apps</a></li>
 <li class=""><a  href="/AppDoc/tools/en/">Tools</a></li>
-<li class=""><a  href="/AppDoc/game/en/">Games</a></li>
+<li class="active"><a  href="/AppDoc/game/en/">Games</a></li>
 </ul>
 
             </div>
             <div>
                 <ul id="nav_right">
-<li class="sub_items "><a  >Language: English</a><ul><li class="active"><a  href="/AppDoc/home/en/no_translate.html">English</a></li>
-<li class=""><a  href="/AppDoc/home/zh/no_translate.html">中文 简体</a></li>
+<li class="sub_items "><a  >Language: English</a><ul><li class="active"><a  href="/AppDoc/game/en/Nonograms.html">English</a></li>
+<li class=""><a  href="/AppDoc/game/zh/Nonograms.html">中文 简体</a></li>
 </ul></li>
 </ul>
 
@@ -103,8 +103,12 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                 <div id="sidebar_title">
                     
                 </div>
-                <ul class="">
-<li class="not_active with_link"><a href="/AppDoc/home/en/index.html"><span class="label">Introduction to teedoc</span><span class=""></span></a></li>
+                <ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/game/en/index.html"><span class="label">Game Introduce</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/game/en/WordGame.html"><span class="label">Word Guessing Games</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/game/en/Minesweeper.html"><span class="label">Minesweeper</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/game/en/Sudoku.html"><span class="label">Sudoku</span><span class=""></span></a></li>
+<li class="active with_link"><a href="/AppDoc/game/en/Nonograms.html"><span class="label">Nonograms</span><span class=""></span></a></li>
 </ul>
 
             </div>
@@ -119,7 +123,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_head">
                         <div id="article_title">
                             
-                            <h1>no translation</h1>
+                            <h1>Nonagrams</h1>
                             
                         </div>
                         <div id="article_tags">
@@ -148,39 +152,84 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     </div>
                     <div id="article_content">
                         
-                            <div id="visit_from"></div>
-<div id="no_translate_hint">This page not translated yet</div>
-<div>
-    <span id="visit_hint">Please visit</span>
-    <a id="translate_src"></a>
-</div>
-<div>
-    <script>
-        function getQueryVariable(variable)
-        {
-            var query = window.location.search.substring(1);
-            var vars = query.split("&");
-            for (var i=0;i<vars.length;i++) {
-                    var pair = vars[i].split("=");
-                    if(pair[0] == variable){return pair[1];}
-            }
-            return(false);
-        }
-        var ref = getQueryVariable("ref");
-        var from = getQueryVariable("from");
-        var link = document.getElementById("translate_src");
-        var fromDis = document.getElementById("visit_from");
-        link.href = ref;
-        link.text = ref;
-        fromDis.innerHTML = from;
-    </script>
-</div>
+                            <p>Include normal version and solve version, supports custom number of rows and columns, the range is 3x3~50x50, the solve version has automatic solving function, contains more levels and professional modes.</p>
+<h3 id="How-to-play">How to play</h3>
+<ol>
+<li>Select the game mode, the game includes random mode, level mode, char mode, symbol mode, and expert mode (<strong>Unique to the Solve Version</strong>).</li>
+</ol>
+<p><img src="../assets/images/nonogram1.png" alt="Nonagrams" /></p>
+<ol start="2">
+<li>The random mode can choose the number of rows and columns, and the other modes can choose the level.</li>
+<li>Click &quot;Start&quot; to enter the game.<br />
+There are three states for cells in the game:<ul>
+<li>Blank state: The initial state, no fill and no marker, no background color</li>
+<li>Fill Status: The numbers on the left and above are calculated for this state, with a blue background</li>
+<li>Marking Status: Mark non-filled cells with a white background</li>
+</ul>
+</li>
+</ol>
+<p><img src="../assets/images/nonogram2.png" alt="Nonagrams" /></p>
+<ol start="4">
+<li><p>Toggle the operation mode: Click the toggle button in the middle of the top toolbar to switch between the draw mode and the clear mode.<br />
+In draw mode, use left-click to toggle cell fill and blank state, and right-click to toggle marking and blank state.<br />
+Left and right button function swaped in clear mode.</p>
+<blockquote>
+<p>Supports continuous drawing or clearing when mouse button pressed and dragging</p>
+</blockquote>
+</li>
+<li><p>Restart: Click the [Restart] button to clear the grid and restart the game.</p>
+</li>
+<li><p>New Game: Click [New Game] to start a new game.</p>
+<blockquote class="spoiler warning">
+<p> Available only in random mode</p>
+</blockquote>
+</li>
+<li><p>Automatic solving: In random mode, you can click the [Resolve] button on the right side of the top toolbar to display the results directly.</p>
+</li>
+<li><p>To exit the game: Click the [Home] button on the top toolbar to return to the home page.</p>
+</li>
+</ol>
+<h3 id="Automatic-solve-puzzle">Automatic solve puzzle</h3>
+<blockquote class="spoiler warning">
+<p> Unique to the Solve Version</p>
+</blockquote>
+<ol>
+<li>Click [Solve Puzzle] on the home page to enter the solve setting page.</li>
+</ol>
+<p><img src="../assets/images/nonogram3.png" alt="Nonagrams" /></p>
+<ol start="2">
+<li><p>Select the number of rows and columns, the minimum value is 3x3, and the maximum value is 50x50</p>
+</li>
+<li><p>Enter the row and column hints:</p>
+<p>Line hints are the numbers on the left side of the grid, enter each row hint in order from top to bottom, and the numbers in each row are separated by &quot;,&quot;, and the lines are separated by a space.</p>
+<p>Column hints are the numbers above the grid, enter each column hint in order from left to right, and the numbers in each column are separated by &quot;,&quot;, and the columns are separated by a space.</p>
+</li>
+<li><p>Click the [Solve] button will verify the hints, including the number of rows and columns and the format.</p>
+<p>After the verification is passed, try to solve the puzzle automatically, and the result will be displayed if it succeeds.</p>
+<p>Click the [Cancel] button to return to the home page.</p>
+</li>
+</ol>
+<p><img src="../assets/images/nonogram4.png" alt="Nonagrams" /></p>
+
+<pre class="language-none"><code class="language-none">&gt;! Puzzles with more than one answers will pop up an error message, need to modify the hints value to continue.
+
+</code></pre>
+<ol start="5">
+<li>Click the [Home] button on top of the result page to return to the home page.</li>
+</ol>
+<p><a href="https://apps.microsoft.com/detail/9NP8GH864JTW"  target="_blank">Microsoft Store</a></p>
+<p><a href="https://apps.microsoft.com/detail/9P9938FPD2MM"  target="_blank">Solve Version</a></p>
 
                         
                     </div>
                 </div>
                 <div id="previous_next">
                     <div id="previous">
+                        
+                        <a href="/AppDoc/game/en/Sudoku.html">
+                            <span class="icon"></span>
+                            <span class="label">Sudoku</span>
+                        </a>
                         
                     </div>
                     <div id="next">
