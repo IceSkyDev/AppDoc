@@ -5,7 +5,7 @@ keywords: Nonagrams, solve, random, custom quantities
 desc: supports custom number of rows and columns up to has automatic solving function
 ---
 
-Include normal version and solve version, supports custom number of rows and columns, the range is 3x3~50x50, the solve version has automatic solving function, contains more levels and professional modes.
+Include normal version and solve version, random mode supports custom number of rows and columns, the range is 3x3~50x50, the solve version has automatic solving function, contains more levels and professional modes.
 
 ### How to play 
 
@@ -57,9 +57,9 @@ Include normal version and solve version, supports custom number of rows and col
 
 ![Nonagrams](../assets/images/nonogram4.png)
 
-    >! Puzzles with more than one answers will pop up an error message, need to modify the hints value to continue.
+>! Puzzles with more than one answers will pop up an error message, need to modify the hints value to continue.
 
-5. Click the [Home] button on top of the result page to return to the home page.
+1. Click the [Home] button on top of the result page to return to the home page.
 
 
 [Microsoft Store](https://apps.microsoft.com/detail/9NP8GH864JTW)

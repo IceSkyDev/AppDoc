@@ -163,7 +163,7 @@ audio, pinyin,  annotations, and translations
    ![Static Badge](https://img.shields.io/badge/PWA-Free-darkgreen?logo=microsoftstore)
   
   A tool to learn the periodic table of chemical elements, you can view various information about the elements
-  [在线使用](https://periodictableblazor.azurewebsites.net)
+  [Use it online](https://periodictableblazor.azurewebsites.net)
 
   [元素周期表+](https://apps.microsoft.com/detail/9NJKL858L4VS)
    ![Static Badge](https://img.shields.io/badge/WPF-blue?logo=microsoftstore)
@@ -325,7 +325,7 @@ Learn about the traditional culture that has been summarized and inherited by th
   ![Static Badge](https://img.shields.io/badge/PWA-Free-darkgreen?logo=microsoftstore)
 
   Provide a variety of random selection methods
-  [在线使用](https://makedecision.azurewebsites.net)
+  [Use it online](https://makedecision.azurewebsites.net)
 
 * [网址集合](https://apps.microsoft.com/detail/9PLD6M5GCCWV)
    ![Static Badge](https://img.shields.io/badge/UWP-Free-darkgreen?logo=microsoftstore)
@@ -406,7 +406,7 @@ Learn about the traditional culture that has been summarized and inherited by th
    ![Static Badge](https://img.shields.io/badge/PWA-Free-darkgreen?logo=microsoftstore)
   
   A collection of word guessing games including Chinese, English, numbers, etc
-  [在线使用](https://xxxxlegame.azurewebsites.net)
+  [Use it online](https://xxxxlegame.azurewebsites.net)
 
 * [数独](https://apps.microsoft.com/detail/9PJXNP3T8V00)
    ![Static Badge](https://img.shields.io/badge/WPF-Free-darkgreen?logo=microsoftstore)

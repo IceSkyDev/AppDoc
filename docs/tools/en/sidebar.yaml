@@ -1,4 +1,49 @@
 items:
 -   label: Tools
     file: README.md
+-   label: UsefulTools
+    -   label: WebCollection
+        file: UsefulTools_WebCol.md
+    -   label: ChooseHelper
+        file: UsefulTools_Random.md
+    -   label: ColorTools
+        file: UsefulTools_ColorTool.md
+    -   label: ImageTool
+        file: UsefulTools_ImageTool.md
+    -   label: JsonTools
+        file: UsefulTools_Json.md
+    -   label: C#ToConfig
+        file: UsefulTools_C#2Config.md
+    -   label: MultipleVideo
+        file: UsefulTools_MulVideo.md
+    -   label: SimpleDrawing
+        file: UsefulTools_JianBiHua.md
+    -   label: FunColoring
+        file: UsefulTools_FunColor.md
+    -   label: TrafficCounter
+        file: UsefulTools_Traffic.md
+-   label: TestTools
+    collapsed: false
+    -   label: ComTestTools
+        file: TestTools_ComTest.md
+    -   label: ModbusTcpTool
+        file: TestTools_ModbusTcp.md
+    -   label: TCPForwardTool
+        file: TestTools_TcpForward.md
+    -   label: ComForwardTool
+        file: TestTools_ComForward.md
+-   label: ToolsSet
+    file: ToolsSet.md
+    collapsed: false
+    items:
+    -   label: Number
+        file: ToolsSet_Number.md
+    -   label: Date
+        file: ToolsSet_Date.md
+    -   label: Text
+        file: ToolsSet_Text.md
+    -   label: Media
+        file: ToolsSet_Media.md
+    -   label: Other
+        file: ToolsSet_Other.md
 
