@@ -41,7 +41,7 @@ To the right of the config window is the layout config area
   3. After the layout is adjusted, enter a new name at the top and click [Save] to save.
 * Modify Layout: After selecting the layout above and adjusting it, click [Save] to modify the existing layout without changing the name.
 * Delete Layout: After selecting the layout above, click the [-] button on the right to delete the layout.
-  >! Layout that is in use cannot be deleted
+>! Layout that is in use cannot be deleted
 
 ## Video navigation hotkey
 

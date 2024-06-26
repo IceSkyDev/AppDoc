@@ -14,7 +14,7 @@ items:
     -   label: JsonTools
         file: UsefulTools_Json.md
     -   label: C#ToConfig
-        file: UsefulTools_C#2Config.md
+        file: UsefulTools_Cs2Config.md
     -   label: 视频监控
         file: UsefulTools_MulVideo.md
     -   label: 简笔画
