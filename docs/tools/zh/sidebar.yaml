@@ -2,6 +2,7 @@ items:
 -   label: 工具应用
     file: README.md
 -   label: 实用工具
+    items:
     -   label: 网址集合
         file: UsefulTools_WebCol.md
     -   label: 随机选择工具
@@ -24,6 +25,7 @@ items:
         file: UsefulTools_Traffic.md
 -   label: 测试类工具
     collapsed: false
+    items:
     -   label: 调试工具
         file: TestTools_ComTest.md
     -   label: ModbusTcpTool

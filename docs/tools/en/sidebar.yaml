@@ -2,6 +2,7 @@ items:
 -   label: Tools
     file: README.md
 -   label: UsefulTools
+    items:
     -   label: WebCollection
         file: UsefulTools_WebCol.md
     -   label: ChooseHelper
@@ -24,6 +25,7 @@ items:
         file: UsefulTools_Traffic.md
 -   label: TestTools
     collapsed: false
+    items:
     -   label: ComTestTools
         file: TestTools_ComTest.md
     -   label: ModbusTcpTool
