@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"  class=" language_zh  heading_no_counter ">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="多窗口, 视频, 轮播, 自定义布局, 快捷键导航">
+    
+    
+    <meta name="description" content="多窗口视频查看工具，可以进行多窗口视频播放，也可以作为视频监控工具使用，支持自定义布局, 快捷键导航">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/AppDoc/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/AppDoc/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/AppDoc/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/search/style.css" type="text/css"/>
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/bootstrap.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/animate.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>视频监控 - IceSky App</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/AppDoc/">
+                
+                    <img class="site_logo" src="/AppDoc/static/image/logo.png" alt="IceSky Logo">
+                
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/AppDoc/edu/zh/">教育类应用</a></li>
+<li class="active"><a  href="/AppDoc/tools/zh/">工具应用</a></li>
+<li class=""><a  href="/AppDoc/game/zh/">游戏</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class="sub_items "><a  >Language: 中文 简体</a><ul><li class=""><a  href="/AppDoc/tools/en/UsefulTools_MulVideo.html">English</a></li>
+<li class="active"><a  href="/AppDoc/tools/zh/UsefulTools_MulVideo.html">中文 简体</a></li>
+</ul></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">搜索</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">输入关键词，多关键词空格隔开</span>
+                                <span id="search_loading_hint">正在加载，请稍候。。。</span>
+                                <span id="search_download_err_hint">下载文件失败，请刷新重试或检查网络</span>
+                                <span id="search_other_docs_result_hint">来自其它文档的结果</span>
+                                <span id="search_curr_doc_result_hint">当前文档搜索结果</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/index.html"><span class="label">工具应用</span><span class=""></span></a></li>
+<li class="active_parent no_link"><a><span class="label">实用工具</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_WebCol.html"><span class="label">网址集合</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_Random.html"><span class="label">随机选择工具</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_ColorTool.html"><span class="label">ColorTool</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_ImageTool.html"><span class="label">ImageTool</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_Json.html"><span class="label">JsonTools</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/no_translate.html?ref=UsefulTools_C.html&from=/tools/zh/UsefulTools_C.html"><span class="label">C#ToConfig</span><span class=""></span></a></li>
+<li class="active with_link"><a href="/AppDoc/tools/zh/UsefulTools_MulVideo.html"><span class="label">视频监控</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_JianBiHua.html"><span class="label">简笔画</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_FunColor.html"><span class="label">FunColoring</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_Traffic.html"><span class="label">流量计数器</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">测试类工具</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/TestTools_ComTest.html"><span class="label">调试工具</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/TestTools_ModbusTcp.html"><span class="label">ModbusTcpTool</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/no_translate.html?ref=TestTools_TcpForward.html&from=/tools/zh/TestTools_TcpForward.html"><span class="label">TCP转发工具</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/no_translate.html?ref=TestTools_ComForward.html&from=/tools/zh/TestTools_ComForward.html"><span class="label">通信转发工具</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet.html"><span class="label">ToolsSet</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number.html"><span class="label">数值类</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Date.html"><span class="label">日期类</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text.html"><span class="label">文本类</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media.html"><span class="label">媒体类</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other.html"><span class="label">其他类</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>视频监控</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <h2 id="%E4%BB%8B%E7%BB%8D">介绍</h2>
+<p>此应用是一款多窗口视频查看工具，可以进行多窗口视频播放，也可以作为视频监控工具使用。支持本地视频文件：mp4、flv、3gp、mkv，支持rtsp、rtmp、http、m3u8等网络视频协议。</p>
+<p><img src="../assets/images/UsefulTools/Video5.png" alt="" /></p>
+<h2 id="%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">使用方法</h2>
+<p>应用首次打开时为左1右1布局，没有配置视频，所以需要首先对视频进行配置。</p>
+<p>点击关闭按钮左侧的按钮可以打开配置窗口，其中可以配置视频路径及窗口布局。<br />
+配置窗口标题栏控件的作用分别为：</p>
+<ol>
+<li>选择窗口布局</li>
+<li>更新界面布局为所选布局</li>
+<li>设置自动切换间隔时间，单位为毫秒，设置值小于1000时不会触发自动切换</li>
+<li>自动切换开关，开关打开且间隔时间大于1秒时生效</li>
+<li>全屏声音开关，打开后如果将视频最大化，可以播放视频声音，否则将会静音</li>
+</ol>
+<p><img src="../assets/images/UsefulTools/Video2.png" alt="" /></p>
+<h3 id="%E9%85%8D%E7%BD%AE%E8%A7%86%E9%A2%91">配置视频</h3>
+<p>配置窗口左侧是视频配置区</p>
+<ul>
+<li>添加视频：点击上方【+】按钮，下方会出现信息录入区，输入信息后点击保存即可。<blockquote>
+其中Ip和Url必须输入</blockquote>
+</li>
+<li>修改视频：选中表格中的一行，可以修改此行的信息。</li>
+<li>删除视频：选中表格中的一行后，点击上方的【-】按钮，会弹出提示信息，点击提示信息中的【OK】即可删除此纪录。</li>
+</ul>
+<blockquote class="spoiler warning">
+<p> 视频更新后需要重启应用才会生效</p>
+</blockquote>
+<h3 id="%E9%85%8D%E7%BD%AE%E5%B8%83%E5%B1%80">配置布局</h3>
+<p>配置窗口右侧是布局配置区</p>
+<ul>
+<li>使用预定义布局：在配置窗口标题栏的下拉框可以选择预定义的布局方式，选好之后点击右侧同步按钮即可同步到主窗口。</li>
+<li>自定义布局：<ol>
+<li>首先选择一个预定义布局，在此布局基础上进行修改。</li>
+<li>点击右侧浮动按钮【+】，可以在弹出菜单中点击按钮调整布局，按钮从上到下的作用依次为：添加列、删除列、添加行、删除行、合并单元格、拆分单元格。</li>
+<li>布局调整好之后，在上方输入一个新名称点击【Save】进行保存即可。</li>
+</ol>
+</li>
+<li>修改布局：在上方选择布局并调整后，不修改名称点击【Save】可以对现有布局进行修改。</li>
+<li>删除布局：在上方选择布局后，点击右侧【-】按钮即可删除布局。<blockquote>
+! 正在使用中的布局不能删除</blockquote>
+</li>
+</ul>
+<h2 id="%E8%A7%86%E9%A2%91%E5%AF%BC%E8%88%AA%E5%BF%AB%E6%8D%B7%E9%94%AE">视频导航快捷键</h2>
+<ul>
+<li>按键【→】：下一个</li>
+<li>按键【←】：上一个</li>
+<li>按键【PageDown】：下一页</li>
+<li>按键【PageUp】：上一页</li>
+<li>按键【Home】：第一页</li>
+<li>按键【End】：最后一页</li>
+<li>按键【Escape】：还原窗口</li>
+<li>按键【Alt+Enter】：打开跳转窗口</li>
+<li>按键【Alt+Space】：切换自动轮播</li>
+<li>鼠标双击视频切换全屏和窗口状态。</li>
+</ul>
+<blockquote>
+<p>视频数量大于一页时才会生效</p>
+<p>按键导航需间隔2秒操作</p>
+</blockquote>
+<p>左三右二布局：<br />
+<img src="../assets/images/UsefulTools/Video3.png" alt="" /></p>
+<p>七窗口布局：<br />
+<img src="../assets/images/UsefulTools/Video4.png" alt="" /></p>
+<p>自定义布局：<br />
+<img src="../assets/images/UsefulTools/Video1.png" alt="" /></p>
+<p><a href="https://apps.microsoft.com/detail/9NCRFPFG5JB3"  target="_blank">商店下载</a></p>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                        <a href="/AppDoc/tools/zh/no_translate.html?ref=UsefulTools_C.html&from=/tools/zh/UsefulTools_C.html#2Config.md">
+                            <span class="icon"></span>
+                            <span class="label">C#ToConfig</span>
+                        </a>
+                        
+                    </div>
+                    <div id="next">
+                        
+                        <a href="/AppDoc/tools/zh/UsefulTools_JianBiHua.html">
+                            <span class="label">简笔画</span>
+                            <span class="icon"></span>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a>微信公众号：IceSky</a>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a>Windows 个人独立开发者 - IceSky</a>
+</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/AppDoc/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/AppDoc/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/AppDoc/static/js/theme_default/main.js"></script>
+    
+        <script src="/AppDoc/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/AppDoc/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/AppDoc/static/js/search/search_main.js"></script>
+    
+        <script src="/AppDoc/static/js/plugin_blog/main.js"></script>
+    
+        <script src="/AppDoc/static/js/easing.min.js"></script>
+    
+        <script src="/AppDoc/static/js/custom.js"></script>
+    
+</body>
+
+</html>

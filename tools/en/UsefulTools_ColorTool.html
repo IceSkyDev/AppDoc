@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html lang="en"  class=" heading_no_counter ">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="Color, contrast colors, color mixing, gradient colors, traditional colors">
+    
+    
+    <meta name="description" content="A collection of color tools including color selection and palettes, color contrast, color mixing, gradients, traditional colors, and more">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/AppDoc/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/AppDoc/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/AppDoc/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/search/style.css" type="text/css"/>
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/bootstrap.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/animate.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>ColorTools - IceSky App</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/AppDoc/en/">
+                
+                    <img class="site_logo" src="/AppDoc/static/image/logo.png" alt="IceSky Logo">
+                
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/AppDoc/edu/en/">Edu Apps</a></li>
+<li class="active"><a  href="/AppDoc/tools/en/">Tools</a></li>
+<li class=""><a  href="/AppDoc/game/en/">Games</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class="sub_items "><a  >Language: English</a><ul><li class="active"><a  href="/AppDoc/tools/en/UsefulTools_ColorTool.html">English</a></li>
+<li class=""><a  href="/AppDoc/tools/zh/UsefulTools_ColorTool.html">中文 简体</a></li>
+</ul></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">Search</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">Keywords separated by space</span>
+                                <span id="search_loading_hint">Loading, wait please ...</span>
+                                <span id="search_download_err_hint">Download error, please check network and refresh again</span>
+                                <span id="search_other_docs_result_hint">Result from other docs</span>
+                                <span id="search_curr_doc_result_hint">Result from current doc</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/en/index.html"><span class="label">Tools</span><span class=""></span></a></li>
+<li class="active_parent no_link"><a><span class="label">UsefulTools</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_WebCol.html"><span class="label">WebCollection</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_Random.html"><span class="label">ChooseHelper</span><span class=""></span></a></li>
+<li class="active with_link"><a href="/AppDoc/tools/en/UsefulTools_ColorTool.html"><span class="label">ColorTools</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_ImageTool.html"><span class="label">ImageTool</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_Json.html"><span class="label">JsonTools</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/UsefulTools_C.html&from=/tools/en/UsefulTools_C.html"><span class="label">C#ToConfig</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_MulVideo.html"><span class="label">MultipleVideo</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_JianBiHua.html"><span class="label">SimpleDrawing</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_FunColor.html"><span class="label">FunColoring</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_Traffic.html"><span class="label">TrafficCounter</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">TestTools</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/TestTools_ComTest.html&from=/tools/en/TestTools_ComTest.html"><span class="label">ComTestTools</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/TestTools_ModbusTcp.html&from=/tools/en/TestTools_ModbusTcp.html"><span class="label">ModbusTcpTool</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/TestTools_TcpForward.html&from=/tools/en/TestTools_TcpForward.html"><span class="label">TCPForwardTool</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/TestTools_ComForward.html&from=/tools/en/TestTools_ComForward.html"><span class="label">ComForwardTool</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/ToolsSet.html&from=/tools/en/ToolsSet.html"><span class="label">ToolsSet</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/ToolsSet_Number.html&from=/tools/en/ToolsSet_Number.html"><span class="label">Number</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/ToolsSet_Date.html&from=/tools/en/ToolsSet_Date.html"><span class="label">Date</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/ToolsSet_Text.html&from=/tools/en/ToolsSet_Text.html"><span class="label">Text</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/ToolsSet_Media.html&from=/tools/en/ToolsSet_Media.html"><span class="label">Media</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/ToolsSet_Other.html&from=/tools/en/ToolsSet_Other.html"><span class="label">Other</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>ColorTools</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <h2 id="Introduce">Introduce</h2>
+<p>A collection of color tools that includes color selection and palettes, color contrast, color mixing, gradient lists and generation, traditional Chinese and traditional Japanese colors, and more.</p>
+<ol>
+<li>ColorSchema<ul>
+<li>Supports generating a specified number of hue, lighten, darken, and saturation colors</li>
+<li>View contrast colors, closed colors, analogous colors, and more</li>
+<li>Gets color values for multiple color spaces</li>
+</ul>
+</li>
+<li>ColorPalette<ul>
+<li>Contrast the display of the specified color as the background and the foreground color on a black/white background/foreground color</li>
+<li>Specify a random color/light/dark color and use it as a background/foreground color to contrast</li>
+<li>View the WCAG values for the contrast of the two colors</li>
+<li>Specify two colors or two random colors to get mixed color values</li>
+</ul>
+</li>
+<li>GradientColor<ul>
+<li>View a list of predefined gradient colors</li>
+<li>Generates a gradient based on two specified or random colors</li>
+<li>Linear gradients and radial gradients are supported</li>
+</ul>
+</li>
+<li>ClassicColor<ul>
+<li>Traditional Chinese color palette</li>
+<li>Traditional Japanese color palette</li>
+</ul>
+</li>
+</ol>
+<h2 id="How-to-use">How to use</h2>
+<h3 id="ColorSchema">ColorSchema</h3>
+<p><img src="../assets/images/UsefulTools/ColorTool1.png" alt="" /></p>
+<ol>
+<li>Choose color: Choose from the color palette on the left, or enter the Hex color code in the text box at the top of the middle.</li>
+<li>Copy color codes: The color values of various color spaces are displayed at the bottom of the left, which can be copied using the Copy button to the right of the color value.</li>
+<li>View gradient colors: After the count is modified, you can view the colors of a specified number of gradients, including hue, lighten, darken, saturation, and value</li>
+<li>View color schemes: The right side shows the various color schemes, from top to bottom: Complementary, Closed, Complementary of Closed, Analogous, Center Different, Contrast</li>
+</ol>
+<h3 id="ColorPalette">ColorPalette</h3>
+<p><img src="../assets/images/UsefulTools/ColorTool2.png" alt="" /></p>
+<ul>
+<li>The effects that can be viewed in the middle area include:：<ul>
+<li>Black Background - Specified color text</li>
+<li>Specified color background - black text</li>
+<li>Specified color background - white text</li>
+<li>White Background - Specified color text</li>
+</ul>
+</li>
+<li>Specify the color method:<ul>
+<li>Set the color via the left RGB slider or input box</li>
+<li>Click [Random Color] to set a random color</li>
+<li>Click [Random Light Color] to set a random light color</li>
+<li>Click [Random Dark Color] to set a random dark color</li>
+</ul>
+</li>
+<li>Color contrast and mixing<ul>
+<li>Enter the background color and foreground color at the top right, and the display effect and WCAG value of the two colors will be displayed at the bottom, and the two colors and their mixing results will be displayed at the bottom</li>
+<li>Click [Random] to set two random colors</li>
+<li>On the left side, set the color via the slider or input box, and then click &quot;Set To FG&quot; to set the specified color as the foreground color</li>
+<li>On the left side, set the color via the slider or input box, and then click &quot;Set To BG&quot; to set the specified color as the background color</li>
+</ul>
+</li>
+</ul>
+<h3 id="GradientColor">GradientColor</h3>
+<p><img src="../assets/images/UsefulTools/ColorTool3.png" alt="" /></p>
+<ul>
+<li>Specify a color gradient: Enter two colors in the text box at the top of the left, and the gradient effect of these two colors will be automatically generated below, including linear gradient and radial gradient</li>
+<li>Random Color Gradient: Click the [Random] button on the left to generate a gradient with two random colors</li>
+<li>Copy Gradient CSS Code: Click the Copy button to the right of the gradient color below to copy the CSS code for a linear gradient or radial gradient</li>
+<li>View the gradient color list: the right side shows more than 80 predefined gradient colors, you can switch the linear gradient or radial gradient with the switch on top, and the linear gradient can change the angle through the slider. Hover on a color and you can click the copy button to copy the CSS code for that color.</li>
+</ul>
+<p>Radiant gradient effect in dark theme:<br />
+<img src="../assets/images/UsefulTools/ColorTool4.png" alt="" /></p>
+<h3 id="ClassicColor">ClassicColor</h3>
+<p><img src="../assets/images/UsefulTools/ColorTool6.png" alt="" /></p>
+<ul>
+<li>You can filter the palette by color via the color toolbar button on the left</li>
+<li>When hovered on the mouse, the color name and the color Hex value can be displayed</li>
+<li>Hover on and click the copy button to copy the color Hex value</li>
+</ul>
+<blockquote>
+<p>You can switch between light and dark themes by the switch on the right of the toolbar</p>
+</blockquote>
+<p><a href="https://apps.microsoft.com/detail/9P102NQ0CWX8"  target="_blank">Microsoft Store</a></p>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                        <a href="/AppDoc/tools/en/UsefulTools_Random.html">
+                            <span class="icon"></span>
+                            <span class="label">ChooseHelper</span>
+                        </a>
+                        
+                    </div>
+                    <div id="next">
+                        
+                        <a href="/AppDoc/tools/en/UsefulTools_ImageTool.html">
+                            <span class="label">ImageTool</span>
+                            <span class="icon"></span>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a>WeChat Official Account: IceSky</a>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a>Individual developer on Windows - IceSky</a>
+</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/AppDoc/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/AppDoc/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/AppDoc/static/js/theme_default/main.js"></script>
+    
+        <script src="/AppDoc/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/AppDoc/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/AppDoc/static/js/search/search_main.js"></script>
+    
+        <script src="/AppDoc/static/js/plugin_blog/main.js"></script>
+    
+        <script src="/AppDoc/static/js/easing.min.js"></script>
+    
+        <script src="/AppDoc/static/js/custom.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html lang="en"  class=" heading_no_counter ">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="Web Collection, Custom labels, custom categories, custom URLs, save username and password">
+    
+    
+    <meta name="description" content="Web collection application, support custom label style, custom categories and URLs, you can save username and password">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/AppDoc/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/AppDoc/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/AppDoc/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/search/style.css" type="text/css"/>
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/bootstrap.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/animate.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>WebCollection - IceSky App</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/AppDoc/en/">
+                
+                    <img class="site_logo" src="/AppDoc/static/image/logo.png" alt="IceSky Logo">
+                
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/AppDoc/edu/en/">Edu Apps</a></li>
+<li class="active"><a  href="/AppDoc/tools/en/">Tools</a></li>
+<li class=""><a  href="/AppDoc/game/en/">Games</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class="sub_items "><a  >Language: English</a><ul><li class="active"><a  href="/AppDoc/tools/en/UsefulTools_WebCol.html">English</a></li>
+<li class=""><a  href="/AppDoc/tools/zh/UsefulTools_WebCol.html">中文 简体</a></li>
+</ul></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">Search</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">Keywords separated by space</span>
+                                <span id="search_loading_hint">Loading, wait please ...</span>
+                                <span id="search_download_err_hint">Download error, please check network and refresh again</span>
+                                <span id="search_other_docs_result_hint">Result from other docs</span>
+                                <span id="search_curr_doc_result_hint">Result from current doc</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/en/index.html"><span class="label">Tools</span><span class=""></span></a></li>
+<li class="active_parent no_link"><a><span class="label">UsefulTools</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="active with_link"><a href="/AppDoc/tools/en/UsefulTools_WebCol.html"><span class="label">WebCollection</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_Random.html"><span class="label">ChooseHelper</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_ColorTool.html"><span class="label">ColorTools</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_ImageTool.html"><span class="label">ImageTool</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_Json.html"><span class="label">JsonTools</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/UsefulTools_C.html&from=/tools/en/UsefulTools_C.html"><span class="label">C#ToConfig</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_MulVideo.html"><span class="label">MultipleVideo</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_JianBiHua.html"><span class="label">SimpleDrawing</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_FunColor.html"><span class="label">FunColoring</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_Traffic.html"><span class="label">TrafficCounter</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">TestTools</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/TestTools_ComTest.html&from=/tools/en/TestTools_ComTest.html"><span class="label">ComTestTools</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/TestTools_ModbusTcp.html&from=/tools/en/TestTools_ModbusTcp.html"><span class="label">ModbusTcpTool</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/TestTools_TcpForward.html&from=/tools/en/TestTools_TcpForward.html"><span class="label">TCPForwardTool</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/TestTools_ComForward.html&from=/tools/en/TestTools_ComForward.html"><span class="label">ComForwardTool</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/ToolsSet.html&from=/tools/en/ToolsSet.html"><span class="label">ToolsSet</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/ToolsSet_Number.html&from=/tools/en/ToolsSet_Number.html"><span class="label">Number</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/ToolsSet_Date.html&from=/tools/en/ToolsSet_Date.html"><span class="label">Date</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/ToolsSet_Text.html&from=/tools/en/ToolsSet_Text.html"><span class="label">Text</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/ToolsSet_Media.html&from=/tools/en/ToolsSet_Media.html"><span class="label">Media</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/ToolsSet_Other.html&from=/tools/en/ToolsSet_Other.html"><span class="label">Other</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>WebCollection</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <h2 id="Introduce">Introduce</h2>
+<p>The app provides a collection of commonly used web apps, divided into normal and pro editions, and users can also customize categories and URLs to save desktop and mobile addresses of popular websites.</p>
+<h3 id="How-to-use-the-normal-version">How to use the normal version</h3>
+<h4 id="Home-page-menu">Home page menu</h4>
+<p>The functions of the toolbar buttons at the top of the home page are as follows: Category Management, Site Management, Window Background, Label Background, and Mobile Version.</p>
+<p>The app comes preset with categories such as music, video, news, finance, shopping, entertainment, and more, with several websites in each category.<br />
+<img src="../assets/images/UsefulTools/wzjhpt1.png" alt="" /><br />
+Click on label to go to the site.</p>
+<p>After entering the website, the buttons on the right side of the top toolbar are used in order: return to the home, refresh the page, back, forward, and view user information.<br />
+<img src="../assets/images/UsefulTools/wzjhpt2.png" alt="" /></p>
+<blockquote>
+<p>If mobile version is selected, the mobile address will open if you set a mobile address.</p>
+</blockquote>
+<h4 id="Conifg-the-window-style">Conifg the window style</h4>
+<ul>
+<li>Click the Home Background button in the toolbar of the home page to select one of the 25 predefined colors to set the window background color.</li>
+<li>Click the Label Background button in the toolbar of the homepage to select one of the 25 predefined colors to set the label background color. Labels can also be set transparency via sliders.</li>
+</ul>
+<h4 id="Edit-category">Edit category</h4>
+<p>Click the Category Management button in the toolbar of the home page to modify the category.<br />
+<img src="../assets/images/UsefulTools/wzjhpt4.png" alt="" /></p>
+<ul>
+<li>Add: Click the [Add Category] button, enter the category name, you can select the icon and color, and click [Save].</li>
+<li>Modify: Select a category, you can modify its name, icon and color, and click [Save].</li>
+<li>Delete: Click the delete icon on the right side of the category and click the [OK] button in the dialog to delete the category.<blockquote>
+! If sites have already been added to the category, you need to delete all sites in the category before delete the category.</blockquote>
+</li>
+</ul>
+<h4 id="Edit-site">Edit site</h4>
+<p>Click the Site Management button in the toolbar of the home page to modify the site.<br />
+<img src="../assets/images/UsefulTools/wzjhpt3.png" alt="" /></p>
+<ul>
+<li>Add: Click the [Add Website] button, select a category on the right, enter the website name, desktop or mobile address, user information and notes are optional, and click [Save].</li>
+<li>Modify: Select the category in the drop-down box on the left, click the website you want to modify in the selected category, modify the parameters on the right, and click Save.</li>
+<li>Delete: After selecting a category, click the delete icon on the right side of the website, and click the [OK] button in the pop-up dialog box to delete the website.</li>
+</ul>
+<h4 id="Use-User-Information">Use User Information</h4>
+<ul>
+<li>Edit User Information: You can change the user name, password, and notes in the Edit Website dialog for use when opening a website.<blockquote>
+For security reasons, it is recommended that passwords should not save plaintext, but save the prompt information of part of the mask.</blockquote>
+</li>
+<li>Use: After opening the website, click the user information icon in the top toolbar to view the saved information, and you can click the [Copy User Name] button to copy the user name to the clipboard and paste it when needed.</li>
+</ul>
+<h3 id="How-to-use-the-pro-version">How to use the pro version</h3>
+<p>The pro version adds the following features:</p>
+<ol>
+<li>You can use Bing wallpapers as backgrounds.</li>
+<li>You can search using Bing or Baidu on the homepage.</li>
+<li>The color scheme is more abundant, and more options can be customized.</li>
+<li>Support URL copying, quickly add URLs.</li>
+<li>You can import and export website settings.</li>
+</ol>
+<h4 id="Home-page-menu">Home page menu</h4>
+<p>The functions of the toolbar buttons at the top of the home page are as follows:  category management, website management, and mobile version.</p>
+<p>The search function has been added at the top of the homepage of the pro version, you can select Bing or Baidu in the drop-down box, and after clicking Search, the corresponding web page will be opened to display the search results.</p>
+<p>The app preset categories and websites are the same as those of the normal version.<br />
+<img src="../assets/images/UsefulTools/wzjh1.png" alt="" /><br />
+Click on label to go to the site.</p>
+<p>After entering the website, the buttons on the right side of the top toolbar are used in order: return to home, copy url, refresh the page, back, forward and user information.<br />
+<img src="../assets/images/UsefulTools/wzjh5.png" alt="" /><br />
+The added [Copy Path] button can copy the current URL to the clipboard.<br />
+Other features are the same as those of the normal version.</p>
+<h4 id="App-settings">App settings</h4>
+<p>The pro version adds more settings features, and you can open the settings interface by click the setting button on the left of the toolbar.<br />
+<img src="../assets/images/UsefulTools/wzjh2.png" alt="" /><br />
+The settings interface includes: background settings, label settings, and application settings.</p>
+<ul>
+<li>Background settings: You can use Bing wallpapers as app backgrounds or use solid backgrounds.</li>
+<li>Label settings: You can set the border width, rounded corners, spacing, size, font size, background color, and foreground color of the label.<blockquote>
+You can set the values of the border width, rounded corners, and spacing of the label in the four directions of up, down, left, and right respectively</blockquote>
+</li>
+<li>App settings: You can set the background color and foreground color of the command bar, and the website configuration has been imported and exported.</li>
+</ul>
+<blockquote>
+<p>Pro version color settings can be selected from 48 basic colors, or you can use a palette of custom colors. The color palette supports ARGB text input and transparency settings.</p>
+</blockquote>
+<h4 id="Edit-category">Edit category</h4>
+<p>The category editing function of the pro version adds the function of adjusting the classification order, and other functions are the same as those of the normal version.</p>
+<h4 id="Edit-site">Edit site</h4>
+<p>This feature is the same as that of the normal version.</p>
+<h4 id="Use-User-Information">Use User Information</h4>
+<p>This feature is the same as that of the normal version.</p>
+<p><a href="https://apps.microsoft.com/detail/9PLD6M5GCCWV"  target="_blank">Microsoft Store</a></p>
+<p><a href="https://apps.microsoft.com/detail/9P89C1H8QHH7"  target="_blank">Pro version</a></p>
+<p>Some custom interface effects:<br />
+<img src="../assets/images/UsefulTools/wzjh7.png" alt="" /></p>
+<p><img src="../assets/images/UsefulTools/wzjh8.png" alt="" /></p>
+<p><img src="../assets/images/UsefulTools/wzjh9.png" alt="" /></p>
+<p><img src="../assets/images/UsefulTools/wzjh10.png" alt="" /></p>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                        <a href="/AppDoc/tools/en/index.html">
+                            <span class="icon"></span>
+                            <span class="label">Tools</span>
+                        </a>
+                        
+                    </div>
+                    <div id="next">
+                        
+                        <a href="/AppDoc/tools/en/UsefulTools_Random.html">
+                            <span class="label">ChooseHelper</span>
+                            <span class="icon"></span>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a>WeChat Official Account: IceSky</a>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a>Individual developer on Windows - IceSky</a>
+</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/AppDoc/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/AppDoc/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/AppDoc/static/js/theme_default/main.js"></script>
+    
+        <script src="/AppDoc/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/AppDoc/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/AppDoc/static/js/search/search_main.js"></script>
+    
+        <script src="/AppDoc/static/js/plugin_blog/main.js"></script>
+    
+        <script src="/AppDoc/static/js/easing.min.js"></script>
+    
+        <script src="/AppDoc/static/js/custom.js"></script>
+    
+</body>
+
+</html>

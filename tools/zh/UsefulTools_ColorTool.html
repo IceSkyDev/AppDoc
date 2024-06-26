@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"  class=" language_zh  heading_no_counter ">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="配色, 对比色, 颜色混合, 渐变色, 传统色">
+    
+    
+    <meta name="description" content="颜色配置工具集合，其中包含颜色选取及调色板、颜色对比度、颜色混合、渐变色, 传统色等">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/AppDoc/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/AppDoc/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/AppDoc/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/search/style.css" type="text/css"/>
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/bootstrap.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/animate.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>颜色工具 - IceSky App</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/AppDoc/">
+                
+                    <img class="site_logo" src="/AppDoc/static/image/logo.png" alt="IceSky Logo">
+                
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/AppDoc/edu/zh/">教育类应用</a></li>
+<li class="active"><a  href="/AppDoc/tools/zh/">工具应用</a></li>
+<li class=""><a  href="/AppDoc/game/zh/">游戏</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class="sub_items "><a  >Language: 中文 简体</a><ul><li class=""><a  href="/AppDoc/tools/en/UsefulTools_ColorTool.html">English</a></li>
+<li class="active"><a  href="/AppDoc/tools/zh/UsefulTools_ColorTool.html">中文 简体</a></li>
+</ul></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">搜索</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">输入关键词，多关键词空格隔开</span>
+                                <span id="search_loading_hint">正在加载，请稍候。。。</span>
+                                <span id="search_download_err_hint">下载文件失败，请刷新重试或检查网络</span>
+                                <span id="search_other_docs_result_hint">来自其它文档的结果</span>
+                                <span id="search_curr_doc_result_hint">当前文档搜索结果</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/index.html"><span class="label">工具应用</span><span class=""></span></a></li>
+<li class="active_parent no_link"><a><span class="label">实用工具</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_WebCol.html"><span class="label">网址集合</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_Random.html"><span class="label">随机选择工具</span><span class=""></span></a></li>
+<li class="active with_link"><a href="/AppDoc/tools/zh/UsefulTools_ColorTool.html"><span class="label">ColorTool</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_ImageTool.html"><span class="label">ImageTool</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_Json.html"><span class="label">JsonTools</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/no_translate.html?ref=UsefulTools_C.html&from=/tools/zh/UsefulTools_C.html"><span class="label">C#ToConfig</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_MulVideo.html"><span class="label">视频监控</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_JianBiHua.html"><span class="label">简笔画</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_FunColor.html"><span class="label">FunColoring</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_Traffic.html"><span class="label">流量计数器</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">测试类工具</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/TestTools_ComTest.html"><span class="label">调试工具</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/TestTools_ModbusTcp.html"><span class="label">ModbusTcpTool</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/no_translate.html?ref=TestTools_TcpForward.html&from=/tools/zh/TestTools_TcpForward.html"><span class="label">TCP转发工具</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/no_translate.html?ref=TestTools_ComForward.html&from=/tools/zh/TestTools_ComForward.html"><span class="label">通信转发工具</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet.html"><span class="label">ToolsSet</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number.html"><span class="label">数值类</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Date.html"><span class="label">日期类</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text.html"><span class="label">文本类</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media.html"><span class="label">媒体类</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other.html"><span class="label">其他类</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>颜色工具</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <h2 id="%E4%BB%8B%E7%BB%8D">介绍</h2>
+<p>一款颜色配置工具集合，其中包含颜色选取及调色板、颜色对比度、颜色混合、渐变色列表及生成、中国传统色和日本传统色等功能。</p>
+<ol>
+<li>ColorSchema<ul>
+<li>支持生成指定数量的色相、变亮、变暗、饱和度梯度颜色</li>
+<li>查看对比色、相近色、近似色等</li>
+<li>获取多个颜色空间的颜色值</li>
+</ul>
+</li>
+<li>ColorPalette<ul>
+<li>对比指定颜色作为背景和前景色在黑/白色背景/前景色时的显示效果</li>
+<li>指定随机颜色/亮色/暗色并将其作为背景/前景色进行对比</li>
+<li>查看两种颜色对比度WCAG值</li>
+<li>指定两种颜色或随机两种颜色获取混合色值</li>
+</ul>
+</li>
+<li>GradientColor<ul>
+<li>查看预定义的渐变色列表</li>
+<li>根据指定的或者随机生成的两种颜色生成渐变色</li>
+<li>支持线性渐变和放射渐变</li>
+</ul>
+</li>
+<li>ClassicColor<ul>
+<li>中国传统颜色色板</li>
+<li>日本传统颜色色板</li>
+</ul>
+</li>
+</ol>
+<h2 id="%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">使用方法</h2>
+<h3 id="ColorSchema">ColorSchema</h3>
+<p><img src="../assets/images/UsefulTools/ColorTool1.png" alt="" /></p>
+<ol>
+<li>选取颜色：在左侧调色板上选取，或者在中间上方文本框输入16进制颜色代码。</li>
+<li>复制颜色代码：左侧下方显示了各种颜色空间的颜色值，可以颜色值右侧的复制按钮进行复制。</li>
+<li>查看梯度颜色：中间数量值修改后可以查看指定数量梯度的颜色，类型包括：色相、变亮、变暗、饱和度、明度</li>
+<li>查看配色：右侧显示了各种配色方案，从上到下依次为：互补色、邻近色、邻近互补色、相似色、中差色、对比色</li>
+</ol>
+<h3 id="ColorPalette">ColorPalette</h3>
+<p><img src="../assets/images/UsefulTools/ColorTool2.png" alt="" /></p>
+<ul>
+<li>中间可以查看的效果包括：<ul>
+<li>黑色背景-指定色文本</li>
+<li>指定色背景-黑色文本</li>
+<li>指定色背景-白色文本</li>
+<li>白色背景-指定色文本</li>
+</ul>
+</li>
+<li>指定颜色方式：<ul>
+<li>通过左侧RGB滑动条或输入框设置颜色</li>
+<li>点击【Random Color】可以设置一种随机颜色</li>
+<li>点击【Random Light Color】可以设置一种随机浅色</li>
+<li>点击【Random Dark Color】可以设置一种随机深色</li>
+</ul>
+</li>
+<li>颜色对比及混合<ul>
+<li>在右侧上方输入背景色和前景色，下方会显示这两种颜色的显示效果及WCAG值，最下方为这两种颜色及其混合结果</li>
+<li>点击【Random】，可以随机设置两种颜色</li>
+<li>在左侧通过滑动条或输入框设置颜色后点击【Set To FG】，可以设置指定颜色为前景色</li>
+<li>在左侧通过滑动条或输入框设置颜色后点击【Set To BG】，可以设置指定颜色为背景色</li>
+</ul>
+</li>
+</ul>
+<h3 id="GradientColor">GradientColor</h3>
+<p><img src="../assets/images/UsefulTools/ColorTool3.png" alt="" /></p>
+<ul>
+<li>指定颜色渐变：在左侧上方文本框输入两种颜色，下方自动生成这两种颜色的渐变效果，包括线性渐变和放射渐变</li>
+<li>随机颜色渐变：点击左侧【Random】按钮，可以使用两种随机颜色生成渐变</li>
+<li>复制渐变CSS代码：点击下方渐变色右侧的复制按钮，可以复制线性渐变或放射渐变的CSS代码</li>
+<li>查看渐变色列表：右侧展示了预定义的80余种渐变配色，可以同上方开关切换线性渐变或放射渐变，线性渐变可以通过滑动条改变角度。鼠标悬停到颜色上，可以点击复制按钮复制此颜色的CSS代码。</li>
+</ul>
+<p>暗色主题下的放射渐变效果：<br />
+<img src="../assets/images/UsefulTools/ColorTool4.png" alt="" /></p>
+<h3 id="ClassicColor">ClassicColor</h3>
+<p><img src="../assets/images/UsefulTools/ColorTool6.png" alt="" /></p>
+<ul>
+<li>可以通过左侧颜色工具栏按钮按色系过滤色板</li>
+<li>鼠标悬停后可以显示颜色名称和颜色Hex值</li>
+<li>鼠标悬停后点击复制按钮可以复制颜色Hex值</li>
+</ul>
+<blockquote>
+<p>通过界面上方工具栏最右侧的开关可以切换明暗主题</p>
+</blockquote>
+<p><a href="https://apps.microsoft.com/detail/9P102NQ0CWX8"  target="_blank">商店下载</a></p>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                        <a href="/AppDoc/tools/zh/UsefulTools_Random.html">
+                            <span class="icon"></span>
+                            <span class="label">随机选择工具</span>
+                        </a>
+                        
+                    </div>
+                    <div id="next">
+                        
+                        <a href="/AppDoc/tools/zh/UsefulTools_ImageTool.html">
+                            <span class="label">ImageTool</span>
+                            <span class="icon"></span>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a>微信公众号：IceSky</a>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a>Windows 个人独立开发者 - IceSky</a>
+</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/AppDoc/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/AppDoc/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/AppDoc/static/js/theme_default/main.js"></script>
+    
+        <script src="/AppDoc/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/AppDoc/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/AppDoc/static/js/search/search_main.js"></script>
+    
+        <script src="/AppDoc/static/js/plugin_blog/main.js"></script>
+    
+        <script src="/AppDoc/static/js/easing.min.js"></script>
+    
+        <script src="/AppDoc/static/js/custom.js"></script>
+    
+</body>
+
+</html>

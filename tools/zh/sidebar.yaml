@@ -1,3 +1,50 @@
 items:
 -   label: 工具应用
     file: README.md
+-   label: 实用工具
+    items:
+    -   label: 网址集合
+        file: UsefulTools_WebCol.md
+    -   label: 随机选择工具
+        file: UsefulTools_Random.md
+    -   label: ColorTool
+        file: UsefulTools_ColorTool.md
+    -   label: ImageTool
+        file: UsefulTools_ImageTool.md
+    -   label: JsonTools
+        file: UsefulTools_Json.md
+    -   label: C#ToConfig
+        file: UsefulTools_C#2Config.md
+    -   label: 视频监控
+        file: UsefulTools_MulVideo.md
+    -   label: 简笔画
+        file: UsefulTools_JianBiHua.md
+    -   label: FunColoring
+        file: UsefulTools_FunColor.md
+    -   label: 流量计数器
+        file: UsefulTools_Traffic.md
+-   label: 测试类工具
+    collapsed: false
+    items:
+    -   label: 调试工具
+        file: TestTools_ComTest.md
+    -   label: ModbusTcpTool
+        file: TestTools_ModbusTcp.md
+    -   label: TCP转发工具
+        file: TestTools_TcpForward.md
+    -   label: 通信转发工具
+        file: TestTools_ComForward.md
+-   label: ToolsSet
+    file: ToolsSet.md
+    collapsed: false
+    items:
+    -   label: 数值类
+        file: ToolsSet_Number.md
+    -   label: 日期类
+        file: ToolsSet_Date.md
+    -   label: 文本类
+        file: ToolsSet_Text.md
+    -   label: 媒体类
+        file: ToolsSet_Media.md
+    -   label: 其他类
+        file: ToolsSet_Other.md

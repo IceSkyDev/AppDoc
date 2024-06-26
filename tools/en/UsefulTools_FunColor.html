@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html lang="en"  class=" heading_no_counter ">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="Coloring">
+    
+    
+    <meta name="description" content="The coloring tool supports opening local pictures or network pictures for coloring and saving coloring results">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/AppDoc/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/AppDoc/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/AppDoc/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/search/style.css" type="text/css"/>
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/bootstrap.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/animate.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>FunColoring - IceSky App</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/AppDoc/en/">
+                
+                    <img class="site_logo" src="/AppDoc/static/image/logo.png" alt="IceSky Logo">
+                
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/AppDoc/edu/en/">Edu Apps</a></li>
+<li class="active"><a  href="/AppDoc/tools/en/">Tools</a></li>
+<li class=""><a  href="/AppDoc/game/en/">Games</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class="sub_items "><a  >Language: English</a><ul><li class="active"><a  href="/AppDoc/tools/en/UsefulTools_FunColor.html">English</a></li>
+<li class=""><a  href="/AppDoc/tools/zh/UsefulTools_FunColor.html">中文 简体</a></li>
+</ul></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">Search</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">Keywords separated by space</span>
+                                <span id="search_loading_hint">Loading, wait please ...</span>
+                                <span id="search_download_err_hint">Download error, please check network and refresh again</span>
+                                <span id="search_other_docs_result_hint">Result from other docs</span>
+                                <span id="search_curr_doc_result_hint">Result from current doc</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/en/index.html"><span class="label">Tools</span><span class=""></span></a></li>
+<li class="active_parent no_link"><a><span class="label">UsefulTools</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_WebCol.html"><span class="label">WebCollection</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_Random.html"><span class="label">ChooseHelper</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_ColorTool.html"><span class="label">ColorTools</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_ImageTool.html"><span class="label">ImageTool</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_Json.html"><span class="label">JsonTools</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/UsefulTools_C.html&from=/tools/en/UsefulTools_C.html"><span class="label">C#ToConfig</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_MulVideo.html"><span class="label">MultipleVideo</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_JianBiHua.html"><span class="label">SimpleDrawing</span><span class=""></span></a></li>
+<li class="active with_link"><a href="/AppDoc/tools/en/UsefulTools_FunColor.html"><span class="label">FunColoring</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_Traffic.html"><span class="label">TrafficCounter</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">TestTools</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/TestTools_ComTest.html&from=/tools/en/TestTools_ComTest.html"><span class="label">ComTestTools</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/TestTools_ModbusTcp.html&from=/tools/en/TestTools_ModbusTcp.html"><span class="label">ModbusTcpTool</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/TestTools_TcpForward.html&from=/tools/en/TestTools_TcpForward.html"><span class="label">TCPForwardTool</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/TestTools_ComForward.html&from=/tools/en/TestTools_ComForward.html"><span class="label">ComForwardTool</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/ToolsSet.html&from=/tools/en/ToolsSet.html"><span class="label">ToolsSet</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/ToolsSet_Number.html&from=/tools/en/ToolsSet_Number.html"><span class="label">Number</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/ToolsSet_Date.html&from=/tools/en/ToolsSet_Date.html"><span class="label">Date</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/ToolsSet_Text.html&from=/tools/en/ToolsSet_Text.html"><span class="label">Text</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/ToolsSet_Media.html&from=/tools/en/ToolsSet_Media.html"><span class="label">Media</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/ToolsSet_Other.html&from=/tools/en/ToolsSet_Other.html"><span class="label">Other</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>FunColoring</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <h2 id="Introduce">Introduce</h2>
+<p>This application contains more than 50 sample pictures of various types, supports opening local pictures or network pictures for coloring, can zoom and pan the picture and fill in continuously, and can save the coloring results as jpg files.</p>
+<h2 id="How-to-use">How to use</h2>
+<p>The first 4 buttons in the top toolbar are file operations, and their functions are as follows:</p>
+<ul>
+<li>Toggle the display of the list of sample images</li>
+<li>Open a local image</li>
+<li>Open the web picture</li>
+<li>Save the picture</li>
+</ul>
+<p>Select an example image:<br />
+<img src="../assets/images/UsefulTools/Coloring2.png" alt="" /></p>
+<p>Coloring web image:<br />
+<img src="../assets/images/UsefulTools/Coloring3.png" alt="" /></p>
+<p>Once the image is opened, you can use other buttons in the toolbar to fill in the color. You can do the following:</p>
+<ul>
+<li>Clear all fills</li>
+<li>Undo and redo</li>
+<li>Switch Mode:<ol>
+<li>Fill mode: use left mouse button to fill, right button to drag</li>
+<li>Clear mode: use left mouse button to clear the fill, right button to drag</li>
+<li>Movement mode: use left mouse button to drag, right button to fill</li>
+<li>Color mode: use left mouse button to set the current color to the color at the click coordinates, right button to drag</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p>The drag function is only available when the canvas is zoomed in</p>
+<p><strong>The black color is locked and cannot be filled and removed when filling</strong></p>
+</blockquote>
+<ul>
+<li>Set fuzz range: it is used to set the similar color range when filling, the smaller the value, the more accurate it is, the range is 0~99.</li>
+<li>Continuous filling switch: after it is turned on, it can be continuously filled, the fillable area is the same color area as the clicked position and white area, and you can press and drag the mouse to fill all the fillable areas with the specified color.</li>
+<li>Color selection: You can select a color with a color palette in the drop-down box, or you can click the color palette on the right to quickly specify it.</li>
+</ul>
+<p><img src="../assets/images/UsefulTools/Coloring1.png" alt="" /></p>
+<h2 id="Hot-Keys">Hot Keys</h2>
+<ul>
+<li>Ctrl+o  Open the local file</li>
+<li>Ctrl+u  Open the network URL</li>
+<li>Ctrl+s  Save to local file</li>
+<li>Ctrl+c  Toggle continuous mode</li>
+<li>Ctrl+f  Switch to fill tool</li>
+<li>Ctrl+e  Switch to cleanup tool</li>
+<li>Ctrl+m  Switch to move tool</li>
+<li>Ctrl+p  Switch to color picker</li>
+<li>Ctrl+z  Undo</li>
+<li>Ctrl+y  Redo</li>
+<li>Ctrl+delete  Clear the fill</li>
+<li>Ctrl+r  Reset the size and position</li>
+<li>Ctrl+n  Restore the picture to original state</li>
+<li>The mouse wheel can zoom in and out of the canvas</li>
+</ul>
+<p><a href="https://apps.microsoft.com/detail/9NMDVK2Z3D9P"  target="_blank">Microsoft Store</a></p>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                        <a href="/AppDoc/tools/en/UsefulTools_JianBiHua.html">
+                            <span class="icon"></span>
+                            <span class="label">SimpleDrawing</span>
+                        </a>
+                        
+                    </div>
+                    <div id="next">
+                        
+                        <a href="/AppDoc/tools/en/UsefulTools_Traffic.html">
+                            <span class="label">TrafficCounter</span>
+                            <span class="icon"></span>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a>WeChat Official Account: IceSky</a>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a>Individual developer on Windows - IceSky</a>
+</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/AppDoc/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/AppDoc/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/AppDoc/static/js/theme_default/main.js"></script>
+    
+        <script src="/AppDoc/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/AppDoc/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/AppDoc/static/js/search/search_main.js"></script>
+    
+        <script src="/AppDoc/static/js/plugin_blog/main.js"></script>
+    
+        <script src="/AppDoc/static/js/easing.min.js"></script>
+    
+        <script src="/AppDoc/static/js/custom.js"></script>
+    
+</body>
+
+</html>

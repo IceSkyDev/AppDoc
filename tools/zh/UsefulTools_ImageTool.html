@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"  class=" language_zh  heading_no_counter ">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="图片处理, 变色, 滤镜, 变换, 水印, 裁剪">
+    
+    
+    <meta name="description" content="图片处理工具，支持对图片进行颜色调整、添加滤镜、进行变换">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/AppDoc/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/AppDoc/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/AppDoc/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/search/style.css" type="text/css"/>
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/bootstrap.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/animate.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>图片处理 - IceSky App</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/AppDoc/">
+                
+                    <img class="site_logo" src="/AppDoc/static/image/logo.png" alt="IceSky Logo">
+                
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/AppDoc/edu/zh/">教育类应用</a></li>
+<li class="active"><a  href="/AppDoc/tools/zh/">工具应用</a></li>
+<li class=""><a  href="/AppDoc/game/zh/">游戏</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class="sub_items "><a  >Language: 中文 简体</a><ul><li class=""><a  href="/AppDoc/tools/en/UsefulTools_ImageTool.html">English</a></li>
+<li class="active"><a  href="/AppDoc/tools/zh/UsefulTools_ImageTool.html">中文 简体</a></li>
+</ul></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">搜索</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">输入关键词，多关键词空格隔开</span>
+                                <span id="search_loading_hint">正在加载，请稍候。。。</span>
+                                <span id="search_download_err_hint">下载文件失败，请刷新重试或检查网络</span>
+                                <span id="search_other_docs_result_hint">来自其它文档的结果</span>
+                                <span id="search_curr_doc_result_hint">当前文档搜索结果</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/index.html"><span class="label">工具应用</span><span class=""></span></a></li>
+<li class="active_parent no_link"><a><span class="label">实用工具</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_WebCol.html"><span class="label">网址集合</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_Random.html"><span class="label">随机选择工具</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_ColorTool.html"><span class="label">ColorTool</span><span class=""></span></a></li>
+<li class="active with_link"><a href="/AppDoc/tools/zh/UsefulTools_ImageTool.html"><span class="label">ImageTool</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_Json.html"><span class="label">JsonTools</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/no_translate.html?ref=UsefulTools_C.html&from=/tools/zh/UsefulTools_C.html"><span class="label">C#ToConfig</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_MulVideo.html"><span class="label">视频监控</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_JianBiHua.html"><span class="label">简笔画</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_FunColor.html"><span class="label">FunColoring</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_Traffic.html"><span class="label">流量计数器</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">测试类工具</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/TestTools_ComTest.html"><span class="label">调试工具</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/TestTools_ModbusTcp.html"><span class="label">ModbusTcpTool</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/no_translate.html?ref=TestTools_TcpForward.html&from=/tools/zh/TestTools_TcpForward.html"><span class="label">TCP转发工具</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/no_translate.html?ref=TestTools_ComForward.html&from=/tools/zh/TestTools_ComForward.html"><span class="label">通信转发工具</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet.html"><span class="label">ToolsSet</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number.html"><span class="label">数值类</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Date.html"><span class="label">日期类</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text.html"><span class="label">文本类</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media.html"><span class="label">媒体类</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other.html"><span class="label">其他类</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>图片处理</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <h2 id="%E4%BB%8B%E7%BB%8D">介绍</h2>
+<p>一款简单易用的图片编辑处理工具，支持对图片进行颜色调整、添加滤镜、进行变换，菜单栏左侧4个按钮分别可以打开图片、保存图片、保存副本、重置图片。<br />
+<img src="../assets/images/UsefulTools/ImageTool1.png" alt="" /></p>
+<blockquote>
+<p>在菜单进行操作时会在窗口右侧打开预览，点击应用按钮才会将效果应用到左侧，应用效果后可以在菜单选择其他操作进行连续修改。</p>
+</blockquote>
+<h3 id="Color%E8%8F%9C%E5%8D%95">Color菜单</h3>
+<p>可以对颜色进行调整，其中包括：</p>
+<ul>
+<li>改变背景色：可以设置png格式的透明背景为指定颜色</li>
+<li>调整亮度：调整图片的亮度</li>
+<li>调整对比度：调整图片的对比度</li>
+<li>调整饱和度：调整图片的饱和度</li>
+<li>调整色相：调整图片的色相，Rotate可以设置是否调整成一个色调</li>
+<li>色彩调整：通过给图片添加一个指定颜色的透明蒙版来调整整体色彩</li>
+<li>灰度模式：把图片进行去色处理，变成灰度</li>
+<li>黑白图片：把图片变成黑白模式</li>
+<li>反色：把图片反色</li>
+<li>颜色替换：将图片中的一种指定颜色替换成另外的颜色，可以设置容差值<br />
+<img src="../assets/images/UsefulTools/ImageTool2.png" alt="" /></li>
+</ul>
+<h3 id="Filter%E8%8F%9C%E5%8D%95">Filter菜单</h3>
+<p>可以对图片添加滤镜，其中包括：</p>
+<ul>
+<li>查找边缘：根据指定算法类型对图片进行边缘查找，可以指定为灰度模式</li>
+<li>漫画：把图片转换成漫画效果</li>
+<li>哥谭：把图片转换成哥谭的高级暗灰色调效果</li>
+<li>高饱和：把图片转换成高饱和效果</li>
+<li>低饱和：把图片转换成低饱和效果</li>
+<li>Lomo胶片：给图片添加四角变暗的Lomo胶片效果</li>
+<li>宝丽来：给图片添加四角变暗的宝丽来效果</li>
+<li>深褐色：把图片转换成深褐色的怀旧效果</li>
+<li>高斯模糊：给图片添加高斯模糊效果</li>
+<li>高斯锐化：把图片进行高斯锐化处理</li>
+<li>像素化：把图片按指定像素大小进行像素化处理，可以指定整幅图片或局部区域</li>
+<li>光晕：给图片添加指定颜色的光晕效果</li>
+<li>伽马：对图片进行伽马调整<br />
+<img src="../assets/images/UsefulTools/ImageTool3.png" alt="" /></li>
+</ul>
+<h3 id="Transform%E8%8F%9C%E5%8D%95">Transform菜单</h3>
+<p>可以对图片进行变换，其中包括：</p>
+<ul>
+<li><p>透明度：调整图片的透明度，需要图片格式支持（如：png格式）</p>
+</li>
+<li><p>旋转：将图片按指定角度进行旋转，可以设置是否锁定图片尺寸</p>
+</li>
+<li><p>缩放：将图片按指定尺寸进行缩放，支持多种方式</p>
+</li>
+<li><p>裁剪：将图片按指定位置和尺寸进行裁剪，可以指定像素或百分比</p>
+</li>
+<li><p>熵裁剪：可以智能的裁剪图片的背景空白</p>
+</li>
+<li><p>翻转：可以将图片进行水平或垂直翻转</p>
+</li>
+<li><p>遮罩：在图片指定位置添加图片遮罩，图片将会显示遮罩图片的不透明区域</p>
+</li>
+<li><p>圆角：给图片添加圆角，可以指定四个边角的其中几个或全部</p>
+</li>
+<li><p>图片叠加：在图片指定位置叠加另一张图片，可以指定图片尺寸和透明度</p>
+</li>
+<li><p>水印：在图片指定位置添加文字水印，可以指定字号、颜色、透明度和是否有阴影</p>
+</li>
+<li><p>格式：改变图片格式，支持Jpeg、Png、Bmp、Gif和Tifff格式，Jpeg支持指定图片质量<br />
+<img src="../assets/images/UsefulTools/ImageTool4.png" alt="" /></p>
+<p><img src="../assets/images/UsefulTools/ImageTool5.png" alt="" /></p>
+</li>
+</ul>
+<p><a href="https://apps.microsoft.com/detail/9MV16HSW0NLR"  target="_blank">商店下载</a></p>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                        <a href="/AppDoc/tools/zh/UsefulTools_ColorTool.html">
+                            <span class="icon"></span>
+                            <span class="label">ColorTool</span>
+                        </a>
+                        
+                    </div>
+                    <div id="next">
+                        
+                        <a href="/AppDoc/tools/zh/UsefulTools_Json.html">
+                            <span class="label">JsonTools</span>
+                            <span class="icon"></span>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a>微信公众号：IceSky</a>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a>Windows 个人独立开发者 - IceSky</a>
+</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/AppDoc/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/AppDoc/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/AppDoc/static/js/theme_default/main.js"></script>
+    
+        <script src="/AppDoc/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/AppDoc/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/AppDoc/static/js/search/search_main.js"></script>
+    
+        <script src="/AppDoc/static/js/plugin_blog/main.js"></script>
+    
+        <script src="/AppDoc/static/js/easing.min.js"></script>
+    
+        <script src="/AppDoc/static/js/custom.js"></script>
+    
+</body>
+
+</html>
