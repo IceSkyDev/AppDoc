@@ -63,7 +63,7 @@ To the right of the config window is the layout config area
 Left 3 Right 2 Layout:
 ![](../assets/images/UsefulTools/Video3.png)
 
-7 windows Layout:
+6 windows Layout:
 ![](../assets/images/UsefulTools/Video4.png)
 
 Custom Layout:：
