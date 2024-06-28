@@ -14,7 +14,7 @@ The communication interface in the application is divided into two parts, the le
 ### TCP Server and Client
 ![](../assets/images/TestTools/ComTest1.png)
 
-#### Server Settings
+#### TCP Server Settings
 1. Connection Settings
   * Enter the IP and port, click the [Start] button, and the button will change to [Stop] after success.
 
@@ -37,7 +37,7 @@ The communication interface in the application is divided into two parts, the le
       > If a single send is used when [Split Lines] is opened, it has no practical effect because it is sent at the same time; If you use periodic sending, the specified sending period is separated between each line when sending.
 4. Disconnect: Click [Stop] to disconnect
 
-#### Client Settings
+#### TCP Client Settings
 1. Connection Settings
   * Enter IP and port, click the [Connect] button, and the button will change to [Disconnect] when successful.
 
@@ -57,7 +57,7 @@ The communication interface in the application is divided into two parts, the le
 ![](../assets/images/TestTools/ComTest2.png)
 
 
-#### Server Settings
+#### UDP Server Settings
 1. Connection Settings
   * This is the same as that of the TCP server 
 2. Receive Area Options
@@ -67,7 +67,7 @@ The communication interface in the application is divided into two parts, the le
   
   > Once the UDP client is closed, it will not be removed from the client list, and data sent to it will not be received
 
-#### Client Settings
+#### UDP Client Settings
 1. Connection Settings
   * The IP and port settings are the same as those of the server
   * A connection option has been added to the settings that needs to be set before connecting, and the options include:
@@ -83,7 +83,7 @@ The communication interface in the application is divided into two parts, the le
 ### Websocket Server and Client
 ![](../assets/images/TestTools/ComTest3.png)
 
-#### Server Settings
+#### Websocket Server Settings
 1. Connection Settings
   * In addition to IP and port, you can also set Path, username, and password
 2. Receive Area Options
@@ -92,7 +92,7 @@ The communication interface in the application is divided into two parts, the le
   * Except that the destination can't be specified, it is the same as the TCP server
 
 
-#### Client Settings
+#### Websocket Client Settings
 1. Connection Settings
   * In addition to IP and port, you can also set Path, username, and password
 
@@ -106,7 +106,7 @@ The communication interface in the application is divided into two parts, the le
 
 ![](../assets/images/TestTools/ComTest4.png)
 
-#### Server Settings
+#### MQTT Server Settings
 1. Connection Settings
   * In addition to IP and port, you can also set a username and password
 
@@ -118,7 +118,7 @@ The communication interface in the application is divided into two parts, the le
   * Added Topic and QoS settings, removed the data encoding mode, and other optons are the same as those of the TCP server
 
 
-#### Client Settings
+#### MQTT Client Settings
 1. Connection Settings
   * In addition to IP and port, you can also set a username and password
 
@@ -133,7 +133,7 @@ The communication interface in the application is divided into two parts, the le
 ### SignalR Server and Client
 ![](../assets/images/TestTools/ComTest5.png)
 
-#### Server Settings
+#### SignalR Server Settings
 1. Connection Settings
   * In addition to IP and port, you can also set Path
 
@@ -144,7 +144,7 @@ The communication interface in the application is divided into two parts, the le
   * Removed the data encoding mode, and the other options are the same as those of the Websocket server
 
 
-#### Client Settings
+#### SignalR Client Settings
 1. Connection Settings
   * In addition to IP and port, you can also set Path
 
@@ -158,7 +158,7 @@ The communication interface in the application is divided into two parts, the le
 ### ZeroMq Server and Client
 ![](../assets/images/TestTools/ComTest6.png)
 
-#### Server Settings
+#### ZeroMq Server Settings
 1. Connection Settings
   * This is the same as that of the TCP server
 
@@ -169,7 +169,7 @@ The communication interface in the application is divided into two parts, the le
   * This is the same as that of the SignalR server
 
 
-#### Client Settings
+#### ZeroMq Client Settings
 1. Connection Settings
   * This is the same as that of the TCP client
 
@@ -183,12 +183,12 @@ The communication interface in the application is divided into two parts, the le
 ### Http Server and Client
 ![](../assets/images/TestTools/ComTest7.png)
 
-#### Server Settings
+#### Http Server Settings
 * Specify the port and path, and click [Start] to start the server
 * Enter the mock response in the text box below, or click the Open File button on the right to load the content from the text file
 * Click the [Clear] button on the right to clear the response
 
-#### Client Settings
+#### Http Client Settings
 * Enter the full path of the request in the text box of path, and click the [Request] button to get the response content
   * Enter the web url can get the source code of the web page
   * Enter the Web Api path can get the Api response
