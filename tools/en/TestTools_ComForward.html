@@ -7,10 +7,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="keywords" content="TCP, Forward, MQTT, Websocket">
+    <meta name="keywords" content="Tcp, forward, Mqtt, Websocket, many-to-many">
     
     
-    <meta name="description" content="TCP forward tool supports server and client forwarding, and the target supports MQTT and Websocket">
+    <meta name="description" content="The communication forward tool supports forwarding between Tcp server, Tcp client, Mqtt and Websocket, and supports many-to-many forwarding">
     
     <meta name="generator" content="teedoc">
     <meta name="theme" content="teedoc-plugin-theme-default">
@@ -50,7 +50,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
         
     
     
-    <title>TCP Forward tool - IceSky App</title>
+    <title>Communication forward tools - IceSky App</title>
     
     <script type="text/javascript">js_vars = {}</script>
     <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
@@ -80,8 +80,8 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
             </div>
             <div>
                 <ul id="nav_right">
-<li class="sub_items "><a  >Language: English</a><ul><li class="active"><a  href="/AppDoc/tools/en/TestTool_TcpForward.html">English</a></li>
-<li class=""><a  href="/AppDoc/tools/zh/TestTool_TcpForward.html">中文 简体</a></li>
+<li class="sub_items "><a  >Language: English</a><ul><li class="active"><a  href="/AppDoc/tools/en/TestTools_ComForward.html">English</a></li>
+<li class=""><a  href="/AppDoc/tools/zh/TestTools_ComForward.html">中文 简体</a></li>
 </ul></li>
 </ul>
 
@@ -103,7 +103,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                 <div id="sidebar_title">
                     
                 </div>
-                <ul class="">
+                <ul class="show">
 <li class="not_active with_link"><a href="/AppDoc/tools/en/index.html"><span class="label">Tools</span><span class=""></span></a></li>
 <li class="not_active no_link"><a><span class="label">UsefulTools</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
 <li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_WebCol.html"><span class="label">WebCollection</span><span class=""></span></a></li>
@@ -118,11 +118,11 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_Traffic.html"><span class="label">TrafficCounter</span><span class=""></span></a></li>
 </ul>
 </li>
-<li class="not_active no_link"><a><span class="label">TestTools</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="active_parent no_link"><a><span class="label">TestTools</span><span class="sub_indicator"></span></a><ul class="show">
 <li class="not_active with_link"><a href="/AppDoc/tools/en/TestTools_ComTest.html"><span class="label">ComTestTools</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/TestTools_ModbusTcp.html"><span class="label">ModbusTcpTool</span><span class=""></span></a></li>
-<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/TestTools_TcpForward.html&from=/tools/en/TestTools_TcpForward.html"><span class="label">TCPForwardTool</span><span class=""></span></a></li>
-<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/TestTools_ComForward.html&from=/tools/en/TestTools_ComForward.html"><span class="label">ComForwardTool</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/TestTools_TcpForward.html"><span class="label">TCPForwardTool</span><span class=""></span></a></li>
+<li class="active with_link"><a href="/AppDoc/tools/en/TestTools_ComForward.html"><span class="label">ComForwardTool</span><span class=""></span></a></li>
 </ul>
 </li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet.html"><span class="label">ToolsSet</span><span class="sub_indicator"></span></a><ul class="show">
@@ -147,7 +147,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_head">
                         <div id="article_title">
                             
-                            <h1>TCP Forward tool</h1>
+                            <h1>Communication forward tools</h1>
                             
                         </div>
                         <div id="article_tags">
@@ -177,22 +177,28 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_content">
                         
                             <h2 id="Introduce">Introduce</h2>
-<p>The TCP data forwarding tool supports connecting the TCP server and the client at the receiver, supports the TCP server, the TCP client, MQTT and Websocket at the forwarding destination, and supports custom mapping to forward data.</p>
+<p>The communication data forwarding tool provides data forwarding between the Tcp server, Tcp client, Mqtt and Websocket, supports many-to-many forwarding, and forwards data according to custom mappings.</p>
 <h2 id="How-to-use">How to use</h2>
-<p>The interface is divided into two parts, the left side is receive area, which is used to connect the source of the data; The right side is send area, which is used to connect to the destination of data sending.</p>
+<p>The interface is divided into two parts: the left data receiver is used to connect the source of data; The data sender on the right is used to connect the destination of data sending.</p>
 <h3 id="Data-Forward-Settings">Data Forward Settings</h3>
-<p><img src="../assets/images/TestTools/TCPForward1.png" alt="" /></p>
+<p><img src="../assets/images/TestTools/Forward1.png" alt="" /></p>
 <ol>
 <li><p>Config receiver</p>
 <ol>
+<li>The app will add a receiver by default, and if you need to add it, you can click the [+] button on the right side of the area title to add it</li>
 <li>Select the receiver connection type<ul>
-<li>The available connection types for the receiver are TCP Server and TCP Client</li>
-<li>The TCP server is used to receive data sent by other TCP clients, and the TCP client is used to receive data from the TCP server to which it is connected</li>
+<li>The available connection types for the receiver are Tcp Server, Tcp Client, Mqtt and Websocket</li>
+<li>The Tcp server is used to receive data sent by other Tcp clients</li>
+<li>Tcp Client is used to receive data from the Tcp Server to which it is connected</li>
+<li>MQTT can receive data from a specified topic to which it is subscribed</li>
+<li>Websockets can receive data from a specified path</li>
 </ul>
 </li>
 <li>Connect the receiver<ul>
-<li>Enter the server IP and port in the text box</li>
-<li>For TCP servers, you do not need to change the IP address, but can keep the default value of 127.0.0.1</li>
+<li>or TCP servers, you do not need to change the IP address, but can keep the default value of 127.0.0.1</li>
+<li>To connect to the Tcp client, you need to specify the IP address and port</li>
+<li>In addition to the IP and port, you also need to specify the topic and Qos to connect to Mqtt, and the username and password can be specified as needed</li>
+<li>In addition to specifying the IP and port, you can also specify the path, username, and password as needed to connect to a websocket</li>
 <li>After the parameters are set, click the [Start] button at the bottom, and the button will change to [Stop] after success</li>
 </ul>
 </li>
@@ -200,29 +206,33 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li>Click the [Stop] button to stop</li>
 </ul>
 </li>
+<li>Delete connection<ul>
+<li>Click the [x] button on the right of the connection settings to delete it</li>
+</ul>
+</li>
 </ol>
 </li>
 <li><p>Configure sender</p>
 <ol>
+<li>The app will add a sender by default, and if you need to add it, you can click the [+] button on the right side of the regional title bar to add it</li>
 <li>Select the sender connection type<ul>
-<li>In addition to TCP Server and TCP Client, you can also select MQTT and WebSocket for the sender</li>
-<li>A TCP server broadcasts the received data to all clients connected to the server<blockquote>
-Use this way, you can forward multiple destination TCP clients</blockquote>
-</li>
+<li>The available connection types for the sender are Tcp Server, Tcp Client, Mqtt and Websocket</li>
+<li>A TCP server broadcasts the received data to all clients connected to the server</li>
 <li>A TCP client can send the received data to the server to which it is connected</li>
 <li>MQTT sends the received data with specified topic</li>
 <li>Websoctor will send the received data to the specified Path</li>
 </ul>
 </li>
 <li>Connect the sender<ul>
-<li>For TCP Server and TCP Client, the connection way is the same as that of the receiver</li>
-<li>In addition to specifying the IP and port, you also need to specify the sending topic and Qos to connect to MQTT, and the username and password can be specified as needed</li>
-<li>In addition to specifying the IP and port, you can also specify the path, username, and password as needed to connect to a websocket</li>
-<li>After the parameters are set, click the [Start] button at the bottom, and the button will change to [Stop] after success</li>
+<li>It is the same as that of the receiver</li>
 </ul>
 </li>
 <li>Stop the sender<ul>
 <li>Click the [Stop] button to stop</li>
+</ul>
+</li>
+<li>Delete connection<ul>
+<li>Click the [x] button on the right of the connection settings to delete it</li>
 </ul>
 </li>
 </ol>
@@ -235,16 +245,18 @@ Use this way, you can forward multiple destination TCP clients</blockquote>
 </ul>
 <blockquote>
 <p>If no mapping file is configured, the data sent is a full copy of the received data</p>
+<p>Multiple receivers can receive data at the same time and send data to all senders</p>
 </blockquote>
 </li>
 </ol>
+<p><img src="../assets/images/TestTools/Forward2.png" alt="" /></p>
 <h3 id="Configure-mapping-file">Configure mapping file</h3>
-<p><img src="../assets/images/TestTools/TCPForward2.png" alt="" /><br />
+<p><img src="../assets/images/TestTools/Forward3.png" alt="" /><br />
 The data mapping file is used to configure the mapping between the receive and send data for forwarding</p>
 <ul>
 <li>Click the Configure button to the right of the receiver header to open the configuration window</li>
 <li>The switch at the top of the configuration window allows you to set the forwarding mode: if you turn it on, only the data that matches the first column will be sent, otherwise all data will be sent</li>
-<li>The grid below is used to configure the data mapping, the first column of data is used to match the received data, and if it matches, the corresponding data of the second column will be sent</li>
+<li>he grid below is used to configure the data mapping, the first column of data is used to match the received data, and if it matches, the corresponding data of the second column will be sent</li>
 <li>Click [Save] to close the window after saving to the file, and [Cancel] to close the window without saving the file</li>
 </ul>
 <blockquote>
@@ -254,16 +266,17 @@ The data mapping file is used to configure the mapping between the receive and s
 <p>The first column of data can be duplicated, and if duplicate data is matched, each matched mapping data is forwarded</p>
 </blockquote>
 <h3 id="View-data-records">View data records</h3>
-<p><img src="../assets/images/TestTools/TCPForward3.png" alt="" /></p>
+<p><img src="../assets/images/TestTools/Forward4.png" alt="" /></p>
 <ul>
-<li>During the data forwarding, data sending and receiving records are displayed below the connection configuration, which records the time and content of each data sending and receiving record</li>
-<li>The status bar at the bottom records the count of data sent and received, the number of bytes, and the last time it was sent and received</li>
-<li>The two buttons on the right side below the receive and send areas are used to reset the count and clear the sending and receiving records</li>
+<li>During the data forwarding, the data sending and receiving records will be displayed below each connection, which records the time and content of each data sending and receiving record, and click the downward arrow on the right to expand and collapse</li>
+<li>The status bar for each connection records the count of data sent and received, the number of bytes, and the last time it was sent and received</li>
+<li>The two buttons on the left side of each connection status bar are used to clear records and copy records</li>
+<li>The first button on the right side of the receive and send areas used to reset the count of all connections in that area</li>
 </ul>
 <blockquote>
 <p>When the app is closing, you can choose quit or hide it to the taskbar icon, and the window can be displayed by click the taskbar icon when the window is hidden</p>
 </blockquote>
-<p><a href="https://apps.microsoft.com/detail/9P8RD3LDT8TW"  target="_blank">Microsoft Store</a></p>
+<p><a href="https://apps.microsoft.com/detail/9P8FJRT704DC"  target="_blank">Microsoft Store</a></p>
 
                         
                     </div>
@@ -271,8 +284,18 @@ The data mapping file is used to configure the mapping between the receive and s
                 <div id="previous_next">
                     <div id="previous">
                         
+                        <a href="/AppDoc/tools/en/TestTools_TcpForward.html">
+                            <span class="icon"></span>
+                            <span class="label">TCPForwardTool</span>
+                        </a>
+                        
                     </div>
                     <div id="next">
+                        
+                        <a href="/AppDoc/tools/en/ToolsSet.html">
+                            <span class="label">ToolsSet</span>
+                            <span class="icon"></span>
+                        </a>
                         
                     </div>
                 </div>
