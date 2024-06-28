@@ -7,10 +7,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="keywords" content="媒体工具, 测试工具, 效率, 实用">
+    <meta name="keywords" content="通信测试, TCP, UDP, MQTT, Websocket, SignalR, ZeroMq, Http">
     
     
-    <meta name="description" content="一系列的工具应用，包括图片工具、配色工具、效率工具、测试工具等">
+    <meta name="description" content="通信测试工具，支持多种通信的服务器和客户端，支持Http模拟">
     
     <meta name="generator" content="teedoc">
     <meta name="theme" content="teedoc-plugin-theme-default">
@@ -50,7 +50,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
         
     
     
-    <title>ToolsSet 数值类 - IceSky App</title>
+    <title>通信测试工具 - IceSky App</title>
     
     <script type="text/javascript">js_vars = {}</script>
     <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
@@ -147,7 +147,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_head">
                         <div id="article_title">
                             
-                            <h1>ToolsSet 数值类</h1>
+                            <h1>通信测试工具</h1>
                             
                         </div>
                         <div id="article_tags">
@@ -177,7 +177,333 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_content">
                         
                             <h2 id="%E4%BB%8B%E7%BB%8D">介绍</h2>
-<p><a href="https://apps.microsoft.com/detail/9MV2NK7FZ4CC"  target="_blank">调试工具</a></p>
+<p>通信测试工具，支持多种通信方式的服务器和客户端，包括TCP、UDP、MQTT、Websocket、SignalR、ZeroMq，另外支持Http响应模拟，可以用于测试http请求或者测试WebApi。</p>
+<p>应用中的通信连接界面都分为了左右两部分，左侧为服务端，右侧为客户端。</p>
+<blockquote class="spoiler warning">
+<p> 周期发送会有毫秒精度的误差，使用场景如果需要毫秒级高频率发送时需要注意</p>
+</blockquote>
+<h2 id="%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">使用方法</h2>
+<h3 id="TCP%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%92%8C%E5%AE%A2%E6%88%B7%E7%AB%AF">TCP服务器和客户端</h3>
+<p><img src="../assets/images/TestTools/ComTest1.png" alt="" /></p>
+<h4 id="%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AE%BE%E7%BD%AE">服务器设置</h4>
+<ol>
+<li>连接配置</li>
+</ol>
+<ul>
+<li>输入IP和端口，点击【Start】按钮，成功后按钮会变成【Stop】</li>
+</ul>
+<ol start="2">
+<li>接收区选项</li>
+</ol>
+<ul>
+<li>接收区域用于显示接收数据记录，可以显示内容包括：数据来源的IP和端口、接收时间、数据内容</li>
+<li>区域标题右侧操作功能依次为：<ul>
+<li>IP显示切换开关：用于切换是否显示IP和端口，默认打开显示</li>
+<li>时间显示切换开关：用于切换是否显示接收时间，默认打开显示</li>
+<li>数据编码模式：可以切换字符串和十六进制模式，默认为字符串</li>
+<li>数据显示方式：切换全部显示或者显示最新数据，默认为全部显示</li>
+<li>清除接收数据：可以清除接收区数据，清除后如果要查看历史数据可以在日志中查看</li>
+</ul>
+</li>
+</ul>
+<ol start="3">
+<li>发送区选项</li>
+</ol>
+<ul>
+<li><p>发送区域用于发送数据，在编辑区输入内容后点击发送即可，两个发送按钮：左侧为定时周期发送，右侧为单次发送</p>
+</li>
+<li><p>可以配置的选项包括：</p>
+<ul>
+<li><p>选择发送目标：客户端连接后会显示在客户端列表中，在列表中选择一个可以将数据发送到指定客户端，选择全部可以进行广播</p>
+</li>
+<li><p>发送数据格式：支持字符串和十六进制，默认为字符串</p>
+</li>
+<li><p>周期发送：可以在周期文本框输入间隔时间，单位为毫秒，默认1000毫秒，最小间隔为10毫秒，点击周期发送按钮即可按指定间隔周期发送数据。周期发送开始后按钮功能会变成停止，点击即可停止发送。</p>
+</li>
+<li><p>新版本增加了从文本文件打开发送内容及分行发送开关，开启分行发送，可以将数据按行分割后逐行发送。</p>
+<blockquote>
+<p>分行发送开启后如果使用单次发送，由于是同时发送所以没有实际效果；如果使用周期发送，则发送时每行之间会间隔指定的发送周期。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<ol start="4">
+<li>断开连接：点击【Stop】即可断开连接</li>
+</ol>
+<h4 id="%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BE%E7%BD%AE">客户端设置</h4>
+<ol>
+<li>连接配置</li>
+</ol>
+<ul>
+<li>输入IP和端口，点击【Connect】按钮，成功后按钮会变成【Disconnect】</li>
+</ul>
+<ol start="2">
+<li>接收区选项</li>
+</ol>
+<ul>
+<li>接收区域用于显示接收数据记录，可以显示内容包括：接收时间、数据内容</li>
+<li>区域标题右侧操作功能依次为：<ul>
+<li>时间显示切换开关：用于切换是否显示接收时间，默认打开显示</li>
+<li>数据编码模式：可以切换字符串和十六进制模式，默认为字符串</li>
+<li>数据显示方式：切换全部显示或者显示最新数据，默认为全部显示</li>
+<li>清除接收数据：可以清除接收区数据，清除后如果要查看历史数据可以在日志中查看</li>
+</ul>
+</li>
+</ul>
+<ol start="3">
+<li>发送区选项</li>
+</ol>
+<ul>
+<li>发送区除了不能指定目标外其他功能设置和服务器一致</li>
+</ul>
+<ol start="4">
+<li>断开连接：点击【Disconnect】即可断开连接</li>
+</ol>
+<h3 id="UDP%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%92%8C%E5%AE%A2%E6%88%B7%E7%AB%AF">UDP服务器和客户端</h3>
+<p><img src="../assets/images/TestTools/ComTest2.png" alt="" /></p>
+<h4 id="%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AE%BE%E7%BD%AE">服务器设置</h4>
+<ol>
+<li>连接配置</li>
+</ol>
+<ul>
+<li>和TCP服务器功能设置方法一致</li>
+</ul>
+<ol start="2">
+<li>接收区选项</li>
+</ol>
+<ul>
+<li>和TCP服务器功能设置方法一致</li>
+</ul>
+<ol start="3">
+<li>发送区选项</li>
+</ol>
+<ul>
+<li>和TCP服务器功能设置方法一致</li>
+</ul>
+<blockquote>
+<p>UDP客户端关闭后不会从客户端列表移除，向其发送数据不会被接收</p>
+</blockquote>
+<h4 id="%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BE%E7%BD%AE">客户端设置</h4>
+<ol>
+<li>连接配置</li>
+</ol>
+<ul>
+<li>IP及端口设置方法和服务器一致</li>
+<li>设置中增加了一个连接选项，需要在连接之前设置，选项包括<ul>
+<li>广播方式：只接收服务器发送的广播数据</li>
+<li>单独方式：只接收服务器指定给其的数据，不会接收广播数据</li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li>接收区选项</li>
+</ol>
+<ul>
+<li>和TCP客户端功能设置方法一致</li>
+</ul>
+<ol start="3">
+<li>发送区选项</li>
+</ol>
+<ul>
+<li>和TCP客户端功能设置方法一致</li>
+</ul>
+<h3 id="Websocket%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%92%8C%E5%AE%A2%E6%88%B7%E7%AB%AF">Websocket服务器和客户端</h3>
+<p><img src="../assets/images/TestTools/ComTest3.png" alt="" /></p>
+<h4 id="%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AE%BE%E7%BD%AE">服务器设置</h4>
+<ol>
+<li>连接配置</li>
+</ol>
+<ul>
+<li>除了IP和端口，还可以设置Path、用户名和密码</li>
+</ul>
+<ol start="2">
+<li>接收区选项</li>
+</ol>
+<ul>
+<li>除了不显示IP外，其他和TCP服务器功能设置方法一致</li>
+</ul>
+<ol start="3">
+<li>发送区选项</li>
+</ol>
+<ul>
+<li>除了不能指定目标外其他和TCP服务器功能设置方法一致</li>
+</ul>
+<h4 id="%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BE%E7%BD%AE">客户端设置</h4>
+<ol>
+<li>连接配置</li>
+</ol>
+<ul>
+<li>除了IP和端口，还可以设置Path、用户名和密码</li>
+</ul>
+<ol start="2">
+<li>接收区选项</li>
+</ol>
+<ul>
+<li>和TCP客户端功能设置方法一致</li>
+</ul>
+<ol start="3">
+<li>发送区选项</li>
+</ol>
+<ul>
+<li>和TCP客户端功能设置方法一致</li>
+</ul>
+<h3 id="MQTT%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%92%8C%E5%AE%A2%E6%88%B7%E7%AB%AF">MQTT服务器和客户端</h3>
+<p><img src="../assets/images/TestTools/ComTest4.png" alt="" /></p>
+<h4 id="%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AE%BE%E7%BD%AE">服务器设置</h4>
+<ol>
+<li>连接配置</li>
+</ol>
+<ul>
+<li>除了IP和端口，还可以设置用户名和密码</li>
+</ul>
+<ol start="2">
+<li>接收区选项</li>
+</ol>
+<ul>
+<li>增加了主题显示开关，去掉了数据编码模式，其他和TCP服务器功能设置方法一致</li>
+<li>接收区下方显示了当前订阅的IP、端口和主题</li>
+</ul>
+<ol start="3">
+<li>发送区选项</li>
+</ol>
+<ul>
+<li>增加了主题和Qos设置，去掉了数据编码模式，其他和TCP服务器功能设置方法一致</li>
+</ul>
+<h4 id="%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BE%E7%BD%AE">客户端设置</h4>
+<ol>
+<li>连接配置</li>
+</ol>
+<ul>
+<li>除了IP和端口，还可以设置用户名和密码</li>
+</ul>
+<ol start="2">
+<li>接收区选项</li>
+</ol>
+<ul>
+<li>支持订阅多个主题和Qos，方法为输入主题并选择Qos后点击右侧【+】按钮即可；取消订阅只需点击下方主题列表项右侧的【x】图标删除即可</li>
+<li>去掉了数据编码模式，其他和TCP客户端功能设置方法一致</li>
+</ul>
+<ol start="3">
+<li>发送区选项</li>
+</ol>
+<ul>
+<li>增加了主题和Qos设置，去掉了数据编码模式，其他和TCP客户端功能设置方法一致</li>
+</ul>
+<h3 id="SignalR%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%92%8C%E5%AE%A2%E6%88%B7%E7%AB%AF">SignalR服务器和客户端</h3>
+<p><img src="../assets/images/TestTools/ComTest5.png" alt="" /></p>
+<h4 id="%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AE%BE%E7%BD%AE">服务器设置</h4>
+<ol>
+<li>连接配置</li>
+</ol>
+<ul>
+<li>除了IP和端口，还可以设置Path</li>
+</ul>
+<ol start="2">
+<li>接收区选项</li>
+</ol>
+<ul>
+<li>去掉了数据编码模式，其他和Websocket服务器功能设置方法一致</li>
+</ul>
+<ol start="3">
+<li>发送区选项</li>
+</ol>
+<ul>
+<li>去掉了数据编码模式，其他和Websocket服务器功能设置方法一致</li>
+</ul>
+<h4 id="%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BE%E7%BD%AE">客户端设置</h4>
+<ol>
+<li>连接配置</li>
+</ol>
+<ul>
+<li>除了IP和端口，还可以设置Path</li>
+</ul>
+<ol start="2">
+<li>接收区选项</li>
+</ol>
+<ul>
+<li>去掉了数据编码模式，其他和Websocket客户端功能设置方法一致</li>
+</ul>
+<ol start="3">
+<li>发送区选项</li>
+</ol>
+<ul>
+<li>去掉了数据编码模式，其他和Websocket客户端功能设置方法一致</li>
+</ul>
+<h3 id="ZeroMq%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%92%8C%E5%AE%A2%E6%88%B7%E7%AB%AF">ZeroMq服务器和客户端</h3>
+<p><img src="../assets/images/TestTools/ComTest6.png" alt="" /></p>
+<h4 id="%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AE%BE%E7%BD%AE">服务器设置</h4>
+<ol>
+<li>连接配置</li>
+</ol>
+<ul>
+<li>和TCP服务器设置方法一致</li>
+</ul>
+<ol start="2">
+<li>接收区选项</li>
+</ol>
+<ul>
+<li>和SignalR服务器设置方法一致</li>
+</ul>
+<ol start="3">
+<li>发送区选项</li>
+</ol>
+<ul>
+<li>和SignalR服务器设置方法一致</li>
+</ul>
+<h4 id="%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BE%E7%BD%AE">客户端设置</h4>
+<ol>
+<li>连接配置</li>
+</ol>
+<ul>
+<li>和TCP客户端设置方法一致</li>
+</ul>
+<ol start="2">
+<li>接收区选项</li>
+</ol>
+<ul>
+<li>和SignalR客户端设置方法一致</li>
+</ul>
+<ol start="3">
+<li>发送区选项</li>
+</ol>
+<ul>
+<li>和SignalR客户端设置方法一致</li>
+</ul>
+<h3 id="Http%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%92%8C%E5%AE%A2%E6%88%B7%E7%AB%AF">Http服务器和客户端</h3>
+<p><img src="../assets/images/TestTools/ComTest7.png" alt="" /></p>
+<h4 id="%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AE%BE%E7%BD%AE">服务器设置</h4>
+<ul>
+<li>指定端口号和Path，点击【Start】即可启动服务</li>
+<li>在下方文本框输入模拟响应内容，或者点击右侧【打开文件】按钮从文本文件加载内容</li>
+<li>点击右侧【清空】按钮可以清空输入的响应内容</li>
+</ul>
+<h4 id="%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BE%E7%BD%AE">客户端设置</h4>
+<ul>
+<li>在上方路径文本框输入请求的完整路径，点击【Request】按钮可以获取响应内容<ul>
+<li>输入网页地址可以获取网页源码</li>
+<li>输入Web Api路径可以获取Api响应</li>
+</ul>
+</li>
+<li>点击【Request】左侧的按钮可以直接将路径设置为左侧服务器区域设置的Mock服务路径</li>
+<li>点击右侧【清空】按钮可以清空响应内容</li>
+</ul>
+<h3 id="%E6%97%A5%E5%BF%97%E6%9F%A5%E7%9C%8B">日志查看</h3>
+<p>应用左侧导航栏最下方菜单为日志查看功能，点击后可以打开如下界面<br />
+<img src="../assets/images/TestTools/ComTest8.png" alt="" /></p>
+<ul>
+<li>左侧为连接类型列表，点击名称可以查看其对应的日志记录</li>
+<li>最右侧的三个按钮的作用分别是<ul>
+<li>复制记录：将日志内容复制到剪贴板</li>
+<li>清空记录：清空日志文件内容</li>
+<li>重新加载记录：加载最新的日志文件</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>日志只会保留各个连接最后一次连接后的通信数据，在连接启动时会清空以前的日志记录</p>
+</blockquote>
+<p><a href="https://apps.microsoft.com/detail/9MV2NK7FZ4CC"  target="_blank">商店下载</a></p>
 
                         
                     </div>

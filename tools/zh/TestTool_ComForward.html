@@ -7,10 +7,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="keywords" content="多窗口, 视频, 轮播, 自定义布局, 快捷键导航">
+    <meta name="keywords" content="Tcp, 转发, Mqtt, Websocket">
     
     
-    <meta name="description" content="多窗口视频查看工具，可以进行多窗口视频播放，也可以作为视频监控工具使用，支持自定义布局, 快捷键导航">
+    <meta name="description" content="通信转发工具，支持Tcp服务器、Tcp客户端、Mqtt和Websocket之间互相转发，支持多对多转发">
     
     <meta name="generator" content="teedoc">
     <meta name="theme" content="teedoc-plugin-theme-default">
@@ -50,7 +50,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
         
     
     
-    <title>视频监控 - IceSky App</title>
+    <title>通信转发工具 - IceSky App</title>
     
     <script type="text/javascript">js_vars = {}</script>
     <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
@@ -80,8 +80,8 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
             </div>
             <div>
                 <ul id="nav_right">
-<li class="sub_items "><a  >Language: 中文 简体</a><ul><li class=""><a  href="/AppDoc/tools/en/UsefulTools_MulVideo.html">English</a></li>
-<li class="active"><a  href="/AppDoc/tools/zh/UsefulTools_MulVideo.html">中文 简体</a></li>
+<li class="sub_items "><a  >Language: 中文 简体</a><ul><li class=""><a  href="/AppDoc/tools/en/TestTool_ComForward.html">English</a></li>
+<li class="active"><a  href="/AppDoc/tools/zh/TestTool_ComForward.html">中文 简体</a></li>
 </ul></li>
 </ul>
 
@@ -103,16 +103,16 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                 <div id="sidebar_title">
                     
                 </div>
-                <ul class="show">
+                <ul class="">
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/index.html"><span class="label">工具应用</span><span class=""></span></a></li>
-<li class="active_parent no_link"><a><span class="label">实用工具</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active no_link"><a><span class="label">实用工具</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_WebCol.html"><span class="label">网址集合</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_Random.html"><span class="label">随机选择工具</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_ColorTool.html"><span class="label">ColorTool</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_ImageTool.html"><span class="label">ImageTool</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_Json.html"><span class="label">JsonTools</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_Cs2Config.html"><span class="label">C#ToConfig</span><span class=""></span></a></li>
-<li class="active with_link"><a href="/AppDoc/tools/zh/UsefulTools_MulVideo.html"><span class="label">视频监控</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_MulVideo.html"><span class="label">视频监控</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_JianBiHua.html"><span class="label">简笔画</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_FunColor.html"><span class="label">FunColoring</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_Traffic.html"><span class="label">流量计数器</span><span class=""></span></a></li>
@@ -147,7 +147,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_head">
                         <div id="article_title">
                             
-                            <h1>视频监控</h1>
+                            <h1>通信转发工具</h1>
                             
                         </div>
                         <div id="article_tags">
@@ -177,72 +177,106 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_content">
                         
                             <h2 id="%E4%BB%8B%E7%BB%8D">介绍</h2>
-<p>此应用是一款多窗口视频查看工具，可以进行多窗口视频播放，也可以作为视频监控工具使用。支持本地视频文件：mp4、flv、3gp、mkv，支持rtsp、rtmp、http、m3u8等网络视频协议。</p>
-<p><img src="../assets/images/UsefulTools/Video5.png" alt="" /></p>
+<p>数据转发工具，提供数据在Tcp服务器、Tcp客户端、Mqtt和Websocket之间互相转发，支持多对多转发，可以根据自定义映射转发数据。</p>
 <h2 id="%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">使用方法</h2>
-<p>应用首次打开时为左1右1布局，没有配置视频，所以需要首先对视频进行配置。</p>
-<p>点击关闭按钮左侧的按钮可以打开配置窗口，其中可以配置视频路径及窗口布局。<br />
-配置窗口标题栏控件的作用分别为：</p>
+<p>界面分为左右两部分，左侧数据接收端，用于连接数据的来源；右侧数据发送端，用于连接数据发送的目标。</p>
+<h3 id="%E6%95%B0%E6%8D%AE%E8%BD%AC%E5%8F%91%E8%AE%BE%E7%BD%AE">数据转发设置</h3>
+<p><img src="../assets/images/TestTools/Forward1.png" alt="" /></p>
 <ol>
-<li>选择窗口布局</li>
-<li>更新界面布局为所选布局</li>
-<li>设置自动切换间隔时间，单位为毫秒，设置值小于1000时不会触发自动切换</li>
-<li>自动切换开关，开关打开且间隔时间大于1秒时生效</li>
-<li>全屏声音开关，打开后如果将视频最大化，可以播放视频声音，否则将会静音</li>
-</ol>
-<p><img src="../assets/images/UsefulTools/Video2.png" alt="" /></p>
-<h3 id="%E9%85%8D%E7%BD%AE%E8%A7%86%E9%A2%91">配置视频</h3>
-<p>配置窗口左侧是视频配置区</p>
-<ul>
-<li>添加视频：点击上方【+】按钮，下方会出现信息录入区，输入信息后点击保存即可。<blockquote>
-其中Ip和Url必须输入</blockquote>
-</li>
-<li>修改视频：选中表格中的一行，可以修改此行的信息。</li>
-<li>删除视频：选中表格中的一行后，点击上方的【-】按钮，会弹出提示信息，点击提示信息中的【OK】即可删除此纪录。</li>
+<li><p>配置数据接收端</p>
+<ol>
+<li>应用默认会添加一个接收端，需要增加的话可以点击区域标题栏右侧的【+】按钮进行添加</li>
+<li>选择接收端连接类型<ul>
+<li>接收端可选连接类型为Tcp Server、Tcp Client、Mqtt和Websocket</li>
+<li>Tcp Server用于接收其他Tcp client发送的数据</li>
+<li>Tcp Client用于接收Tcp Server的数据</li>
+<li>Mqtt可以接收订阅的指定主题的数据</li>
+<li>Websocket可以接收指定Path的数据</li>
 </ul>
-<blockquote class="spoiler warning">
-<p> 视频更新后需要重启应用才会生效</p>
-</blockquote>
-<h3 id="%E9%85%8D%E7%BD%AE%E5%B8%83%E5%B1%80">配置布局</h3>
-<p>配置窗口右侧是布局配置区</p>
-<ul>
-<li>使用预定义布局：在配置窗口标题栏的下拉框可以选择预定义的布局方式，选好之后点击右侧同步按钮即可同步到主窗口。</li>
-<li>自定义布局：<ol>
-<li>首先选择一个预定义布局，在此布局基础上进行修改。</li>
-<li>点击右侧浮动按钮【+】，可以在弹出菜单中点击按钮调整布局，按钮从上到下的作用依次为：添加列、删除列、添加行、删除行、合并单元格、拆分单元格。</li>
-<li>布局调整好之后，在上方输入一个新名称点击【Save】进行保存即可。</li>
+</li>
+<li>连接接收端<ul>
+<li>对于Tcp Server，Ip不用修改，保持默认的“127.0.0.1”即可</li>
+<li>连接Tcp Client需要指定Ip和端口</li>
+<li>连接Mqtt除了需要指定Ip和端口外，还需要指定主题和Qos，用户名和密码可以根据需要指定</li>
+<li>连接Websocket除了指定Ip和端口，可以根据需要指定Path、用户名和密码</li>
+<li>参数设定好之后点击下方【Start】按钮进行连接，成功后按钮会变成【Stop】</li>
+</ul>
+</li>
+<li>停止接收端<ul>
+<li>点击【Stop】按钮即可停止</li>
+</ul>
+</li>
+<li>删除连接<ul>
+<li>点击连接设置右侧的【x】按钮即可删除</li>
+</ul>
+</li>
 </ol>
 </li>
-<li>修改布局：在上方选择布局并调整后，不修改名称点击【Save】可以对现有布局进行修改。</li>
-<li>删除布局：在上方选择布局后，点击右侧【-】按钮即可删除布局。</li>
+<li><p>配置数据发送端</p>
+<ol>
+<li>应用默认会添加一个发送端，需要增加的话可以点击区域标题栏右侧的【+】按钮进行添加</li>
+<li>选择发送端连接类型<ul>
+<li>发送端可选连接类型为Tcp Server、Tcp Client、Mqtt和Websocket</li>
+<li>Tcp Server可将接收到的数据广播到所有连接到此Server的客户端</li>
+<li>Tcp Client可将接收到的数据发送给其连接的服务器</li>
+<li>Mqtt会以指定主题发送接收的数据</li>
+<li>Websocket会将接收的数据发送到指定Path</li>
 </ul>
-<blockquote class="spoiler warning">
-<p> 正在使用中的布局不能删除</p>
-</blockquote>
-<h2 id="%E8%A7%86%E9%A2%91%E5%AF%BC%E8%88%AA%E5%BF%AB%E6%8D%B7%E9%94%AE">视频导航快捷键</h2>
+</li>
+<li>连接发送端<ul>
+<li>连接方法和接收端一致</li>
+</ul>
+</li>
+<li>停止发送端<ul>
+<li>点击【Stop】按钮即可停止</li>
+</ul>
+</li>
+<li>删除连接<ul>
+<li>点击连接设置右侧的【x】按钮即可删除</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p>数据转发测试</p>
 <ul>
-<li>按键【→】：下一个</li>
-<li>按键【←】：上一个</li>
-<li>按键【PageDown】：下一页</li>
-<li>按键【PageUp】：上一页</li>
-<li>按键【Home】：第一页</li>
-<li>按键【End】：最后一页</li>
-<li>按键【Escape】：还原窗口</li>
-<li>按键【Alt+Enter】：打开跳转窗口</li>
-<li>按键【Alt+Space】：切换自动轮播</li>
-<li>鼠标双击视频切换全屏和窗口状态。</li>
+<li>使用工具或设备连接接收端及发送端</li>
+<li>用接收端连接的工具或设备发送数据</li>
+<li>发送端连接的工具或设备即可收到数据</li>
 </ul>
 <blockquote>
-<p>视频数量大于一页时才会生效</p>
-<p>按键导航需间隔2秒操作</p>
+<p>如果没有配置映射文件的话，发送的数据是对接收数据的完全复制转发</p>
+<p>多个接收端可以同时接收数据，并将数据发送给所有发送端</p>
 </blockquote>
-<p>左三右二布局：<br />
-<img src="../assets/images/UsefulTools/Video3.png" alt="" /></p>
-<p>六窗口布局：<br />
-<img src="../assets/images/UsefulTools/Video4.png" alt="" /></p>
-<p>自定义布局：<br />
-<img src="../assets/images/UsefulTools/Video1.png" alt="" /></p>
-<p><a href="https://apps.microsoft.com/detail/9NCRFPFG5JB3"  target="_blank">商店下载</a></p>
+</li>
+</ol>
+<p><img src="../assets/images/TestTools/Forward2.png" alt="" /></p>
+<h3 id="%E9%85%8D%E7%BD%AE%E6%95%B0%E6%8D%AE%E6%98%A0%E5%B0%84%E6%96%87%E4%BB%B6">配置数据映射文件</h3>
+<p><img src="../assets/images/TestTools/Forward3.png" alt="" /><br />
+数据映射文件用于配置接收数据和发送数据的对应关系，供转发时使用</p>
+<ul>
+<li>点击接收端标题右侧的配置按钮可以打开配置窗口</li>
+<li>配置窗口上方的开关可以设置转发方式：打开的话将只会发送与第一列匹配的数据，否则会发送所有数据</li>
+<li>下方表格用于配置数据映射，第一列数据用于和接收数据匹配，如果匹配则发送第二列的对应数据</li>
+<li>点击【Save】配置保存到文件后关闭窗口，【Cancel】关闭窗口但不保存文件</li>
+</ul>
+<blockquote>
+<p>映射文件第一列的匹配规则是完全相等匹配</p>
+<p>第二列数据可以为空，如果为空则会将第一列中的数据直接转发</p>
+<p>可以在单元格中使用【Ctrl+回车】输入换行符</p>
+<p>第一列数据可以重复，如果匹配到重复数据，则会转发每条匹配到的映射数据</p>
+</blockquote>
+<h3 id="%E6%9F%A5%E7%9C%8B%E6%95%B0%E6%8D%AE%E8%AE%B0%E5%BD%95">查看数据记录</h3>
+<p><img src="../assets/images/TestTools/Forward4.png" alt="" /></p>
+<ul>
+<li>数据转发过程中会在每个连接下方显示数据收发记录，其中会记录每条数据首发时间和内容，点击右侧向下的箭头可以展开和折叠</li>
+<li>每个连接的状态栏会记录最后收发时间和收发数据的条数和字节数</li>
+<li>每个连接状态栏左侧的两个按钮的作用分别是：清空记录和复制记录</li>
+<li>左右区域右侧第一个按钮可以重置该区域所有连接的计数</li>
+</ul>
+<blockquote>
+<p>应用关闭时可以选择退出或者隐藏到任务栏图标，窗口隐藏后可以通过点击任务栏图标显示</p>
+</blockquote>
+<p><a href="https://apps.microsoft.com/detail/9P8FJRT704DC"  target="_blank">商店下载</a></p>
 
                         
                     </div>
@@ -250,18 +284,8 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                 <div id="previous_next">
                     <div id="previous">
                         
-                        <a href="/AppDoc/tools/zh/UsefulTools_Cs2Config.html">
-                            <span class="icon"></span>
-                            <span class="label">C#ToConfig</span>
-                        </a>
-                        
                     </div>
                     <div id="next">
-                        
-                        <a href="/AppDoc/tools/zh/UsefulTools_JianBiHua.html">
-                            <span class="label">简笔画</span>
-                            <span class="icon"></span>
-                        </a>
                         
                     </div>
                 </div>

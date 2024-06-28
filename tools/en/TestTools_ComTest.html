@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+
+<html lang="en"  class=" heading_no_counter ">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="Communication Test, TCP, UDP, MQTT, Websocket, SignalR, ZeroMq, Http">
+    
+    
+    <meta name="description" content="Communication Test Tools, server and client that supports multiple communications, and supports mock Http response">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/AppDoc/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/AppDoc/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/AppDoc/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/search/style.css" type="text/css"/>
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/bootstrap.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/animate.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>Communication Test Tools - IceSky App</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/AppDoc/en/">
+                
+                    <img class="site_logo" src="/AppDoc/static/image/logo.png" alt="IceSky Logo">
+                
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/AppDoc/edu/en/">Edu Apps</a></li>
+<li class="active"><a  href="/AppDoc/tools/en/">Tools</a></li>
+<li class=""><a  href="/AppDoc/game/en/">Games</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class="sub_items "><a  >Language: English</a><ul><li class="active"><a  href="/AppDoc/tools/en/TestTools_ComTest.html">English</a></li>
+<li class=""><a  href="/AppDoc/tools/zh/TestTools_ComTest.html">中文 简体</a></li>
+</ul></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">Search</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">Keywords separated by space</span>
+                                <span id="search_loading_hint">Loading, wait please ...</span>
+                                <span id="search_download_err_hint">Download error, please check network and refresh again</span>
+                                <span id="search_other_docs_result_hint">Result from other docs</span>
+                                <span id="search_curr_doc_result_hint">Result from current doc</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/en/index.html"><span class="label">Tools</span><span class=""></span></a></li>
+<li class="not_active no_link"><a><span class="label">UsefulTools</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_WebCol.html"><span class="label">WebCollection</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_Random.html"><span class="label">ChooseHelper</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_ColorTool.html"><span class="label">ColorTools</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_ImageTool.html"><span class="label">ImageTool</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_Json.html"><span class="label">JsonTools</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_Cs2Config.html"><span class="label">C#ToConfig</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_MulVideo.html"><span class="label">MultipleVideo</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_JianBiHua.html"><span class="label">SimpleDrawing</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_FunColor.html"><span class="label">FunColoring</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_Traffic.html"><span class="label">TrafficCounter</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="active_parent no_link"><a><span class="label">TestTools</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="active with_link"><a href="/AppDoc/tools/en/TestTools_ComTest.html"><span class="label">ComTestTools</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/TestTools_ModbusTcp.html"><span class="label">ModbusTcpTool</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/TestTools_TcpForward.html&from=/tools/en/TestTools_TcpForward.html"><span class="label">TCPForwardTool</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/TestTools_ComForward.html&from=/tools/en/TestTools_ComForward.html"><span class="label">ComForwardTool</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet.html"><span class="label">ToolsSet</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/ToolsSet_Number.html&from=/tools/en/ToolsSet_Number.html"><span class="label">Number</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/ToolsSet_Date.html&from=/tools/en/ToolsSet_Date.html"><span class="label">Date</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/ToolsSet_Text.html&from=/tools/en/ToolsSet_Text.html"><span class="label">Text</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/ToolsSet_Media.html&from=/tools/en/ToolsSet_Media.html"><span class="label">Media</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/ToolsSet_Other.html&from=/tools/en/ToolsSet_Other.html"><span class="label">Other</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>Communication Test Tools</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <h2 id="Introduce">Introduce</h2>
+<p>Communication testing tools, support server and client mode for a variety of communications, includ TCP, UDP, MQTT, Websocket, SignalR, ZeroMq, and support mock Http response, which can be used to test http requests or test WebApi.</p>
+<p>The communication interface in the application is divided into two parts, the left side is the server area and the right side is the client area.</p>
+<h2 id="How-to-use">How to use</h2>
+<h3 id="TCP-Server-and-Client">TCP Server and Client</h3>
+<p><img src="../assets/images/TestTools/ComTest1.png" alt="" /></p>
+<h4 id="Server-Settings">Server Settings</h4>
+<ol>
+<li>Connection Settings</li>
+</ol>
+<ul>
+<li>Enter the IP and port, click the [Start] button, and the button will change to [Stop] after success.</li>
+</ul>
+<ol start="2">
+<li>Receive Area Options</li>
+</ol>
+<ul>
+<li>The receive area is used to display the received data records, and the contents that can be displayed include: the IP and port of the data source, the receiving time, and the data content</li>
+<li>The operation on the right side of the area header are:<ul>
+<li>IP mode switch: Used to toggle whether to show IP and port</li>
+<li>Time mode switch: Used to toggle whether to show receiving time</li>
+<li>Data encoding mode: You can switch between string and hexadecimal mode</li>
+<li>Data display mode: Toggle to display all or the latest data</li>
+<li>Clear data: You can clear the receiving area data, and if you want to view historical data after clearing, you can view it in the log</li>
+</ul>
+</li>
+</ul>
+<ol start="3">
+<li>Send Area Options</li>
+</ol>
+<ul>
+<li><p>The send area is used to send data, click Send after entering the content in the editing area, and there are two sending buttons: the left side is the scheduled period to send, and the right side is send ontime</p>
+</li>
+<li><p>The options that can be configured include:</p>
+<ul>
+<li><p>Select Target: After the client is connected, it will be displayed in the client list, select one of the clients in the list to send data to the specified client, or select none to broadcast</p>
+</li>
+<li><p>Data format: String and hexadecimal are supported, and the default is string</p>
+</li>
+<li><p>Periodic send: You can enter the interval time in milliseconds, the default is 1000 milliseconds, and the minimum interval is 10 milliseconds, and you can click the periodic send button to send data according to the specified interval period. The button function will change to stop when the cycle of sending starts, and you can click it to stop the sending.</p>
+</li>
+<li><p>In the new version, you can open a txt file and Send in Lines, if switch [Split Lines] is open, you can split the data into lines and send them line by line.</p>
+<blockquote>
+<p>If a single send is used when [Split Lines] is opened, it has no practical effect because it is sent at the same time; If you use periodic sending, the specified sending period is separated between each line when sending.</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<ol start="4">
+<li>Disconnect: Click [Stop] to disconnect</li>
+</ol>
+<h4 id="Client-Settings">Client Settings</h4>
+<ol>
+<li>Connection Settings</li>
+</ol>
+<ul>
+<li>Enter IP and port, click the [Connect] button, and the button will change to [Disconnect] when successful.</li>
+</ul>
+<ol start="2">
+<li>Receive Area Options</li>
+</ol>
+<ul>
+<li>The receive area is used to display the received data record, and the contents that can be displayed include: receiving time and data content</li>
+<li>The operation functions on the right side of the area header are:<ul>
+<li>Time mode switch: Used to toggle whether to show the receiving time</li>
+<li>Data encoding mode: You can switch between string and hexadecimal mode</li>
+<li>Data display mode: Toggle to display all or the latest data</li>
+<li>Clear data: You can clear the receiving area data, and if you want to view historical data after clearing, you can view it in the log</li>
+</ul>
+</li>
+</ul>
+<ol start="3">
+<li>Send Area Options</li>
+</ol>
+<ul>
+<li>Except cannot specify client in the sending area, other settings are the same as those of the server</li>
+</ul>
+<ol start="4">
+<li>Disconnect: Click [Stop] to disconnect</li>
+</ol>
+<h3 id="UDP-Server-and-Client">UDP Server and Client</h3>
+<p><img src="../assets/images/TestTools/ComTest2.png" alt="" /></p>
+<h4 id="Server-Settings">Server Settings</h4>
+<ol>
+<li>Connection Settings</li>
+</ol>
+<ul>
+<li>This is the same as that of the TCP server</li>
+</ul>
+<ol start="2">
+<li>Receive Area Options</li>
+</ol>
+<ul>
+<li>This is the same as that of the TCP server</li>
+</ul>
+<ol start="3">
+<li>Send Area Options</li>
+</ol>
+<ul>
+<li>This is the same as that of the TCP server</li>
+</ul>
+<blockquote>
+<p>Once the UDP client is closed, it will not be removed from the client list, and data sent to it will not be received</p>
+</blockquote>
+<h4 id="Client-Settings">Client Settings</h4>
+<ol>
+<li>Connection Settings</li>
+</ol>
+<ul>
+<li>The IP and port settings are the same as those of the server</li>
+<li>A connection option has been added to the settings that needs to be set before connecting, and the options include:<ul>
+<li>Broadcast mode: Receives only the broadcast data sent by the server</li>
+<li>Single mode: Receives only the data assigned to it by the server</li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li>Receive Area Options</li>
+</ol>
+<ul>
+<li>This is the same as that of the TCP client</li>
+</ul>
+<ol start="3">
+<li>Send Area Options</li>
+</ol>
+<ul>
+<li>This is the same as that of the TCP client</li>
+</ul>
+<h3 id="Websocket-Server-and-Client">Websocket Server and Client</h3>
+<p><img src="../assets/images/TestTools/ComTest3.png" alt="" /></p>
+<h4 id="Server-Settings">Server Settings</h4>
+<ol>
+<li>Connection Settings</li>
+</ol>
+<ul>
+<li>In addition to IP and port, you can also set Path, username, and password</li>
+</ul>
+<ol start="2">
+<li>Receive Area Options</li>
+</ol>
+<ul>
+<li>Except that the IP is not displayed, it is the same as the TCP server</li>
+</ul>
+<ol start="3">
+<li>Send Area Options</li>
+</ol>
+<ul>
+<li>Except that the destination can't be specified, it is the same as the TCP server</li>
+</ul>
+<h4 id="Client-Settings">Client Settings</h4>
+<ol>
+<li>Connection Settings</li>
+</ol>
+<ul>
+<li>In addition to IP and port, you can also set Path, username, and password</li>
+</ul>
+<ol start="2">
+<li>Receive Area Options</li>
+</ol>
+<ul>
+<li>This is the same as that of the TCP client</li>
+</ul>
+<ol start="3">
+<li>Send Area Options</li>
+</ol>
+<ul>
+<li>This is the same as that of the TCP client</li>
+</ul>
+<h3 id="MQTT-Server-and-Client">MQTT Server and Client</h3>
+<p><img src="../assets/images/TestTools/ComTest4.png" alt="" /></p>
+<h4 id="Server-Settings">Server Settings</h4>
+<ol>
+<li>Connection Settings</li>
+</ol>
+<ul>
+<li>In addition to IP and port, you can also set a username and password</li>
+</ul>
+<ol start="2">
+<li>Receive Area Options</li>
+</ol>
+<ul>
+<li>Added a Topic display switch, removed the data encoding mode, and the other options are the same as those of the TCP server</li>
+<li>The IP, port, and topic of the current subscription are displayed at the bottom of the receiving area</li>
+</ul>
+<ol start="3">
+<li>Send Area Options</li>
+</ol>
+<ul>
+<li>Added Topic and QoS settings, removed the data encoding mode, and other optons are the same as those of the TCP server</li>
+</ul>
+<h4 id="Client-Settings">Client Settings</h4>
+<ol>
+<li>Connection Settings</li>
+</ol>
+<ul>
+<li>In addition to IP and port, you can also set a username and password</li>
+</ul>
+<ol start="2">
+<li>Receive Area Options</li>
+</ol>
+<ul>
+<li>You can subscribe to multiple topics and QoS, the way is to enter a topic and selecte QoS, then click the [+] button on the right. To cancel a subscription, click the &quot;x&quot; icon to the right of the topic list item</li>
+<li>The data encoding mode is removed, and the other options are the same as those of the TCP client</li>
+</ul>
+<ol start="3">
+<li>Send Area Options</li>
+</ol>
+<ul>
+<li>Added Topic and QoS settings, removed the data encoding mode, and the other options are the same as those of the TCP client</li>
+</ul>
+<h3 id="SignalR-Server-and-Client">SignalR Server and Client</h3>
+<p><img src="../assets/images/TestTools/ComTest5.png" alt="" /></p>
+<h4 id="Server-Settings">Server Settings</h4>
+<ol>
+<li>Connection Settings</li>
+</ol>
+<ul>
+<li>In addition to IP and port, you can also set Path</li>
+</ul>
+<ol start="2">
+<li>Receive Area Options</li>
+</ol>
+<ul>
+<li>Removed the data encoding mode, and the other options are the same as those of the Websocket server</li>
+</ul>
+<ol start="3">
+<li>Send Area Options</li>
+</ol>
+<ul>
+<li>Removed the data encoding mode, and the other options are the same as those of the Websocket server</li>
+</ul>
+<h4 id="Client-Settings">Client Settings</h4>
+<ol>
+<li>Connection Settings</li>
+</ol>
+<ul>
+<li>In addition to IP and port, you can also set Path</li>
+</ul>
+<ol start="2">
+<li>Receive Area Options</li>
+</ol>
+<ul>
+<li>Removed the data encoding mode, and the other options are the same as those of the Websocket client</li>
+</ul>
+<ol start="3">
+<li>Send Area Options</li>
+</ol>
+<ul>
+<li>Removed the data encoding mode, and the other options are the same as those of the Websocket client</li>
+</ul>
+<h3 id="ZeroMq-Server-and-Client">ZeroMq Server and Client</h3>
+<p><img src="../assets/images/TestTools/ComTest6.png" alt="" /></p>
+<h4 id="Server-Settings">Server Settings</h4>
+<ol>
+<li>Connection Settings</li>
+</ol>
+<ul>
+<li>This is the same as that of the TCP server</li>
+</ul>
+<ol start="2">
+<li>Receive Area Options</li>
+</ol>
+<ul>
+<li>This is the same as that of the SignalR server</li>
+</ul>
+<ol start="3">
+<li>Send Area Options</li>
+</ol>
+<ul>
+<li>This is the same as that of the SignalR server</li>
+</ul>
+<h4 id="Client-Settings">Client Settings</h4>
+<ol>
+<li>Connection Settings</li>
+</ol>
+<ul>
+<li>This is the same as that of the TCP client</li>
+</ul>
+<ol start="2">
+<li>Receive Area Options</li>
+</ol>
+<ul>
+<li>This is the same as that of the SignalR client</li>
+</ul>
+<ol start="3">
+<li>Send Area Options</li>
+</ol>
+<ul>
+<li>This is the same as that of the SignalR client</li>
+</ul>
+<h3 id="Http-Server-and-Client">Http Server and Client</h3>
+<p><img src="../assets/images/TestTools/ComTest7.png" alt="" /></p>
+<h4 id="Server-Settings">Server Settings</h4>
+<ul>
+<li>Specify the port and path, and click [Start] to start the server</li>
+<li>Enter the mock response in the text box below, or click the Open File button on the right to load the content from the text file</li>
+<li>Click the [Clear] button on the right to clear the response</li>
+</ul>
+<h4 id="Client-Settings">Client Settings</h4>
+<ul>
+<li>Enter the full path of the request in the text box of path, and click the [Request] button to get the response content<ul>
+<li>Enter the web url can get the source code of the web page</li>
+<li>Enter the Web Api path can get the Api response</li>
+</ul>
+</li>
+<li>Click the button on the left side of [Request] to directly set the path to the mock server path</li>
+<li>Click the [Clear] button on the right to clear the response content</li>
+</ul>
+<h3 id="View-Log">View Log</h3>
+<p>Click the bottom menu in the left navigation bar to open the log viewing page<br />
+<img src="../assets/images/TestTools/ComTest8.png" alt="" /></p>
+<ul>
+<li>On the left is a list of connection types, click the name to view the corresponding log records</li>
+<li>The three buttons on the right are used to:<ul>
+<li>Copy Records: Copies the log content to the clipboard</li>
+<li>Clear Record: Clears the log file contents</li>
+<li>Reload Records: Loads the latest log file</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>The logs only retain the data after the last connection of each connection, and the previous log records will clear when the connection is opened</p>
+</blockquote>
+<p><a href="https://apps.microsoft.com/detail/9MV2NK7FZ4CC"  target="_blank">Microsoft Store</a></p>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                        <a href="/AppDoc/tools/en/UsefulTools_Traffic.html">
+                            <span class="icon"></span>
+                            <span class="label">TrafficCounter</span>
+                        </a>
+                        
+                    </div>
+                    <div id="next">
+                        
+                        <a href="/AppDoc/tools/en/TestTools_ModbusTcp.html">
+                            <span class="label">ModbusTcpTool</span>
+                            <span class="icon"></span>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a>WeChat Official Account: IceSky</a>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a>Individual developer on Windows - IceSky</a>
+</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/AppDoc/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/AppDoc/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/AppDoc/static/js/theme_default/main.js"></script>
+    
+        <script src="/AppDoc/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/AppDoc/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/AppDoc/static/js/search/search_main.js"></script>
+    
+        <script src="/AppDoc/static/js/plugin_blog/main.js"></script>
+    
+        <script src="/AppDoc/static/js/easing.min.js"></script>
+    
+        <script src="/AppDoc/static/js/custom.js"></script>
+    
+</body>
+
+</html>

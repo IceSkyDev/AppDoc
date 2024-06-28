@@ -7,10 +7,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="keywords" content="Video playback, quantity statistics, export to Excel">
+    <meta name="keywords" content="Modbus Tcp, master, slave, read write">
     
     
-    <meta name="description" content="The traffic statistics tool can count the traffic flow according to the specified classification through the video, and export the results.">
+    <meta name="description" content="ModbusTcp test tool, includes both server and client, and supports coil and register read and write operations">
     
     <meta name="generator" content="teedoc">
     <meta name="theme" content="teedoc-plugin-theme-default">
@@ -50,7 +50,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
         
     
     
-    <title>TrafficCounter - IceSky App</title>
+    <title>ModbusTcpTool - IceSky App</title>
     
     <script type="text/javascript">js_vars = {}</script>
     <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
@@ -80,8 +80,8 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
             </div>
             <div>
                 <ul id="nav_right">
-<li class="sub_items "><a  >Language: English</a><ul><li class="active"><a  href="/AppDoc/tools/en/UsefulTools_Traffic.html">English</a></li>
-<li class=""><a  href="/AppDoc/tools/zh/UsefulTools_Traffic.html">中文 简体</a></li>
+<li class="sub_items "><a  >Language: English</a><ul><li class="active"><a  href="/AppDoc/tools/en/TestTools_ModbusTcp.html">English</a></li>
+<li class=""><a  href="/AppDoc/tools/zh/TestTools_ModbusTcp.html">中文 简体</a></li>
 </ul></li>
 </ul>
 
@@ -105,7 +105,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                 </div>
                 <ul class="show">
 <li class="not_active with_link"><a href="/AppDoc/tools/en/index.html"><span class="label">Tools</span><span class=""></span></a></li>
-<li class="active_parent no_link"><a><span class="label">UsefulTools</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active no_link"><a><span class="label">UsefulTools</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
 <li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_WebCol.html"><span class="label">WebCollection</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_Random.html"><span class="label">ChooseHelper</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_ColorTool.html"><span class="label">ColorTools</span><span class=""></span></a></li>
@@ -115,12 +115,12 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_MulVideo.html"><span class="label">MultipleVideo</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_JianBiHua.html"><span class="label">SimpleDrawing</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_FunColor.html"><span class="label">FunColoring</span><span class=""></span></a></li>
-<li class="active with_link"><a href="/AppDoc/tools/en/UsefulTools_Traffic.html"><span class="label">TrafficCounter</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_Traffic.html"><span class="label">TrafficCounter</span><span class=""></span></a></li>
 </ul>
 </li>
-<li class="not_active no_link"><a><span class="label">TestTools</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="active_parent no_link"><a><span class="label">TestTools</span><span class="sub_indicator"></span></a><ul class="show">
 <li class="not_active with_link"><a href="/AppDoc/tools/en/TestTools_ComTest.html"><span class="label">ComTestTools</span><span class=""></span></a></li>
-<li class="not_active with_link"><a href="/AppDoc/tools/en/TestTools_ModbusTcp.html"><span class="label">ModbusTcpTool</span><span class=""></span></a></li>
+<li class="active with_link"><a href="/AppDoc/tools/en/TestTools_ModbusTcp.html"><span class="label">ModbusTcpTool</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/TestTools_TcpForward.html&from=/tools/en/TestTools_TcpForward.html"><span class="label">TCPForwardTool</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/TestTools_ComForward.html&from=/tools/en/TestTools_ComForward.html"><span class="label">ComForwardTool</span><span class=""></span></a></li>
 </ul>
@@ -147,7 +147,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_head">
                         <div id="article_title">
                             
-                            <h1>TrafficCounter</h1>
+                            <h1>ModbusTcpTool</h1>
                             
                         </div>
                         <div id="article_tags">
@@ -177,31 +177,43 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_content">
                         
                             <h2 id="Introduce">Introduce</h2>
-<p>Traffic Counter tool that can play videos, count traffic flow according to type, and export the results to excel file.</p>
-<h2 id="How-to-use">How to use</h2>
-<p><img src="../assets/images/UsefulTools/Count1.png" alt="" /></p>
+<p>Modbus TCP test tool, support server and client mode, support 4 types of registers, client support timed data reading, data support decimal, hexadecimal, binary format viewing.</p>
+<p><img src="../assets/images/TestTools/ModbusTcpTool1.png" alt="" /></p>
+<p>On the left side is server area, and on the right is client area.</p>
+<h3 id="How-to-use">How to use</h3>
+<h3 id="Server-Usage">Server Usage</h3>
 <ol>
-<li>Open the video file: Click the Open button in the menu bar and select the video you want to count.</li>
-<li>Configure statistics: Click the [Settings] button in the menu bar to open the type configuration dialog.</li>
-</ol>
-<p><img src="../assets/images/UsefulTools/Count2.png" alt="" /></p>
-<ul>
-<li>Add: Click on the blank row in the table to add a row, enter the information and save it.<blockquote>
-The type must be entered, and the shortcut key input way is: after activating the shortcut key cell, press the keyboard key directly<br />
-The purpose of selecting the checkbox is to specify whether the type is displayed in the action area on the right</blockquote>
-</li>
-<li>Modify: Double-click the cell you want to edit to edit the content, and click Save when you're done.</li>
-<li>Delete: After selecting a row, press the [Delete] button on the keyboard to delete it, and it will only take effect after clicking the save button.</li>
+<li>Start server: Set the server port, the default is 502, and then click [Start] to start the server, and the button will change to [Stop] after started.</li>
+<li>Configure register: Select a register type in the RegType drop-down box, and enter the start address and quantity in the text box.</li>
+<li>Modify value: After the server is started, you can click the edit icon in the Action column in the table to modify the value in the address.<ul>
+<li>The values of Coil and DiscInput are bool type, which can be modified by using the checkbox when editing, and the value is 1 when selected, otherwise it is 0</li>
+<li>InputReg and HoldingReg can modify the value type, and you can use the drop-down button in the Type column of the table to select the type, which can be specified as: short, int, long, float, double, and binary<ul>
+<li>The value of the binary type is actually short, but the binary is used when displaying, and the value of each bit is modified with a set of checkboxes when editing</li>
+<li>The values of int and float used two addresses, and changing the value of the start address will modify two consecutive addresses at the same time</li>
+<li>The values of long and double used four addresses, and changing the value of the start address will modify four consecutive addresses at the same time</li>
+<li>The int, long, float, and double types can change byte order by the LH switch in the top toolbar</li>
 </ul>
-<ol start="3">
-<li>Count the quantity: Click the [Play] button at the bottom of the player to play the video, press the configured shortcut key or directly click the button on the right during the playback process to count the number of the corresponding type.</li>
-<li>View results: Click the View Results button in the menu bar to open a result view dialog, where you can view the statistics and details</li>
-<li>Export the result: Click the [Save] button at the bottom of the result view dialog to save the result to an excel file.</li>
+</li>
+</ul>
+</li>
+<li>Stop server: Click the [Stop] button on the toolbar to stop the server.</li>
+</ol>
+<h3 id="Client-Usage">Client Usage</h3>
+<ol>
+<li>Connect to server: Enter the server IP and port, then click [Connect] to Connect to server, and the button will change to [Disconnect] after connected.</li>
+<li>Set registers: Same as the server settings.</li>
+<li>Read value: There are two ways to read the value: manual reading and automatic reading<ul>
+<li>Manual reading: You can click the [ReadData] button on the top toolbar to read the data of all addresses at once, or you can click the first icon button in the Action column of the table to get the value of the address in this row</li>
+<li>Auto-Read: Select the [AutoRead] checkbox in the top toolbar, and then the read interval input box will appear, you can enter the read interval (in seconds, the accuracy is 0.1, the default is 1 second, the maximum value is 60 seconds), and then click the [ReadData] button to automatically read the values of all addresses according to the specified read interval. Click [StopRead] to stop the reading.</li>
+</ul>
+</li>
+<li>Modify value: If RegType is set to Input and DiscInput, the value cannot be modified. The other two types of modifications are the same as those of the server.</li>
+<li>Disconnect: Click the [Disconnect] button on the toolbar to disconnect.</li>
 </ol>
 <blockquote>
-<p>The app can also be used as a video player, and the control functions support play, pause, speed up, slow down, forward 5 seconds, backward 5 seconds, progress and volume control</p>
+<p>When connecting to a third-party server or client, the start address may be 0 or 1, so it is best to do a read/write test to confirm the address correspondence after connecting.</p>
 </blockquote>
-<p><a href="https://apps.microsoft.com/detail/9NW2XDGDKZHM"  target="_blank">Microsoft Store</a></p>
+<p><a href="https://apps.microsoft.com/detail/9NZTLN2M1RL8"  target="_blank">Microsoft Store</a></p>
 
                         
                     </div>
@@ -209,16 +221,16 @@ The purpose of selecting the checkbox is to specify whether the type is displaye
                 <div id="previous_next">
                     <div id="previous">
                         
-                        <a href="/AppDoc/tools/en/UsefulTools_FunColor.html">
+                        <a href="/AppDoc/tools/en/TestTools_ComTest.html">
                             <span class="icon"></span>
-                            <span class="label">FunColoring</span>
+                            <span class="label">ComTestTools</span>
                         </a>
                         
                     </div>
                     <div id="next">
                         
-                        <a href="/AppDoc/tools/en/TestTools_ComTest.html">
-                            <span class="label">ComTestTools</span>
+                        <a href="/AppDoc/tools/en/no_translate.html?ref=/tools/zh/TestTools_TcpForward.html&from=/tools/en/TestTools_TcpForward.html">
+                            <span class="label">TCPForwardTool</span>
                             <span class="icon"></span>
                         </a>
                         
