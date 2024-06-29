@@ -6,6 +6,7 @@
 
 <a href="https://info.flagcounter.com/ah2P"><img src="https://s01.flagcounter.com/count2/ah2P/bg_363636/txt_DEDEDE/border_3BB0FF/columns_2/maxflags_10/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" alt="Visitor Counter" border="0"></a>
 
+[使用说明文档](https://iceskydev.github.io/AppDoc)
 
 ## 教育类应用 
 
@@ -423,8 +424,8 @@
   
   包含随机关卡和上千预定义关卡的数织游戏，支持解迷功能
 
-  <br/>
------
+
+## [使用说明文档](https://iceskydev.github.io/AppDoc)
 
 
 <div align="center">
