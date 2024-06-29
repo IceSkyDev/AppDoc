@@ -6,7 +6,7 @@
 
 <a href="https://info.flagcounter.com/ah2P"><img src="https://s01.flagcounter.com/count2/ah2P/bg_363636/txt_DEDEDE/border_3BB0FF/columns_2/maxflags_10/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" alt="Visitor Counter" border="0"></a>
 
-[使用说明文档](https://iceskydev.github.io/AppDoc)
+[使用说明文档](https://iceskydev.github.io/AppDoc/en/)
 
 ## Educational Apps 
 
@@ -427,7 +427,7 @@ Learn about the traditional culture that has been summarized and inherited by th
   
   A Nonograms with random levels and hundreds of predefined levels, and supports puzzle solving functions
 
-## [使用说明文档](https://iceskydev.github.io/AppDoc)
+## [使用说明文档](https://iceskydev.github.io/AppDoc/en/)
 
 
 
