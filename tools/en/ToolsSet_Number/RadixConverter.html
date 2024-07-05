@@ -7,10 +7,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="keywords" content="Json viewer, Json editor, Json converter, to Xml, to YAML, to TOML, to Csv, to class, flatten">
+    <meta name="keywords" content="Base conversion, Dec, Hex, Oct, Bin, Float, Double">
     
     
-    <meta name="description" content="The JSON file processing tool supports the preview, editing and conversion functions">
+    <meta name="description" content="A decimal conversion tool, including multiple base conversions of integer and float number">
     
     <meta name="generator" content="teedoc">
     <meta name="theme" content="teedoc-plugin-theme-default">
@@ -50,7 +50,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
         
     
     
-    <title>JsonTools - IceSky App</title>
+    <title>RadixConverter - IceSky App</title>
     
     <script type="text/javascript">js_vars = {}</script>
     <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
@@ -80,8 +80,8 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
             </div>
             <div>
                 <ul id="nav_right">
-<li class="sub_items "><a  >Language: English</a><ul><li class="active"><a  href="/AppDoc/tools/en/UsefulTools_Json.html">English</a></li>
-<li class=""><a  href="/AppDoc/tools/zh/UsefulTools_Json.html">中文 简体</a></li>
+<li class="sub_items "><a  >Language: English</a><ul><li class="active"><a  href="/AppDoc/tools/en/ToolsSet_Number/RadixConverter.html">English</a></li>
+<li class=""><a  href="/AppDoc/tools/zh/ToolsSet_Number/RadixConverter.html">中文 简体</a></li>
 </ul></li>
 </ul>
 
@@ -105,12 +105,12 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                 </div>
                 <ul class="show">
 <li class="not_active with_link"><a href="/AppDoc/tools/en/index.html"><span class="label">Tools</span><span class=""></span></a></li>
-<li class="active_parent no_link"><a><span class="label">UsefulTools</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active no_link"><a><span class="label">UsefulTools</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
 <li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_WebCol.html"><span class="label">WebCollection</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_Random.html"><span class="label">ChooseHelper</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_ColorTool.html"><span class="label">ColorTools</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_ImageTool.html"><span class="label">ImageTool</span><span class=""></span></a></li>
-<li class="active with_link"><a href="/AppDoc/tools/en/UsefulTools_Json.html"><span class="label">JsonTools</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_Json.html"><span class="label">JsonTools</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_Cs2Config.html"><span class="label">C#ToConfig</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_MulVideo.html"><span class="label">MultipleVideo</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_JianBiHua.html"><span class="label">SimpleDrawing</span><span class=""></span></a></li>
@@ -125,9 +125,9 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/en/TestTools_ComForward.html"><span class="label">ComForwardTool</span><span class=""></span></a></li>
 </ul>
 </li>
-<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet.html"><span class="label">ToolsSet</span><span class="sub_indicator"></span></a><ul class="show">
-<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Number.html"><span class="label">Number</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
-<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Number/RadixConverter.html"><span class="label">None</span><span class=""></span></a></li>
+<li class="active_parent with_link"><a href="/AppDoc/tools/en/ToolsSet.html"><span class="label">ToolsSet</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="active_parent with_link"><a href="/AppDoc/tools/en/ToolsSet_Number.html"><span class="label">Number</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="active with_link"><a href="/AppDoc/tools/en/ToolsSet_Number/RadixConverter.html"><span class="label">None</span><span class=""></span></a></li>
 </ul>
 </li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Date.html"><span class="label">Date</span><span class=""></span></a></li>
@@ -150,7 +150,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_head">
                         <div id="article_title">
                             
-                            <h1>JsonTools</h1>
+                            <h1>RadixConverter</h1>
                             
                         </div>
                         <div id="article_tags">
@@ -180,56 +180,134 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_content">
                         
                             <h2 id="Introduce">Introduce</h2>
-<p>The JSON text processing tool supports view, edit, and multiple conversion functions.</p>
-<h3 id="Viewer">Viewer</h3>
+<p>This tool supports</p>
 <ul>
-<li>JSON format verification</li>
-<li>JSON formatting</li>
-<li>Edit Json as text</li>
-<li>View the Json content in a tree structure</li>
-<li>Different colors show different types</li>
-<li>JSON text content lookup</li>
-<li>JsonPath filtering</li>
-<li>Node content viewing and fast copying</li>
+<li>Convert Dec, Hex, Oct and Bin to each other</li>
+<li>Float and double to Hex and Bin</li>
+<li>Hex to flaot or double</li>
+<li>Arbitrary conversion of decimal integer</li>
+<li>Decimal integers are converted into strings of the specified character set</li>
 </ul>
-<p><img src="../assets/images/UsefulTools/JsonTool1.png" alt="" /></p>
+<p><img src="../../assets/images/ToolsSet/TS1.png" alt="" /></p>
 <blockquote>
-<p>Click the copy button in the middle to quickly copy the contents of the selected node in the tree</p>
-<p>Turn off the switch in front of the search box to exclude key names in the search</p>
-<p>After selecting a node in the tree, click the header row on the right to quickly copy the node path</p>
+<p>If the conversion data format is entered incorrectly, the contents of the other corresponding result text boxes will be cleared</p>
 </blockquote>
-<h3 id="Editor">Editor</h3>
+<h2 id="How-to-use">How to use</h2>
+<h3 id="Integer-conversion">Integer conversion</h3>
+<p>The first area at the top is the integer conversion area, and there are four text boxes used to input:</p>
 <ul>
-<li>Open an existing Json file or create a new blank Json file for editing</li>
-<li>Tree structure to display content</li>
-<li>JSON text content lookup</li>
-<li>Edit content by node</li>
-<li>Add nodes of the String, Number, Bool, Array, and Object types</li>
-<li>Node clone, move location, delete node</li>
-<li>Edit the node name and value</li>
+<li>Dec</li>
+<li>Hex (up to 16 Hex characters, case-insensitive)</li>
+<li>Oct</li>
+<li>Bin (up to 64-bit 0 or 1)</li>
 </ul>
-<p><img src="../assets/images/UsefulTools/JsonTool2.png" alt="" /></p>
-<blockquote class="spoiler warning">
-<p> After editing the node content, you need to click the refresh button on the right to synchronize the data to the left tree, otherwise the modification will be lost</p>
-<p>! When the value is set to null, the node type will be lost, and the value of null can only be changed to string when changing to a non-null value, and it must be entered</p>
+<p>Enter a string that conforms to the format in each text box, and the other three text boxes can display the corresponding conversion results of other formats</p>
+<blockquote>
+<p>The data range is a signed 64-bit integer range, i.e. -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807, and the hexadecimal is: 80000000000000000000 ~ 7FFFFFFFFFFFFFF</p>
 </blockquote>
-<h3 id="Converter">Converter</h3>
+<h3 id="Float-conversion">Float conversion</h3>
+<p>The second area at the top is the float conversion area, and there are three text boxes used to input:</p>
 <ul>
-<li>Format check and formatting</li>
-<li>Josn to Json schema</li>
-<li>Josn to Xml</li>
-<li>Josn to Yaml</li>
-<li>Josn array to Csv</li>
-<li>Josn to C# class</li>
-<li>Josn to Toml</li>
-<li>Josn flatten</li>
-<li>Save result to file</li>
+<li>Dec (range is -3.4028235E38 ~ 3.4028235E38)</li>
+<li>Hex (up to 8 Hex characters, case-insensitive)</li>
+<li>Bin</li>
 </ul>
-<p><img src="../assets/images/UsefulTools/JsonTool3.png" alt="" /></p>
-<blockquote class="spoiler warning">
-<p> When the conversion object is an array, the type will be determined according to the first element, so when the format of the array elements is different, sometimes the conversion fails due to the data type, then you need to check whether the data type is consistent, if it is inconsistent, you need to modify the value of the first element according to the situation, so that its data type can include all array elements. For example, change [integer type 12] to [real type 12.0] or [number type 1.4] to [string type &quot;1.4&quot;].</p>
+<p>Dec and Hex can be entered, and binary is read-only</p>
+<h3 id="Double-conversion">Double conversion</h3>
+<p>The third area at the top is the double conversion area, and there are three text boxes used to input:</p>
+<ul>
+<li>Dec (range is -1.7976931348623158E308 ~ 1.7976931348623158E308)</li>
+<li>Hex (up to 16 Hex characters, case-insensitive)</li>
+<li>Bin</li>
+</ul>
+<p>Dec and Hex can be entered, and binary is read-only</p>
+<blockquote>
+<p>Float and double convert inputs support scientific notation, you need to pay attention to the input method, you can use two ways to input</p>
+<ol>
+<li>Enter the exponent first, followed by significant figures. For example, if you enter 1.2e3, enter e3 first, and then enter 1.2 before e</li>
+<li>Enter all the numbers first, then enter the e. For example, if you enter 1.2e3, enter 1.23 first, and then enter e before 3</li>
+</ol>
+<ul>
+<li>The letter e is not case-sensitive</li>
+</ul>
 </blockquote>
-<p><a href="https://apps.microsoft.com/detail/9P198RFZ9RTS"  target="_blank">Microsoft Store</a></p>
+<h3 id="Arbitrary-radix-conversion">Arbitrary radix conversion</h3>
+<p>At the bottom of the interface, you can convert integers to any base, the controls are:</p>
+<ul>
+<li>Custom base: Enter the base you want to convert</li>
+<li>Base charset: Several predefined character sets are available to choose from</li>
+<li>Base chars: You can edit the characters used in the conversion result</li>
+<li>Decimal value: The number before conversion, the conversion result can be obtained when entered</li>
+<li>Custom value: The result of conversion, you can enter the reverse conversion to get the number before the conversion</li>
+</ul>
+<p>The predefined character set includes Base16, Base64, base 27 (lowercase/uppercase letters), base 10 Chinese, Base2 and other methods</p>
+<p>When you select a predefined character set, the Custom base is automatically modified based on the selected character</p>
+<p>Conversion examples:</p>
+<table>
+<thead>
+<tr>
+  <th></th>
+  <th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Decimal value</td>
+  <td>123</td>
+</tr>
+<tr>
+  <td>Base16</td>
+  <td>7B</td>
+</tr>
+<tr>
+  <td>Base64</td>
+  <td>1X</td>
+</tr>
+<tr>
+  <td>Lowercase</td>
+  <td>do</td>
+</tr>
+<tr>
+  <td>Uppercase</td>
+  <td>DO</td>
+</tr>
+<tr>
+  <td>Chinese1</td>
+  <td>一二三</td>
+</tr>
+<tr>
+  <td>Chinese2</td>
+  <td>壹贰叁</td>
+</tr>
+<tr>
+  <td>Base2_1</td>
+  <td>▮▮▮▮▯▮▮</td>
+</tr>
+<tr>
+  <td>Base2_2</td>
+  <td>││││─││</td>
+</tr>
+<tr>
+  <td>Base2_3</td>
+  <td>➊➊➊➊⓪➊➊</td>
+</tr>
+<tr>
+  <td>Base2_4</td>
+  <td>⌃⌃⌃⌃⌄⌃⌃</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+<p>Conversions can be done using other base and custom characters<br />
+For example, 123 is represented as 323 in the Hex value of the number, and &gt;&gt;&lt; is expressed in the base 5 of the character set []-&lt;&gt;&lt;</p>
+<blockquote>
+<p>If the conversion base is greater than the number of characters provided, the values not included in the character set will be expressed as [N], e.g. 123 with only ab in the base 3 will result in bbb[2]a</p>
+<p>Don't use duplicate characters in character sets</p>
+<p>The characters used in reverse conversion must be included in the set of characters and are case-sensitive</p>
+</blockquote>
 
                         
                     </div>
@@ -237,16 +315,16 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                 <div id="previous_next">
                     <div id="previous">
                         
-                        <a href="/AppDoc/tools/en/UsefulTools_ImageTool.html">
+                        <a href="/AppDoc/tools/en/ToolsSet_Number.html">
                             <span class="icon"></span>
-                            <span class="label">ImageTool</span>
+                            <span class="label">Number</span>
                         </a>
                         
                     </div>
                     <div id="next">
                         
-                        <a href="/AppDoc/tools/en/UsefulTools_Cs2Config.html">
-                            <span class="label">C#ToConfig</span>
+                        <a href="/AppDoc/tools/en/ToolsSet_Date.html">
+                            <span class="label">Date</span>
                             <span class="icon"></span>
                         </a>
                         

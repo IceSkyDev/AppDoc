@@ -40,6 +40,9 @@ items:
     items:
     -   label: Number
         file: ToolsSet_Number.md
+        items:
+        -   label:
+            file: ToolsSet_Number/RadixConverter.md
     -   label: Date
         file: ToolsSet_Date.md
     -   label: Text

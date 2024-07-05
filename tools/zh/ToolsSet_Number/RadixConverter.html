@@ -7,10 +7,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="keywords" content="随机选择, 随机排序, 转盘, 骰子, 抛硬币">
+    <meta name="keywords" content="进制转换, 十进制, 十六进制, 八进制, 二进制, 任意进制, 整数, 浮点数">
     
     
-    <meta name="description" content="随机选择工具，包括2选1、3选1、6选1、转盘、随机排序等">
+    <meta name="description" content="数字进制转换工具，包括整数和浮点数的多种进制转换">
     
     <meta name="generator" content="teedoc">
     <meta name="theme" content="teedoc-plugin-theme-default">
@@ -50,7 +50,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
         
     
     
-    <title>随机选择工具 - IceSky App</title>
+    <title>进制转换 - IceSky App</title>
     
     <script type="text/javascript">js_vars = {}</script>
     <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
@@ -80,8 +80,8 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
             </div>
             <div>
                 <ul id="nav_right">
-<li class="sub_items "><a  >Language: 中文 简体</a><ul><li class=""><a  href="/AppDoc/tools/en/UsefulTools_Random.html">English</a></li>
-<li class="active"><a  href="/AppDoc/tools/zh/UsefulTools_Random.html">中文 简体</a></li>
+<li class="sub_items "><a  >Language: 中文 简体</a><ul><li class=""><a  href="/AppDoc/tools/en/ToolsSet_Number/RadixConverter.html">English</a></li>
+<li class="active"><a  href="/AppDoc/tools/zh/ToolsSet_Number/RadixConverter.html">中文 简体</a></li>
 </ul></li>
 </ul>
 
@@ -105,9 +105,9 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                 </div>
                 <ul class="show">
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/index.html"><span class="label">工具应用</span><span class=""></span></a></li>
-<li class="active_parent no_link"><a><span class="label">实用工具</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active no_link"><a><span class="label">实用工具</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_WebCol.html"><span class="label">网址集合</span><span class=""></span></a></li>
-<li class="active with_link"><a href="/AppDoc/tools/zh/UsefulTools_Random.html"><span class="label">随机选择工具</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_Random.html"><span class="label">随机选择工具</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_ColorTool.html"><span class="label">ColorTool</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_ImageTool.html"><span class="label">ImageTool</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_Json.html"><span class="label">JsonTools</span><span class=""></span></a></li>
@@ -125,9 +125,9 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/TestTools_ComForward.html"><span class="label">通信转发工具</span><span class=""></span></a></li>
 </ul>
 </li>
-<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet.html"><span class="label">ToolsSet</span><span class="sub_indicator"></span></a><ul class="show">
-<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number.html"><span class="label">数值类</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
-<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number/RadixConverter.html"><span class="label">None</span><span class=""></span></a></li>
+<li class="active_parent with_link"><a href="/AppDoc/tools/zh/ToolsSet.html"><span class="label">ToolsSet</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="active_parent with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number.html"><span class="label">数值类</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number/RadixConverter.html"><span class="label">None</span><span class=""></span></a></li>
 </ul>
 </li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Date.html"><span class="label">日期类</span><span class=""></span></a></li>
@@ -150,7 +150,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_head">
                         <div id="article_title">
                             
-                            <h1>随机选择工具</h1>
+                            <h1>进制转换</h1>
                             
                         </div>
                         <div id="article_tags">
@@ -180,63 +180,134 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_content">
                         
                             <h2 id="%E4%BB%8B%E7%BB%8D">介绍</h2>
-<p>功能包括随机的二选一、三选一、六选一、转盘、随机排序，每种选择都提供了多种方式风格，界面支持明暗主题切换，支持自定义选项。</p>
-<h3 id="%E4%BA%8C%E9%80%89%E4%B8%80">二选一</h3>
-<p>从两个选项中进行选择。</p>
+<p>此工具支持</p>
 <ul>
-<li>具有三种样式：样式一和二为两种不同的硬币样式，旋转方式不同，样式三可以指定正面及反面文字。</li>
-<li>可以在预定义中选择预先定义好的选项列表。</li>
-<li>支持连续抛多次。</li>
+<li>整数的十进制、十六进制、八进制、二进制相互转换</li>
+<li>单/双精度浮点数转十六进制和二进制</li>
+<li>十六进制转单/双精度浮点数</li>
+<li>十进制整数数字的任意进制转换</li>
+<li>十进制整数按任意进制转指定字符集的字符串</li>
 </ul>
-<p><img src="../assets/images/UsefulTools/choose1.png" alt="" /></p>
-<h3 id="%E4%B8%89%E9%80%89%E4%B8%80">三选一</h3>
-<p>从三个选项中选择一个。</p>
-<ul>
-<li>具有三种样式：样式一为石头剪刀布；样式二为红绿灯，可以指定文字；样式三为转盘，也可以指定文字。</li>
-<li>可以在预定义中选择预先定义好的选项列表。</li>
-</ul>
-<p><img src="../assets/images/UsefulTools/choose2.png" alt="" /></p>
-<h3 id="%E5%85%AD%E9%80%89%E4%B8%80">六选一</h3>
-<p>通过扔骰子的方式从六个选项中进行选择。</p>
-<ul>
-<li>具有两种样式：样式一为普通六点骰子样式；样式二可以自定义各面文字。</li>
-<li>可以在预定义中选择预先定义好的选项列表。</li>
-<li>支持连续抛多次。</li>
-</ul>
-<p><img src="../assets/images/UsefulTools/choose5.png" alt="" /></p>
-<h3 id="%E9%9A%8F%E6%84%8F%E9%80%89">随意选</h3>
-<p>通过转转盘的方式从多个选项中进行选择。</p>
-<ul>
-<li>可以选择转动转盘或指针，可以选择是否在选中之后自动删除选中项。</li>
-<li>【快速创建】可以指定数量后自动创建选项；</li>
-<li>【直接创建】可以直接输入选项创建选项；</li>
-<li>【预定义】可以选择预先定义好的选项列表。</li>
-</ul>
-<p><img src="../assets/images/UsefulTools/choose3.png" alt="" /></p>
-<h3 id="%E9%9A%8F%E6%9C%BA%E6%8E%92%E5%BA%8F">随机排序</h3>
-<p>生成指定数量的选项，对其进行随机排序。</p>
-<ul>
-<li>【方式一】可以指定数量后创建数字选项；</li>
-<li>【方式二】可以直接输入选项创建选项；</li>
-<li>【预定义】可以选择预先定义好的选项列表。</li>
-</ul>
+<p><img src="../../assets/images/ToolsSet/TS1.png" alt="" /></p>
 <blockquote>
-<p>数量或选项改变后都需要先点击【生成元素】，再点击【开始排序】进行随机排序。</p>
+<p>所有转换数据格式输入错误的话，其他对应结果文本框内容将会被清空</p>
 </blockquote>
-<p><img src="../assets/images/UsefulTools/choose4.png" alt="" /></p>
-<h3 id="%E9%A2%84%E5%AE%9A%E4%B9%89%E9%80%89%E9%A1%B9">预定义选项</h3>
-<p>可以对各种方式进行选项预定义。</p>
+<h2 id="%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">使用方法</h2>
+<h3 id="%E6%95%B4%E6%95%B0%E8%BF%9B%E5%88%B6%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2">整数进制相互转换</h3>
+<p>界面上方第一个区域为整数转换区域，有四个文本框，从上到下依次为：</p>
 <ul>
-<li>点击右上角【预定义选项】按钮可以打开预定义选项组，可以在界面中对预定义组进行操作。</li>
-<li>添加：点击【添加组】，在弹出窗口输入名称，选择类型，输入选项后保存即可，其中只有自定义方式可以修改选项数量。</li>
-<li>修改：点击选项组列表中的一项即可弹出窗口进行修改。</li>
-<li>删除：点击选项组列表前的删除按钮会弹出确认对话框，点击确认即可删除。</li>
+<li>十进制</li>
+<li>十六进制（最多输入16个Hex字符，不区分大小写）</li>
+<li>八进制</li>
+<li>二进制（最多输入64位0或1）</li>
 </ul>
-<p><img src="../assets/images/UsefulTools/choose6.png" alt="" /></p>
-<p>主题切换：应用右上角的按钮可以切换应用明暗主题。</p>
-<p><a href="https://apps.microsoft.com/detail/9N2S39RTRPB6"  target="_blank">商店下载</a></p>
-<p><a href="https://apps.microsoft.com/detail/9PMKD8SSQZH7"  target="_blank">PWA版</a></p>
-<p><a href="https://makedecision.azurewebsites.net"  target="_blank">在线使用</a></p>
+<p>在各个文本框输入符合格式的字符串，其他三个文本框即可显示对应的其他格式转换结果</p>
+<blockquote>
+<p>数据范围为带符号的64位整数范围，即 -9,223,372,036,854,775,808 到 9,223,372,036,854,775,807，十六进制为：8000000000000000 ~ 7FFFFFFFFFFFFFFF</p>
+</blockquote>
+<h3 id="%E5%8D%95%E7%B2%BE%E5%BA%A6%E6%B5%AE%E7%82%B9%E6%95%B0%E8%BD%AC%E6%8D%A2">单精度浮点数转换</h3>
+<p>界面上方第二个区域为单精度浮点数转换区域，有三个文本框，从上到下依次为：</p>
+<ul>
+<li>十进制（范围为 -3.4028235E38 ~ 3.4028235E38）</li>
+<li>十六进制（最多输入8个Hex字符，不区分大小写）</li>
+<li>二进制</li>
+</ul>
+<p>其中十进制和十六进制可以输入，二进制为只读</p>
+<h3 id="%E5%8F%8C%E7%B2%BE%E5%BA%A6%E6%B5%AE%E7%82%B9%E6%95%B0%E8%BD%AC%E6%8D%A2">双精度浮点数转换</h3>
+<p>界面上方第三个区域为双精度浮点数转换区域，有三个文本框，从上到下依次为：</p>
+<ul>
+<li>十进制（范围为 -1.7976931348623158E308 ~ 1.7976931348623158E308）</li>
+<li>十六进制（最多输入16个Hex字符，不区分大小写）</li>
+<li>二进制</li>
+</ul>
+<p>其中十进制和十六进制可以输入，二进制为只读</p>
+<blockquote>
+<p>单精度和双精度浮点数转换的十进制输入支持科学计数法，但是因为数据验证需要注意输入方式，可以使用两种方式输入</p>
+<ol>
+<li>先输入指数，之后再输入有效数字。比如输入1.2e3，先输入e3，再在e之前输入1.2</li>
+<li>先输入所有数字，再输入e。比如输入1.2e3，先输入1.23，再在3之前输入e</li>
+</ol>
+<ul>
+<li>字母e不区分大小写</li>
+</ul>
+</blockquote>
+<h3 id="%E4%BB%BB%E6%84%8F%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2">任意进制转换</h3>
+<p>界面下方可以进行整数的任意进制转换，其中控件的作用依次为：</p>
+<ul>
+<li>进制基数：输入要转换的进制基数</li>
+<li>预定义字符集名称：提供数个预定义的字符集供选择</li>
+<li>字符集包含字符：可以编辑转换结果使用的字符</li>
+<li>十进制整数：转换前的数字，输入时可以获取转换结果</li>
+<li>自定义进制结果：转换后的结果，可以输入进行反向转换来获取转换前的数字</li>
+</ul>
+<p>预定义字符集包含了16进制、64进制、27进制（小写/大写字母）、10进制中文、二进制等多种方式</p>
+<p>选择预定义字符集时，进制基数会根据所选项自动修改</p>
+<p>转换举例：</p>
+<table>
+<thead>
+<tr>
+  <th></th>
+  <th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>转换前数字</td>
+  <td>123</td>
+</tr>
+<tr>
+  <td>Base16</td>
+  <td>7B</td>
+</tr>
+<tr>
+  <td>Base64</td>
+  <td>1X</td>
+</tr>
+<tr>
+  <td>小写字母</td>
+  <td>do</td>
+</tr>
+<tr>
+  <td>大写子母</td>
+  <td>DO</td>
+</tr>
+<tr>
+  <td>中文小写</td>
+  <td>一二三</td>
+</tr>
+<tr>
+  <td>中文大写</td>
+  <td>壹贰叁</td>
+</tr>
+<tr>
+  <td>二进制1</td>
+  <td>▮▮▮▮▯▮▮</td>
+</tr>
+<tr>
+  <td>二进制2</td>
+  <td>││││─││</td>
+</tr>
+<tr>
+  <td>二进制3</td>
+  <td>➊➊➊➊⓪➊➊</td>
+</tr>
+<tr>
+  <td>二进制4</td>
+  <td>⌃⌃⌃⌃⌄⌃⌃</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+<p>可以使用其他进制和自定义字符进行转换<br />
+比如：123用数字的6进制表示为323，用字符集 []-&lt;&gt; 的5进制表示为 &gt;&gt;&lt;</p>
+<blockquote>
+<p>如果转换基数大于提供的字符数量，不包含在字符集中的数值将以 [N] 的形式表示，比如123用只包含 ab 的3进制表示结果为 bbb[2]a</p>
+<p>字符集不要使用重复字符</p>
+<p>反向转换时使用字符必须包含在所设置的字符集中，区分大小写</p>
+</blockquote>
 
                         
                     </div>
@@ -244,16 +315,16 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                 <div id="previous_next">
                     <div id="previous">
                         
-                        <a href="/AppDoc/tools/zh/UsefulTools_WebCol.html">
+                        <a href="/AppDoc/tools/zh/ToolsSet_Number.html">
                             <span class="icon"></span>
-                            <span class="label">网址集合</span>
+                            <span class="label">数值类</span>
                         </a>
                         
                     </div>
                     <div id="next">
                         
-                        <a href="/AppDoc/tools/zh/UsefulTools_ColorTool.html">
-                            <span class="label">ColorTool</span>
+                        <a href="/AppDoc/tools/zh/ToolsSet_Date.html">
+                            <span class="label">日期类</span>
                             <span class="icon"></span>
                         </a>
                         
