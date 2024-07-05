@@ -37,6 +37,8 @@ The JSON text processing tool supports view, edit, and multiple conversion funct
 ![](../assets/images/UsefulTools/JsonTool2.png)
 
 >! After editing the node content, you need to click the refresh button on the right to synchronize the data to the left tree, otherwise the modification will be lost
+>
+>! When the value is set to null, the node type will be lost, and the value of null can only be changed to string when changing to a non-null value, and it must be entered
 
 ### Converter
 * Format check and formatting

@@ -40,6 +40,9 @@ items:
     items:
     -   label: 数值类
         file: ToolsSet_Number.md
+        items:
+        -   label:
+            file: ToolsSet_Number/RadixConverter.md
     -   label: 日期类
         file: ToolsSet_Date.md
     -   label: 文本类
