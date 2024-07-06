@@ -61,11 +61,12 @@ The right area on the top is the other language conversion area, which supports 
 > Numbers support 12-digit integers, and currency amount conversion supports two-digit decimal places
 >
 > The currency is displayed in the selected language, taking 123.45 as an example:
-> |Language|Text|Currency|Amount|
-> |-|-|-|-|
-> |English|one hundred twenty three point four five|US Dollar|One hundred twenty three Dollars Forty five Cents|
-> |French|cent vingt trois . quatre cinq|Euro|Cent vingt trois Euros Quarante cinq Centimes|
-> |Amharic|አንድ መቶ ሀያ ሶስት . አራት አምስት|Turkish Lira|አንድ መቶ ሀያ ሶስት የቱርክ ሊራ ከ አርባ አምስት ሳንቲም|
+
+|Language|Text|Currency|Amount|
+|-|-|-|-|
+|English|one hundred twenty three point four five|US Dollar|One hundred twenty three Dollars Forty five Cents|
+|French|cent vingt trois . quatre cinq|Euro|Cent vingt trois Euros Quarante cinq Centimes|
+|Amharic|አንድ መቶ ሀያ ሶስት . አራት አምስት|Turkish Lira|አንድ መቶ ሀያ ሶስት የቱርክ ሊራ ከ አርባ አምስት ሳንቲም|
 
 ### Integer to text
 

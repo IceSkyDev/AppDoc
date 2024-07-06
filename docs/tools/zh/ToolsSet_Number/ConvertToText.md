@@ -61,11 +61,12 @@ desc: 数字文本互转工具，包括中文大小写、金额、多国语言�
 > 数字支持12位整数，金额转换支持两位小数
 >
 > 货币的显示语言为所选择的语言，以123.45为例：
-> |语言|文本|货币|金额|
-> |-|-|-|-|
-> |英语|one hundred twenty three point four five|美元|One hundred twenty three Dollars Forty five Cents|
-> |法语|cent vingt trois . quatre cinq|欧元|Cent vingt trois Euros Quarante cinq Centimes|
-> |阿姆哈拉语|አንድ መቶ ሀያ ሶስት . አራት አምስት|土耳其里拉|አንድ መቶ ሀያ ሶስት የቱርክ ሊራ ከ አርባ አምስት ሳንቲም|
+
+|语言|文本|货币|金额|
+|-|-|-|-|
+|英语|one hundred twenty three point four five|美元|One hundred twenty three Dollars Forty five Cents|
+|法语|cent vingt trois . quatre cinq|欧元|Cent vingt trois Euros Quarante cinq Centimes|
+|阿姆哈拉语|አንድ መቶ ሀያ ሶስት . አራት አምስት|土耳其里拉|አንድ መቶ ሀያ ሶስት የቱርክ ሊራ ከ አርባ አምስት ሳንቲም|
 
 ### 整数转文本
 
