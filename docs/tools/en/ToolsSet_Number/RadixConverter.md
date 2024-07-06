@@ -13,6 +13,7 @@ This tool supports
 * Hex to flaot or double
 * Arbitrary conversion of decimal integer
 * Decimal integers are converted into strings of the specified character set
+
 ![](../../assets/images/ToolsSet/TS1.png)
 
 > If the conversion data format is entered incorrectly, the contents of the other corresponding result text boxes will be cleared
@@ -80,7 +81,6 @@ Conversion examples:
 |Base2_2|││││─││|
 |Base2_3|➊➊➊➊⓪➊➊|
 |Base2_4|⌃⌃⌃⌃⌄⌃⌃|
-| | |
 
 Conversions can be done using other base and custom characters
 For example, 123 is represented as 323 in the Hex value of the number, and >>< is expressed in the base 5 of the character set []-<><
