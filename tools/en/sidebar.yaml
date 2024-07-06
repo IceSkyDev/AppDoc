@@ -41,10 +41,21 @@ items:
     -   label: Number
         file: ToolsSet_Number.md
         items:
-        -   label:
+        -   label: RadixConverter
             file: ToolsSet_Number/RadixConverter.md
+        -   label: ConvertToText
+            file: ToolsSet_Number/ConvertToText.md
+        -   label: UnitConverter
+            file: ToolsSet_Number/UnitConvert.md
     -   label: Date
         file: ToolsSet_Date.md
+        items:
+        -   label: ChineseCalendar
+            file: ToolsSet_Date/ChineseCalendar.md
+        -   label: YearCalendar
+            file: ToolsSet_Date/YearCalendar.md
+        -   label: Countdown
+            file: ToolsSet_Date/Countdown.md
     -   label: Text
         file: ToolsSet_Text.md
     -   label: Media

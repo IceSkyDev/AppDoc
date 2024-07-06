@@ -41,10 +41,21 @@ items:
     -   label: 数值类
         file: ToolsSet_Number.md
         items:
-        -   label:
+        -   label: 进制转换
             file: ToolsSet_Number/RadixConverter.md
+        -   label: 数字文本互转
+            file: ToolsSet_Number/ConvertToText.md
+        -   label: 单位转换
+            file: ToolsSet_Number/UnitConvert.md
     -   label: 日期类
         file: ToolsSet_Date.md
+        items:
+        -   label: 老黄历
+            file: ToolsSet_Date/ChineseCalendar.md
+        -   label: 年历
+            file: ToolsSet_Date/YearCalendar.md
+        -   label: 倒计时
+            file: ToolsSet_Date/Countdown.md
     -   label: 文本类
         file: ToolsSet_Text.md
     -   label: 媒体类
