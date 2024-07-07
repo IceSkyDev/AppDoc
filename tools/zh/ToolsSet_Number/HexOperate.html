@@ -7,10 +7,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="keywords" content="文本转换, 金额, 中文, 汉字, 多语言">
+    <meta name="keywords" content="十六进制, 二进制, 位运算, 逻辑">
     
     
-    <meta name="description" content="数字文本互转工具，包括中文大小写、金额、多国语言、特殊字符等">
+    <meta name="description" content="十六进制操作工具，可以转换二进制进行位操作，可以进行逻辑运算">
     
     <meta name="generator" content="teedoc">
     <meta name="theme" content="teedoc-plugin-theme-default">
@@ -50,7 +50,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
         
     
     
-    <title>数字文本互转 - IceSky App</title>
+    <title>十六进制操作 - IceSky App</title>
     
     <script type="text/javascript">js_vars = {}</script>
     <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
@@ -80,8 +80,8 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
             </div>
             <div>
                 <ul id="nav_right">
-<li class="sub_items "><a  >Language: 中文 简体</a><ul><li class=""><a  href="/AppDoc/tools/en/ToolsSet_Number/ConvertToText.html">English</a></li>
-<li class="active"><a  href="/AppDoc/tools/zh/ToolsSet_Number/ConvertToText.html">中文 简体</a></li>
+<li class="sub_items "><a  >Language: 中文 简体</a><ul><li class=""><a  href="/AppDoc/tools/en/ToolsSet_Number/HexOperate.html">English</a></li>
+<li class="active"><a  href="/AppDoc/tools/zh/ToolsSet_Number/HexOperate.html">中文 简体</a></li>
 </ul></li>
 </ul>
 
@@ -103,7 +103,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                 <div id="sidebar_title">
                     
                 </div>
-                <ul class="show">
+                <ul class="">
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/index.html"><span class="label">工具应用</span><span class=""></span></a></li>
 <li class="not_active no_link"><a><span class="label">实用工具</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_WebCol.html"><span class="label">网址集合</span><span class=""></span></a></li>
@@ -125,10 +125,10 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/TestTools_ComForward.html"><span class="label">通信转发工具</span><span class=""></span></a></li>
 </ul>
 </li>
-<li class="active_parent with_link"><a href="/AppDoc/tools/zh/ToolsSet.html"><span class="label">ToolsSet</span><span class="sub_indicator"></span></a><ul class="show">
-<li class="active_parent with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number.html"><span class="label">数值类</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet.html"><span class="label">ToolsSet</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number.html"><span class="label">数值类</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number/RadixConverter.html"><span class="label">进制转换</span><span class=""></span></a></li>
-<li class="active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number/ConvertToText.html"><span class="label">数字文本互转</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number/ConvertToText.html"><span class="label">数字文本互转</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number/UnitConvert.html"><span class="label">单位转换</span><span class=""></span></a></li>
 </ul>
 </li>
@@ -157,7 +157,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_head">
                         <div id="article_title">
                             
-                            <h1>数字文本互转</h1>
+                            <h1>十六进制操作</h1>
                             
                         </div>
                         <div id="article_tags">
@@ -187,163 +187,61 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_content">
                         
                             <h2 id="%E4%BB%8B%E7%BB%8D">介绍</h2>
-<p>此工具支持</p>
-<ul>
-<li>十进制数字和中文大小写数字、中文序号、中文金额互相转换</li>
-<li>十进制数字转为多国语言文本和金额</li>
-<li>整数转为指定字符集文本</li>
-</ul>
-<p><img src="../../assets/images/ToolsSet/TS2.png" alt="" /></p>
-<blockquote>
-<p>所有转换数据格式输入错误的话，其他对应结果文本框内容将会被清空</p>
-</blockquote>
+<p>此工具用于十六进制数据操作，可以将其转换为二进制进行操作，支持二进制位运算及逻辑运算</p>
+<p><img src="../../assets/images/ToolsSet/TSNHex.png" alt="" /></p>
 <h2 id="%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">使用方法</h2>
-<h3 id="%E5%8D%81%E8%BF%9B%E5%88%B6%E6%95%B0%E5%AD%97%E5%92%8C%E4%B8%AD%E6%96%87%E8%BD%AC%E6%8D%A2">十进制数字和中文转换</h3>
-<p>界面上方左侧区域为中文转换区域，可以输入的类型包括：</p>
 <ul>
-<li>十进制数字（最多28位）</li>
-<li>中文小写数字</li>
-<li>中文小写序号</li>
-<li>中文小写金额</li>
-</ul>
-<p>在各个文本框输入符合格式的字符串，其他文本框即可显示对应的其他格式转换结果</p>
+<li><p>操作数设置：在上方文本框可以输入十六进制数字，右侧为字节序开关，开关打开可以将十六进制字节倒序，操作数设置好之后需要点击最右侧按钮将数值更新到下方二进制数据区</p>
 <blockquote>
-<p>中文数字和序号小写可以输入“点”来表示小数点，也可以输入中文大写数字</p>
-<p>金额精度到分，金额输入单位精度到元或角时需要在末尾输入“整”，否则需要输入“分”。比如：</p>
-<ul>
-<li>100 的金额为 一百元整</li>
-<li>100.2 的金额为 一百元二角整</li>
-<li>100.23 的金额为 一百元二角三分</li>
-<li>100.03 的金额为 一百元零三分</li>
-</ul>
+<p>输入框的数字默认为4位，转为二进制即16位，可以通过改变十六进制数据位数来改变二进制区域的位数</p>
+<p>比如输入5位十六进制数，二进制区域位数即可变为32位，十六进制数据会自动填充到8位</p>
+<p>输入9位十六进制数，二进制区域位数即可变为64位，十六进制数据会自动填充到16位; 同理可以减少位数</p>
+<p>十六进制数据最多支持16位，即最多64位二进制位</p>
 </blockquote>
-<h3 id="%E5%8D%81%E8%BF%9B%E5%88%B6%E6%95%B0%E5%AD%97%E8%BD%AC%E5%85%B6%E4%BB%96%E8%AF%AD%E8%A8%80">十进制数字转其他语言</h3>
-<p>界面上方右侧区域为其他语言转换区域，支持10中语言和7中货币格式</p>
+</li>
+<li><p>二进制操作</p>
+<p>二进制区域的每个位都是一个开关，通过打开和关闭可以将对应位值设置为1或0</p>
+<blockquote>
+<p>打开或关闭开关时对值的修改会自动同步到上方十六进制数据和最下方的位范围数据中</p>
+</blockquote>
+</li>
+<li><p>逻辑运算</p>
+<p>二进制区域下方是逻辑运算区，可以进行按位逻辑操作。此区域默认没有展开，需要操作时可以点击区域标题栏切换</p>
+<p>此区域可以执行的操作包括：</p>
 <ul>
-<li>语言包括<ul>
-<li>英语 en</li>
-<li>波兰语 pl</li>
-<li>西班牙语 es</li>
-<li>法语 fr</li>
-<li>俄语 ru</li>
-<li>土耳其语 tr</li>
-<li>乌克兰语 ua</li>
-<li>保加利亚语 bg</li>
-<li>阿姆哈拉语 am</li>
-<li>葡萄牙语 pt</li>
+<li>单一操作数运算<ul>
+<li>取反（NOT）：对二进制数据按位取反<blockquote>
+点击最上方的更新数据按钮可以自动更新值，如果修改了二进制的位，则需要点击此区域的计算按钮重新计算值</blockquote>
+</li>
+<li>左移（ShiftL）：对二进制数据按位左移，通过滑动条进行操作，数据范围和当前数据的二进制位数一致</li>
+<li>右移（ShiftR）：对二进制数据按位右移，操作方式和左移一致</li>
 </ul>
 </li>
-<li>货币包括<ul>
-<li>美元 USD</li>
-<li>欧元 EUR</li>
-<li>俄罗斯卢布 RUB</li>
-<li>土耳其里拉 TRY</li>
-<li>格里夫尼亚 UAH</li>
-<li>埃塞俄比亚比尔 ETB</li>
-<li>兹罗提 PLN</li>
+<li>两个操作数运算<ul>
+<li>与（AND）</li>
+<li>或（OR）：</li>
+<li>异或（XOR）</li>
+<li>同或（XNOR）</li>
+<li>与非（NAND）</li>
+<li>或非（NOR）</li>
 </ul>
+<blockquote>
+这组操作方式都一样，先点击按钮选择要进行的运算，然后设置第二个操作数，之后点击计算按钮即可得到结果<br />
+<br />
+第二个操作数的输入方式有三种：十六进制、十进制、二进制，十六进制和十进制直接输入符合格式的数值即可<br />
+<br />
+二进制输入为一组开关按钮，可以通过改变数据位数来增加或减少二进制位数量<br />
+<br />
+这三种进制的数据会自动进行转换，即修改一个的值其他进制的值将自动修改</blockquote>
 </li>
 </ul>
-<blockquote>
-<p>数字支持12位整数，金额转换支持两位小数</p>
-<p>货币的显示语言为所选择的语言，以123.45为例：</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-  <th>语言</th>
-  <th>文本</th>
-  <th>货币</th>
-  <th>金额</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>英语</td>
-  <td>one hundred twenty three point four five</td>
-  <td>美元</td>
-  <td>One hundred twenty three Dollars Forty five Cents</td>
-</tr>
-<tr>
-  <td>法语</td>
-  <td>cent vingt trois . quatre cinq</td>
-  <td>欧元</td>
-  <td>Cent vingt trois Euros Quarante cinq Centimes</td>
-</tr>
-<tr>
-  <td>阿姆哈拉语</td>
-  <td>አንድ መቶ ሀያ ሶስት . አራት አምስት</td>
-  <td>土耳其里拉</td>
-  <td>አንድ መቶ ሀያ ሶስት የቱርክ ሊራ ከ አርባ አምስት ሳንቲም</td>
-</tr>
-</tbody>
-</table>
-<h3 id="%E6%95%B4%E6%95%B0%E8%BD%AC%E6%96%87%E6%9C%AC">整数转文本</h3>
-<p>界面下方可以将整数转换为指定字符集的文本，其中包含了多种预定义字符集，可以修改为自定义字符</p>
-<p>预定义字符集包含了罗马数字、中文、带圈/点/括号的数字、盲文等多种方式</p>
-<p>转换举例：</p>
-<table>
-<thead>
-<tr>
-  <th>字符集</th>
-  <th>结果</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>数字</td>
-  <td>1357</td>
-</tr>
-<tr>
-  <td>粗体</td>
-  <td>𝟭𝟯𝟱𝟳</td>
-</tr>
-<tr>
-  <td>中文3</td>
-  <td>㍙㍛㍝㍟</td>
-</tr>
-<tr>
-  <td>罗马大写</td>
-  <td>ⅠⅢⅤⅦ</td>
-</tr>
-<tr>
-  <td>带圈数字</td>
-  <td>①③⑤⑦</td>
-</tr>
-<tr>
-  <td>括号数字</td>
-  <td>⑴⑶⑸⑺</td>
-</tr>
-<tr>
-  <td>带点数字</td>
-  <td>⒈⒊⒌⒎</td>
-</tr>
-<tr>
-  <td>楔形数字</td>
-  <td>𒐕𒐗𒐙𒐛</td>
-</tr>
-<tr>
-  <td>盲文</td>
-  <td>⠼⠁⠼⠉⠼⠑⠼⠛</td>
-</tr>
-<tr>
-  <td>麻将</td>
-  <td>🀙🀛🀝🀟</td>
-</tr>
-<tr>
-  <td>扑克</td>
-  <td>🂡🂣🂥🂧</td>
-</tr>
-</tbody>
-</table>
-<p>可以使用自定义字符进行转换<br />
-比如：123用字符集 😁 😀 🙂 ❤️ 表示为 😀🙂❤️</p>
-<blockquote>
-<p>自定义字符中的第一个字符代表数字 <strong>0</strong></p>
-<p>自定义字符之间用 <strong>一个空格</strong> 分隔</p>
-<p>此转换为10进制转换，如果需要转为其他进制可以使用<a href="../ToolsSet_Number/RadixConverter.html"  >进制转换工具</a></p>
-<p>不支持反向转换</p>
-</blockquote>
+</li>
+<li><p>获取位范围值</p>
+<p>最下方区域可以按位获取所选范围的值，默认位全部位，可以通过修改起始位和结束位获取其中的一部分</p>
+<p>起始位和结束位可以互换，交换后获取的位也将反序</p>
+<p>可以点击中间的复制按钮复制截取的二进制数据</p>
+</li>
+</ul>
 
                         
                     </div>
@@ -351,18 +249,8 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                 <div id="previous_next">
                     <div id="previous">
                         
-                        <a href="/AppDoc/tools/zh/ToolsSet_Number/RadixConverter.html">
-                            <span class="icon"></span>
-                            <span class="label">进制转换</span>
-                        </a>
-                        
                     </div>
                     <div id="next">
-                        
-                        <a href="/AppDoc/tools/zh/ToolsSet_Number/UnitConvert.html">
-                            <span class="label">单位转换</span>
-                            <span class="icon"></span>
-                        </a>
                         
                     </div>
                 </div>
