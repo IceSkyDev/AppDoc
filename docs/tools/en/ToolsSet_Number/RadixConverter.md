@@ -68,7 +68,7 @@ When you select a predefined character set, the Custom base is automatically mod
 
 Conversion examples:
 
-| | |
+|Base Charset|Result|
 |-|-|
 | Decimal value | 123 |
 | Base16 | 7B |

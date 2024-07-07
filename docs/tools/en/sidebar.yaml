@@ -47,6 +47,10 @@ items:
             file: ToolsSet_Number/ConvertToText.md
         -   label: UnitConverter
             file: ToolsSet_Number/UnitConvert.md
+        -   label: HexOperate
+            file: ToolsSet_Number/HexOperate.md
+        -   label: RatioCalculate
+            file: ToolsSet_Number/RatioCalc.md
     -   label: Date
         file: ToolsSet_Date.md
         items:

@@ -76,9 +76,9 @@ The predefined character set includes Roman number, Chinese, numbers with circle
 
 Conversion examples:
 
-| | |
+|Charset|Result|
 |-|-|
-| Decimal value | 1357 |
+| Decimal | 1357 |
 | BoldNumber | 𝟭𝟯𝟱𝟳 |
 | Chinese3 | ㍙㍛㍝㍟ |
 | RomanNumber2| ⅠⅢⅤⅦ|
