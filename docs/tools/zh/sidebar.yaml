@@ -47,6 +47,10 @@ items:
             file: ToolsSet_Number/ConvertToText.md
         -   label: 单位转换
             file: ToolsSet_Number/UnitConvert.md
+        -   label: 十六进制操作
+            file: ToolsSet_Number/HexOperate.md
+        -   label: 比例计算
+            file: ToolsSet_Number/RatioCalc.md
     -   label: 日期类
         file: ToolsSet_Date.md
         items:
@@ -62,3 +66,12 @@ items:
         file: ToolsSet_Media.md
     -   label: 其他类
         file: ToolsSet_Other.md
+        items:
+        -   label: ASCII码表
+            file: ToolsSet_Other/ASCII.md
+        -   label: Unicode符号表
+            file: ToolsSet_Other/Unicode.md
+        -   label: Emoji列表
+            file: ToolsSet_Other/Emoji.md
+        -   label: 颜文字
+            file: ToolsSet_Other/Emotion.md
