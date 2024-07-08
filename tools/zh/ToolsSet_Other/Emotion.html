@@ -7,10 +7,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="keywords" content="日期处理, 阴历, 颜色, 实用, 数字处理, 图片处理, 文本处理, 速查表">
+    <meta name="keywords" content="颜文字, 生成">
     
     
-    <meta name="description" content="工具合集，包括数字类、日期类、媒体类、文本类、速查表等">
+    <meta name="description" content="颜文字工具，可以按分类查看、生成颜文字、编辑颜文字">
     
     <meta name="generator" content="teedoc">
     <meta name="theme" content="teedoc-plugin-theme-default">
@@ -50,7 +50,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
         
     
     
-    <title>ToolsSet - IceSky App</title>
+    <title>颜文字 - IceSky App</title>
     
     <script type="text/javascript">js_vars = {}</script>
     <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
@@ -80,8 +80,8 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
             </div>
             <div>
                 <ul id="nav_right">
-<li class="sub_items "><a  >Language: 中文 简体</a><ul><li class=""><a  href="/AppDoc/tools/en/ToolsSet.html">English</a></li>
-<li class="active"><a  href="/AppDoc/tools/zh/ToolsSet.html">中文 简体</a></li>
+<li class="sub_items "><a  >Language: 中文 简体</a><ul><li class=""><a  href="/AppDoc/tools/en/ToolsSet_Other/Emotion.html">English</a></li>
+<li class="active"><a  href="/AppDoc/tools/zh/ToolsSet_Other/Emotion.html">中文 简体</a></li>
 </ul></li>
 </ul>
 
@@ -125,7 +125,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/TestTools_ComForward.html"><span class="label">通信转发工具</span><span class=""></span></a></li>
 </ul>
 </li>
-<li class="active with_link"><a href="/AppDoc/tools/zh/ToolsSet.html"><span class="label">ToolsSet</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="active_parent with_link"><a href="/AppDoc/tools/zh/ToolsSet.html"><span class="label">ToolsSet</span><span class="sub_indicator"></span></a><ul class="show">
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number.html"><span class="label">数值类</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number/RadixConverter.html"><span class="label">进制转换</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number/ConvertToText.html"><span class="label">数字文本互转</span><span class=""></span></a></li>
@@ -142,11 +142,11 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 </li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text.html"><span class="label">文本类</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media.html"><span class="label">媒体类</span><span class=""></span></a></li>
-<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other.html"><span class="label">其他类</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="active_parent with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other.html"><span class="label">其他类</span><span class="sub_indicator"></span></a><ul class="show">
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/ASCII.html"><span class="label">ASCII码表</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/Unicode.html"><span class="label">Unicode符号表</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/Emoji.html"><span class="label">Emoji列表</span><span class=""></span></a></li>
-<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/Emotion.html"><span class="label">颜文字</span><span class=""></span></a></li>
+<li class="active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/Emotion.html"><span class="label">颜文字</span><span class=""></span></a></li>
 </ul>
 </li>
 </ul>
@@ -165,7 +165,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_head">
                         <div id="article_title">
                             
-                            <h1>ToolsSet</h1>
+                            <h1>颜文字</h1>
                             
                         </div>
                         <div id="article_tags">
@@ -195,82 +195,31 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_content">
                         
                             <h2 id="%E4%BB%8B%E7%BB%8D">介绍</h2>
-<p>一款包含数十个功能菜单，具有数百种细分功能的工具集合应用，功能还在不断增加完善。</p>
-<p>工具主要分为五类：数值类、文本类、日期类、媒体类、其他类</p>
-<h3 id="%3Ca-href%3D%22./ToolsSet_Number.html%22--%3E%E6%95%B0%E5%80%BC%E7%B1%BB%3C/a%3E"><a href="./ToolsSet_Number.html"  >数值类</a></h3>
-<p>数值类功能包括：进制转换、数字和文本互转、单位转换、十六进制数据操作、比例计算器</p>
+<p>包含30个分类超过2千个预定义颜文字，可以选择部件生成颜文字并编辑颜文字</p>
+<p><img src="../../assets/images/ToolsSet/TSOEmotion.png" alt="" /></p>
+<h2 id="%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">使用方法</h2>
 <ul>
-<li>进制转换：支持float、double类型的十进制转成二进制和十六进制，整数支持任意进制转换</li>
-<li>数字和文本互转：数字和汉字和人民币大写互转，以及转换为其他9种语言文字和7种货币单位的写法</li>
-<li>单位转换：支持70余种数理化单位转换，包括常见的长度、角度、面积、重量、温度等</li>
-<li>十六进制数据操作：可以转换十六进制为二进制并可以按位进行操作</li>
-<li>比例计算器：可以进行百分比计算和分数换算</li>
+<li>查看颜文字列表</li>
 </ul>
-<h3 id="%3Ca-href%3D%22./ToolsSet_Text.html%22--%3E%E6%96%87%E6%9C%AC%E7%B1%BB%3C/a%3E"><a href="./ToolsSet_Text.html"  >文本类</a></h3>
-<p>文本类功能包括：编码解码、加密解密、文本转换、文本生成器、文本比较、JSON格式化、XML工具、正则表达式测试、条形码和二维码编码解码、文本转语音和摩斯码、csv编辑器、文本批处理工具、文本分割合并、列表操作</p>
+<p>点击左侧上方分类标题即可查看各个分类中的颜文字列表，点击其中的颜文字可以将其复制到剪贴板</p>
 <ul>
-<li>编码解码：可以对常见的十种编码格式互相转换，包括常见的ASCII、UTF-8、GB2312、BIG5等，以及对各类Base32、Base64、Base58、Base85的编解码</li>
-<li>加密解密：可以对文本进行AES、DES、RSA加解密，以及计算文本的MD5、SHA hash散列值</li>
-<li>文本转换：支持英数字、中文、日文的各种转换，例如：英文大小写转换、中文简繁体和拼音转换、日文全半角转换等</li>
-<li>文本生成器：可以按指定要求生成密码和测试数据</li>
-<li>文本比较：用于对两个文本进行比较，高亮显示比较结果</li>
-<li>JSON格式化：可以对JSON字符串进行格式化、压缩、扁平化（转为字典）处理</li>
-<li>XML工具：可以对XML字符串进行格式化、压缩、转换成JSON、XPath查询</li>
-<li>正则表达式测试：提供80种常用正则表达式，并可以对正则表达式进行测试</li>
-<li>条形码和二维码编码解码：支持十五种格式的条形码或二维码生成和识别</li>
-<li>文本转语音和摩斯码：调用本机安装的TTS引擎将文本转换为对应语音，支持摩斯电码编解码</li>
-<li>csv编辑器：支持以表格的形式对csv文件进行编辑</li>
-<li>文本批处理工具：可以对表格中的文本进行批量处理，支持公式和模板</li>
-<li>文本分割合并：可以对文本进行分割、合并、连接、Trim以及字数统计</li>
-<li>列表操作：可以对列表进行排序、过滤、长度填充、提取、去重、计数等操作</li>
+<li><p>生成颜文字<br />
+右侧上方可以选择颜文字部件，部件包括：嘴、眼睛、耳朵、脸、手，其中嘴和眼睛必须选择，选择后点击生成按钮即可自动生成</p>
+<blockquote>
+<p>所有部件都可以选择Random来随机选择</p>
+<p>耳朵、脸、手部件可以通过右侧开关来指定是否生成</p>
+<p>自动生成的颜文字显示在下方文本框中，可以点击右侧复制按钮进行复制</p>
+</blockquote>
+</li>
+<li><p>编辑颜文字</p>
+<p>在自动生成颜文字的文本框中输入字符来编辑颜文字，右侧下方为预定义部件列表，可以通过点击将其添加到文本框</p>
+<blockquote>
+<p>可以复制左侧预定义颜文字到文本框，然后进行修改</p>
+<p>可以先生成一个颜文字，然后在此基础上进行修改</p>
+<p>可以在空白文本框中添加部件创建新的颜文字</p>
+</blockquote>
+</li>
 </ul>
-<h3 id="%3Ca-href%3D%22./ToolsSet_Date.html%22--%3E%E6%97%A5%E6%9C%9F%E7%B1%BB%3C/a%3E"><a href="./ToolsSet_Date.html"  >日期类</a></h3>
-<p>日期类功能包括：老黄历、年历、倒计时、世界时间、Cron表达式生成器、Cron表达式转换及测试、日期计算器</p>
-<ul>
-<li>老黄历：可以查看指定日期阳历和阴历的各种信息，包括干支、五行、冲煞、吉凶等</li>
-<li>年历：支持以全年或半年周期查看指定年份的年历</li>
-<li>倒计时：可以按指定时间倒计时</li>
-<li>世界时间：可以查看指定时间在不同时区的时间</li>
-<li>Cron表达式生成器：可以指定参数生成对应的Cron表达式</li>
-<li>Cron表达式转换及测试：可以将Cron表达式转换为指定语言的文本描述，或者将英文描述转换为Cron表达式，还可以获取指定数量的执行时间</li>
-<li>日期计算器：可以计算阳历和阴历指定偏移时间后的时间，阴历干支转成阳历，还可以将日期转为Unix时间戳等</li>
-</ul>
-<h3 id="%3Ca-href%3D%22./ToolsSet_Media.html%22--%3E%E5%AA%92%E4%BD%93%E7%B1%BB%3C/a%3E"><a href="./ToolsSet_Media.html"  >媒体类</a></h3>
-<p>媒体类功能包括：色盘、拾色器、渐变色、颜色混合、颜色提取、图片Base64编解码、歌词编辑器、ASCII字符画、3D图片生成、像素图绘制、图片格式转换、GIF转换、图片比较、HSV色板、图片分割、图片滤镜</p>
-<ul>
-<li>色盘：包含中国传统色、日本传统色和系统色盘，可以查看颜色名称和颜色值</li>
-<li>拾色器：可以在拾色器中选择颜色或输入RGB HEX颜色，并将其转换为其他颜色空间，如HSV、HSL等</li>
-<li>渐变色：可以生成2-5种随机颜色的线性或放射渐变色</li>
-<li>颜色混合：可以指定两种或多种颜色将他们按不同比例混合，获取混合后的颜色值</li>
-<li>颜色提取：可以从指定图片中提取主色调及指定数量的颜色</li>
-<li>图片Base64编解码：可以进行图片和Base64字符串的相互转换</li>
-<li>歌词编辑器：可以根据mp3可视化的对歌词文件添加时间</li>
-<li>ASCII字符画：可以将指定图片或文本转换为ASCII字符画</li>
-<li>3D图片生成：可以指定一副灰度图片和背景将其转换成裸眼3d图，也可以根据文本生成3d文本（这种3d图需要使用交叉眼才能看出来）</li>
-<li>像素图绘制：可以使用网格来绘制像素图</li>
-<li>图片格式转换：支持多种常见格式图片的转换</li>
-<li>GIF转换：支持从GIF动画提取图片序列，及通过图片序列生成GIF动画</li>
-<li>图片比较：支持对两张图片进行比较，并可以查看图片差异部分</li>
-<li>HSV色板：可以查看HSV/HSL颜色空间的调色板</li>
-<li>图片分割：可以将一张图片按照数量或尺寸分割成多个图片块</li>
-<li>图片滤镜：可以给图片增加一系列滤镜</li>
-</ul>
-<h3 id="%3Ca-href%3D%22./ToolsSet_Other.html%22--%3E%E5%85%B6%E4%BB%96%E7%B1%BB%3C/a%3E"><a href="./ToolsSet_Other.html"  >其他类</a></h3>
-<p>其他类功能包括：ASCII码表、ISO列表、Unicode符号表、Emoji列表、颜文字、字体查看器、几何路径查看器、目录预览、常用快捷键表、速查表</p>
-<ul>
-<li>ASCII码表：可以查看ASCII码的8进制、十进制、十六进制及HTML字符</li>
-<li>ISO列表：可以查看国际标准的国家代码、货币代码和语言代码</li>
-<li>Unicode符号表：可以按分类查看Unicode符号</li>
-<li>Emoji列表：可以按分类查看Emoji图片并复制</li>
-<li>颜文字：包含上千个颜文字列表，可以创建随机的颜文字，支持编辑修改</li>
-<li>字体查看器：可以查看系统安装字体中的字符及其编码，还可以转换字符为几何路径</li>
-<li>几何路径查看器：可以查看svg或xaml中几何路径生成的图形</li>
-<li>目录预览：可以查看本机目录及文件列表，可以复制目录和文件路径或名称，支持是否包含子目录选项</li>
-<li>常用快捷键表：可以查看常用软件的快捷键，包括office、VS、PS等</li>
-<li>速查表：可以查看各种常用命令及代码，包括python函数、vim命令、Linux命令、正则表达式语法等</li>
-</ul>
-<p><a href="https://apps.microsoft.com/detail/9NQGTZGM4LRH"  target="_blank">ToolsSet</a></p>
-<p><a href="https://apps.microsoft.com/detail/9N6W6006WDVK"  target="_blank">FreeToolsSet</a></p>
 
                         
                     </div>
@@ -278,18 +227,13 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                 <div id="previous_next">
                     <div id="previous">
                         
-                        <a href="/AppDoc/tools/zh/TestTools_ComForward.html">
+                        <a href="/AppDoc/tools/zh/ToolsSet_Other/Emoji.html">
                             <span class="icon"></span>
-                            <span class="label">通信转发工具</span>
+                            <span class="label">Emoji列表</span>
                         </a>
                         
                     </div>
                     <div id="next">
-                        
-                        <a href="/AppDoc/tools/zh/ToolsSet_Number.html">
-                            <span class="label">数值类</span>
-                            <span class="icon"></span>
-                        </a>
                         
                     </div>
                 </div>

@@ -66,4 +66,13 @@ items:
         file: ToolsSet_Media.md
     -   label: Other
         file: ToolsSet_Other.md
+        items:
+        -   label: ASCII Table
+            file: ToolsSet_Other/ASCII.md
+        -   label: Unicode Symbols
+            file: ToolsSet_Other/Unicode.md
+        -   label: Emoji List
+            file: ToolsSet_Other/Emoji.md
+        -   label: Emotions
+            file: ToolsSet_Other/Emotion.md
 
