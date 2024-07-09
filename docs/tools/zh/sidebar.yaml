@@ -62,8 +62,20 @@ items:
             file: ToolsSet_Date/Countdown.md
     -   label: 文本类
         file: ToolsSet_Text.md
+        items:
+        -   label: 编码解码
+            file: ToolsSet_Text/Encode.md
+        -   label: 加密解密
+            file: ToolsSet_Text/Encrypt.md
     -   label: 媒体类
         file: ToolsSet_Media.md
+        items:
+        -   label: 拾色器
+            file: ToolsSet_Media/ColorPicker.md
+        -   label: 色盘
+            file: ToolsSet_Media/ColorPalette.md
+        -   label: HSV色板
+            file: ToolsSet_Media/HSVPalette.md
     -   label: 其他类
         file: ToolsSet_Other.md
         items:
