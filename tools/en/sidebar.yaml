@@ -64,6 +64,13 @@ items:
         file: ToolsSet_Text.md
     -   label: Media
         file: ToolsSet_Media.md
+        items:
+        -   label: Color Picker
+            file: ToolsSet_Media/ColorPicker.md
+        -   label: Color Palette
+            file: ToolsSet_Media/ColorPalette.md
+        -   label: HSV Palette
+            file: ToolsSet_Media/HSVPalette.md
     -   label: Other
         file: ToolsSet_Other.md
         items:

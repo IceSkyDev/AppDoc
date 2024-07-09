@@ -8,271 +8,301 @@
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/edu/zh/improve.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/edu/zh/index.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/edu/zh/language.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/edu/zh/chinese.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/edu/zh/enlighten.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/UsefulTools_FunColor.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/ToolsSet_Media/ColorPalette.html</loc>
+            <lastmod>2024-07-09</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/ToolsSet_Media/HSVPalette.html</loc>
+            <lastmod>2024-07-09</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/ToolsSet_Media/ColorPicker.html</loc>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/ToolsSet_Number.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/TestTools.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/UsefulTools_JianBiHua.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/UsefulTools_Traffic.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/UsefulTools_ImageTool.html</loc>
-            <lastmod>2024-07-08</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/ToolsSet_Number/HexOperate.html</loc>
-            <lastmod>2024-07-08</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/ToolsSet_Number/RatioCalc.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/ToolsSet_Number/UnitConvert.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/UsefulTools_Random.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/ToolsSet_Text/Encrypt.html</loc>
+            <lastmod>2024-07-09</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/ToolsSet_Text/Encode.html</loc>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/UsefulTools_Json.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/ToolsSet_Other/Unicode.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/ToolsSet_Other/Emoji.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/ToolsSet_Other/ASCII.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/ToolsSet_Other/Emotion.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/UsefulTools_MulVideo.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/UsefulTools_FunColor.html</loc>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/TestTools_TcpForward.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/TestTools_ModbusTcp.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/ToolsSet.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/TestTools_ComForward.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/UsefulTools_WebCol.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/ToolsSet_Date.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/ToolsSet_Media.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/UsefulTools_ColorTool.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/UsefulTools_Cs2Config.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/ToolsSet_Text.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/ToolsSet_Other.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/ToolsSet_Date/YearCalendar.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/ToolsSet_Date/Countdown.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/ToolsSet_Date/ChineseCalendar.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/UsefulTools.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/index.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/TestTools_ComTest.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/ToolsSet_Number/RadixConverter.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/ToolsSet_Number/ConvertToText.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/ToolsSet_Number/HexOperate.html</loc>
+            <lastmod>2024-07-09</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/tools/zh/ToolsSet_Number/RatioCalc.html</loc>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/game/zh/Nonograms.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/game/zh/WordGame.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/game/zh/Sudoku.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/game/zh/index.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/game/zh/Minesweeper.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
@@ -290,289 +320,319 @@
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/home/en/no_translate.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/edu/en/improve.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/edu/en/index.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/edu/en/language.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/edu/en/chinese.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/edu/en/enlighten.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/edu/en/no_translate.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://IceSkyDev.github.io/AppDoc/tools/en/ToolsSet_Other/ASCII.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <loc>https://IceSkyDev.github.io/AppDoc/tools/en/ToolsSet_Media/ColorPalette.html</loc>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://IceSkyDev.github.io/AppDoc/tools/en/ToolsSet_Other/Emotion.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <loc>https://IceSkyDev.github.io/AppDoc/tools/en/ToolsSet_Media/HSVPalette.html</loc>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://IceSkyDev.github.io/AppDoc/tools/en/UsefulTools_MulVideo.html</loc>
-            <lastmod>2024-07-08</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://IceSkyDev.github.io/AppDoc/tools/en/UsefulTools_FunColor.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <loc>https://IceSkyDev.github.io/AppDoc/tools/en/ToolsSet_Media/ColorPicker.html</loc>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/en/ToolsSet_Number.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/en/UsefulTools_JianBiHua.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/en/UsefulTools_Traffic.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/en/UsefulTools_ImageTool.html</loc>
-            <lastmod>2024-07-08</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://IceSkyDev.github.io/AppDoc/tools/en/ToolsSet_Number/RadixConverter.html</loc>
-            <lastmod>2024-07-08</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://IceSkyDev.github.io/AppDoc/tools/en/ToolsSet_Number/ConvertToText.html</loc>
-            <lastmod>2024-07-08</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://IceSkyDev.github.io/AppDoc/tools/en/ToolsSet_Number/HexOperate.html</loc>
-            <lastmod>2024-07-08</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://IceSkyDev.github.io/AppDoc/tools/en/ToolsSet_Number/RatioCalc.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/en/ToolsSet_Number/UnitConvert.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/en/UsefulTools_Random.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/tools/en/ToolsSet_Text/Encrypt.html</loc>
+            <lastmod>2024-07-09</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/tools/en/ToolsSet_Text/Encode.html</loc>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/en/UsefulTools_Json.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/en/ToolsSet_Other/Unicode.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/en/ToolsSet_Other/Emoji.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://IceSkyDev.github.io/AppDoc/tools/en/UsefulTools_Cs2Config.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <loc>https://IceSkyDev.github.io/AppDoc/tools/en/ToolsSet_Other/ASCII.html</loc>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://IceSkyDev.github.io/AppDoc/tools/en/ToolsSet_Text.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <loc>https://IceSkyDev.github.io/AppDoc/tools/en/ToolsSet_Other/Emotion.html</loc>
+            <lastmod>2024-07-09</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/tools/en/UsefulTools_MulVideo.html</loc>
+            <lastmod>2024-07-09</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/tools/en/UsefulTools_FunColor.html</loc>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/en/ToolsSet_Other.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/en/ToolsSet_Date/YearCalendar.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/en/ToolsSet_Date/Countdown.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/en/ToolsSet_Date/ChineseCalendar.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/en/UsefulTools.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/en/index.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/en/TestTools_ComTest.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/tools/en/ToolsSet_Number/RadixConverter.html</loc>
+            <lastmod>2024-07-09</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/tools/en/ToolsSet_Number/ConvertToText.html</loc>
+            <lastmod>2024-07-09</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/tools/en/ToolsSet_Number/HexOperate.html</loc>
+            <lastmod>2024-07-09</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/tools/en/ToolsSet_Number/RatioCalc.html</loc>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/en/TestTools_TcpForward.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/en/TestTools_ModbusTcp.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/en/ToolsSet.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/en/TestTools_ComForward.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/en/UsefulTools_WebCol.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/en/ToolsSet_Date.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/en/ToolsSet_Media.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/en/UsefulTools_ColorTool.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/tools/en/UsefulTools_Cs2Config.html</loc>
+            <lastmod>2024-07-09</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/tools/en/ToolsSet_Text.html</loc>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/tools/en/no_translate.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/game/en/Nonograms.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/game/en/WordGame.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/game/en/Sudoku.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/game/en/index.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/game/en/Minesweeper.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/game/en/no_translate.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
@@ -584,7 +644,7 @@
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/usage/en/no_translate.html</loc>
-            <lastmod>2024-07-08</lastmod>
+            <lastmod>2024-07-09</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
