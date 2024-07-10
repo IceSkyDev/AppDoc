@@ -29,7 +29,7 @@ Support color picker, random color selection, color space conversion
 
 * Color space conversion
 
-After selecting a color, the color space conversion will be automatically performed, and the supported color spaces are:
+  After selecting a color, the color space conversion will be automatically performed, and the supported color spaces are:
   * RGB
   * HSV
   * HSL

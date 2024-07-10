@@ -15,7 +15,7 @@ Contains more than 2,000 predefined emotion text in 30 categories, and you can s
 
 * View list of emotions
 
-Click on the category headings at the top left to view emotion text in each category, and click to copy it
+  Click on the category headings at the top left to view emotion text in each category, and click to copy it
 
 * Generate emotions
   You can select the parts on the upper right side, which includes: mouth, eyes, ears, face, and hands, the mouth and eyes must be selected, and then click the generate button to automatically generate
@@ -28,7 +28,7 @@ Click on the category headings at the top left to view emotion text in each cate
 
 * Edit emotion
   
-Enter characters to edit in the text box, and at the bottom right is a list of predefined parts, which can be added to the text box by clicking it
+  Enter characters to edit in the text box, and at the bottom right is a list of predefined parts, which can be added to the text box by clicking it
 
   > You can copy the predefined text on the left to the text box and modify them
   >

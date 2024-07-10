@@ -60,6 +60,14 @@ items:
             file: ToolsSet_Date/YearCalendar.md
         -   label: Countdown
             file: ToolsSet_Date/Countdown.md
+        -   label: WorldTime
+            file: ToolsSet_Date/WorldTime.md
+        -   label: CronBuilder
+            file: ToolsSet_Date/CronBuilder.md
+        -   label: CronConverter
+            file: ToolsSet_Date/CronConverter.md
+        -   label: DateCalculate
+            file: ToolsSet_Date/DateCalc.md
     -   label: Text
         file: ToolsSet_Text.md
     -   label: Media
