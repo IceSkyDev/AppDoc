@@ -7,10 +7,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="keywords" content="文本处理, 编码解码, 加密解密, 转换, 生成, 比较, 格式化, 正则">
+    <meta name="keywords" content="Cron测试, 生成">
     
     
-    <meta name="description" content="文本处理类工具，编码解码、加密解密、文本转换生成、文本比较、格式化、正则表达式、文本转语音、csv编辑器、批处理、分割合并等">
+    <meta name="description" content="Cron表达式转换及测试，可以将英文描述转为表达式，表达式转为多语言描述，生成测试时间">
     
     <meta name="generator" content="teedoc">
     <meta name="theme" content="teedoc-plugin-theme-default">
@@ -50,7 +50,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
         
     
     
-    <title>ToolsSet 文本类 - IceSky App</title>
+    <title>Cron表达式转换及测试 - IceSky App</title>
     
     <script type="text/javascript">js_vars = {}</script>
     <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
@@ -80,8 +80,8 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
             </div>
             <div>
                 <ul id="nav_right">
-<li class="sub_items "><a  >Language: 中文 简体</a><ul><li class=""><a  href="/AppDoc/tools/en/ToolsSet_Text.html">English</a></li>
-<li class="active"><a  href="/AppDoc/tools/zh/ToolsSet_Text.html">中文 简体</a></li>
+<li class="sub_items "><a  >Language: 中文 简体</a><ul><li class=""><a  href="/AppDoc/tools/en/ToolsSet_Date/CronConverter.html">English</a></li>
+<li class="active"><a  href="/AppDoc/tools/zh/ToolsSet_Date/CronConverter.html">中文 简体</a></li>
 </ul></li>
 </ul>
 
@@ -134,17 +134,17 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number/RatioCalc.html"><span class="label">比例计算</span><span class=""></span></a></li>
 </ul>
 </li>
-<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Date.html"><span class="label">日期类</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="active_parent with_link"><a href="/AppDoc/tools/zh/ToolsSet_Date.html"><span class="label">日期类</span><span class="sub_indicator"></span></a><ul class="show">
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Date/ChineseCalendar.html"><span class="label">老黄历</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Date/YearCalendar.html"><span class="label">年历</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Date/Countdown.html"><span class="label">倒计时</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Date/WorldTime.html"><span class="label">世界时间</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Date/CronBuilder.html"><span class="label">Cron表达式生成器</span><span class=""></span></a></li>
-<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Date/CronConverter.html"><span class="label">Cron表达式转换及测试</span><span class=""></span></a></li>
+<li class="active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Date/CronConverter.html"><span class="label">Cron表达式转换及测试</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Date/DateCalc.html"><span class="label">日期计算器</span><span class=""></span></a></li>
 </ul>
 </li>
-<li class="active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text.html"><span class="label">文本类</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text.html"><span class="label">文本类</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/Encode.html"><span class="label">编码解码</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/Encrypt.html"><span class="label">加密解密</span><span class=""></span></a></li>
 </ul>
@@ -178,7 +178,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_head">
                         <div id="article_title">
                             
-                            <h1>ToolsSet 文本类</h1>
+                            <h1>Cron表达式转换及测试</h1>
                             
                         </div>
                         <div id="article_tags">
@@ -208,245 +208,23 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_content">
                         
                             <h2 id="%E4%BB%8B%E7%BB%8D">介绍</h2>
-<p>功能包括：Encode &amp; Decode、Encrypt &amp; Decrypt &amp; Hash、Text Converter、Text Generator、Text Compare、JSON Formatter、XML Tool、Regex Test、Qr &amp; Bar code、TTS &amp; Morse、Csv Editor、Text Batch、Split Join、List Operate</p>
-<p><img src="../assets/images/ToolsSet/ToolsSet01.png" alt="" /></p>
-<h2 id="%E5%8A%9F%E8%83%BD%E5%88%97%E8%A1%A8">功能列表</h2>
-<h3 id="Encode-%26amp%3B-Decode-%3Cem%3E%E7%BC%96%E7%A0%81%E8%A7%A3%E7%A0%81%3C/em%3E">Encode &amp; Decode <em>编码解码</em></h3>
+<p>将Cron表达式转换为指定语言的文本描述，或者将英文描述转换为Cron表达式，还可以获取指定数量的执行时间</p>
+<p><img src="../../assets/images/ToolsSet/TSDCronConv.png" alt="" /></p>
+<h2 id="%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">使用方法</h2>
 <ul>
-<li>常用编码转换（11种）<ul>
-<li>Byte数组</li>
-<li>ASCII</li>
-<li>UTF-8</li>
-<li>Iso 8859-1</li>
-<li>UTF-16</li>
-<li>UTF-16 BE</li>
-<li>UTF-32</li>
-<li>UTF-32 BE</li>
-<li>GB2312</li>
-<li>BIG5</li>
-<li>Shift-JIS</li>
-</ul>
+<li><p>Cron表达式转描述</p>
+<p>在上方文本框输入Cron表达式，从右侧下拉框选择描述语言，点击转换按钮即可将表达式转为相应语言描述</p>
 </li>
-<li>Base编码转换（13种）<ul>
-<li>Base64</li>
-<li>Base32（6种）</li>
-<li>Base58（3种）</li>
-<li>Base85（3种）</li>
-</ul>
+<li><p>描述转Cron表达式</p>
+<p>点击中间区域左侧按钮可以弹出预定义描述选择列表，选择之后描述会显示在右侧文本框中，此时可以对其进行编辑修改，修改完成点击右侧按钮即可转换为Cron表达式</p>
 </li>
-</ul>
-<h3 id="Encrypt-%26amp%3B-Decrypt-%26amp%3B-Hash-%3Cem%3E%E5%8A%A0%E5%AF%86%E8%A7%A3%E5%AF%86%3C/em%3E">Encrypt &amp; Decrypt &amp; Hash <em>加密解密</em></h3>
-<ul>
-<li>加解密<ul>
-<li>AES加解密</li>
-<li>DES加解密</li>
-<li>RSA加解密</li>
-</ul>
-</li>
-<li>Hash<ul>
-<li>MD5-16</li>
-<li>MD5-32</li>
-<li>SHA1</li>
-<li>SHA256</li>
-<li>SHA384</li>
-<li>SHA512</li>
-</ul>
-</li>
-</ul>
-<h3 id="Text-Converter-%3Cem%3E%E6%96%87%E6%9C%AC%E8%BD%AC%E6%8D%A2%3C/em%3E">Text Converter <em>文本转换</em></h3>
-<ul>
-<li>字母转换<ul>
-<li>转为大写</li>
-<li>转为小写</li>
-<li>下划线连接</li>
-<li>首字母大写</li>
-<li>驼峰模式</li>
-<li>中划线连接</li>
-<li>常量模式</li>
-<li>标题模式</li>
-<li>大小写反转</li>
-</ul>
-</li>
-<li>中文转换<ul>
-<li>转为简体</li>
-<li>转为繁体</li>
-<li>转为无声调拼音</li>
-<li>转为带声调拼音</li>
-<li>转为拼音标题</li>
-<li>转为姓名拼音</li>
-<li>转为拼音首字母</li>
-<li>拼音转为汉字</li>
-<li>拼音转为姓名汉字</li>
-</ul>
-</li>
-<li>日文转换<ul>
-<li>平假名/片假名 -&gt; 罗马字</li>
-<li>罗马字/片假名 -&gt; 平假名</li>
-<li>罗马字/平假名 -&gt; 片假名</li>
-<li>半角字符 -&gt; 全角字符</li>
-<li>全角字符 -&gt; 半角字符</li>
-</ul>
-</li>
-</ul>
-<h3 id="Text-Generator-%3Cem%3E%E6%96%87%E6%9C%AC%E7%94%9F%E6%88%90%E5%99%A8%3C/em%3E">Text Generator <em>文本生成器</em></h3>
-<ul>
-<li>密码生成<ul>
-<li>指定长度</li>
-<li>包含数字</li>
-<li>包含大小写字母</li>
-<li>包含特殊符号</li>
-<li>包含自定义字符</li>
-</ul>
-</li>
-<li>假文本生成<ul>
-<li>12种语言（部分类型支持）</li>
-<li>34种数据类型</li>
-<li>指定数量</li>
-<li>指定范围</li>
-</ul>
-</li>
-</ul>
-<h3 id="Text-Compare-%3Cem%3E%E6%96%87%E6%9C%AC%E6%AF%94%E8%BE%83%3C/em%3E">Text Compare <em>文本比较</em></h3>
-<ul>
-<li>高亮显示文本比较结果</li>
-</ul>
-<h3 id="JSON-Formatter-%3Cem%3EJSON%E6%A0%BC%E5%BC%8F%E5%8C%96%3C/em%3E">JSON Formatter <em>JSON格式化</em></h3>
-<ul>
-<li>JSON格式化</li>
-<li>JSON压缩</li>
-<li>JSON扁平化</li>
-<li>JSON反扁平化</li>
-<li>JSON转XML</li>
-</ul>
-<h3 id="XML-Tool-%3Cem%3EXML%E5%B7%A5%E5%85%B7%3C/em%3E">XML Tool <em>XML工具</em></h3>
-<ul>
-<li>XML格式化</li>
-<li>XML压缩</li>
-<li>XML转JSON</li>
-<li>XPath查找</li>
-</ul>
-<h3 id="Regex-Test-%3Cem%3E%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%B5%8B%E8%AF%95%3C/em%3E">Regex Test <em>正则表达式测试</em></h3>
-<ul>
-<li>82种预定义正则表达式</li>
-<li>正则表达式测试<ul>
-<li>全局、多行、区分大小写开关</li>
-<li>匹配结果分组</li>
-<li>显示捕获</li>
-</ul>
-</li>
-</ul>
-<h3 id="Qr-%26amp%3B-Bar-code-%3Cem%3E%E6%9D%A1%E5%BD%A2%E7%A0%81%E5%92%8C%E4%BA%8C%E7%BB%B4%E7%A0%81%E7%BC%96%E7%A0%81%E8%A7%A3%E7%A0%81%3C/em%3E">Qr &amp; Bar code <em>条形码和二维码编码解码</em></h3>
-<ul>
-<li>生成条形码或二维码（13种）</li>
-<li>识别条形码或二维码</li>
-</ul>
-<h3 id="TTS-%26amp%3B-Morse-%3Cem%3E%E6%96%87%E6%9C%AC%E8%BD%AC%E8%AF%AD%E9%9F%B3%E5%92%8C%E6%91%A9%E6%96%AF%E7%A0%81%3C/em%3E">TTS &amp; Morse <em>文本转语音和摩斯码</em></h3>
-<ul>
-<li>文本转语言<ul>
-<li>直接播放</li>
-<li>导出音频</li>
-</ul>
-</li>
-<li>摩斯编码转换<ul>
-<li>文本转摩斯编码<ul>
-<li>直接播放</li>
-<li>导出音频</li>
-</ul>
-</li>
-<li>摩斯编码转文本</li>
-</ul>
-</li>
-</ul>
-<h3 id="Csv-Editor-%3Cem%3ECsv%E7%BC%96%E8%BE%91%E5%99%A8%3C/em%3E">Csv Editor <em>Csv编辑器</em></h3>
-<ul>
-<li>以表格形式编辑CSV文件<ul>
-<li>支持添加删除行列</li>
-<li>支持同时查看文本</li>
-</ul>
-</li>
-</ul>
-<h3 id="Text-Batch-%3Cem%3E%E6%96%87%E6%9C%AC%E6%89%B9%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7%3C/em%3E">Text Batch <em>文本批处理工具</em></h3>
-<ul>
-<li>网格形式批处理文本<ul>
-<li>支持公式</li>
-<li>支持模板</li>
-</ul>
-</li>
-</ul>
-<h3 id="Split-Join-%3Cem%3E%E6%96%87%E6%9C%AC%E5%88%86%E5%89%B2%E5%90%88%E5%B9%B6%3C/em%3E">Split Join <em>文本分割合并</em></h3>
-<ul>
-<li>文本分割<ul>
-<li>按数量分割</li>
-<li>按字符分割</li>
-<li>指定分隔符</li>
-</ul>
-</li>
-<li>文本合并<ul>
-<li>合并多个空格</li>
-<li>合并多个换行</li>
-<li>合并多个空白字符</li>
-<li>合并多个指定字符</li>
-</ul>
-</li>
-<li>多行文本连接<ul>
-<li>用空格连接</li>
-<li>用制表符连接</li>
-<li>用指定字符连接</li>
-</ul>
-</li>
-<li>文本裁剪<ul>
-<li>指定位置</li>
-<li>指定裁剪字符</li>
-</ul>
-</li>
-<li>字数统计<ul>
-<li>按类型统计字符数量</li>
-<li>统计ASCII字符数量</li>
-<li>统计数量前100的字符</li>
-<li>统计指定文本的数量</li>
-</ul>
-</li>
-</ul>
-<h3 id="List-Operate-%3Cem%3E%E5%88%97%E8%A1%A8%E6%93%8D%E4%BD%9C%3C/em%3E">List Operate <em>列表操作</em></h3>
-<ul>
-<li>排序<ul>
-<li>字符升序、降序</li>
-<li>随机排序</li>
-<li>长度升序、降序</li>
-<li>倒序</li>
-<li>是否启用数字格式</li>
-</ul>
-</li>
-<li>查找<ul>
-<li>开始位置</li>
-<li>结束位置</li>
-<li>包含</li>
-<li>长度匹配</li>
-</ul>
-</li>
-<li>Pad操作<ul>
-<li>指定位置：左、右</li>
-<li>指定字符</li>
-<li>指定长度</li>
-</ul>
-</li>
-<li>提取<ul>
-<li>指定方向：左、右</li>
-<li>按数量提取</li>
-<li>按字符提取</li>
-</ul>
-</li>
-<li>单一操作<ul>
-<li>去除重复项</li>
-<li>计数</li>
-<li>按字符反序</li>
-</ul>
-</li>
-<li>列表运算<ul>
-<li>获取并集</li>
-<li>获取交集</li>
-<li>排除列表</li>
-</ul>
+<li><p>生成测试时间</p>
+<ol>
+<li>输入表达式：在Cron Test 上方文本框中输入合法的Cron表达式，超过5个部分时需要选择是否包含秒或年的部分</li>
+<li>选择开始日期和时间：在下方输入或选择开始日期时间，日期为空时为当天，时间为空时0点</li>
+<li>设置数量：在数量文本框输入或用右侧按钮增减数量</li>
+<li>生成时间：点击下方按钮即可在右侧生成指定数量的运行时间列表</li>
+</ol>
 </li>
 </ul>
 
@@ -456,16 +234,16 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                 <div id="previous_next">
                     <div id="previous">
                         
-                        <a href="/AppDoc/tools/zh/ToolsSet_Date/DateCalc.html">
+                        <a href="/AppDoc/tools/zh/ToolsSet_Date/CronBuilder.html">
                             <span class="icon"></span>
-                            <span class="label">日期计算器</span>
+                            <span class="label">Cron表达式生成器</span>
                         </a>
                         
                     </div>
                     <div id="next">
                         
-                        <a href="/AppDoc/tools/zh/ToolsSet_Text/Encode.html">
-                            <span class="label">编码解码</span>
+                        <a href="/AppDoc/tools/zh/ToolsSet_Date/DateCalc.html">
+                            <span class="label">日期计算器</span>
                             <span class="icon"></span>
                         </a>
                         

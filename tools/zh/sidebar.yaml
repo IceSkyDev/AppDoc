@@ -60,6 +60,14 @@ items:
             file: ToolsSet_Date/YearCalendar.md
         -   label: 倒计时
             file: ToolsSet_Date/Countdown.md
+        -   label: 世界时间
+            file: ToolsSet_Date/WorldTime.md
+        -   label: Cron表达式生成器
+            file: ToolsSet_Date/CronBuilder.md
+        -   label: Cron表达式转换及测试
+            file: ToolsSet_Date/CronConverter.md
+        -   label: 日期计算器
+            file: ToolsSet_Date/DateCalc.md
     -   label: 文本类
         file: ToolsSet_Text.md
         items:

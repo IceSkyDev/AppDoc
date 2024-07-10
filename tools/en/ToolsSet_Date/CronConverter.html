@@ -7,10 +7,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="keywords" content="黄历, Chinese lunar calendar, 天干地支, 五行, 吉凶">
+    <meta name="keywords" content="Cron Converter, generate cron">
     
     
-    <meta name="description" content="Chinese lunar calendar">
+    <meta name="description" content="Cron expression conversion and testing, you can convert English descriptions into expressions, and expressions into multilingual descriptions, and generate test time">
     
     <meta name="generator" content="teedoc">
     <meta name="theme" content="teedoc-plugin-theme-default">
@@ -50,7 +50,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
         
     
     
-    <title>ChineseCalendar - IceSky App</title>
+    <title>CronConverter - IceSky App</title>
     
     <script type="text/javascript">js_vars = {}</script>
     <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
@@ -80,8 +80,8 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
             </div>
             <div>
                 <ul id="nav_right">
-<li class="sub_items "><a  >Language: English</a><ul><li class="active"><a  href="/AppDoc/tools/en/ToolsSet_Date/ChineseCalendar.html">English</a></li>
-<li class=""><a  href="/AppDoc/tools/zh/ToolsSet_Date/ChineseCalendar.html">中文 简体</a></li>
+<li class="sub_items "><a  >Language: English</a><ul><li class="active"><a  href="/AppDoc/tools/en/ToolsSet_Date/CronConverter.html">English</a></li>
+<li class=""><a  href="/AppDoc/tools/zh/ToolsSet_Date/CronConverter.html">中文 简体</a></li>
 </ul></li>
 </ul>
 
@@ -135,12 +135,12 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 </ul>
 </li>
 <li class="active_parent with_link"><a href="/AppDoc/tools/en/ToolsSet_Date.html"><span class="label">Date</span><span class="sub_indicator"></span></a><ul class="show">
-<li class="active with_link"><a href="/AppDoc/tools/en/ToolsSet_Date/ChineseCalendar.html"><span class="label">ChineseCalendar</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Date/ChineseCalendar.html"><span class="label">ChineseCalendar</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Date/YearCalendar.html"><span class="label">YearCalendar</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Date/Countdown.html"><span class="label">Countdown</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Date/WorldTime.html"><span class="label">WorldTime</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Date/CronBuilder.html"><span class="label">CronBuilder</span><span class=""></span></a></li>
-<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Date/CronConverter.html"><span class="label">CronConverter</span><span class=""></span></a></li>
+<li class="active with_link"><a href="/AppDoc/tools/en/ToolsSet_Date/CronConverter.html"><span class="label">CronConverter</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Date/DateCalc.html"><span class="label">DateCalculate</span><span class=""></span></a></li>
 </ul>
 </li>
@@ -174,7 +174,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_head">
                         <div id="article_title">
                             
-                            <h1>ChineseCalendar</h1>
+                            <h1>CronConverter</h1>
                             
                         </div>
                         <div id="article_tags">
@@ -204,88 +204,25 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_content">
                         
                             <h2 id="Introduce">Introduce</h2>
-<p>This tool allows you to view information about a given solar calendar date and its various information corresponding to the Chinese lunar calendar</p>
-<p><img src="../../assets/images/ToolsSet/TS4.png" alt="" /></p>
+<p>You can convert a Cron expression to text description in a specified language, or convert an English description to a Cron expression, can also generate a specified count of execution time</p>
+<p><img src="../../assets/images/ToolsSet/TSDCronConv.png" alt="" /></p>
 <h2 id="How-to-use">How to use</h2>
-<ol>
-<li><p>Select a date: Click date in the calendar at the top left</p>
-<blockquote>
-<p>Click on the calendar title once to select the month, and click the left and right arrow icons to turn the page by year</p>
-<p>Click the calendar header twice to select the year, and click the left and right arrow icons to turn the page in ten-year increments</p>
-<p>Click the calendar icon below the calendar to jump to today</p>
-</blockquote>
-</li>
-<li><p>Solar date info: The solar area below the calendar includes:</p>
 <ul>
-<li>Whether it is a leap year</li>
-<li>Zodiac sign</li>
-<li>Day of the year</li>
-<li>Day of the month</li>
-<li>Week of the year</li>
-<li>Week of the month</li>
-<li>Quarter of the year</li>
-<li>Holidays</li>
-</ul>
+<li><p>Cron expressions to description</p>
+<p>Enter the Cron expression in the text box, select a description language from the drop-down box on the right, and click the Convert button to convert the expression to the corresponding language description</p>
 </li>
-<li><p>Lunar date info: The lunar area below the calendar includes:</p>
-<ul>
-<li>三九/三伏第几天</li>
-<li>生肖</li>
-<li>阴历日期</li>
-<li>阴历月数和天数</li>
-<li>阴历闰月信息</li>
-<li>物候、节气</li>
-<li>侯、月相</li>
-</ul>
+<li><p>Description to Cron expression</p>
+<p>Click the button on the left side of the middle area to pop up a list of predefined descriptions, and the description will be displayed in the text box on the right after selection, you can edit and modify it, and click the button on the right to convert it to a Cron expression</p>
 </li>
-<li><p>Chinese lunar info：On the right side, divided into three areas from top to bottom, including the following contents:</p>
+<li><p>Generate time</p>
 <ol>
-<li>阴历年月日信息<ul>
-<li>阴历中文名称</li>
-<li>天干地支</li>
-<li>生肖</li>
-<li>太岁</li>
-<li>五行</li>
-<li>纳音</li>
-<li>天干十神</li>
-<li>地支十神</li>
-<li>地势</li>
-<li>九星</li>
-<li>旬</li>
-<li>旬空</li>
-</ul>
-</li>
-<li>天神和吉凶<ul>
-<li>冲煞</li>
-<li>值星</li>
-<li>天神</li>
-<li>吉凶</li>
-<li>四宫</li>
-<li>二十八星宿</li>
-<li>六曜</li>
-<li>禄</li>
-<li>吉神</li>
-<li>凶煞</li>
-<li>宜忌</li>
-<li>吉神方位</li>
-<li>胎神方位</li>
-<li>二十八星宿歌诀</li>
-</ul>
-</li>
-<li>时辰信息<ul>
-<li>时辰名称</li>
-<li>时刻</li>
-<li>冲煞</li>
-<li>旬空</li>
-<li>天神</li>
-<li>纳音</li>
-<li>九星</li>
-<li>宜忌</li>
-</ul>
-</li>
+<li>Enter expression: Enter a valid Cron expression in the text box in the Cron Test area, and if there are more than 5 parts, you need to select whether to include seconds or years</li>
+<li>Select start date and time: Enter or select the start date and time below, the date is the current day when the date is empty, and the time is 0:00 when the time is empty</li>
+<li>Set quantity: Enter quantity in the text box or use the button on the right to increase or decrease the quantity</li>
+<li>Generate time: Click the button below to generate a list of the specified count of times on the right side</li>
 </ol>
 </li>
-</ol>
+</ul>
 
                         
                     </div>
@@ -293,16 +230,16 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                 <div id="previous_next">
                     <div id="previous">
                         
-                        <a href="/AppDoc/tools/en/ToolsSet_Date.html">
+                        <a href="/AppDoc/tools/en/ToolsSet_Date/CronBuilder.html">
                             <span class="icon"></span>
-                            <span class="label">Date</span>
+                            <span class="label">CronBuilder</span>
                         </a>
                         
                     </div>
                     <div id="next">
                         
-                        <a href="/AppDoc/tools/en/ToolsSet_Date/YearCalendar.html">
-                            <span class="label">YearCalendar</span>
+                        <a href="/AppDoc/tools/en/ToolsSet_Date/DateCalc.html">
+                            <span class="label">DateCalculate</span>
                             <span class="icon"></span>
                         </a>
                         
