@@ -9,7 +9,7 @@ desc: 各种条形码和二维码生成和识别工具
 
 提供多种条形码和二维码的生成和识别
 
-![](../../assets/images/ToolsSet/TSTBarcode.png)
+![](../../assets/images/ToolsSet/TSTBarCode.png)
 
 ## 使用方法
 

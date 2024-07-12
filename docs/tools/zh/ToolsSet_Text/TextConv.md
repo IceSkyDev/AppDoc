@@ -27,8 +27,7 @@ desc: 各种文本转换，包括英文大小写、中文简体繁体、中文�
   * Title：单词首字母大写，比如 hello world -> Hello World
   * Constant：大写且单词间用下划线连接，比如 Hello World -> HELLO_WORLD
   * Reverse：大小写反转，比如 Hello World -> hELLO  wORLD
-  * RevWord：以单词为单位反转顺序，比如 Hello World -> World Hello
-  
+  * RevWord：以单词为单位反转顺序，比如 Hello World -> World Hello  
   > Snake、Kebab、Heder、Constant这四种转换会自动按字母大小写划分单词
 
 ### 中文转换

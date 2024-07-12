@@ -9,7 +9,7 @@ desc: Various types of barcode and QR code generate and recognize tool
 
 Provides various types of barcode and QR code generate and recognize
 
-![](../../assets/images/ToolsSet/TSTBarcode.png)
+![](../../assets/images/ToolsSet/TSTBarCode.png)
 
 ## How to use
 
