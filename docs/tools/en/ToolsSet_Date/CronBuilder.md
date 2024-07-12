@@ -48,7 +48,7 @@ Generate cron expression based on the specified rules
    * Specify the minute
    * Every minute within the specified range
 
-* seconds setting
+* Seconds setting
    * Any second
    * The second period that starts with the specified second
    * Specify the second

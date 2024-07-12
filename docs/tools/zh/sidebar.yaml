@@ -75,6 +75,16 @@ items:
             file: ToolsSet_Text/Encode.md
         -   label: 加密解密
             file: ToolsSet_Text/Encrypt.md
+        -   label: 文本转换
+            file: ToolsSet_Text/TextConv.md
+        -   label: 文本生成
+            file: ToolsSet_Text/TextGenerate.md
+        -   label: Json和XML工具
+            file: ToolsSet_Text/TextFormat.md
+        -   label: 条形码和二维码
+            file: ToolsSet_Text/BarCode.md
+        -   label: 文本转语音
+            file: ToolsSet_Text/TTS.md
     -   label: 媒体类
         file: ToolsSet_Media.md
         items:
@@ -95,3 +105,7 @@ items:
             file: ToolsSet_Other/Emoji.md
         -   label: 颜文字
             file: ToolsSet_Other/Emotion.md
+        -   label: 字体查看器
+            file: ToolsSet_Other/FontViewer.md
+        -   label: 目录预览
+            file: ToolsSet_Other/DirViewer.md

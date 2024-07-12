@@ -41,35 +41,50 @@ items:
     -   label: Number
         file: ToolsSet_Number.md
         items:
-        -   label: RadixConverter
+        -   label: Radix Converter
             file: ToolsSet_Number/RadixConverter.md
-        -   label: ConvertToText
+        -   label: Convert To Text
             file: ToolsSet_Number/ConvertToText.md
-        -   label: UnitConverter
+        -   label: Unit Converter
             file: ToolsSet_Number/UnitConvert.md
-        -   label: HexOperate
+        -   label: Hex Operate
             file: ToolsSet_Number/HexOperate.md
-        -   label: RatioCalculate
+        -   label: Ratio Calculate
             file: ToolsSet_Number/RatioCalc.md
     -   label: Date
         file: ToolsSet_Date.md
         items:
-        -   label: ChineseCalendar
+        -   label: Chinese Calendar
             file: ToolsSet_Date/ChineseCalendar.md
-        -   label: YearCalendar
+        -   label: Year Calendar
             file: ToolsSet_Date/YearCalendar.md
         -   label: Countdown
             file: ToolsSet_Date/Countdown.md
-        -   label: WorldTime
+        -   label: World Time
             file: ToolsSet_Date/WorldTime.md
-        -   label: CronBuilder
+        -   label: Cron Builder
             file: ToolsSet_Date/CronBuilder.md
-        -   label: CronConverter
+        -   label: Cron Converter
             file: ToolsSet_Date/CronConverter.md
-        -   label: DateCalculate
+        -   label: Date Calculate
             file: ToolsSet_Date/DateCalc.md
     -   label: Text
         file: ToolsSet_Text.md
+        items:
+        -   label: Encode & Decode
+            file: ToolsSet_Text/Encode.md
+        -   label: Encrypt & Decrypt
+            file: ToolsSet_Text/Encrypt.md
+        -   label: Text Converter
+            file: ToolsSet_Text/TextConv.md
+        -   label: Text Generator
+            file: ToolsSet_Text/TextGenerate.md
+        -   label: Json XML Tool
+            file: ToolsSet_Text/TextFormat.md
+        -   label: Qr & Bar code
+            file: ToolsSet_Text/BarCode.md
+        -   label: TTS & Morse
+            file: ToolsSet_Text/TTS.md
     -   label: Media
         file: ToolsSet_Media.md
         items:
@@ -90,4 +105,8 @@ items:
             file: ToolsSet_Other/Emoji.md
         -   label: Emotions
             file: ToolsSet_Other/Emotion.md
+        -   label: Font Viewer
+            file: ToolsSet_Other/FontViewer.md
+        -   label: Directory Viewer
+            file: ToolsSet_Other/DirViewer.md
 
