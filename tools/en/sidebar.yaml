@@ -85,6 +85,8 @@ items:
             file: ToolsSet_Text/BarCode.md
         -   label: TTS & Morse
             file: ToolsSet_Text/TTS.md
+        -   label: Regex Test
+            file: ToolsSet_Text/RegexTest.md
     -   label: Media
         file: ToolsSet_Media.md
         items:
@@ -94,6 +96,18 @@ items:
             file: ToolsSet_Media/ColorPalette.md
         -   label: HSV Palette
             file: ToolsSet_Media/HSVPalette.md
+        -   label: Gradient Color
+            file: ToolsSet_Media/GradientColor.md
+        -   label: Color Blender
+            file: ToolsSet_Media/ColorBlender.md
+        -   label: Color Extractor
+            file: ToolsSet_Media/ColorExtractor.md
+        -   label: Image Encode
+            file: ToolsSet_Media/ImageEncode.md
+        -   label: Lrc Editor
+            file: ToolsSet_Media/LrcEditor.md
+        -   label: ASCII Art
+            file: ToolsSet_Media/AsciiArt.md
     -   label: Other
         file: ToolsSet_Other.md
         items:
