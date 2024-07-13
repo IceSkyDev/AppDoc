@@ -85,6 +85,8 @@ items:
             file: ToolsSet_Text/BarCode.md
         -   label: 文本转语音
             file: ToolsSet_Text/TTS.md
+        -   label: 正则表达式测试
+            file: ToolsSet_Text/RegexTest.md
     -   label: 媒体类
         file: ToolsSet_Media.md
         items:
@@ -94,6 +96,18 @@ items:
             file: ToolsSet_Media/ColorPalette.md
         -   label: HSV色板
             file: ToolsSet_Media/HSVPalette.md
+        -   label: 渐变色
+            file: ToolsSet_Media/GradientColor.md
+        -   label: 颜色混合
+            file: ToolsSet_Media/ColorBlender.md
+        -   label: 颜色提取
+            file: ToolsSet_Media/ColorExtractor.md
+        -   label: 图片Base64编解码
+            file: ToolsSet_Media/ImageEncode.md
+        -   label: 歌词编辑器
+            file: ToolsSet_Media/LrcEditor.md
+        -   label: ASCII字符画
+            file: ToolsSet_Media/AsciiArt.md
     -   label: 其他类
         file: ToolsSet_Other.md
         items:
