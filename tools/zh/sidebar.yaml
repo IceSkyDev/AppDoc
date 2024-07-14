@@ -87,6 +87,14 @@ items:
             file: ToolsSet_Text/TTS.md
         -   label: 正则表达式测试
             file: ToolsSet_Text/RegexTest.md
+        -   label: Csv编辑器
+            file: ToolsSet_Text/CsvEditor.md
+        -   label: 文本批处理
+            file: ToolsSet_Text/TextBatch.md
+        -   label: 文本分割合并
+            file: ToolsSet_Text/TextSplit.md
+        -   label: 列表操作
+            file: ToolsSet_Text/ListOpt.md
     -   label: 媒体类
         file: ToolsSet_Media.md
         items:

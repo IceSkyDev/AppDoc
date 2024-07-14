@@ -87,6 +87,14 @@ items:
             file: ToolsSet_Text/TTS.md
         -   label: Regex Test
             file: ToolsSet_Text/RegexTest.md
+        -   label: Csv Editor
+            file: ToolsSet_Text/CsvEditor.md
+        -   label: Text Batch
+            file: ToolsSet_Text/TextBatch.md
+        -   label: Split Join
+            file: ToolsSet_Text/TextSplit.md
+        -   label: List Operate
+            file: ToolsSet_Text/ListOpt.md
     -   label: Media
         file: ToolsSet_Media.md
         items:
