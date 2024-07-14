@@ -9,7 +9,7 @@ desc: The gradient tool can generate 30 linear or radial gradients consisting of
 
 You can generate 30 random gradients according to specified parameters, or one gradient color with a specified color or position, and support linear and radial gradients, linear gradients can specify angles, radial gradients can specify center points, and CSS and XAML code can be generated
 
-Linear gradient:
+Linear Gradient:
 ![](../../assets/images/ToolsSet/TSMGradient.png)
 
 Radial Gradient:

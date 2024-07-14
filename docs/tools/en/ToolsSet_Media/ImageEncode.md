@@ -14,6 +14,7 @@ Provides Base64 encoding and decoding of image
 ## How to use
 
 The left side is the Base64 encoding area, and the right side is the Base64 decoding area
+> Base64 encod and decod by this tool does not contain header prefixes
 
 ### To Base64
 * Click on the image area at the top of the left side and select Open Image or Paste from the pop-up menu
