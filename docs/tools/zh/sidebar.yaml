@@ -116,6 +116,20 @@ items:
             file: ToolsSet_Media/LrcEditor.md
         -   label: ASCII字符画
             file: ToolsSet_Media/AsciiArt.md
+        -   label: 像素图
+            file: ToolsSet_Media/PixelGrid.md
+        -   label: 3D图片生成
+            file: ToolsSet_Media/3DImage.md
+        -   label: 图片格式转换
+            file: ToolsSet_Media/ImgFormat.md
+        -   label: GIF转换
+            file: ToolsSet_Media/GifConv.md
+        -   label: 图片比较
+            file: ToolsSet_Media/ImgCompare.md
+        -   label: 图片分割
+            file: ToolsSet_Media/ImgCrop.md
+        -   label: 图片滤镜
+            file: ToolsSet_Media/ImgFilter.md
     -   label: 其他类
         file: ToolsSet_Other.md
         items:
