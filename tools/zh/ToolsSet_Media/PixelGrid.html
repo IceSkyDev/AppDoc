@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"  class=" language_zh  heading_no_counter ">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="指定尺寸, 网格, 像素数量">
+    
+    
+    <meta name="description" content="提供网格可以用于绘制像素图，支持导出图片及复制文本">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/AppDoc/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/AppDoc/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/AppDoc/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/search/style.css" type="text/css"/>
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/bootstrap.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/animate.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>像素图 - IceSky App</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/AppDoc/">
+                
+                    <img class="site_logo" src="/AppDoc/static/image/logo.png" alt="IceSky Logo">
+                
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/AppDoc/edu/zh/">教育类应用</a></li>
+<li class="active"><a  href="/AppDoc/tools/zh/">工具应用</a></li>
+<li class=""><a  href="/AppDoc/game/zh/">游戏</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class="sub_items "><a  >Language: 中文 简体</a><ul><li class=""><a  href="/AppDoc/tools/en/ToolsSet_Media/PixelGrid.html">English</a></li>
+<li class="active"><a  href="/AppDoc/tools/zh/ToolsSet_Media/PixelGrid.html">中文 简体</a></li>
+</ul></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">搜索</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">输入关键词，多关键词空格隔开</span>
+                                <span id="search_loading_hint">正在加载，请稍候。。。</span>
+                                <span id="search_download_err_hint">下载文件失败，请刷新重试或检查网络</span>
+                                <span id="search_other_docs_result_hint">来自其它文档的结果</span>
+                                <span id="search_curr_doc_result_hint">当前文档搜索结果</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/index.html"><span class="label">工具应用</span><span class=""></span></a></li>
+<li class="not_active no_link"><a><span class="label">实用工具</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_WebCol.html"><span class="label">网址集合</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_Random.html"><span class="label">随机选择工具</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_ColorTool.html"><span class="label">ColorTool</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_ImageTool.html"><span class="label">ImageTool</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_Json.html"><span class="label">JsonTools</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_Cs2Config.html"><span class="label">C#ToConfig</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_MulVideo.html"><span class="label">视频监控</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_JianBiHua.html"><span class="label">简笔画</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_FunColor.html"><span class="label">FunColoring</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_Traffic.html"><span class="label">流量计数器</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">测试类工具</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/TestTools_ComTest.html"><span class="label">调试工具</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/TestTools_ModbusTcp.html"><span class="label">ModbusTcpTool</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/TestTools_TcpForward.html"><span class="label">TCP转发工具</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/TestTools_ComForward.html"><span class="label">通信转发工具</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="active_parent with_link"><a href="/AppDoc/tools/zh/ToolsSet.html"><span class="label">ToolsSet</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number.html"><span class="label">数值类</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number/RadixConverter.html"><span class="label">进制转换</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number/ConvertToText.html"><span class="label">数字文本互转</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number/UnitConvert.html"><span class="label">单位转换</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number/HexOperate.html"><span class="label">十六进制操作</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number/RatioCalc.html"><span class="label">比例计算</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Date.html"><span class="label">日期类</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Date/ChineseCalendar.html"><span class="label">老黄历</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Date/YearCalendar.html"><span class="label">年历</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Date/Countdown.html"><span class="label">倒计时</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Date/WorldTime.html"><span class="label">世界时间</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Date/CronBuilder.html"><span class="label">Cron表达式生成器</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Date/CronConverter.html"><span class="label">Cron表达式转换及测试</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Date/DateCalc.html"><span class="label">日期计算器</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text.html"><span class="label">文本类</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/Encode.html"><span class="label">编码解码</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/Encrypt.html"><span class="label">加密解密</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/TextConv.html"><span class="label">文本转换</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/TextGenerate.html"><span class="label">文本生成</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/TextFormat.html"><span class="label">Json和XML工具</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/BarCode.html"><span class="label">条形码和二维码</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/TTS.html"><span class="label">文本转语音</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/RegexTest.html"><span class="label">正则表达式测试</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/CsvEditor.html"><span class="label">Csv编辑器</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/TextBatch.html"><span class="label">文本批处理</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/TextSplit.html"><span class="label">文本分割合并</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/ListOpt.html"><span class="label">列表操作</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="active_parent with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media.html"><span class="label">媒体类</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/ColorPicker.html"><span class="label">拾色器</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/ColorPalette.html"><span class="label">色盘</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/HSVPalette.html"><span class="label">HSV色板</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/GradientColor.html"><span class="label">渐变色</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/ColorBlender.html"><span class="label">颜色混合</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/ColorExtractor.html"><span class="label">颜色提取</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/ImageEncode.html"><span class="label">图片Base64编解码</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/LrcEditor.html"><span class="label">歌词编辑器</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/AsciiArt.html"><span class="label">ASCII字符画</span><span class=""></span></a></li>
+<li class="active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/PixelGrid.html"><span class="label">像素图</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/3DImage.html"><span class="label">3D图片生成</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/ImgFormat.html"><span class="label">图片格式转换</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/GifConv.html"><span class="label">GIF转换</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/ImgCompare.html"><span class="label">图片比较</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/ImgCrop.html"><span class="label">图片分割</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/ImgFilter.html"><span class="label">图片滤镜</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other.html"><span class="label">其他类</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/ASCII.html"><span class="label">ASCII码表</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/Unicode.html"><span class="label">Unicode符号表</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/Emoji.html"><span class="label">Emoji列表</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/Emotion.html"><span class="label">颜文字</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/FontViewer.html"><span class="label">字体查看器</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/DirViewer.html"><span class="label">目录预览</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>像素图</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <h2 id="%E4%BB%8B%E7%BB%8D">介绍</h2>
+<p>使用网格绘制像素图，可以锁定颜色、填充文本、缩放网格，支持导出图片及复制文本</p>
+<p><img src="../../assets/images/ToolsSet/TSMPixelGrid.png" alt="" /></p>
+<h2 id="%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">使用方法</h2>
+<p>左侧为设置区域，右侧为绘制区域</p>
+<ul>
+<li>工具打开时默认创建了8x8的网格，可以通过左侧设置修改<ul>
+<li>通过Rows滑动条调整网格数量，范围为4~64，调整时行列会同时修改，如果需要行列数量不一样，可以点击右侧按钮切换模式，切换之后可以分别设置行数和列数</li>
+<li>通过Cell Size滑动条设置网格尺寸，范围为20~50，此设置会影响到导出图片时的像素大小</li>
+<li>修改数量和尺寸后点击【New Grid】可以创建一个新的网格</li>
+</ul>
+</li>
+<li>设置颜色有三种方式<ol>
+<li>在Fill Color文本框输入16进制的颜色值</li>
+<li>使用颜色选择器选择</li>
+<li>点击下方预定义颜色选择</li>
+</ol>
+</li>
+<li>可以在With Text的文本框中输入字符，在绘制的同时填充到网格</li>
+<li>文本输入右侧的三个按钮的作用分别是：切换绘制和清除、锁定颜色、清除所有绘制<blockquote>
+鼠标按下并拖动可以连续绘制或清除<br />
+<br />
+锁定颜色开启后在绘制和清除状态下有不同的作用<ul>
+<li>绘制状态下将锁定已经填充颜色的区域使其不会被填充</li>
+<li>清除状态下将锁定只清除与鼠标点击时相同的颜色，其他颜色不会清除</li>
+</ul>
+</blockquote>
+</li>
+<li>点击【ExportImage】按钮可以将绘制的图案导出为图片文件</li>
+<li>点击【CopyText】按钮可以复制网格中填充的文本</li>
+<li>绘制时每使用一种新的颜色就会在最下方记录颜色历史，从而可以快速的重新使用其绘制，颜色历史可以通过点击预定义颜色右侧的按钮清空</li>
+<li>左侧最下方三个按钮可用于对右侧网格的缩放和重置显示，此缩放不会影响最终导出的图片文件</li>
+</ul>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                        <a href="/AppDoc/tools/zh/ToolsSet_Media/AsciiArt.html">
+                            <span class="icon"></span>
+                            <span class="label">ASCII字符画</span>
+                        </a>
+                        
+                    </div>
+                    <div id="next">
+                        
+                        <a href="/AppDoc/tools/zh/ToolsSet_Media/3DImage.html">
+                            <span class="label">3D图片生成</span>
+                            <span class="icon"></span>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a>微信公众号：IceSky</a>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a>Windows 个人独立开发者 - IceSky</a>
+</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/AppDoc/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/AppDoc/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/AppDoc/static/js/theme_default/main.js"></script>
+    
+        <script src="/AppDoc/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/AppDoc/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/AppDoc/static/js/search/search_main.js"></script>
+    
+        <script src="/AppDoc/static/js/plugin_blog/main.js"></script>
+    
+        <script src="/AppDoc/static/js/easing.min.js"></script>
+    
+        <script src="/AppDoc/static/js/custom.js"></script>
+    
+</body>
+
+</html>

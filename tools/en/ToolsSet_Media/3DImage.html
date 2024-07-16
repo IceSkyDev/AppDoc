@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html lang="en"  class=" heading_no_counter ">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="3D Picture, 3D Text">
+    
+    
+    <meta name="description" content="It is used to generate 3D picture and text">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/AppDoc/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/AppDoc/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/AppDoc/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/search/style.css" type="text/css"/>
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/bootstrap.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/animate.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>3D Picture - IceSky App</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/AppDoc/en/">
+                
+                    <img class="site_logo" src="/AppDoc/static/image/logo.png" alt="IceSky Logo">
+                
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/AppDoc/edu/en/">Edu Apps</a></li>
+<li class="active"><a  href="/AppDoc/tools/en/">Tools</a></li>
+<li class=""><a  href="/AppDoc/game/en/">Games</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class="sub_items "><a  >Language: English</a><ul><li class="active"><a  href="/AppDoc/tools/en/ToolsSet_Media/3DImage.html">English</a></li>
+<li class=""><a  href="/AppDoc/tools/zh/ToolsSet_Media/3DImage.html">中文 简体</a></li>
+</ul></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">Search</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">Keywords separated by space</span>
+                                <span id="search_loading_hint">Loading, wait please ...</span>
+                                <span id="search_download_err_hint">Download error, please check network and refresh again</span>
+                                <span id="search_other_docs_result_hint">Result from other docs</span>
+                                <span id="search_curr_doc_result_hint">Result from current doc</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/en/index.html"><span class="label">Tools</span><span class=""></span></a></li>
+<li class="not_active no_link"><a><span class="label">UsefulTools</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_WebCol.html"><span class="label">WebCollection</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_Random.html"><span class="label">ChooseHelper</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_ColorTool.html"><span class="label">ColorTools</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_ImageTool.html"><span class="label">ImageTool</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_Json.html"><span class="label">JsonTools</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_Cs2Config.html"><span class="label">C#ToConfig</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_MulVideo.html"><span class="label">MultipleVideo</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_JianBiHua.html"><span class="label">SimpleDrawing</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_FunColor.html"><span class="label">FunColoring</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_Traffic.html"><span class="label">TrafficCounter</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">TestTools</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/en/TestTools_ComTest.html"><span class="label">ComTestTools</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/TestTools_ModbusTcp.html"><span class="label">ModbusTcpTool</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/TestTools_TcpForward.html"><span class="label">TCPForwardTool</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/TestTools_ComForward.html"><span class="label">ComForwardTool</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="active_parent with_link"><a href="/AppDoc/tools/en/ToolsSet.html"><span class="label">ToolsSet</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Number.html"><span class="label">Number</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Number/RadixConverter.html"><span class="label">Radix Converter</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Number/ConvertToText.html"><span class="label">Convert To Text</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Number/UnitConvert.html"><span class="label">Unit Converter</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Number/HexOperate.html"><span class="label">Hex Operate</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Number/RatioCalc.html"><span class="label">Ratio Calculate</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Date.html"><span class="label">Date</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Date/ChineseCalendar.html"><span class="label">Chinese Calendar</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Date/YearCalendar.html"><span class="label">Year Calendar</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Date/Countdown.html"><span class="label">Countdown</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Date/WorldTime.html"><span class="label">World Time</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Date/CronBuilder.html"><span class="label">Cron Builder</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Date/CronConverter.html"><span class="label">Cron Converter</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Date/DateCalc.html"><span class="label">Date Calculate</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Text.html"><span class="label">Text</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Text/Encode.html"><span class="label">Encode & Decode</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Text/Encrypt.html"><span class="label">Encrypt & Decrypt</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Text/TextConv.html"><span class="label">Text Converter</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Text/TextGenerate.html"><span class="label">Text Generator</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Text/TextFormat.html"><span class="label">Json XML Tool</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Text/BarCode.html"><span class="label">Qr & Bar code</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Text/TTS.html"><span class="label">TTS & Morse</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Text/RegexTest.html"><span class="label">Regex Test</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Text/CsvEditor.html"><span class="label">Csv Editor</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Text/TextBatch.html"><span class="label">Text Batch</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Text/TextSplit.html"><span class="label">Split Join</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Text/ListOpt.html"><span class="label">List Operate</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="active_parent with_link"><a href="/AppDoc/tools/en/ToolsSet_Media.html"><span class="label">Media</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/ColorPicker.html"><span class="label">Color Picker</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/ColorPalette.html"><span class="label">Color Palette</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/HSVPalette.html"><span class="label">HSV Palette</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/GradientColor.html"><span class="label">Gradient Color</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/ColorBlender.html"><span class="label">Color Blender</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/ColorExtractor.html"><span class="label">Color Extractor</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/ImageEncode.html"><span class="label">Image Encode</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/LrcEditor.html"><span class="label">Lrc Editor</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/AsciiArt.html"><span class="label">ASCII Art</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/PixelGrid.html"><span class="label">Pixel Grid</span><span class=""></span></a></li>
+<li class="active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/3DImage.html"><span class="label">3D Picture</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/ImgFormat.html"><span class="label">Image Format Converter</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/GifConv.html"><span class="label">GIF Converter</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/ImgCompare.html"><span class="label">Image Compare</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/ImgCrop.html"><span class="label">Image Crop</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/ImgFilter.html"><span class="label">Image Filter</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Other.html"><span class="label">Other</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Other/ASCII.html"><span class="label">ASCII Table</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Other/Unicode.html"><span class="label">Unicode Symbols</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Other/Emoji.html"><span class="label">Emoji List</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Other/Emotion.html"><span class="label">Emotions</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Other/FontViewer.html"><span class="label">Font Viewer</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Other/DirViewer.html"><span class="label">Directory Viewer</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>3D Picture</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <h2 id="Introduce">Introduce</h2>
+<p>Generate 3D pictrue using grayscale image and backgrounds, as well as 3D text based on text or arrays, which require binocular stereoscopic vision, i.e., cross-eyed viewing</p>
+<p><img src="../../assets/images/ToolsSet/TSM3DImg.png" alt="" /></p>
+<h2 id="How-to-use">How to use</h2>
+<p>The left side is the 3D image generation area, and the right side is the 3D text generation area</p>
+<h3 id="Generate-3D-Image">Generate 3D Image</h3>
+<ul>
+<li>The top is the image selection area, both of which can be opened or pasted by clicking on the pop-up menu. The left side is used to select the content image, and the right side is used to select the background image<blockquote>
+The content image needs to select a grayscale image that represents the depth, where the brighter places are closer and the darker places are farther away<br />
+Do not use images with large areas of color in the background, otherwise the 3D image will be less effective or even unrecognizable</blockquote>
+</li>
+<li>After the image selected, click the [Generate] button below to generate a 3D image, and click [Clear] to clear all images</li>
+</ul>
+<h3 id="Generate-3D-Text">Generate 3D Text</h3>
+<ul>
+<li><p>There are two ways to generate 3D text</p>
+<ol>
+<li>Use the text with the specified font<ul>
+<li>After selecting the text mode above, you can set the font family, font size, number of characters in the row and column, and content text</li>
+</ul>
+</li>
+<li>Use an array of numbers<ul>
+<li>After selecting the array mode, you can select a predefined array or a custom array in the drop-down box, the first item is custom array</li>
+<li>You can enter a array of numbers 1-9 in the text box below, where the numbers 1-9 represent the distance, and the larger the number, the closer the distance<blockquote>
+This array can be generated using <a href="./PixelGrid.html"  >Pixel Grid</a> of this application</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>In the middle text box, you can enter the character set to be displayed, and don't have too few characters in the character set and the characters should not be too simple</p>
+<p>Font size setting for the output area is used to set the font size to be displayed when the output text is previewed</p>
+<p>Click the [Generate] button to generate 3D text below, and click [Clear] to clear the result</p>
+</blockquote>
+</li>
+</ul>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                        <a href="/AppDoc/tools/en/ToolsSet_Media/PixelGrid.html">
+                            <span class="icon"></span>
+                            <span class="label">Pixel Grid</span>
+                        </a>
+                        
+                    </div>
+                    <div id="next">
+                        
+                        <a href="/AppDoc/tools/en/ToolsSet_Media/ImgFormat.html">
+                            <span class="label">Image Format Converter</span>
+                            <span class="icon"></span>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a>WeChat Official Account: IceSky</a>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a>Individual developer on Windows - IceSky</a>
+</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/AppDoc/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/AppDoc/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/AppDoc/static/js/theme_default/main.js"></script>
+    
+        <script src="/AppDoc/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/AppDoc/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/AppDoc/static/js/search/search_main.js"></script>
+    
+        <script src="/AppDoc/static/js/plugin_blog/main.js"></script>
+    
+        <script src="/AppDoc/static/js/easing.min.js"></script>
+    
+        <script src="/AppDoc/static/js/custom.js"></script>
+    
+</body>
+
+</html>

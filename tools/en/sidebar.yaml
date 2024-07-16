@@ -116,6 +116,20 @@ items:
             file: ToolsSet_Media/LrcEditor.md
         -   label: ASCII Art
             file: ToolsSet_Media/AsciiArt.md
+        -   label: Pixel Grid
+            file: ToolsSet_Media/PixelGrid.md
+        -   label: 3D Picture
+            file: ToolsSet_Media/3DImage.md
+        -   label: Image Format Converter
+            file: ToolsSet_Media/ImgFormat.md
+        -   label: GIF Converter
+            file: ToolsSet_Media/GifConv.md
+        -   label: Image Compare
+            file: ToolsSet_Media/ImgCompare.md
+        -   label: Image Crop
+            file: ToolsSet_Media/ImgCrop.md
+        -   label: Image Filter
+            file: ToolsSet_Media/ImgFilter.md
     -   label: Other
         file: ToolsSet_Other.md
         items:
