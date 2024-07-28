@@ -64,7 +64,9 @@ Media tools include:
 * Image Compare: You can compare two images and view the differences between them
 * HSV Palette: You can view the color palette of the HSV/HSL color space
 * Image Crop: You can divide an image into multiple image blocks by number or size
-* Image Filters: You can add a series of filters to your images
+* Image Filters: You can add a series of filters to your image
+* Image Watermark: Add text or image watermark to image
+* Random Colorful: You can generate image with random color, or add random color filter to image
 
 ### [Other Tools](./ToolsSet_Other.md)
 Other tools include:
@@ -79,6 +81,7 @@ Other tools include:
 * Hotkey: You can view the shortcut keys of commonly used software, including office, VS, and PS, etc
 * Cheat Sheet: You can view a variety of common commands and code, including python functions, vim commands, Linux commands, regular expression syntax, etc
 
+**[Update Log](./ToolsSet_Log.md)**
 
 [ToolsSet](https://apps.microsoft.com/detail/9NQGTZGM4LRH)
 

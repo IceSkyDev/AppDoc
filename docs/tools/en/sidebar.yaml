@@ -130,6 +130,10 @@ items:
             file: ToolsSet_Media/ImgCrop.md
         -   label: Image Filter
             file: ToolsSet_Media/ImgFilter.md
+        -   label: Image Watermark
+            file: ToolsSet_Media/ImgWatermark.md
+        -   label: Random Colorful
+            file: ToolsSet_Media/RandColor.md
     -   label: Other
         file: ToolsSet_Other.md
         items:

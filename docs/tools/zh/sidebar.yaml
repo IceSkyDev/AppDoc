@@ -130,6 +130,10 @@ items:
             file: ToolsSet_Media/ImgCrop.md
         -   label: 图片滤镜
             file: ToolsSet_Media/ImgFilter.md
+        -   label: 图片水印
+            file: ToolsSet_Media/ImgWatermark.md
+        -   label: 随机色彩
+            file: ToolsSet_Media/RandColor.md
     -   label: 其他类
         file: ToolsSet_Other.md
         items:
