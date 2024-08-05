@@ -5,6 +5,10 @@ keywords:
 desc: 
 ---
 
+* 1.1.9
+  * Add pixelated image function
+  * Add image montage function
+  * Add audio split and combine functions
 * 1.1.8
   * Add tool to add watermark to an image
   * Add random color tool

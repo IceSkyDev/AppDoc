@@ -7,7 +7,7 @@ desc: Media tools, including color palette, color picker, gradient color, lyrics
 
 ## Introduce
 
-Features include: Color Picker, Color Palette, HSV Palette, Gradient Color, Color Blender, Color Extractor, Image Encode, Lrc Editor, ASCII Art, Pixel Grid, 3D Picture, Image Format Convert, GIF Convert, Image Compare, Image Crop, Image Filters
+Features include: Color Picker, Color Palette, HSV Palette, Gradient Color, Color Blender, Color Extractor, Image Encode, Lrc Editor, ASCII Art, Pixel Grid, 3D Picture, Image Format Convert, GIF Convert, Image Compare, Image Crop, Image Filters, Image Montage, Random Colorful, Image Watermark, Audio Split Combine, Image Pixelate
 
 ![](../assets/images/ToolsSet/ToolsSet03.png)
 
@@ -147,8 +147,58 @@ Features include: Color Picker, Color Palette, HSV Palette, Gradient Color, Colo
   * Custom proportional splitting
 * Split grid preview
 
+### Image Montage
+* Specify the background color
+* Specify the number and spacing of rows and columns
+* Specify the size of the image block
+* Specify the block effect
+  * Rotate
+  * Border
+  * Frame
+  * Shadow
+
+### Random Colorful
+* Specify the background type
+  * Color: Specify color, random color, gradient color
+  * Plasma: Plasma and fractal combinations
+  * Image
+* Specify the pattern
+  * Line: Straight line with different angular spacing
+  * Shape: Grid pattern of different shapes
+  * Gray: Dot pattern with different proportions
+* Specify special effects
+  * No effect
+  * Colorful effect
+  * Polychrome effect
+  * Blur effect
+
+### Image Watermark
+* Specify background image
+* Specify watermark parameters
+  * Watermark size
+  * Watermark position
+  * Overlay types and tiles
+  * Transparency and angle
+  * Text Watermark: You can specify the font, font size, text content, and color
+  * Image Watermark: You can specify the content and size of the image
+
+### Audio Split Combine
+* Audio split
+  * Audio spectrum display
+  * Split position adjustment
+* Audio combine
+  * Specify audio sequence
+  * Specify time range
+
+### Image Pixelate
+* Specify the content of the image
+* Specify the background color
+* Split by size or quantity
+* Specify the spacing
+* Specify the shape of the pattern
+
 ### Image Filters 
-* 73 predefined filters
+* More than 70 predefined filters
 * Multiple filter can be used
 * Preview result
 * Save the result

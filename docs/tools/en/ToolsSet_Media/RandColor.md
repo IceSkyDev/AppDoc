@@ -22,7 +22,7 @@ You can generate random solid colors, two-color gradients, specify colors, or pl
   * Image: After selecting the image option, you can open the local image file
 * Add pattern
   * In the Add Pattern section, you can select the pattern type: line, shape, gray
-    * Line: Select straight line with different direction and angle
+    * Line: Select line with different direction and angle
     * Shape: Choose a grid pattern with different shape
     * Gray: Choose a dot pattern with different proportions
   * Choose different overlay effects
@@ -35,5 +35,5 @@ You can generate random solid colors, two-color gradients, specify colors, or pl
     * Polychrome: Multiple color effects will be added
   * You can specify whether or not to add a blur effect
     > Slightly longer spawn time after the blur effect is enabled 
-* Click the [Generate] button below to generate a color or pattern in the preview area on the right according to the settings  
+* Click the [Generate] button below to generate a color or image in the preview area on the right according to the settings  
 * Click Save to save the color or image to a file

@@ -23,7 +23,7 @@
   
   包含三字经、百家姓、千字文、弟子规、儿歌、童谣、绕口令、故事等
 * [国学启蒙](https://apps.microsoft.com/detail/9NHSJH132S35?hl=zh-cn&gl=CN)
-   ![Static Badge](https://img.shields.io/badge/UWP-Free-darkgreen?logo=microsoftstore)
+   ![Static Badge](https://img.shields.io/badge/UWP-blue?logo=microsoftstore)
   
   包含《百家姓》、《三字经》、《千字文》、《弟子规》、《蒙求》、《神童诗》及《续神童诗》，提供真人朗诵音频，带有拼音、注释或者翻译
 * [德育启蒙](https://apps.microsoft.com/detail/9NLLGXJP1ZTP?hl=zh-cn&gl=CN)

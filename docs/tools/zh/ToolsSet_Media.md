@@ -7,7 +7,7 @@ desc: 媒体类工具，包括色盘、拾色器、渐变色、歌词编辑器�
 
 ## 介绍
 
-功能包括：Color Picker、Color Palette、HSV Palette、Gradient Color、Color Blender、Color Extractor、Image Encode、Lrc Editor、ASCII Art、Pixel Grid、3D Picture、Image Format Convert、GIF Convert、Image Compare、Image Crop、Image Filters
+功能包括：Color Picker、Color Palette、HSV Palette、Gradient Color、Color Blender、Color Extractor、Image Encode、Lrc Editor、ASCII Art、Pixel Grid、3D Picture、Image Format Convert、GIF Convert、Image Compare、Image Crop、Image Filters、Image Montage、Random Colorful、Image Watermark、Audio Split Combine、Image Pixelate
 
 ![](../assets/images/ToolsSet/ToolsSet03.png)
 
@@ -147,8 +147,58 @@ desc: 媒体类工具，包括色盘、拾色器、渐变色、歌词编辑器�
   * 自定义比例分割
 * 分割网格预览
 
+### Image Montage *图片拼接*
+* 指定背景颜色
+* 指定行列数量及间距
+* 指定图片块尺寸
+* 指定块效果
+  * 旋转
+  * 边框
+  * 相框
+  * 阴影
+
+### Random Colorful *随机色彩*
+* 指定背景类型
+  * 颜色：指定颜色、随机颜色、渐变色
+  * 等离子体：等离子体和分形组合
+  * 图片
+* 指定图案
+  * 线：不同角度间距的直线或锯齿
+  * 形状：不同形状的网格图案
+  * 灰色调：不同比例的点状图案
+* 指定特效
+  * 无特效
+  * 颜色特效
+  * 多彩特效
+  * 模糊特效
+
+### Image Watermark *图片水印*
+* 指定背景图片
+* 指定水印参数
+  * 水印尺寸
+  * 水印位置
+  * 叠加类型及平铺
+  * 透明度及角度
+  * 文本水印：可以指定字体、字号、文本内容、颜色
+  * 图片水印：可以指定图片内容和尺寸
+
+### Audio Split Combine *音频分割合并*
+* 音频分割
+  * 音频频谱显示
+  * 分割位置调整
+* 音频合并
+  * 指定音频序列
+  * 指定时间范围
+
+### Image Pixelate *图片像素化*
+* 指定图片内容
+* 指定背景颜色
+* 按尺寸或数量分割
+* 指定间距
+* 指定图案形状
+
 ### Image Filters *图片滤镜*
-* 73种预定义滤镜处理
+* 70多种预定义滤镜处理
 * 多重滤镜叠加
 * 处理结果预览
 * 保存处理结果

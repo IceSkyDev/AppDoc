@@ -23,7 +23,7 @@ It can be used for Chinese preschool and primary school enlightenment education,
   
   Include 三字经、百家姓、千字文、弟子规、nursery rhymes, tongue twisters, stories
 * [国学启蒙](https://apps.microsoft.com/detail/9NHSJH132S35)
-   ![Static Badge](https://img.shields.io/badge/UWP-Free-darkgreen?logo=microsoftstore)
+   ![Static Badge](https://img.shields.io/badge/UWP-blue?logo=microsoftstore)
   
   Include 《百家姓》、《三字经》、《千字文》、《弟子规》、《蒙求》、《神童诗》及《续神童诗》, with audio, pinyin, annotations, and translations
 * [德育启蒙](https://apps.microsoft.com/detail/9NLLGXJP1ZTP)

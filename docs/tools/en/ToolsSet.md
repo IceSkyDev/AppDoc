@@ -67,6 +67,9 @@ Media tools include:
 * Image Filters: You can add a series of filters to your image
 * Image Watermark: Add text or image watermark to image
 * Random Colorful: You can generate image with random color, or add random color filter to image
+* Image Pixelate: Convert image to pixels or colored grid, support a variety of shapes and patterns
+* Image Montage: Generate tables of image thumbnails
+* Audio Split Combine: Split an audio into multiple or splice multiple audios into one
 
 ### [Other Tools](./ToolsSet_Other.md)
 Other tools include:
