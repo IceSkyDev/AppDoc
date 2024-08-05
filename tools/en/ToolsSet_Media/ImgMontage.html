@@ -7,10 +7,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="keywords" content="Image extraction, generation animation">
+    <meta name="keywords" content="Image Montage, Image Join, Image Merge">
     
     
-    <meta name="description" content="Extract image from gif, or animations can be generated using picture sequences">
+    <meta name="description" content="The image stitching merge tool can merge multiple pictures into one">
     
     <meta name="generator" content="teedoc">
     <meta name="theme" content="teedoc-plugin-theme-default">
@@ -50,7 +50,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
         
     
     
-    <title>GIF Converter - IceSky App</title>
+    <title>Image Montage - IceSky App</title>
     
     <script type="text/javascript">js_vars = {}</script>
     <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
@@ -80,8 +80,8 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
             </div>
             <div>
                 <ul id="nav_right">
-<li class="sub_items "><a  >Language: English</a><ul><li class="active"><a  href="/AppDoc/tools/en/ToolsSet_Media/GifConv.html">English</a></li>
-<li class=""><a  href="/AppDoc/tools/zh/ToolsSet_Media/GifConv.html">中文 简体</a></li>
+<li class="sub_items "><a  >Language: English</a><ul><li class="active"><a  href="/AppDoc/tools/en/ToolsSet_Media/ImgMontage.html">English</a></li>
+<li class=""><a  href="/AppDoc/tools/zh/ToolsSet_Media/ImgMontage.html">中文 简体</a></li>
 </ul></li>
 </ul>
 
@@ -172,13 +172,13 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/PixelGrid.html"><span class="label">Pixel Grid</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/3DImage.html"><span class="label">3D Picture</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/ImgFormat.html"><span class="label">Image Format Converter</span><span class=""></span></a></li>
-<li class="active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/GifConv.html"><span class="label">GIF Converter</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/GifConv.html"><span class="label">GIF Converter</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/ImgCompare.html"><span class="label">Image Compare</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/ImgCrop.html"><span class="label">Image Crop</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/ImgFilter.html"><span class="label">Image Filter</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/ImgWatermark.html"><span class="label">Image Watermark</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/RandColor.html"><span class="label">Random Colorful</span><span class=""></span></a></li>
-<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/ImgMontage.html"><span class="label">Image Montage</span><span class=""></span></a></li>
+<li class="active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/ImgMontage.html"><span class="label">Image Montage</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/ImgPixelate.html"><span class="label">Image Pixelate</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/AudioSplit.html"><span class="label">Audio Split Combine</span><span class=""></span></a></li>
 </ul>
@@ -208,7 +208,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_head">
                         <div id="article_title">
                             
-                            <h1>GIF Converter</h1>
+                            <h1>Image Montage</h1>
                             
                         </div>
                         <div id="article_tags">
@@ -238,18 +238,45 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_content">
                         
                             <h2 id="Introduce">Introduce</h2>
-<p>Extract image sequence from a GIF, or use image sequence to generate animated Gif image</p>
-<p><img src="../../assets/images/ToolsSet/TSMGif.png" alt="" /></p>
+<p>The image stitching and merging tool can merge multiple pictures into one, support setting the count, size and spacing of rows and columns, add special effects and background colors, and use blank spaceholders</p>
+<p><img src="../../assets/images/ToolsSet/TSMImgMontage.png" alt="" /></p>
 <h2 id="How-to-use">How to use</h2>
-<p>The left area can extract images from Gifs, and the right area can add image sequence to generate GIF</p>
 <ul>
-<li>Click on the top left area to select the Gif image to open, after the file is opened, the frame sequence contained in it will be automatically extracted and displayed below, you can click the export button to export all the frame pictures, or click on a certain image to copy it to the clipboard</li>
-<li>The three buttons in the top left corner of the right area are: Add Image File, Paste Image, Clear List, and the two buttons on the right can preview the animation and save the Gif image<blockquote>
-When you open or paste an image, it will be automatically added to the list below, and you can select multiple files at once when opening the image<br />
-<br />
-In the image list, you can adjust the image duration through the slider below the image, the range is 0~5 seconds<br />
-<br />
-You can click the delete icon in the top right corner of the image to remove it</blockquote>
+<li><p>Set Background: You can set the background of the image at the top of the left side</p>
+<ul>
+<li>Width and Height: Set the size of the final image, the default value is 0, that is, it is generated according to the content, and the maximum value is not more than 5000*5000</li>
+<li>Color BG: Background color switch, you can set the background color when it is turned on, and the background will be transparent when it is turned off</li>
+<li>The color can be set in the text box or through the color picker</li>
+</ul>
+</li>
+<li><p>Set image block parameters: In the middle area on the left, you can set image block parameters</p>
+<ul>
+<li>BlockW and BlockH: Set the width and height of the image block, the default is 0, it will be automatically calculated according to the selected image, no more than 500*500, after setting, all images will be scaled to the specified size</li>
+<li>CountR and CountC: Set the number of rows and columns when arranging, can be 0, 0 means that there is no limit in this direction, if the total number of grids is less than the number of images, the images will be superimposed</li>
+<li>MarginX and MarginY: Set the block spacing, the range is 0~99</li>
+<li>Effects: You can add special effects to image blocks<ul>
+<li>Rotate: Rotate the image block at a random angle</li>
+<li>Border: Add a border to the image, adding a border will automatically add a gray background</li>
+<li>Frame: Add a frame to the image</li>
+<li>Shadow: Add a shadow to the image</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Configure the picture: The four buttons on the left side of the bottom are the image list operation buttons</p>
+<ul>
+<li>Add Image: You can open the file dialog to select the image file to add to the list, and support multiple selection</li>
+<li>Paste Image: You can paste image from the clipboard to the list</li>
+<li>Add Placeholder: You can add a blank placeholder to the list</li>
+<li>Clear Pictures: You can empty the list of images</li>
+<li>Delete an image: Click the delete button in the top right corner of the image in the list to delete the corresponding image</li>
+</ul>
+</li>
+<li><p>Preview and save result:</p>
+<ul>
+<li>Preview: After the parameters and images are set, you can click the preview button to generate a preview on the right side</li>
+<li>Save Result: Click the Save button on the right to save the image to file</li>
+</ul>
 </li>
 </ul>
 
@@ -259,16 +286,16 @@ You can click the delete icon in the top right corner of the image to remove it<
                 <div id="previous_next">
                     <div id="previous">
                         
-                        <a href="/AppDoc/tools/en/ToolsSet_Media/ImgFormat.html">
+                        <a href="/AppDoc/tools/en/ToolsSet_Media/RandColor.html">
                             <span class="icon"></span>
-                            <span class="label">Image Format Converter</span>
+                            <span class="label">Random Colorful</span>
                         </a>
                         
                     </div>
                     <div id="next">
                         
-                        <a href="/AppDoc/tools/en/ToolsSet_Media/ImgCompare.html">
-                            <span class="label">Image Compare</span>
+                        <a href="/AppDoc/tools/en/ToolsSet_Media/ImgPixelate.html">
+                            <span class="label">Image Pixelate</span>
                             <span class="icon"></span>
                         </a>
                         

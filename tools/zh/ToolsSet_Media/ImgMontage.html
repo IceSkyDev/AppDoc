@@ -7,10 +7,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="keywords" content="媒体工具, 色盘, 渐变色, 歌词编辑, 字符画, 转换, 滤镜">
+    <meta name="keywords" content="图片拼接, 图片合并, 蒙太奇">
     
     
-    <meta name="description" content="媒体类工具，包括色盘、拾色器、渐变色、歌词编辑器、字符画、3D图片生成、转换、图片分割、图片滤镜等">
+    <meta name="description" content="图片拼接合并工具，可以将多个图片合并成一个">
     
     <meta name="generator" content="teedoc">
     <meta name="theme" content="teedoc-plugin-theme-default">
@@ -50,7 +50,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
         
     
     
-    <title>ToolsSet 媒体类 - IceSky App</title>
+    <title>图片拼接 - IceSky App</title>
     
     <script type="text/javascript">js_vars = {}</script>
     <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
@@ -80,8 +80,8 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
             </div>
             <div>
                 <ul id="nav_right">
-<li class="sub_items "><a  >Language: 中文 简体</a><ul><li class=""><a  href="/AppDoc/tools/en/ToolsSet_Media.html">English</a></li>
-<li class="active"><a  href="/AppDoc/tools/zh/ToolsSet_Media.html">中文 简体</a></li>
+<li class="sub_items "><a  >Language: 中文 简体</a><ul><li class=""><a  href="/AppDoc/tools/en/ToolsSet_Media/ImgMontage.html">English</a></li>
+<li class="active"><a  href="/AppDoc/tools/zh/ToolsSet_Media/ImgMontage.html">中文 简体</a></li>
 </ul></li>
 </ul>
 
@@ -103,7 +103,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                 <div id="sidebar_title">
                     
                 </div>
-                <ul class="show">
+                <ul class="">
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/index.html"><span class="label">工具应用</span><span class=""></span></a></li>
 <li class="not_active no_link"><a><span class="label">实用工具</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_WebCol.html"><span class="label">网址集合</span><span class=""></span></a></li>
@@ -125,7 +125,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/TestTools_ComForward.html"><span class="label">通信转发工具</span><span class=""></span></a></li>
 </ul>
 </li>
-<li class="active_parent with_link"><a href="/AppDoc/tools/zh/ToolsSet.html"><span class="label">ToolsSet</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet.html"><span class="label">ToolsSet</span><span class="sub_indicator"></span></a><ul class="show">
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number.html"><span class="label">数值类</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number/RadixConverter.html"><span class="label">进制转换</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number/ConvertToText.html"><span class="label">数字文本互转</span><span class=""></span></a></li>
@@ -159,7 +159,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/ListOpt.html"><span class="label">列表操作</span><span class=""></span></a></li>
 </ul>
 </li>
-<li class="active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media.html"><span class="label">媒体类</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media.html"><span class="label">媒体类</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/ColorPicker.html"><span class="label">拾色器</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/ColorPalette.html"><span class="label">色盘</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/HSVPalette.html"><span class="label">HSV色板</span><span class=""></span></a></li>
@@ -205,7 +205,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_head">
                         <div id="article_title">
                             
-                            <h1>ToolsSet 媒体类</h1>
+                            <h1>图片拼接</h1>
                             
                         </div>
                         <div id="article_tags">
@@ -235,276 +235,48 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_content">
                         
                             <h2 id="%E4%BB%8B%E7%BB%8D">介绍</h2>
-<p>功能包括：Color Picker、Color Palette、HSV Palette、Gradient Color、Color Blender、Color Extractor、Image Encode、Lrc Editor、ASCII Art、Pixel Grid、3D Picture、Image Format Convert、GIF Convert、Image Compare、Image Crop、Image Filters、Image Montage、Random Colorful、Image Watermark、Audio Split Combine、Image Pixelate</p>
-<p><img src="../assets/images/ToolsSet/ToolsSet03.png" alt="" /></p>
-<h2 id="%E5%8A%9F%E8%83%BD%E5%88%97%E8%A1%A8">功能列表</h2>
-<h3 id="Color-Picker-%3Cem%3E%E6%8B%BE%E8%89%B2%E5%99%A8%3C/em%3E">Color Picker <em>拾色器</em></h3>
+<p>图片拼接合并工具，可以将多个图片合并成一个，支持设置行列数量、尺寸及间距，可以添加特效和背景色，可以使用空白占位</p>
+<p><img src="../../assets/images/ToolsSet/TSMImgMontage.png" alt="" /></p>
+<h2 id="%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">使用方法</h2>
 <ul>
-<li>选取颜色<ul>
-<li>调色板选择</li>
-<li>滑动条输入，支持RGB、HSV、HSL方式</li>
-<li>16进制RGB输入</li>
-<li>随机颜色</li>
-</ul>
-</li>
-<li>颜色空间转换<ul>
-<li>RGB</li>
-<li>HSV</li>
-<li>HSL</li>
-<li>CMYK</li>
-<li>XYZ</li>
-<li>YIQ</li>
-<li>YUV</li>
-</ul>
-</li>
-</ul>
-<h3 id="Color-Palette-%3Cem%3E%E8%89%B2%E7%9B%98%3C/em%3E">Color Palette <em>色盘</em></h3>
+<li><p>设置背景：左侧上方可以设置图片背景</p>
 <ul>
-<li>中国传统色</li>
-<li>日本传统色</li>
-<li>Windows系统颜色</li>
+<li>Width和Height：设置最终生成的图片尺寸，默认为0，即按照内容生成，最大不超过5000*5000</li>
+<li>Color BG：背景色开关，打开时可以设置背景颜色，关闭时背景将使用透明</li>
+<li>设置颜色可以在文本框输入也可以通过颜色选择器设置</li>
+<li></li>
 </ul>
-<h3 id="HSV-Palette-%3Cem%3EHSV%E8%89%B2%E6%9D%BF%3C/em%3E">HSV Palette <em>HSV色板</em></h3>
+</li>
+<li><p>设置图片块参数：左侧中间区域可以设置图片块参数</p>
 <ul>
-<li>HSV色板</li>
-<li>HSL色板</li>
+<li>BlockW和BlockH：设置图片块宽度和高度，默认为0，将根据所选图片自动计算，不超过500*500；设置后所有图片将都缩放到指定尺寸</li>
+<li>CountR和CountC：设置排列时的行列数量，可以为0，为0表示此方向没有限制，如果网格总数小于图片数量，图片将会叠加</li>
+<li>MarginX和MarginY：设置图片间距，范围为0~99</li>
+<li>Effects：可以给图片块添加特效<ul>
+<li>Rotate：将图片块旋转随机角度</li>
+<li>Border：给图片添加边框，添加边框会自动添加灰色背景</li>
+<li>Frame：给图片添加相框</li>
+<li>Shadow：给图片添加阴影</li>
+<li></li>
 </ul>
-<h3 id="Gradient-Color-%3Cem%3E%E6%B8%90%E5%8F%98%E8%89%B2%3C/em%3E">Gradient Color <em>渐变色</em></h3>
+</li>
+</ul>
+</li>
+<li><p>配置图片：下方左侧四个按钮为图片列表操作按钮</p>
 <ul>
-<li>生成渐变色<ul>
-<li>指定颜色数量</li>
-<li>指定颜色类型</li>
-<li>指定渐变类型</li>
-<li>指定角度或中心点</li>
+<li>添加图片：可以打开文件选择对话框选择图片文件添加到列表，支持多选</li>
+<li>粘贴图片：可以将剪贴板的图片添加到列表</li>
+<li>添加占位：可以在列表中添加空白占位</li>
+<li>清除图片：可以将列表的图片清空</li>
+<li>删除图片：点击列表中图片右上角的删除按钮，可以删除对应图片</li>
 </ul>
 </li>
-<li>复制代码<ul>
-<li>Css代码</li>
-<li>XAML代码</li>
-</ul>
-</li>
-</ul>
-<h3 id="Color-Blender-%3Cem%3E%E9%A2%9C%E8%89%B2%E6%B7%B7%E5%90%88%3C/em%3E">Color Blender <em>颜色混合</em></h3>
+<li><p>预览和保存结果：</p>
 <ul>
-<li>选取颜色<ul>
-<li>调色板选择</li>
-<li>选择预定义颜色</li>
-<li>输入16进制RGB值</li>
+<li>预览结果：参数及图片设置完成后可以点击预览按钮在右侧生成图片预览</li>
+<li>保存结果：点击右侧保存按钮可以将图片保存到文件</li>
 </ul>
 </li>
-<li>混合颜色<ul>
-<li>两种颜色混合</li>
-<li>多种颜色混合</li>
-</ul>
-</li>
-</ul>
-<h3 id="Color-Extractor-%3Cem%3E%E9%A2%9C%E8%89%B2%E6%8F%90%E5%8F%96%3C/em%3E">Color Extractor <em>颜色提取</em></h3>
-<ul>
-<li>添加图片<ul>
-<li>打开图片文件</li>
-<li>粘贴图片</li>
-</ul>
-</li>
-<li>提取颜色<ul>
-<li>提取主题色</li>
-<li>提取指定数量的颜色</li>
-<li>提取指定位置的颜色</li>
-</ul>
-</li>
-</ul>
-<h3 id="Image-Encode-%3Cem%3E%E5%9B%BE%E7%89%87Base64%E7%BC%96%E8%A7%A3%E7%A0%81%3C/em%3E">Image Encode <em>图片Base64编解码</em></h3>
-<ul>
-<li>添加图片<ul>
-<li>打开图片文件</li>
-<li>粘贴图片</li>
-</ul>
-</li>
-<li>图片编码为Base64</li>
-<li>从Base64解码图片</li>
-</ul>
-<h3 id="Lrc-Editor-%3Cem%3E%E6%AD%8C%E8%AF%8D%E7%BC%96%E8%BE%91%E5%99%A8%3C/em%3E">Lrc Editor <em>歌词编辑器</em></h3>
-<ul>
-<li>打开音频文件</li>
-<li>展示音频波形</li>
-<li>点击插入时间</li>
-</ul>
-<h3 id="ASCII-Art-%3Cem%3EASCII%E5%AD%97%E7%AC%A6%E7%94%BB%3C/em%3E">ASCII Art <em>ASCII字符画</em></h3>
-<ul>
-<li>图片转为字符画<ul>
-<li>打开图片文件或粘贴图片</li>
-<li>指定行列字符数量</li>
-<li>指定绘制字符</li>
-<li>指定预览字号</li>
-</ul>
-</li>
-<li>字体转为字符画<ul>
-<li>指定字体、字号及文本</li>
-<li>指定行列字符数量</li>
-<li>指定绘制字符</li>
-<li>指定预览字号</li>
-</ul>
-</li>
-</ul>
-<h3 id="Pixel-Grid-%3Cem%3E%E5%83%8F%E7%B4%A0%E5%9B%BE%E7%BB%98%E5%88%B6%3C/em%3E">Pixel Grid <em>像素图绘制</em></h3>
-<ul>
-<li>网格设置<ul>
-<li>指定网格数量</li>
-<li>指定网格尺寸</li>
-</ul>
-</li>
-<li>绘制设置<ul>
-<li>指定填充颜色</li>
-<li>指定输入文本</li>
-<li>连续绘制开关</li>
-<li>颜色锁定开关</li>
-</ul>
-</li>
-<li>结果输出<ul>
-<li>导出图片</li>
-<li>复制文本</li>
-</ul>
-</li>
-</ul>
-<h3 id="3D-Picture-%3Cem%3E3D%E5%9B%BE%E7%89%87%E7%94%9F%E6%88%90%3C/em%3E">3D Picture <em>3D图片生成</em></h3>
-<ul>
-<li>生成3D图片<ul>
-<li>自定义灰度模型</li>
-<li>自定义背景图</li>
-<li>保存或复制结果图片</li>
-</ul>
-</li>
-<li>生成3D文本<ul>
-<li>字符模式<ul>
-<li>指定字体、字号及文本</li>
-<li>指定行列字符数量</li>
-</ul>
-</li>
-<li>数组模式<ul>
-<li>选择类型：自定义或预定义</li>
-<li>输入或编辑字符数组</li>
-</ul>
-</li>
-<li>指定绘制字符</li>
-<li>指定预览字号</li>
-<li>复制结果文本</li>
-</ul>
-</li>
-</ul>
-<h3 id="Image-Format-Convert-%3Cem%3E%E5%9B%BE%E7%89%87%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2%3C/em%3E">Image Format Convert <em>图片格式转换</em></h3>
-<ul>
-<li>源格式支持png、jpg、gif、bmp、tiff、ico</li>
-<li>目标格式支持png、jpg、gif、bmp、tiff、ico、pdf</li>
-<li>支持图片缩放</li>
-</ul>
-<h3 id="GIF-Convert-%3Cem%3EGIF%E8%BD%AC%E6%8D%A2%3C/em%3E">GIF Convert <em>GIF转换</em></h3>
-<ul>
-<li>图片序列提取<ul>
-<li>打开GIF文件</li>
-<li>提取图片序列</li>
-<li>复制单帧图片</li>
-<li>导出图片序列</li>
-</ul>
-</li>
-<li>生成GIF动画<ul>
-<li>添加图片序列</li>
-<li>持续时间调整</li>
-<li>GIF动画预览</li>
-<li>导出GIF文件</li>
-</ul>
-</li>
-</ul>
-<h3 id="Image-Compare-%3Cem%3E%E5%9B%BE%E7%89%87%E6%AF%94%E8%BE%83%3C/em%3E">Image Compare <em>图片比较</em></h3>
-<ul>
-<li>横向比较预览</li>
-<li>纵向比较预览</li>
-<li>比较结果查看</li>
-</ul>
-<h3 id="Image-Crop-%3Cem%3E%E5%9B%BE%E7%89%87%E5%88%86%E5%89%B2%3C/em%3E">Image Crop <em>图片分割</em></h3>
-<ul>
-<li>指定分割方式<ul>
-<li>固定数量分割</li>
-<li>固定尺寸分割</li>
-<li>自定义数量及尺寸</li>
-<li>自定义比例分割</li>
-</ul>
-</li>
-<li>分割网格预览</li>
-</ul>
-<h3 id="Image-Montage-%3Cem%3E%E5%9B%BE%E7%89%87%E6%8B%BC%E6%8E%A5%3C/em%3E">Image Montage <em>图片拼接</em></h3>
-<ul>
-<li>指定背景颜色</li>
-<li>指定行列数量及间距</li>
-<li>指定图片块尺寸</li>
-<li>指定块效果<ul>
-<li>旋转</li>
-<li>边框</li>
-<li>相框</li>
-<li>阴影</li>
-</ul>
-</li>
-</ul>
-<h3 id="Random-Colorful-%3Cem%3E%E9%9A%8F%E6%9C%BA%E8%89%B2%E5%BD%A9%3C/em%3E">Random Colorful <em>随机色彩</em></h3>
-<ul>
-<li>指定背景类型<ul>
-<li>颜色：指定颜色、随机颜色、渐变色</li>
-<li>等离子体：等离子体和分形组合</li>
-<li>图片</li>
-</ul>
-</li>
-<li>指定图案<ul>
-<li>线：不同角度间距的直线或锯齿</li>
-<li>形状：不同形状的网格图案</li>
-<li>灰色调：不同比例的点状图案</li>
-</ul>
-</li>
-<li>指定特效<ul>
-<li>无特效</li>
-<li>颜色特效</li>
-<li>多彩特效</li>
-<li>模糊特效</li>
-</ul>
-</li>
-</ul>
-<h3 id="Image-Watermark-%3Cem%3E%E5%9B%BE%E7%89%87%E6%B0%B4%E5%8D%B0%3C/em%3E">Image Watermark <em>图片水印</em></h3>
-<ul>
-<li>指定背景图片</li>
-<li>指定水印参数<ul>
-<li>水印尺寸</li>
-<li>水印位置</li>
-<li>叠加类型及平铺</li>
-<li>透明度及角度</li>
-<li>文本水印：可以指定字体、字号、文本内容、颜色</li>
-<li>图片水印：可以指定图片内容和尺寸</li>
-</ul>
-</li>
-</ul>
-<h3 id="Audio-Split-Combine-%3Cem%3E%E9%9F%B3%E9%A2%91%E5%88%86%E5%89%B2%E5%90%88%E5%B9%B6%3C/em%3E">Audio Split Combine <em>音频分割合并</em></h3>
-<ul>
-<li>音频分割<ul>
-<li>音频频谱显示</li>
-<li>分割位置调整</li>
-</ul>
-</li>
-<li>音频合并<ul>
-<li>指定音频序列</li>
-<li>指定时间范围</li>
-</ul>
-</li>
-</ul>
-<h3 id="Image-Pixelate-%3Cem%3E%E5%9B%BE%E7%89%87%E5%83%8F%E7%B4%A0%E5%8C%96%3C/em%3E">Image Pixelate <em>图片像素化</em></h3>
-<ul>
-<li>指定图片内容</li>
-<li>指定背景颜色</li>
-<li>按尺寸或数量分割</li>
-<li>指定间距</li>
-<li>指定图案形状</li>
-</ul>
-<h3 id="Image-Filters-%3Cem%3E%E5%9B%BE%E7%89%87%E6%BB%A4%E9%95%9C%3C/em%3E">Image Filters <em>图片滤镜</em></h3>
-<ul>
-<li>70多种预定义滤镜处理</li>
-<li>多重滤镜叠加</li>
-<li>处理结果预览</li>
-<li>保存处理结果</li>
 </ul>
 
                         
@@ -513,18 +285,8 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                 <div id="previous_next">
                     <div id="previous">
                         
-                        <a href="/AppDoc/tools/zh/ToolsSet_Text/ListOpt.html">
-                            <span class="icon"></span>
-                            <span class="label">列表操作</span>
-                        </a>
-                        
                     </div>
                     <div id="next">
-                        
-                        <a href="/AppDoc/tools/zh/ToolsSet_Media/ColorPicker.html">
-                            <span class="label">拾色器</span>
-                            <span class="icon"></span>
-                        </a>
                         
                     </div>
                 </div>

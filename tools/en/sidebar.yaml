@@ -134,6 +134,12 @@ items:
             file: ToolsSet_Media/ImgWatermark.md
         -   label: Random Colorful
             file: ToolsSet_Media/RandColor.md
+        -   label: Image Montage
+            file: ToolsSet_Media/ImgMontage.md
+        -   label: Image Pixelate
+            file: ToolsSet_Media/ImgPixelate.md
+        -   label: Audio Split Combine
+            file: ToolsSet_Media/AudioSplit.md
     -   label: Other
         file: ToolsSet_Other.md
         items:
