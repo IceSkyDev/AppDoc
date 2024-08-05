@@ -134,6 +134,12 @@ items:
             file: ToolsSet_Media/ImgWatermark.md
         -   label: 随机色彩
             file: ToolsSet_Media/RandColor.md
+        -   label: 图片拼接
+            file: ToolsSet_Media/ImgMontage.md
+        -   label: 图片像素化
+            file: ToolsSet_Media/ImgPixelate.md
+        -   label: 音频分割合并
+            file: ToolsSet_Media/AudioSplit.md
     -   label: 其他类
         file: ToolsSet_Other.md
         items:
