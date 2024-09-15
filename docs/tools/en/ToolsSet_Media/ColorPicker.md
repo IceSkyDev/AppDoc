@@ -20,6 +20,10 @@ Support color picker, random color selection, color space conversion
   3. Set the color via the text box on the right of the slider below
   4. Enter the hexadecimal color code in the text box at the top right
   
+  > The color selected by the color picker is automatically synced to the right side
+  >
+  > The first two digits of the 8-bit color value above the color picker indicate transparency, and if you don't need transparency when copying, you can copy the color value in the right area
+
 * Random color
 
   Click the three buttons on the right of the text box to generate random colors, support

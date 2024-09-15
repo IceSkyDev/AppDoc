@@ -4,7 +4,9 @@ class: heading_no_counter
 keywords: 
 desc: 
 ---
-
+* 1.2.0
+  * Added online tools category
+  * Provide flowchart drawing, API testing, SVG editing and several drawing tools
 * 1.1.9
   * Add pixelated image function
   * Add image montage function
