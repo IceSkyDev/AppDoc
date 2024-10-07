@@ -7,10 +7,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="keywords" content="色板, HSV, HSL, 阶梯颜色">
+    <meta name="keywords" content="色板, HSV, HSL, 梯度颜色">
     
     
-    <meta name="description" content="调色板，支持HSV阶梯色板、HSL阶梯色板">
+    <meta name="description" content="调色板，支持HSV/HSL梯度色板以及RGB梯度色板和灰度色板">
     
     <meta name="generator" content="teedoc">
     <meta name="theme" content="teedoc-plugin-theme-default">
@@ -50,7 +50,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
         
     
     
-    <title>HSV色板 - IceSky App</title>
+    <title>梯度色板 - IceSky App</title>
     
     <script type="text/javascript">js_vars = {}</script>
     <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
@@ -132,6 +132,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number/UnitConvert.html"><span class="label">单位转换</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number/HexOperate.html"><span class="label">十六进制操作</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number/RatioCalc.html"><span class="label">比例计算</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number/BigNumber.html"><span class="label">大数计算</span><span class=""></span></a></li>
 </ul>
 </li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Date.html"><span class="label">日期类</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
@@ -154,6 +155,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/TTS.html"><span class="label">文本转语音</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/RegexTest.html"><span class="label">正则表达式测试</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/CsvEditor.html"><span class="label">Csv编辑器</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/TableConvert.html"><span class="label">表格数据转换</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/TextBatch.html"><span class="label">文本批处理</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/TextSplit.html"><span class="label">文本分割合并</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/ListOpt.html"><span class="label">列表操作</span><span class=""></span></a></li>
@@ -162,7 +164,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="active_parent with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media.html"><span class="label">媒体类</span><span class="sub_indicator"></span></a><ul class="show">
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/ColorPicker.html"><span class="label">拾色器</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/ColorPalette.html"><span class="label">色盘</span><span class=""></span></a></li>
-<li class="active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/HSVPalette.html"><span class="label">HSV色板</span><span class=""></span></a></li>
+<li class="active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/HSVPalette.html"><span class="label">梯度色板</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/GradientColor.html"><span class="label">渐变色</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/ColorBlender.html"><span class="label">颜色混合</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/ColorExtractor.html"><span class="label">颜色提取</span><span class=""></span></a></li>
@@ -208,7 +210,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_head">
                         <div id="article_title">
                             
-                            <h1>HSV色板</h1>
+                            <h1>梯度色板</h1>
                             
                         </div>
                         <div id="article_tags">
@@ -238,16 +240,28 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_content">
                         
                             <h2 id="%E4%BB%8B%E7%BB%8D">介绍</h2>
-<p>提供HSV和HSL阶梯色板两种模式</p>
-<p><img src="../../assets/images/ToolsSet/TSMHSVPalette.png" alt="" /></p>
+<p>提供HSV/HSL梯度色板、RGB梯度色板和灰度梯度色板</p>
+<p><img src="../../assets/images/ToolsSet/TSMGradientPalette0.png" alt="" /></p>
 <h2 id="%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">使用方法</h2>
+<p>可以在左侧上方选择色板模式</p>
 <ul>
-<li>可以使用左上角开关切换HSV和HSL模式</li>
+<li>HSV/HSL梯度色板<ul>
+<li>可以使用左侧开关切换HSV和HSL模式</li>
 <li>下方提供了24种颜色可以提供切换色相</li>
 <li>右侧提供了20种相同亮度和对比度的颜色可供色相对比</li>
 <li>中间区域按亮度和饱和度显示了阶梯颜色，点击颜色可以同步亮度和对比度到右侧颜色栏</li>
-<li>选中颜色后可以在左侧查看颜色代码并复制</li>
 </ul>
+</li>
+<li>RGB梯度色板<ul>
+<li>点击左侧的R、G、B三个按钮可以切换显示内容</li>
+<li>右侧颜色条可以选择RGB三种颜色所占比例</li>
+</ul>
+</li>
+<li>灰度梯度色板</li>
+</ul>
+<blockquote>
+<p>选中颜色后可以在左侧查看颜色代码并复制</p>
+</blockquote>
 
                         
                     </div>

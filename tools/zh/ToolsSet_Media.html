@@ -132,6 +132,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number/UnitConvert.html"><span class="label">单位转换</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number/HexOperate.html"><span class="label">十六进制操作</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number/RatioCalc.html"><span class="label">比例计算</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number/BigNumber.html"><span class="label">大数计算</span><span class=""></span></a></li>
 </ul>
 </li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Date.html"><span class="label">日期类</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
@@ -154,6 +155,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/TTS.html"><span class="label">文本转语音</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/RegexTest.html"><span class="label">正则表达式测试</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/CsvEditor.html"><span class="label">Csv编辑器</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/TableConvert.html"><span class="label">表格数据转换</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/TextBatch.html"><span class="label">文本批处理</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/TextSplit.html"><span class="label">文本分割合并</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/ListOpt.html"><span class="label">列表操作</span><span class=""></span></a></li>
@@ -162,7 +164,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media.html"><span class="label">媒体类</span><span class="sub_indicator"></span></a><ul class="show">
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/ColorPicker.html"><span class="label">拾色器</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/ColorPalette.html"><span class="label">色盘</span><span class=""></span></a></li>
-<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/HSVPalette.html"><span class="label">HSV色板</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/HSVPalette.html"><span class="label">梯度色板</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/GradientColor.html"><span class="label">渐变色</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/ColorBlender.html"><span class="label">颜色混合</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/ColorExtractor.html"><span class="label">颜色提取</span><span class=""></span></a></li>
@@ -238,7 +240,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_content">
                         
                             <h2 id="%E4%BB%8B%E7%BB%8D">介绍</h2>
-<p>功能包括：Color Picker、Color Palette、HSV Palette、Gradient Color、Color Blender、Color Extractor、Image Encode、Lrc Editor、ASCII Art、Pixel Grid、3D Picture、Image Format Convert、GIF Convert、Image Compare、Image Crop、Image Filters、Image Montage、Random Colorful、Image Watermark、Audio Split Combine、Image Pixelate</p>
+<p>功能包括：Color Picker、Color Palette、Gradient Palette、Gradient Color、Color Blender、Color Extractor、Image Encode、Lrc Editor、ASCII Art、Pixel Grid、3D Picture、Image Format Convert、GIF Convert、Image Compare、Image Crop、Image Filters、Image Montage、Random Colorful、Image Watermark、Audio Split Combine、Image Pixelate</p>
 <p><img src="../assets/images/ToolsSet/ToolsSet03.png" alt="" /></p>
 <h2 id="%E5%8A%9F%E8%83%BD%E5%88%97%E8%A1%A8">功能列表</h2>
 <h3 id="Color-Picker-%3Cem%3E%E6%8B%BE%E8%89%B2%E5%99%A8%3C/em%3E">Color Picker <em>拾色器</em></h3>
@@ -267,10 +269,12 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li>日本传统色</li>
 <li>Windows系统颜色</li>
 </ul>
-<h3 id="HSV-Palette-%3Cem%3EHSV%E8%89%B2%E6%9D%BF%3C/em%3E">HSV Palette <em>HSV色板</em></h3>
+<h3 id="Gradient-Palette-%3Cem%3E%E6%A2%AF%E5%BA%A6%E8%89%B2%E6%9D%BF%3C/em%3E">Gradient Palette <em>梯度色板</em></h3>
 <ul>
 <li>HSV色板</li>
 <li>HSL色板</li>
+<li>RGB色板</li>
+<li>灰度色板</li>
 </ul>
 <h3 id="Gradient-Color-%3Cem%3E%E6%B8%90%E5%8F%98%E8%89%B2%3C/em%3E">Gradient Color <em>渐变色</em></h3>
 <ul>

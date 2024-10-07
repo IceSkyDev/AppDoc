@@ -51,6 +51,8 @@ items:
             file: ToolsSet_Number/HexOperate.md
         -   label: 比例计算
             file: ToolsSet_Number/RatioCalc.md
+        -   label: 大数计算
+            file: ToolsSet_Number/BigNumber.md
     -   label: 日期类
         file: ToolsSet_Date.md
         items:
@@ -89,6 +91,8 @@ items:
             file: ToolsSet_Text/RegexTest.md
         -   label: Csv编辑器
             file: ToolsSet_Text/CsvEditor.md
+        -   label: 表格数据转换
+            file: ToolsSet_Text/TableConvert.md
         -   label: 文本批处理
             file: ToolsSet_Text/TextBatch.md
         -   label: 文本分割合并
@@ -102,7 +106,7 @@ items:
             file: ToolsSet_Media/ColorPicker.md
         -   label: 色盘
             file: ToolsSet_Media/ColorPalette.md
-        -   label: HSV色板
+        -   label: 梯度色板
             file: ToolsSet_Media/HSVPalette.md
         -   label: 渐变色
             file: ToolsSet_Media/GradientColor.md

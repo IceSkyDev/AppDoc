@@ -132,6 +132,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number/UnitConvert.html"><span class="label">单位转换</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number/HexOperate.html"><span class="label">十六进制操作</span><span class=""></span></a></li>
 <li class="active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number/RatioCalc.html"><span class="label">比例计算</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number/BigNumber.html"><span class="label">大数计算</span><span class=""></span></a></li>
 </ul>
 </li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Date.html"><span class="label">日期类</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
@@ -154,6 +155,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/TTS.html"><span class="label">文本转语音</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/RegexTest.html"><span class="label">正则表达式测试</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/CsvEditor.html"><span class="label">Csv编辑器</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/TableConvert.html"><span class="label">表格数据转换</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/TextBatch.html"><span class="label">文本批处理</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/TextSplit.html"><span class="label">文本分割合并</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/ListOpt.html"><span class="label">列表操作</span><span class=""></span></a></li>
@@ -162,7 +164,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media.html"><span class="label">媒体类</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/ColorPicker.html"><span class="label">拾色器</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/ColorPalette.html"><span class="label">色盘</span><span class=""></span></a></li>
-<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/HSVPalette.html"><span class="label">HSV色板</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/HSVPalette.html"><span class="label">梯度色板</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/GradientColor.html"><span class="label">渐变色</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/ColorBlender.html"><span class="label">颜色混合</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/ColorExtractor.html"><span class="label">颜色提取</span><span class=""></span></a></li>
@@ -259,19 +261,22 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <p>左侧下方为增长率计算工具，用于解决类似”A增长/减少B是C“这种问题，操作方法和比例计算类似，通过中间的两个按钮选择增长还是减少</p>
 </li>
 <li><p>小数转分数</p>
-<p>右侧上方为小数转分数工具，在文本框输入一个数字，点击【=】按钮即可得到此数字的最简分数</p>
+<p>右侧第一个为小数转分数工具，在文本框输入一个数字，点击【=】按钮即可得到此数字的最简分数</p>
 </li>
 <li><p>分数化简</p>
-<p>右侧中间为分数化简工具，在左侧输入要化简的分数，点击【=】按钮即可得到此数字的最简分数，下方会显示此分数对应的小数</p>
+<p>右侧第二个为分数化简工具，在左侧输入要化简的分数，点击【=】按钮即可得到此数字的最简分数，下方会显示此分数对应的小数</p>
 </li>
 <li><p>等比运算</p>
-<p>右侧下方为等比运算工具，【=】左右为两个值相等的分数，可以输入其中三个计算最后一个值</p>
+<p>右侧第三个为等比运算工具，【=】左右为两个值相等的分数，可以输入其中三个计算最后一个值</p>
 <p>最右侧有两个按钮，上方的可用于选择常用比例，点击下方按钮可以将右侧分数的分子分母交换</p>
+</li>
+<li><p>分数比较</p>
+<p>右侧第四个为分数比较工具，在两侧输入两个分数后，点击中间的按钮，下方即可显示两个分数的大小关系</p>
 </li>
 </ul>
 <blockquote class="spoiler warning">
 <p> 此工具的所有输入框都可以输入小数</p>
-<p>所有运算结果最多保留4位小数</p>
+<p>所有运算结果最多保留6位小数</p>
 </blockquote>
 
                         
@@ -288,8 +293,8 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     </div>
                     <div id="next">
                         
-                        <a href="/AppDoc/tools/zh/ToolsSet_Date.html">
-                            <span class="label">日期类</span>
+                        <a href="/AppDoc/tools/zh/ToolsSet_Number/BigNumber.html">
+                            <span class="label">大数计算</span>
                             <span class="icon"></span>
                         </a>
                         
