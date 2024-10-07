@@ -99,3 +99,15 @@ Features include: Radix Converter, Convert To Text, Unit Converter, Hex Operate,
   * Incremental calculat
 * Decimal to Fraction
 * Fraction simplification
+
+### Big Number
+* Mathematical operations
+  * Four arithmetic
+  * Exponent
+  * Root
+  * Greatest Common Divisor
+  * Least Common Multiple
+* Random numbers
+  * Specify the number of integer digits
+  * Specify the number of decimal places
+* Get the number of decimal places for Pi

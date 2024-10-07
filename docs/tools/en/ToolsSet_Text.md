@@ -128,6 +128,23 @@ Features include: Encode & Decode, Encrypt & Decrypt & Hash, Text Converter, Tex
   * Support add and delet rows and columns
   * Support view text
 
+### Table Convert
+* Tabular data editing
+  * Support add and delete rows and columns
+  * Support row and column transpose
+  * Support for converting selection areas
+* Data conversion
+  * CSV
+  * JSON
+  * XML
+  * Markdown
+  * HTML
+  * ASCII
+  * SQL
+  * YAML
+  * C# Object
+
+
 ### Text Batch
 * Grid form batch text
   * Formulas are supported

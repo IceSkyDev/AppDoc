@@ -7,7 +7,7 @@ desc: 文本处理类工具，编码解码、加密解密、文本转换生成�
 
 ## 介绍
 
-功能包括：Encode & Decode、Encrypt & Decrypt & Hash、Text Converter、Text Generator、Text Compare、JSON Formatter、XML Tool、Regex Test、Qr & Bar code、TTS & Morse、Csv Editor、Text Batch、Split Join、List Operate
+功能包括：Encode & Decode、Encrypt & Decrypt & Hash、Text Converter、Text Generator、Text Compare、JSON Formatter、XML Tool、Regex Test、Qr & Bar code、TTS & Morse、Csv Editor、Table Convert、Text Batch、Split Join、List Operate
 
 ![](../assets/images/ToolsSet/ToolsSet01.png)
 
@@ -127,6 +127,22 @@ desc: 文本处理类工具，编码解码、加密解密、文本转换生成�
 * 以表格形式编辑CSV文件
   * 支持添加删除行列
   * 支持同时查看文本
+  
+### Table Convert *表格数据转换*
+* 表格数据编辑
+  * 支持添加删除行列
+  * 支持行列转置
+  * 支持转换选择区域
+* 数据转换
+  * CSV
+  * JSON
+  * XML
+  * Markdown
+  * HTML
+  * ASCII
+  * SQL
+  * YAML
+  * C# Object
 
 ### Text Batch *文本批处理工具*
 * 网格形式批处理文本

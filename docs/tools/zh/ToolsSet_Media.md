@@ -7,7 +7,7 @@ desc: 媒体类工具，包括色盘、拾色器、渐变色、歌词编辑器�
 
 ## 介绍
 
-功能包括：Color Picker、Color Palette、HSV Palette、Gradient Color、Color Blender、Color Extractor、Image Encode、Lrc Editor、ASCII Art、Pixel Grid、3D Picture、Image Format Convert、GIF Convert、Image Compare、Image Crop、Image Filters、Image Montage、Random Colorful、Image Watermark、Audio Split Combine、Image Pixelate
+功能包括：Color Picker、Color Palette、Gradient Palette、Gradient Color、Color Blender、Color Extractor、Image Encode、Lrc Editor、ASCII Art、Pixel Grid、3D Picture、Image Format Convert、GIF Convert、Image Compare、Image Crop、Image Filters、Image Montage、Random Colorful、Image Watermark、Audio Split Combine、Image Pixelate
 
 ![](../assets/images/ToolsSet/ToolsSet03.png)
 
@@ -32,9 +32,11 @@ desc: 媒体类工具，包括色盘、拾色器、渐变色、歌词编辑器�
 * 日本传统色
 * Windows系统颜色
 
-### HSV Palette *HSV色板*
+### Gradient Palette *梯度色板*
 * HSV色板
 * HSL色板
+* RGB色板
+* 灰度色板
 
 ### Gradient Color *渐变色*
 * 生成渐变色

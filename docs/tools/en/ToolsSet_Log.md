@@ -4,6 +4,11 @@ class: heading_no_counter
 keywords: 
 desc: 
 ---
+* 1.2.1
+  * Add more online tools
+  * HSV palette upgraded to gradient palette
+  * Added table data to text tool
+  * Add high precision and big number calculation
 * 1.2.0
   * Added online tools category
   * Provide flowchart drawing, API testing, SVG editing and several drawing tools

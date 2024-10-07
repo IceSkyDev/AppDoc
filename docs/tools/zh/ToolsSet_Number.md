@@ -7,7 +7,7 @@ desc: 数值处理类工具，包括进制转换、数字文本互转、单位�
 
 ## 介绍
 
-功能包括：Radix Converter、Convert To Text、Unit Converter、Hex Operate、Ratio Calculator
+功能包括：Radix Converter、Convert To Text、Unit Converter、Hex Operate、Ratio Calculator、Big Number
 
 ![](../assets/images/ToolsSet/ToolsSet00.png)
 
@@ -99,3 +99,15 @@ desc: 数值处理类工具，包括进制转换、数字文本互转、单位�
   * 增量计算
 * 小数转分数
 * 分数化简
+
+
+### Big Number *大数计算*
+* 数学运算
+  * 四则运算
+  * 乘方开方
+  * 最大公约数
+  * 最小公倍数
+* 随机数
+  * 指定整数位数
+  * 指定小数位数
+* 获取Pi的小数位数

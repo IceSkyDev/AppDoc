@@ -51,6 +51,8 @@ items:
             file: ToolsSet_Number/HexOperate.md
         -   label: Ratio Calculate
             file: ToolsSet_Number/RatioCalc.md
+        -   label: Big Number
+            file: ToolsSet_Number/BigNumber.md
     -   label: Date
         file: ToolsSet_Date.md
         items:
@@ -89,6 +91,8 @@ items:
             file: ToolsSet_Text/RegexTest.md
         -   label: Csv Editor
             file: ToolsSet_Text/CsvEditor.md
+        -   label: Table Convert
+            file: ToolsSet_Text/TableConvert.md
         -   label: Text Batch
             file: ToolsSet_Text/TextBatch.md
         -   label: Split Join
@@ -102,7 +106,7 @@ items:
             file: ToolsSet_Media/ColorPicker.md
         -   label: Color Palette
             file: ToolsSet_Media/ColorPalette.md
-        -   label: HSV Palette
+        -   label: Gradient Palette
             file: ToolsSet_Media/HSVPalette.md
         -   label: Gradient Color
             file: ToolsSet_Media/GradientColor.md

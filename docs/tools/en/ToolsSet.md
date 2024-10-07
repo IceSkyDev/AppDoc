@@ -10,7 +10,7 @@ desc: A collection of tools, including numbers, dates, media, text, cheat sheets
 
 A tool collection app with dozens of menus and hundreds of features.
 
-There are five main categories of tools: numeric tools, text tools, date tools, media tools, and other tools。
+There are six main categories of tools: numeric tools, text tools, date tools, media tools, other tools, and online tools.
 
 ### [Numeric tools](./ToolsSet_Number.md)
 Numeric tools include:
@@ -19,6 +19,7 @@ Numeric tools include:
 * Unit Converter: It supports more than 70 kinds of mathematical, physical and chemical unit conversion, including length, angle, area, weight, temperature, etc
 * Hex Operate: Hexadecimal can be converted to binary and bitwise manipulation can be performed
 * Ratio Calculator: Percentage calculations and fraction conversions are possible
+* Big Number: It supports some operations for high-precision and big number, generate random big number and obtain the decimal part of Pi within 100,000 digits
 
 ### [Text tools](./ToolsSet_Text.md)
 Text tools include:
@@ -36,6 +37,7 @@ Text tools include:
 * Text Batch: You can batch process the text in the table, and support formulas and templates
 * Split Join: You can split, merge, concatenate, trim, and count the number of characters in the text
 * List Operat: You can sort, filter, padding in length, extract, deduplicate, and count lists
+* Table Convert: You can convert tabular data to Json, Xml, Html, Sql, Markdown formate
 
 ### [Date tools](./ToolsSet_Date.md)
 Date tools include:
@@ -62,7 +64,7 @@ Media tools include:
 * Image Format Convert: Supports the conversion of images in a variety of common formats
 * GIF Convert: You can extract image sequences from GIF animations and generate GIF animations from image sequences
 * Image Compare: You can compare two images and view the differences between them
-* HSV Palette: You can view the color palette of the HSV/HSL color space
+* Gradient Palette: You can view the color palette of the HSV/HSL/RGB color space and graysale colors
 * Image Crop: You can divide an image into multiple image blocks by number or size
 * Image Filters: You can add a series of filters to your image
 * Image Watermark: Add text or image watermark to image
@@ -83,6 +85,30 @@ Other tools include:
 * Directory Viewer: You can view the list of directories and files on the machine, copy the directory and file path or name
 * Hotkey: You can view the shortcut keys of commonly used software, including office, VS, and PS, etc
 * Cheat Sheet: You can view a variety of common commands and code, including python functions, vim commands, Linux commands, regular expression syntax, etc
+
+### Online Tools
+* API Tool: API development ecosystem
+* Flowchart: Create flowchat, diagrams, UML and more
+* VS Code: Visual Studio Code for the web
+* SVG Editor: A fast, web-based SVG drawing editor
+* NimbleText: Text manipulation and code generation tool
+* Pixel Art: Create pixel art, game sprites, icons and animated GIFs
+* Draw Database: Database entity relationship (DBER) editor
+* Hex Editor: Web-based hex editor
+* SVG Path Editor: Create and manipulate SVG Paths
+* Photo Editor: Edit photos, apply effects, filters, crop or resize pictures
+* Sketchpad: Create digital artwork online and export image
+* Paint Tool: Paint with natural brushes, layers, and edit drawings
+* Whiteboard: Simple online whiteboard
+* LaTeX Editor: LaTeX online editor
+* Markdown Editor: Markdown online editor
+* Music Editor: Remove vocals, cut audio tracks, change key & BPM
+* Random Choose: Random selection tool with custom options
+* Plotly Studio: Create charts and graphs online with data
+* Table Convert: Convert table data to JSON, XML, SQL, PDF...
+* Geogebra: Interactive graphing calculator and function drawing tool
+* Chart Builder: Create charts with data visualizations
+* Mermaid Chart: Generat diagrams from text in a similar manner as markdown
 
 **[Update Log](./ToolsSet_Log.md)**
 

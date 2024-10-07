@@ -32,9 +32,11 @@ Features include: Color Picker, Color Palette, HSV Palette, Gradient Color, Colo
 * Japanese traditional color
 * Windows system color
 
-### HSV Palette 
+### Gradient Palette 
 * HSV palette
 * HSL palette
+* RGB palette
+* Grayscale palette
 
 ### Gradient Color 
 * Generate gradient color
