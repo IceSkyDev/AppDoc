@@ -7,10 +7,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="keywords" content="列表, 排序, 查找, 提取, 去重, 合并">
+    <meta name="keywords" content="TTS, 文本转语音, 保存音频">
     
     
-    <meta name="description" content="列表操作，提供排序、查找、提取、去重、合并等操作">
+    <meta name="description" content="文本转语音工具，调用Edge TTS API将指定文本转换为语音，支持多国语音及保存音频。">
     
     <meta name="generator" content="teedoc">
     <meta name="theme" content="teedoc-plugin-theme-default">
@@ -50,7 +50,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
         
     
     
-    <title>列表操作 - IceSky App</title>
+    <title>Edge TTS - IceSky App</title>
     
     <script type="text/javascript">js_vars = {}</script>
     <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
@@ -80,8 +80,8 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
             </div>
             <div>
                 <ul id="nav_right">
-<li class="sub_items "><a  >Language: 中文 简体</a><ul><li class=""><a  href="/AppDoc/tools/en/ToolsSet_Text/ListOpt.html">English</a></li>
-<li class="active"><a  href="/AppDoc/tools/zh/ToolsSet_Text/ListOpt.html">中文 简体</a></li>
+<li class="sub_items "><a  >Language: 中文 简体</a><ul><li class=""><a  href="/AppDoc/tools/en/UsefulTools_EdgeTTS.html">English</a></li>
+<li class="active"><a  href="/AppDoc/tools/zh/UsefulTools_EdgeTTS.html">中文 简体</a></li>
 </ul></li>
 </ul>
 
@@ -105,7 +105,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                 </div>
                 <ul class="show">
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/index.html"><span class="label">工具应用</span><span class=""></span></a></li>
-<li class="not_active no_link"><a><span class="label">实用工具</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="active_parent no_link"><a><span class="label">实用工具</span><span class="sub_indicator"></span></a><ul class="show">
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_WebCol.html"><span class="label">网址集合</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_Random.html"><span class="label">随机选择工具</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_ColorTool.html"><span class="label">ColorTool</span><span class=""></span></a></li>
@@ -115,7 +115,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_MulVideo.html"><span class="label">视频监控</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_JianBiHua.html"><span class="label">简笔画</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_FunColor.html"><span class="label">FunColoring</span><span class=""></span></a></li>
-<li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_EdgeTTS.html"><span class="label">EdgeTTS</span><span class=""></span></a></li>
+<li class="active with_link"><a href="/AppDoc/tools/zh/UsefulTools_EdgeTTS.html"><span class="label">EdgeTTS</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/UsefulTools_Traffic.html"><span class="label">流量计数器</span><span class=""></span></a></li>
 </ul>
 </li>
@@ -126,7 +126,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/TestTools_ComForward.html"><span class="label">通信转发工具</span><span class=""></span></a></li>
 </ul>
 </li>
-<li class="active_parent with_link"><a href="/AppDoc/tools/zh/ToolsSet.html"><span class="label">ToolsSet</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet.html"><span class="label">ToolsSet</span><span class="sub_indicator"></span></a><ul class="show">
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number.html"><span class="label">数值类</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number/RadixConverter.html"><span class="label">进制转换</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Number/ConvertToText.html"><span class="label">数字文本互转</span><span class=""></span></a></li>
@@ -146,7 +146,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Date/DateCalc.html"><span class="label">日期计算器</span><span class=""></span></a></li>
 </ul>
 </li>
-<li class="active_parent with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text.html"><span class="label">文本类</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text.html"><span class="label">文本类</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/Encode.html"><span class="label">编码解码</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/Encrypt.html"><span class="label">加密解密</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/TextConv.html"><span class="label">文本转换</span><span class=""></span></a></li>
@@ -159,7 +159,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/TableConvert.html"><span class="label">表格数据转换</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/TextBatch.html"><span class="label">文本批处理</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/TextSplit.html"><span class="label">文本分割合并</span><span class=""></span></a></li>
-<li class="active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/ListOpt.html"><span class="label">列表操作</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Text/ListOpt.html"><span class="label">列表操作</span><span class=""></span></a></li>
 </ul>
 </li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media.html"><span class="label">媒体类</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
@@ -211,7 +211,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_head">
                         <div id="article_title">
                             
-                            <h1>列表操作</h1>
+                            <h1>Edge TTS</h1>
                             
                         </div>
                         <div id="article_tags">
@@ -241,41 +241,42 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_content">
                         
                             <h2 id="%E4%BB%8B%E7%BB%8D">介绍</h2>
-<p>提供多种对列表文本的操作，包括排序、查找、提取、去重、合并等</p>
-<p><img src="../../assets/images/ToolsSet/TSTListOpt.png" alt="" /></p>
+<p>文本转语音工具，调用Edge TTS API将指定文本转换为语音，支持多国语音及方言，可以将转换结果保存为音频文件。</p>
 <h2 id="%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">使用方法</h2>
+<p><img src="../assets/images/UsefulTools/EdgeTTS.png" alt="" /></p>
+<ol>
+<li><p>在左侧文本框输入文本或点击上方打开文件按钮打开文本文件，支持最大的文件尺寸为100kb。</p>
+</li>
+<li><p>在右侧配置区域依次配置语音、区域和声音，可以选择设置语音速率。</p>
+</li>
+<li><p>点击播放按钮即可播放转换后的语音，播放时可以暂停和停止播放。</p>
+<blockquote>
+<p>播放开始后不能修改声音参数，如果要修改参数，需要先停止播放。</p>
+</blockquote>
+</li>
+<li><p>点击播放按钮右侧的保存按钮可以将语音保存为mp3文件。</p>
+</li>
+<li><p>保存文件前可以在下方设置：</p>
 <ul>
-<li>在左侧文本框中输入待处理的文本</li>
-<li>中间部分为操作区，可执行的操作有<ul>
-<li>Sort：按照指定方式排序，方式包括字母升序、字母降序、随机排序、长度升序、长度降序、倒序<ul>
-<li>方式选项右侧的开关表示是否使用数字排序，默认关闭，即使用字母排序，仅对前两种排序方式起作用</li>
-</ul>
+<li><p>保存文件夹：设置mp3文件保存的目录</p>
 </li>
-<li>Find：按照指定方式查找项，方式包括开始文本、结束文本、包含文本、指定文本<ul>
-<li>文本框右侧开关可以切换相等和不等状态</li>
-</ul>
-</li>
-<li>Pad：使用指定字符填充文本到指定长度，可以指定在开始或结束位置填充<ul>
-<li>不指定字符时默认使用空格填充，不指定长度时将每项都填充至最长项的长度</li>
-</ul>
-</li>
-<li>Take：从起始或结束位置开始提取指定的字符，可以指定跳过及提取数量或字符<ul>
-<li>默认时跳过和提取参数为数字，可以通过选择停止字符来切换到字符</li>
-<li>字符判断时将从起始位置开始，可以指定判断方式为相等或不等</li>
-</ul>
-</li>
-<li>下方为无参数或一个列表参数的操作，列表参数可以在下方文本框中输入<ul>
-<li>Distinct：去除列表中的重复项</li>
-<li>Union：合并两个列表</li>
-<li>Intersect：获取两个列表的交集，即两个列表中都存在的项</li>
-<li>Except：获取第一个列表中存在且在第二个列表中不存在的项</li>
-<li>Count：统计列表中各项的个数</li>
-<li>Reverse：将列表中每个项都按字母反序</li>
-</ul>
+<li><p>自动分割开关：开启后可以设置自动对大文本进行分割保存，有两个选项：</p>
+<ol>
+<li>按行数分割：可以指定分割行数，范围为0~200，指定为0时将生成一个文件</li>
+<li>按文件数分割：可以指定要保存的文件数量，范围为1~20</li>
+</ol>
+<blockquote>
+<p>开启自动分割后转换过程时间会增加，请耐心等待。</p>
+<p>自动分割的音频文件名会自动添加数字序号。</p>
+</blockquote>
 </li>
 </ul>
 </li>
-</ul>
+</ol>
+<blockquote>
+<p>上方工具栏的开关按钮打开后可以进行选区转换，即只转换鼠标选中的文本。</p>
+</blockquote>
+<p><a href="https://apps.microsoft.com/detail/9NDRP25RM7Q3"  target="_blank">商店下载</a></p>
 
                         
                     </div>
@@ -283,16 +284,16 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                 <div id="previous_next">
                     <div id="previous">
                         
-                        <a href="/AppDoc/tools/zh/ToolsSet_Text/TextSplit.html">
+                        <a href="/AppDoc/tools/zh/UsefulTools_FunColor.html">
                             <span class="icon"></span>
-                            <span class="label">文本分割合并</span>
+                            <span class="label">FunColoring</span>
                         </a>
                         
                     </div>
                     <div id="next">
                         
-                        <a href="/AppDoc/tools/zh/ToolsSet_Media.html">
-                            <span class="label">媒体类</span>
+                        <a href="/AppDoc/tools/zh/UsefulTools_Traffic.html">
+                            <span class="label">流量计数器</span>
                             <span class="icon"></span>
                         </a>
                         

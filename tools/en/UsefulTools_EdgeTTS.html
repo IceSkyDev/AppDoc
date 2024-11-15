@@ -7,10 +7,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="keywords" content="List, Sort, Find, Take, Distinct">
+    <meta name="keywords" content="TTS, Edge TTS, Save audio, voice">
     
     
-    <meta name="description" content="List operations, such as sort, find, take, distinct, and pad">
+    <meta name="description" content="Text-to-speech tool, call Edge TTS API to convert specified text to speech, support multi-language and save audio.">
     
     <meta name="generator" content="teedoc">
     <meta name="theme" content="teedoc-plugin-theme-default">
@@ -50,7 +50,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
         
     
     
-    <title>List Operate - IceSky App</title>
+    <title>Edge TTS - IceSky App</title>
     
     <script type="text/javascript">js_vars = {}</script>
     <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
@@ -80,8 +80,8 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
             </div>
             <div>
                 <ul id="nav_right">
-<li class="sub_items "><a  >Language: English</a><ul><li class="active"><a  href="/AppDoc/tools/en/ToolsSet_Text/ListOpt.html">English</a></li>
-<li class=""><a  href="/AppDoc/tools/zh/ToolsSet_Text/ListOpt.html">中文 简体</a></li>
+<li class="sub_items "><a  >Language: English</a><ul><li class="active"><a  href="/AppDoc/tools/en/UsefulTools_EdgeTTS.html">English</a></li>
+<li class=""><a  href="/AppDoc/tools/zh/UsefulTools_EdgeTTS.html">中文 简体</a></li>
 </ul></li>
 </ul>
 
@@ -105,7 +105,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                 </div>
                 <ul class="show">
 <li class="not_active with_link"><a href="/AppDoc/tools/en/index.html"><span class="label">Tools</span><span class=""></span></a></li>
-<li class="not_active no_link"><a><span class="label">UsefulTools</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="active_parent no_link"><a><span class="label">UsefulTools</span><span class="sub_indicator"></span></a><ul class="show">
 <li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_WebCol.html"><span class="label">WebCollection</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_Random.html"><span class="label">ChooseHelper</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_ColorTool.html"><span class="label">ColorTools</span><span class=""></span></a></li>
@@ -115,7 +115,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_MulVideo.html"><span class="label">MultipleVideo</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_JianBiHua.html"><span class="label">SimpleDrawing</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_FunColor.html"><span class="label">FunColoring</span><span class=""></span></a></li>
-<li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_EdgeTTS.html"><span class="label">EdgeTTS</span><span class=""></span></a></li>
+<li class="active with_link"><a href="/AppDoc/tools/en/UsefulTools_EdgeTTS.html"><span class="label">EdgeTTS</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/UsefulTools_Traffic.html"><span class="label">TrafficCounter</span><span class=""></span></a></li>
 </ul>
 </li>
@@ -126,7 +126,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/en/TestTools_ComForward.html"><span class="label">ComForwardTool</span><span class=""></span></a></li>
 </ul>
 </li>
-<li class="active_parent with_link"><a href="/AppDoc/tools/en/ToolsSet.html"><span class="label">ToolsSet</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet.html"><span class="label">ToolsSet</span><span class="sub_indicator"></span></a><ul class="show">
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Number.html"><span class="label">Number</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Number/RadixConverter.html"><span class="label">Radix Converter</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Number/ConvertToText.html"><span class="label">Convert To Text</span><span class=""></span></a></li>
@@ -146,7 +146,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Date/DateCalc.html"><span class="label">Date Calculate</span><span class=""></span></a></li>
 </ul>
 </li>
-<li class="active_parent with_link"><a href="/AppDoc/tools/en/ToolsSet_Text.html"><span class="label">Text</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Text.html"><span class="label">Text</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Text/Encode.html"><span class="label">Encode & Decode</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Text/Encrypt.html"><span class="label">Encrypt & Decrypt</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Text/TextConv.html"><span class="label">Text Converter</span><span class=""></span></a></li>
@@ -159,7 +159,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Text/TableConvert.html"><span class="label">Table Convert</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Text/TextBatch.html"><span class="label">Text Batch</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Text/TextSplit.html"><span class="label">Split Join</span><span class=""></span></a></li>
-<li class="active with_link"><a href="/AppDoc/tools/en/ToolsSet_Text/ListOpt.html"><span class="label">List Operate</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Text/ListOpt.html"><span class="label">List Operate</span><span class=""></span></a></li>
 </ul>
 </li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media.html"><span class="label">Media</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
@@ -211,7 +211,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_head">
                         <div id="article_title">
                             
-                            <h1>List Operate</h1>
+                            <h1>Edge TTS</h1>
                             
                         </div>
                         <div id="article_tags">
@@ -241,41 +241,42 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_content">
                         
                             <h2 id="Introduce">Introduce</h2>
-<p>Provides a variety of operations on text list, include sort, find, pad, take, and more</p>
-<p><img src="../../assets/images/ToolsSet/TSTListOpt.png" alt="" /></p>
+<p>Text-to-speech tool, call Edge TTS API to convert specified text to speech, support multi-language and save the conversion result as an audio file.</p>
 <h2 id="How-to-use">How to use</h2>
+<p><img src="../assets/images/UsefulTools/EdgeTTS.png" alt="" /></p>
+<ol>
+<li><p>Enter text in the text box on the left or click the Open File button above to open the text file, the maximum file size is 100kb.</p>
+</li>
+<li><p>In the configuration area on the right, select the voice, region, voice, and voice rate.</p>
+</li>
+<li><p>Click the Play button to play the voice, and you can Pause and Stop the sound during playing.</p>
+<blockquote>
+<p>The voice parameters cannot be modified after the playback starts, and if you want to modify the parameters, you need to stop the playback first.</p>
+</blockquote>
+</li>
+<li><p>Click the Save button to save the voice as an mp3 file.</p>
+</li>
+<li><p>Before saving the file, you can set the following settings:</p>
 <ul>
-<li>Enter the text to be processed in the text box on the left</li>
-<li>The middle part is the operation area, and the operations that can be performed are as follows<ul>
-<li>Sort: Type can be alphabet ascending, alphabet descending, random, length ascending, length descending, and reverse<ul>
-<li>The switch on the right side of the type option indicates whether to use numeric sorting, which is turned off by default, that is, using alphabetical sorting, which only works for the first two sorting methods</li>
-</ul>
+<li><p>Save Folder: Set the directory where the mp3 file is saved</p>
 </li>
-<li>Find: Search for items in a specified way, start with, end with, contains, and equal to specified text<ul>
-<li>The switch on the right side of the text box can toggle equal and unequal states</li>
-</ul>
-</li>
-<li>Pad: Pad the text to a specified length with the specified characters, and you can specify that it is filled at the start or end position<ul>
-<li>By default, space is used when no character is specified, and each item is padded to the length of the longest item when length not specified</li>
-</ul>
-</li>
-<li>Take: Take the specified characters from the start or end position, you can specify the number or characters to skip and take<ul>
-<li>By default, the Skip and Extract parameters are numeric and can be switched to characters by selecting StopChar</li>
-<li>The character judgment starts from the starting position, and you can specify whether the judgment method is equal or unequal</li>
-</ul>
-</li>
-<li>Below these is the operation of no parameter or one list parameter, and the list parameter can be entered in the text box below<ul>
-<li>Distinct: Removes duplicates from the list</li>
-<li>Union: Merge two lists</li>
-<li>Intersect: Gets the intersection of two lists, i.e., items that exist in both lists</li>
-<li>Except: Gets items that exist in the first list and do not exist in the second list</li>
-<li>Count: counts the number of items in the list</li>
-<li>Reverse: Reverse character order of each item in the list</li>
-</ul>
+<li><p>Auto Split Switch: After enabled, you can set to automatically split and save large texts, there are two options:</p>
+<ol>
+<li>Split by the number of lines: You can specify the number of split lines, the range is 0~200, and one file will be generated when specified as 0</li>
+<li>Split by number of files: You can specify the number of files to be saved, the range is 1~20</li>
+</ol>
+<blockquote>
+<p>After turning on Auto Split, the conversion process time will increase, please wait patiently.</p>
+<p>Split audio file names are automatically numbered.</p>
+</blockquote>
 </li>
 </ul>
 </li>
-</ul>
+</ol>
+<blockquote>
+<p>When the switch button in the upper toolbar is turned on, you can convert the selection, that is, only the text selected by the mouse can be converted.</p>
+</blockquote>
+<p><a href="https://apps.microsoft.com/detail/9NDRP25RM7Q3"  target="_blank">Microsoft Store</a></p>
 
                         
                     </div>
@@ -283,16 +284,16 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                 <div id="previous_next">
                     <div id="previous">
                         
-                        <a href="/AppDoc/tools/en/ToolsSet_Text/TextSplit.html">
+                        <a href="/AppDoc/tools/en/UsefulTools_FunColor.html">
                             <span class="icon"></span>
-                            <span class="label">Split Join</span>
+                            <span class="label">FunColoring</span>
                         </a>
                         
                     </div>
                     <div id="next">
                         
-                        <a href="/AppDoc/tools/en/ToolsSet_Media.html">
-                            <span class="label">Media</span>
+                        <a href="/AppDoc/tools/en/UsefulTools_Traffic.html">
+                            <span class="label">TrafficCounter</span>
                             <span class="icon"></span>
                         </a>
                         

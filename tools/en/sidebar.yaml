@@ -21,6 +21,8 @@ items:
         file: UsefulTools_JianBiHua.md
     -   label: FunColoring
         file: UsefulTools_FunColor.md
+    -   label: EdgeTTS
+        file: UsefulTools_EdgeTTS.md
     -   label: TrafficCounter
         file: UsefulTools_Traffic.md
 -   label: TestTools

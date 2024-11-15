@@ -21,6 +21,8 @@ items:
         file: UsefulTools_JianBiHua.md
     -   label: FunColoring
         file: UsefulTools_FunColor.md
+    -   label: EdgeTTS
+        file: UsefulTools_EdgeTTS.md
     -   label: 流量计数器
         file: UsefulTools_Traffic.md
 -   label: 测试类工具
