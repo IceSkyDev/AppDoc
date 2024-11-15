@@ -27,4 +27,6 @@ A range of useful tools, includ:
 
 [FunColoring](./UsefulTools_FunColor.md)
 
+[EdgeTTS](./UsefulTools_EdgeTTS.md)
+
 [TrafficCounter](./UsefulTools_Traffic.md)

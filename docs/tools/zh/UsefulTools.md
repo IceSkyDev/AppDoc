@@ -27,4 +27,6 @@ desc: 一系列的实用工具，包括图片工具、配色工具、选择工�
 
 [填色工具](./UsefulTools_FunColor.md)
 
+[EdgeTTS](./UsefulTools_EdgeTTS.md)
+
 [流量计数器](./UsefulTools_Traffic.md)

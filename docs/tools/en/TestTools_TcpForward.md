@@ -12,7 +12,7 @@ The TCP data forwarding tool supports connecting the TCP server and the client a
 ## How to use
 The interface is divided into two parts, the left side is receive area, which is used to connect the source of the data; The right side is send area, which is used to connect to the destination of data sending.
 ### Data Forward Settings
-![](../assets/images/TestTools/TCPForward1.png)
+![](../assets/images/TestTools/TcpForward1.png)
 1. Config receiver
    1. Select the receiver connection type
       * The available connection types for the receiver are TCP Server and TCP Client
@@ -46,7 +46,7 @@ The interface is divided into two parts, the left side is receive area, which is
    > If no mapping file is configured, the data sent is a full copy of the received data
 
 ### Configure mapping file
-![](../assets/images/TestTools/TCPForward2.png)
+![](../assets/images/TestTools/TcpForward2.png)
 The data mapping file is used to configure the mapping between the receive and send data for forwarding
 * Click the Configure button to the right of the receiver header to open the configuration window
 * The switch at the top of the configuration window allows you to set the forwarding mode: if you turn it on, only the data that matches the first column will be sent, otherwise all data will be sent
