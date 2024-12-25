@@ -9,3 +9,7 @@ items:
     file: Sudoku.md
 -   label: 数织
     file: Nonograms.md
+-   label: 控制台游戏集合
+    file: ConsoleGame.md
+-   label: 快艇骰子
+    file: Yahtzee.md

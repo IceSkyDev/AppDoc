@@ -9,4 +9,8 @@ items:
     file: Sudoku.md
 -   label: Nonograms
     file: Nonograms.md
+-   label: Console Games
+    file: ConsoleGame.md
+-   label: Yahtzee
+    file: Yahtzee.md
 

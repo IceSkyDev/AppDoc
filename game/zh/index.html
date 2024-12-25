@@ -109,6 +109,8 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/game/zh/Minesweeper.html"><span class="label">扫雷</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/game/zh/Sudoku.html"><span class="label">数独</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/game/zh/Nonograms.html"><span class="label">数织</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/game/zh/ConsoleGame.html"><span class="label">控制台游戏集合</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/game/zh/Yahtzee.html"><span class="label">快艇骰子</span><span class=""></span></a></li>
 </ul>
 
             </div>
@@ -187,6 +189,33 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <p>在一个矩形网格的上边和左边标这一些数字，这些数字代表其对应的网格列或行中连续色块的数量，玩家需要通过这些数字推断出网格中色块的位置并进行填色，所有色块全部填充即算成功。</p>
 </blockquote>
 <p>它不仅能够锻炼玩家的逻辑思维和空间想象能力，还能够提高注意力和专注力。在解决数织谜题的过程中，玩家需要保持冷静、细心观察，这些品质对于日常生活和工作同样具有重要意义。</p>
+</li>
+<li><p><a href="./ConsoleGame.html"  >控制台游戏</a></p>
+<p>一款控制台游戏集合，包含2048，俄罗斯方块，井字棋，翻转棋，猜数字，wordle等12款经典游戏。</p>
+</li>
+<li><p><a href="./Yahtzee.html"  >快艇骰子</a></p>
+<p>每位玩家轮流掷五个骰子，每个回合最多有三次掷骰机会。玩家在每次掷骰后可以选择保留任意数量的骰子，并重新掷其他骰子。游戏的目标是在13个不同的计分位置中尽可能获得高分。</p>
+<p>计分规则：</p>
+<ul>
+<li>1：每一个1得到 1分</li>
+<li>2：每一个2得到 2分</li>
+<li>3：每一个3得到 3分</li>
+<li>4：每一个4得到 4分</li>
+<li>5：每一个5得到 5分</li>
+<li>6：每一个6得到 6分</li>
+<li>3 of a kind：如果有三颗一样的骰子，加总所有骰子的总和</li>
+<li>4 of a kind：如果有四颗一样的骰子，加总所有骰子的总和</li>
+<li>Full house：如果有一种三颗一样的骰子及一种二颗一样的骰子，得25分，也叫葫芦</li>
+<li>Small straight：如果有四个连续数字骰子，得30分</li>
+<li>Large straight：如果有五个连续数字骰子，得40分</li>
+<li>Yahtzee：如果有五颗一样的骰子，得50分</li>
+<li>Chance：加总所有骰子的总和</li>
+</ul>
+<p>奖励：</p>
+<ol>
+<li>上层数字 1 到 6 的总和相加等于或大于 63 分, 可以得到 35 分奖励分</li>
+<li>如果已在Yahtzee的地方计分，每再额外掷出一个Yahtzee则会得到 100 额外的奖分</li>
+</ol>
 </li>
 </ul>
 
