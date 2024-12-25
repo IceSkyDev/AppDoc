@@ -52,3 +52,31 @@ IceSky offers four games of this type in the Windows Store:
 
   It not only exercises the player's logical thinking and spatial imagination skills, but also improves concentration and concentration. In the process of solving puzzles, players need to remain calm and observant, and these qualities are equally important for daily life and work. 
 
+
+* [Console Games](./ConsoleGame.md)
+  
+  A collection of console games containing 12 classic games such as 2048, Tetris, Tic-tac-toe, Flip Chess, Number Guess, Wordle, etc.
+
+
+* [Yahtzee](./Yahtzee.md)
+  
+  Each player takes turns rolling five dice, with a maximum of three rolls per turn. Players can choose to keep as many dice as they want after each roll and reroll other dice. The goal of the game is to get the highest score possible in 13 different scoring positions.
+
+  Scoring Rules:
+  * 1: 1 point for each 1
+  * 2: 2 points for each 2
+  * 3: 3 points for each 3
+  * 4: 4 points for each 4
+  * 5: 5 points for each 5
+  * 6: 6 points for each 6
+  * 3 of a kind: Get three dice with the same number. Points are the sum all dice
+  * 4 of a kind: Get four dice with the same number. Points are the sum all dice
+  * Full house: Get three of a kind and a pair, e.g. 1,1,3,3,3 or 3,3,3,6,6. Scores 25 points
+  * Small straight: Get four sequential dice, 1,2,3,4 or 2,3,4,5 or 3,4,5,6. Scores 30 points
+  * Large straight: Get five sequential dice, 1,2,3,4,5 or 2,3,4,5,6. Scores 40 points.
+  * Yahtzee: 50 points if there are five of the same dice
+  * Chance: Sum up all the dice
+
+  Bonus:
+  1. The sum of the upper numbers 1 to 6 is 63 or more points, and 35 bonus points will be awarded
+  2. If the score has been scored at the Yahtzee place, 100 additional bonus points will be awarded for each additional Yahtzee rolled
