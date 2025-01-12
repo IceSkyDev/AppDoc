@@ -4,13 +4,26 @@ class: heading_no_counter
 keywords: 
 desc: 
 ---
+* 1.2.4
+  * Add two online tools
+  * Add numerical batch processing function
+  * Enhancements to the feature
+* 1.2.3
+  * Add global clipboard and window pinning function
+  * Add font style selection in Font Viewer 
+  * Add widget and copy path functions to the Emoji list
+  * Geometry preview adds functions such as styling and saving images
+* 1.2.2
+  * Add three online tools
+  * Emoji list supports copying pictures
+  * Text comparison added to open local files
 * 1.2.1
   * Add more online tools
   * HSV palette upgraded to gradient palette
-  * Added table data to text tool
+  * Add table data to text tool
   * Add high precision and big number calculation
 * 1.2.0
-  * Added online tools category
+  * Add online tools category
   * Provide flowchart drawing, API testing, SVG editing and several drawing tools
 * 1.1.9
   * Add pixelated image function

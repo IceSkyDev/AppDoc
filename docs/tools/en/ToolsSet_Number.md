@@ -111,3 +111,15 @@ Features include: Radix Converter, Convert To Text, Unit Converter, Hex Operate,
   * Specify the number of integer digits
   * Specify the number of decimal places
 * Get the number of decimal places for Pi
+
+### Numeric Batch
+* Numerical extraction
+  * Integer extraction
+  * Real number extraction
+  * Hexadecimal extraction
+* Numeric formatting
+  * Decimal specifies the format string
+  * Hexadecimal byte arrays lowercase, delimited with or without separation, and in reverse order
+* Numerical conversion
+  * Decimal to binary, Chinese, hexadecimal byte arrays
+  * Byte arrays to other types
