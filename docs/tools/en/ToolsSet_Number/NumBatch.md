@@ -33,13 +33,13 @@ This tool can extract integers, real numbers, and hexadecimal values from string
 
       The text box to the right of the standard format allows you to enter a custom formatting string, and the formatting specifiers that can be used include:
       1. 0: Zero placeholder, replace 0 with the corresponding number (if present); Otherwise, zeros are displayed in the result string.
-      2. #: Number placeholder, replacing the "#" symbol with the corresponding number (if present); Otherwise, no numbers are displayed in the result string. If the number is a nonsensical 0, no number appears in the result string.
+      2. \#: Number placeholder, replacing the "#" symbol with the corresponding number (if present); Otherwise, no numbers are displayed in the result string. If the number is a nonsensical 0, no number appears in the result string.
       3. .: Decimal point, which determines the position of the decimal separator in the result string.
       4. ,: Group separator and numeric scale conversion, when used as a numeric scale specifier, divides the number by 1000 for each specified comma.
       5. %: A percentage placeholder, multiply the number by 100, and insert a localized percentage symbol in the result string.
       6. ‰: A thousandth placeholder that multiplies the number by 1000 and inserts a localized thousandth symbol in the resulting string.
       7. E0: Exponential notation, where the number of zeros followed by the "E" or "e" character determines the minimum number of digits in the exponent. (If the format string contains only E and numbers, it is standard formatting)
-      8. \: Escape character so that the next character is interpreted as text instead of a custom formatting specifier.
+      8. \\: Escape character so that the next character is interpreted as text instead of a custom formatting specifier.
       9. ;: A partial separator that defines positive, negative, and zero parts by separating the format string.
       10. Other strings: A text string separator that indicates the characters that should be copied to the unchanged resulting string.
   * Select Hexadecimal on the left to format the byte array, options include:
