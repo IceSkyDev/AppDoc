@@ -7,10 +7,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="keywords" content="">
+    <meta name="keywords" content="Numeric batching, integers, real numbers, byte arrays, conversions, endians">
     
     
-    <meta name="description" content="None">
+    <meta name="description" content="Numerical batch processing, support integer numbers, real numbers, hexadecimal extraction, and various conversions">
     
     <meta name="generator" content="teedoc">
     <meta name="theme" content="teedoc-plugin-theme-default">
@@ -50,7 +50,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
         
     
     
-    <title>ToolsSet Update Log - IceSky App</title>
+    <title>Numeric Batch - IceSky App</title>
     
     <script type="text/javascript">js_vars = {}</script>
     <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
@@ -80,8 +80,8 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
             </div>
             <div>
                 <ul id="nav_right">
-<li class="sub_items "><a  >Language: English</a><ul><li class="active"><a  href="/AppDoc/tools/en/ToolsSet_Log.html">English</a></li>
-<li class=""><a  href="/AppDoc/tools/zh/ToolsSet_Log.html">中文 简体</a></li>
+<li class="sub_items "><a  >Language: English</a><ul><li class="active"><a  href="/AppDoc/tools/en/ToolsSet_Number/NumBatch.html">English</a></li>
+<li class=""><a  href="/AppDoc/tools/zh/ToolsSet_Number/NumBatch.html">中文 简体</a></li>
 </ul></li>
 </ul>
 
@@ -211,7 +211,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_head">
                         <div id="article_title">
                             
-                            <h1>ToolsSet Update Log</h1>
+                            <h1>Numeric Batch</h1>
                             
                         </div>
                         <div id="article_tags">
@@ -240,136 +240,92 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     </div>
                     <div id="article_content">
                         
-                            <ul>
-<li>1.2.4<ul>
-<li>Add two online tools</li>
-<li>Add numerical batch processing function</li>
-<li>Enhancements to the feature</li>
+                            <h2 id="Introduce">Introduce</h2>
+<p>This tool can extract integers, real numbers, and hexadecimal values from strings through regular expressions, and perform numerical formatting and various transformations in batches.</p>
+<p><img src="../../assets/images/ToolsSet/TSNNumBatch1.png" alt="" /></p>
+<h2 id="How-to-use">How to use</h2>
+<ul>
+<li><p>Numerical extraction<br />
+In the upper left toolbar, you can select the type of operation, including integer, real number and hexadecimal operation, the text box on the right side of the type is used to enter the regular expression of the extracted content, enter the string containing the numeric value in the lower text box, and click the [Extract] button on the right to perform the extraction, and the data matching the regular expression will be displayed in the result text box at the bottom of the right.</p>
+</li>
+<li><p>Numeric formatting</p>
+<ul>
+<li><p>Select integers or real numbers on the left to format decimal values</p>
+<ul>
+<li><p>Standard formatting</p>
+<p>The standard formatting method that can be selected at the top right will automatically appear in the text box on the right after selection, and you can add numbers at the end.<br />
+Options include:</p>
+<ol>
+<li>G: General format, which can be followed by a number to indicate the number of significant digits</li>
+<li>C: Currency format, currency symbol will be added automatically, can be followed by a number to indicate the number of decimal places, the default is 2 digits</li>
+<li>D: Decimal format, integer only, can be followed by a number to indicate the lower limit of the number, the number of digits less than the lower limit will be preceded by 0</li>
+<li>E: Exponential format, can be followed by a number to indicate the number of decimal places, the default is 6 digits, you can use lowercase e to make the result lowercase</li>
+<li>F: Fixed-point format, which can be followed by a number to represent the number of decimal places, and the default is 2 digits</li>
+<li>N: Number format, the group separator will be added automatically, you can follow the number of decimal places, the default is 2 digits</li>
+<li>P: Percentage format, the number is multiplied by 100 and displayed with a percentage symbol, the group separator will be added automatically, and the number can be followed by a number to indicate the number of decimal places, and the default is 2 digits</li>
+<li>X: Hexadecimal format, integer only, can be followed by a number to indicate the lower limit of the number, the number of digits less than the lower limit will be preceded by 0, you can use lowercase x to make the result lowercase</li>
+</ol>
+</li>
+<li><p>Custom formatting</p>
+<p>The text box to the right of the standard format allows you to enter a custom formatting string, and the formatting specifiers that can be used include:</p>
+<ol>
+<li>0: Zero placeholder, replace 0 with the corresponding number (if present); Otherwise, zeros are displayed in the result string.</li>
+<li><h1 id="%3A-Number-placeholder%2C-replacing-the-%26quot%3B%23%26quot%3B-symbol-with-the-corresponding-number-%28if-present%29%3B-Otherwise%2C-no-numbers-are-displayed-in-the-result-string.-If-the-number-is-a-nonsensical-0%2C-no-number-appears-in-the-result-string.">: Number placeholder, replacing the &quot;#&quot; symbol with the corresponding number (if present); Otherwise, no numbers are displayed in the result string. If the number is a nonsensical 0, no number appears in the result string.</h1>
+</li>
+<li>.: Decimal point, which determines the position of the decimal separator in the result string.</li>
+<li>,: Group separator and numeric scale conversion, when used as a numeric scale specifier, divides the number by 1000 for each specified comma.</li>
+<li>%: A percentage placeholder, multiply the number by 100, and insert a localized percentage symbol in the result string.</li>
+<li>‰: A thousandth placeholder that multiplies the number by 1000 and inserts a localized thousandth symbol in the resulting string.</li>
+<li>E0: Exponential notation, where the number of zeros followed by the &quot;E&quot; or &quot;e&quot; character determines the minimum number of digits in the exponent. (If the format string contains only E and numbers, it is standard formatting)</li>
+<li>: Escape character so that the next character is interpreted as text instead of a custom formatting specifier.</li>
+<li>;: A partial separator that defines positive, negative, and zero parts by separating the format string.</li>
+<li>Other strings: A text string separator that indicates the characters that should be copied to the unchanged resulting string.</li>
+</ol>
+</li>
 </ul>
 </li>
-<li>1.2.3<ul>
-<li>Add global clipboard and window pinning function</li>
-<li>Add font style selection in Font Viewer</li>
-<li>Add widget and copy path functions to the Emoji list</li>
-<li>Geometry preview adds functions such as styling and saving images</li>
-</ul>
-</li>
-<li>1.2.2<ul>
-<li>Add three online tools</li>
-<li>Emoji list supports copying pictures</li>
-<li>Text comparison added to open local files</li>
-</ul>
-</li>
-<li>1.2.1<ul>
-<li>Add more online tools</li>
-<li>HSV palette upgraded to gradient palette</li>
-<li>Add table data to text tool</li>
-<li>Add high precision and big number calculation</li>
-</ul>
-</li>
-<li>1.2.0<ul>
-<li>Add online tools category</li>
-<li>Provide flowchart drawing, API testing, SVG editing and several drawing tools</li>
-</ul>
-</li>
-<li>1.1.9<ul>
-<li>Add pixelated image function</li>
-<li>Add image montage function</li>
-<li>Add audio split and combine functions</li>
-</ul>
-</li>
-<li>1.1.8<ul>
-<li>Add tool to add watermark to an image</li>
-<li>Add random color tool</li>
-</ul>
-</li>
-<li>1.1.7<ul>
-<li>Provide path code simplification</li>
-<li>Add $0 to the line number for the text batch</li>
-<li>Image Base64 conversion can be prefixed or not</li>
-</ul>
-</li>
-<li>1.1.6<ul>
-<li>Functional improvement and optimization</li>
-<li>Gradient tool adds the ability to specify position and color</li>
-<li>Draw pixel maps add predefined colors and color history</li>
-<li>Ratio calculation tool add proportional conversion function</li>
-</ul>
-</li>
-<li>1.1.5<ul>
-<li>Add the tool to add filters and effects to image</li>
-<li>Add the tool of drawing pixel maps</li>
-<li>Add random gradient color generation tool</li>
-<li>Color extraction add color picking</li>
-</ul>
-</li>
-<li>1.1.4<ul>
-<li>Add list operate tool, including sort, merge, deduplicate, find, etc</li>
-<li>Add image crop tool, you can crop the image into multiple image blocks according to the number or size</li>
-</ul>
-</li>
-<li>1.1.3<ul>
-<li>Add percentage calculator and fraction conversion tool</li>
-<li>Base conversion adds predefined character sets</li>
-<li>Add Unicode character set to digital-to-text</li>
-<li>Add file directory tree view tool, to copy multiple files and directory names and paths</li>
-<li>Add text split and merge tool, and supported counting the number of text characters</li>
-</ul>
-</li>
-<li>1.1.2<ul>
-<li>Add XML tool, which can perform XML formatting, JSON, XPath query</li>
-<li>Add XPath cheat sheet, Windows cmd cheat sheet</li>
-<li>Json formatting added the ability to convert to XML</li>
-<li>Add ISO country language table and Unicode symbol table viewing</li>
-<li>Add emoji list and emoji generation function</li>
-<li>Add HSV/HSL color wheel</li>
-<li>Add annual calendar, you can view the luni-solar calendar for the whole year or half a year</li>
-</ul>
-</li>
-<li>1.1.1<ul>
-<li>Morse code conversion added MP3 export function</li>
-<li>Lyrics editor added zoom and playback following</li>
-<li>Added binary arithmetic function</li>
-</ul>
-</li>
-<li>1.1.0<ul>
-<li>Add image format conversion function, support source formats JPG, PNG, BMP, TIFF, GIF, and target formats include ICO and PDF</li>
-<li>Add GIF animation split into frames, as well as image sequence conversion GIF animation function</li>
-<li>Add image comparison function</li>
-</ul>
-</li>
-<li>1.0.9<ul>
-<li>Add tool to extract the theme color and color matching from the image</li>
-<li>Add multi-color color mixing function</li>
-</ul>
-</li>
-<li>1.0.8<ul>
-<li>Add Cron expression creation function</li>
-</ul>
-</li>
-<li>1.0.7<ul>
-<li>Add system font character preview tool</li>
-<li>Add path geometric preview tool</li>
-</ul>
-</li>
-<li>1.0.6<ul>
-<li>Add tool to convert image and text into character painting</li>
-<li>Add tool of generating 3D stereoscopic pictures using grayscale maps</li>
-<li>Add tool to generate text stereo using text or 2D numeric arrays</li>
-</ul>
-</li>
-<li>1.0.5<ul>
-<li>Add datetime calculation, Julian day, Unix timestamp, file time calculation</li>
-<li>Add hexadecimal data editor</li>
-</ul>
-</li>
-<li>1.0.4<ul>
-<li>Add lyrics editor</li>
-<li>Add CSV editor</li>
-<li>Add text batch process tool</li>
+<li><p>Select Hexadecimal on the left to format the byte array, options include:</p>
+<ul>
+<li>Uppercase: The result will be uppercase characters when opened, otherwise it will be lowercase</li>
+<li>Split: When opened, the result will be separated by bytes with a space, otherwise it will not be separated</li>
+<li>Reverse: When opened, the results will be in reverse byte order</li>
 </ul>
 </li>
 </ul>
+</li>
+</ul>
+<p><img src="../../assets/images/ToolsSet/TSNNumBatch2.png" alt="" /></p>
+<ul>
+<li><p>Numerical conversion</p>
+<ul>
+<li><p>Select integer or real number on the left to convert decimal values</p>
+<ul>
+<li><p>Convert to binary</p>
+<p>You can select the number of digits to be displayed in the result, and the number of digits will be automatically converted according to the data format, and other options will be added to the specified number of digits.</p>
+</li>
+<li><p>Converted to Chinese</p>
+<p>Chinese conversion supports Chinese number, Chinese currency, and Chinese order, and you can select uppercase to convert the result to Chinese uppercase.</p>
+</li>
+<li><p>Converted to hexadecimal</p>
+<p>Hexadecimal conversion converts numbers into hexadecimal byte arrays, and you can specify the byte order</p>
+</li>
+</ul>
+</li>
+<li><p>Select hexadecimal on the left to convert the byte array, the options are:</p>
+<ul>
+<li>Data Type: You can choose different data types</li>
+<li>Start Byte: Set the byte position where the conversion starts</li>
+<li>Byte Order: Set the byte order used during conversion</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="../../assets/images/ToolsSet/TSNNumBatch3.png" alt="" /></p>
+<blockquote>
+<p>The results on the right can be quickly copied by clicking the copy button</p>
+<p>Click the left arrow button to quickly copy to the left for the next processing</p>
+</blockquote>
 
                         
                     </div>
