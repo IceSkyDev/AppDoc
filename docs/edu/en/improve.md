@@ -319,3 +319,42 @@ After view by group, you can select 2-4 elements to compare the information of t
 
 [Use it online](https://periodictableblazor.azurewebsites.net)
 
+
+### [桌面单词](https://apps.microsoft.com/detail/9NJKL858L4VS?hl=zh-cn&gl=CN) ###
+It is an English word memory app with multiple levels of word books, and support desktop mode and notification mode.
+
+After the app runs, the desktop mode will be displayed by default, and the display content includes: words, parts of speech, American and British phonetic transcriptions, Chinese meanings, and the operations in the lower area are: Start, Previous Word, Next Word, Remembered, Settings.
+
+![](../assets/images/bdc1.png)
+
+Right-click on the window to open context menu, which allows you to quickly select word books, pin or penetrate the window, and exit the app.
+
+Click the Settings button to open the Settings window, which includes the following settings:
+* Memorized content: You can select the book of words to be memorized
+* Words count: Set the number of words to be recited each time, the words will be recited out of order after the random order is opened, otherwise they will be recited in order
+* Switching Time: The amount of time each word is held while reciting, in seconds
+* Display: Toggle between desktop mode and notification mode
+  * Desktop Mode settings:
+    * Window settings: window topmost, position lock, mouse penetration
+    * Background Color: Set the background color and transparency of the window
+    * Display content: Set the display content in the window, you can set whether each part is displayed, text color, and font size
+  * Notification Mode settings:
+    * Color Settings: Set the background color and text color of the notification window
+    * Font size setting: You can set the font size of English words and Chinese meanings separately
+    * Notification Location: Set the location where the notification window appears
+> Notification mode only shows English words and Chinese meanings, and only English words can be displayed by setting the Chinese font size to 0
+>
+> You can use the taskbar icon to open the settings window, start and end the recitation
+
+![](../assets/images/bdc2.png)
+
+### [Memorize Card](https://apps.microsoft.com/detail/9NJKL858L4VS?hl=zh-cn&gl=CN) ###
+This is a memory card app that allows you to customize the memory content, which can be used by adding a CSV file, and supports desktop mode and notification mode.
+
+After the app runs, the desktop mode will be displayed by default, and the content is Japanese intermediate words, and other buttons and operation methods are the same as 桌面单词.
+
+![](../assets/images/bbb1.png)
+
+You can add custom content in the settings window of the app, after the settings window opens, you can click the button on the right side of the Memorize content to add a custom CSV file, the content of the custom CSV file should contain a header row, each row of data at least 5 columns, and the app will read the first 5 columns of the file as the display content. The other options in the settings window are the same as the 桌面单词.
+
+![](../assets/images/bbb2.png)
