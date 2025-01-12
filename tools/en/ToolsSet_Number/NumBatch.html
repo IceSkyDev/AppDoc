@@ -271,14 +271,13 @@ Options include:</p>
 <p>The text box to the right of the standard format allows you to enter a custom formatting string, and the formatting specifiers that can be used include:</p>
 <ol>
 <li>0: Zero placeholder, replace 0 with the corresponding number (if present); Otherwise, zeros are displayed in the result string.</li>
-<li><h1 id="%3A-Number-placeholder%2C-replacing-the-%26quot%3B%23%26quot%3B-symbol-with-the-corresponding-number-%28if-present%29%3B-Otherwise%2C-no-numbers-are-displayed-in-the-result-string.-If-the-number-is-a-nonsensical-0%2C-no-number-appears-in-the-result-string.">: Number placeholder, replacing the &quot;#&quot; symbol with the corresponding number (if present); Otherwise, no numbers are displayed in the result string. If the number is a nonsensical 0, no number appears in the result string.</h1>
-</li>
+<li>#: Number placeholder, replacing the &quot;#&quot; symbol with the corresponding number (if present); Otherwise, no numbers are displayed in the result string. If the number is a nonsensical 0, no number appears in the result string.</li>
 <li>.: Decimal point, which determines the position of the decimal separator in the result string.</li>
 <li>,: Group separator and numeric scale conversion, when used as a numeric scale specifier, divides the number by 1000 for each specified comma.</li>
 <li>%: A percentage placeholder, multiply the number by 100, and insert a localized percentage symbol in the result string.</li>
 <li>‰: A thousandth placeholder that multiplies the number by 1000 and inserts a localized thousandth symbol in the resulting string.</li>
 <li>E0: Exponential notation, where the number of zeros followed by the &quot;E&quot; or &quot;e&quot; character determines the minimum number of digits in the exponent. (If the format string contains only E and numbers, it is standard formatting)</li>
-<li>: Escape character so that the next character is interpreted as text instead of a custom formatting specifier.</li>
+<li>\: Escape character so that the next character is interpreted as text instead of a custom formatting specifier.</li>
 <li>;: A partial separator that defines positive, negative, and zero parts by separating the format string.</li>
 <li>Other strings: A text string separator that indicates the characters that should be copied to the unchanged resulting string.</li>
 </ol>
