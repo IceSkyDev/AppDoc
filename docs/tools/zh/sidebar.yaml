@@ -55,6 +55,8 @@ items:
             file: ToolsSet_Number/RatioCalc.md
         -   label: 大数计算
             file: ToolsSet_Number/BigNumber.md
+        -   label: 数值批处理
+            file: ToolsSet_Number/NumBatch.md
     -   label: 日期类
         file: ToolsSet_Date.md
         items:

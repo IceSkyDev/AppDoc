@@ -20,6 +20,7 @@ Numeric tools include:
 * Hex Operate: Hexadecimal can be converted to binary and bitwise manipulation can be performed
 * Ratio Calculator: Percentage calculations and fraction conversions are possible
 * Big Number: It supports some operations for high-precision and big number, generate random big number and obtain the decimal part of Pi within 100,000 digits
+* Numeric Batch: Support integers, real numbers, hexadecimal extraction, as well as various formatting and data conversions
 
 ### [Text tools](./ToolsSet_Text.md)
 Text tools include:

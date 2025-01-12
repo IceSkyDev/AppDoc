@@ -55,6 +55,8 @@ items:
             file: ToolsSet_Number/RatioCalc.md
         -   label: Big Number
             file: ToolsSet_Number/BigNumber.md
+        -   label: Numeric Batch
+            file: ToolsSet_Number/NumBatch.md
     -   label: Date
         file: ToolsSet_Date.md
         items:
