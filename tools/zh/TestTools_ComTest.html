@@ -244,8 +244,8 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                             <h2 id="%E4%BB%8B%E7%BB%8D">介绍</h2>
 <p>通信测试工具，支持多种通信方式的服务器和客户端，包括TCP、UDP、MQTT、Websocket、SignalR、ZeroMq，另外支持Http响应模拟，可以用于测试http请求或者测试WebApi。</p>
 <p>应用中的通信连接界面都分为了左右两部分，左侧为服务端，右侧为客户端。</p>
-<blockquote class="spoiler warning">
-<p> 周期发送会有毫秒精度的误差，使用场景如果需要毫秒级高频率发送时需要注意</p>
+<blockquote>
+<p>周期发送最小周期为10毫秒</p>
 </blockquote>
 <h2 id="%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">使用方法</h2>
 <h3 id="TCP%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%92%8C%E5%AE%A2%E6%88%B7%E7%AB%AF">TCP服务器和客户端</h3>
