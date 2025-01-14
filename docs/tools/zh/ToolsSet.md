@@ -123,6 +123,6 @@ desc: 工具合集，包括数字类、日期类、媒体类、文本类、速�
 
 **[更新记录](./ToolsSet_Log.md)**
 
-[ToolsSet](https://apps.microsoft.com/detail/9NQGTZGM4LRH)
+[ToolsSet 商店下载](https://apps.microsoft.com/detail/9NQGTZGM4LRH)
 
-[FreeToolsSet](https://apps.microsoft.com/detail/9N6W6006WDVK)
+[FreeToolsSet 商店下载](https://apps.microsoft.com/detail/9N6W6006WDVK)

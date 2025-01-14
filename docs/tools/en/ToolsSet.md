@@ -119,6 +119,6 @@ Other tools include:
 
 **[Update Log](./ToolsSet_Log.md)**
 
-[ToolsSet](https://apps.microsoft.com/detail/9NQGTZGM4LRH)
+[ToolsSet in Microsoft Store](https://apps.microsoft.com/detail/9NQGTZGM4LRH)
 
-[FreeToolsSet](https://apps.microsoft.com/detail/9N6W6006WDVK)
+[FreeToolsSet in Microsoft Store](https://apps.microsoft.com/detail/9N6W6006WDVK)

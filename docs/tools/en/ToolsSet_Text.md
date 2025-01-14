@@ -155,6 +155,10 @@ Features include: Encode & Decode, Encrypt & Decrypt & Hash, Text Converter, Tex
   * Split by quantity
   * Split by character
   * Specify separator
+* Text extract
+  * Extract text based on regular expressions
+  * Extracted by group
+  * Specify the separator
 * Text merge
   * Merge multiple spaces
   * Merge multiple line breaks

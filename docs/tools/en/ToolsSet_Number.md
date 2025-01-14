@@ -99,6 +99,8 @@ Features include: Radix Converter, Convert To Text, Unit Converter, Hex Operate,
   * Incremental calculat
 * Decimal to Fraction
 * Fraction simplification
+* Proportional arithmetic
+* Fraction comparison
 
 ### Big Number
 * Mathematical operations
