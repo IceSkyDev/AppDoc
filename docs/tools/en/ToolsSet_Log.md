@@ -4,6 +4,10 @@ class: heading_no_counter
 keywords: 
 desc: 
 ---
+* 1.2.5
+  * Text batch add conversion options, template snippets, and more functions
+  * Added the ability to open tools in a new window
+  * Added regular extract function to text split and join tool
 * 1.2.4
   * Add two online tools
   * Add numerical batch processing function

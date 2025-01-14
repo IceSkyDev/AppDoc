@@ -98,18 +98,24 @@ Other tools include:
 * Hex Editor: Web-based hex editor
 * SVG Path Editor: Create and manipulate SVG Paths
 * Photo Editor: Edit photos, apply effects, filters, crop or resize pictures
+* Vector Editor: Edit vector graphics, AI, and SVG files
 * Sketchpad: Create digital artwork online and export image
 * Paint Tool: Paint with natural brushes, layers, and edit drawings
 * Whiteboard: Simple online whiteboard
 * LaTeX Editor: LaTeX online editor
 * Markdown Editor: Markdown online editor
+* CSS Test: Edit and test Html, CSS and JavaScript
+* Online IDE: Online IDE for C, Java, Python, Sql, etc.
 * Music Editor: Remove vocals, cut audio tracks, change key & BPM
 * Random Choose: Random selection tool with custom options
 * Plotly Studio: Create charts and graphs online with data
-* Table Convert: Convert table data to JSON, XML, SQL, PDF...
+* Table Convert: Convert table data to JSON, XML, SQL, PDF, etc.
+* Emoji Mix: Combine two Emoji to one
 * Geogebra: Interactive graphing calculator and function drawing tool
 * Chart Builder: Create charts with data visualizations
 * Mermaid Chart: Generat diagrams from text in a similar manner as markdown
+* Mockup Design: Design and create mockup
+* Poster Designer: Design and edit poster and coloring pages
 
 **[Update Log](./ToolsSet_Log.md)**
 

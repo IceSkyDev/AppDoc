@@ -8,7 +8,7 @@ desc: Communication Test Tools, server and client that supports multiple communi
 ## Introduce
 Communication testing tools, support server and client mode for a variety of communications, includ TCP, UDP, MQTT, Websocket, SignalR, ZeroMq, and support mock Http response, which can be used to test http requests or test WebApi.
 
-The communication interface in the application is divided into two parts, the left side is the server area and the right side is the client area.
+The communication interface in the application is divided into two parts, the left side is the server area and the right side is the client area. The minimum period for periodic send is 10 milliseconds.
 
 ## How to use
 ### TCP Server and Client
