@@ -14,7 +14,7 @@ This tool supports arithmetic operations with high precision and big numbers, an
 ## How to use
 
 * Arithmetic operations
-  Enter the value in the upper two text boxes, then select the operation type in the middle, and then click the [=] button to get the result below, the maximum number of digits of the calculation result is about 3000. Types of operations include:
+  Enter the value in the upper two text boxes, then select the operation type in the middle, and then click the [=] button to get the result below, the maximum value of the result is 1E1073741790, the maximum number of digits of the calculation result is about 3000. Types of operations include:
   1. Four arithmetic
      * Operands support numbers of unlimited length 
      * The divisor cannot be 0 in the division operation
@@ -22,15 +22,17 @@ This tool supports arithmetic operations with high precision and big numbers, an
      * Both operands must be integers 
   3. Exponent
      * The first operand supports numbers of unlimited length 
-     * The second operand must be an integer less than 10,000
+     * The second operand must be an integer less than 10000
   4. Root
      * Both operands must be positive integers 
-     * The second operand must be less than 255
+     * The second operand must be less than 10000
   5. Greatest common divisor
      * Both operands must be positive integers 
   6. Least common multiple
      * Both operands must be positive integers 
   > The rightmost button of the operation type is used to swap two operands
+  >
+  > When the switch on the right side of the [=] button is turned on, you can turn on the display of scientific notation, and then if the checkbox on the right is selected, you can specify the number of decimal places in the result in the text box on the right, which is 100 digits by default
 
 * Random number
   * After entering the number of digits in the integer part and the decimal part in the Random area, click the [Get] button on the right side to generate the corresponding number on the right, and the maximum number of digits can be specified as 9999

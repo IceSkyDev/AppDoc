@@ -7,7 +7,7 @@ desc: Other utilities include ASCII Table, Unicode Symbol Table, Emoji, TFont Vi
 
 ## Introduce
 
-Features include: ASCII Table, ISO Table, Unicode Symbols, Emoji List, Emoticons, Font Viewer, Geometry Viewer, Directory Viewer, Hotkey, Cheat Sheet
+Features include: ASCII Table, ISO Table, Unicode Symbols, Emoji List, Emoticons, Font Viewer, Geometry Viewer, Path Combine, Directory Viewer, Hotkey, Cheat Sheet
 
 ![](../assets/images/ToolsSet/ToolsSet04.png)
 
@@ -37,6 +37,8 @@ Features include: ASCII Table, ISO Table, Unicode Symbols, Emoji List, Emoticons
 ### Emoji List 
 * View Emoji by category
 * Search Emoji by name
+* Copy Emoji characters and images
+* The whole emoji or it's components are converted to geometry codes
 
 ### Emoticons 
 * View Emoticons by category
@@ -46,13 +48,23 @@ Features include: ASCII Table, ISO Table, Unicode Symbols, Emoji List, Emoticons
 * Edit Emoticons
 
 ### Font Viewer 
-* Set the font family
+* Set the font family and typeface
 * Pagination jumps
 * View content includes: characters, Dec code, Hex code, XML/CSS/JS usage, Geometry string
 
 ### Geometry Viewer 
 * String conversion to path viewing
 * Fill switch
+* Set the border and fill color
+* SVG and PNG file can be saved
+
+### Path Combine
+* Add and remove path code
+* Geometry code to path
+* Path rotation, translation, scale transformation
+* Set the border and fill color
+* Copy the combined geometry code and SVG code
+* SVG and PNG file can be saved
 
 ### Directory Viewer 
 * View the local file directory

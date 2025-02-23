@@ -148,6 +148,8 @@ items:
             file: ToolsSet_Media/ImgPixelate.md
         -   label: 音频分割合并
             file: ToolsSet_Media/AudioSplit.md
+        -   label: 二维码艺术
+            file: ToolsSet_Media/QrCodeArt.md
     -   label: 其他类
         file: ToolsSet_Other.md
         items:
@@ -161,5 +163,9 @@ items:
             file: ToolsSet_Other/Emotion.md
         -   label: 字体查看器
             file: ToolsSet_Other/FontViewer.md
+        -   label: 几何路径查看器
+            file: ToolsSet_Other/GeoViewer.md
+        -   label: 几何路径合并
+            file: ToolsSet_Other/PathCombine.md
         -   label: 目录预览
             file: ToolsSet_Other/DirViewer.md

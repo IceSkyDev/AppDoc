@@ -4,6 +4,17 @@ class: heading_no_counter
 keywords: 
 desc: 
 ---
+
+* 1.2.7
+  * Added path combination function, support translation, zoom, rotation, custom color, can be converted to SVG and pictures
+  * Add custom QR code function, generate artistic QR code, ASCII QR code, Base64 and SVG
+  * Pixel Grid add the function of opening the image to edit by pixel
+  * Image format convert added to convert to WebP and SVG
+  * Big Number add scientific notation display and can specify the number of decimal places
+* 1.2.6
+  * Image Montage added automatic loop repeat tiling
+  * Image format convert: Add DPI and common size conversion
+  * Optimization and fix bug
 * 1.2.5
   * Text batch add conversion options, template snippets, and more functions
   * Added the ability to open tools in a new window

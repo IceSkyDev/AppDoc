@@ -7,7 +7,7 @@ desc: 媒体类工具，包括色盘、拾色器、渐变色、歌词编辑器�
 
 ## 介绍
 
-功能包括：Color Picker、Color Palette、Gradient Palette、Gradient Color、Color Blender、Color Extractor、Image Encode、Lrc Editor、ASCII Art、Pixel Grid、3D Picture、Image Format Convert、GIF Convert、Image Compare、Image Crop、Image Filters、Image Montage、Random Colorful、Image Watermark、Audio Split Combine、Image Pixelate
+功能包括：Color Picker、Color Palette、Gradient Palette、Gradient Color、Color Blender、Color Extractor、Image Encode、Lrc Editor、ASCII Art、Pixel Grid、3D Picture、Image Format Convert、GIF Convert、Image Compare、Image Crop、Image Filters、Image Montage、Random Colorful、Image Watermark、Audio Split Combine、Image Pixelate、QrCode Art
 
 ![](../assets/images/ToolsSet/ToolsSet03.png)
 
@@ -44,6 +44,7 @@ desc: 媒体类工具，包括色盘、拾色器、渐变色、歌词编辑器�
   * 指定颜色类型
   * 指定渐变类型
   * 指定角度或中心点
+  * 指定节点位置及颜色
 * 复制代码
   * Css代码
   * XAML代码
@@ -94,6 +95,9 @@ desc: 媒体类工具，包括色盘、拾色器、渐变色、歌词编辑器�
 * 网格设置
   * 指定网格数量
   * 指定网格尺寸
+* 打开图片
+  * 打开图片适应网格数量
+  * 打开图片并调整网格数量
 * 绘制设置
   * 指定填充颜色
   * 指定输入文本
@@ -120,8 +124,8 @@ desc: 媒体类工具，包括色盘、拾色器、渐变色、歌词编辑器�
   * 复制结果文本
 
 ### Image Format Convert *图片格式转换*
-* 源格式支持png、jpg、gif、bmp、tiff、ico
-* 目标格式支持png、jpg、gif、bmp、tiff、ico、pdf
+* 源格式支持png、jpg、gif、bmp、tiff、ico、webp
+* 目标格式支持png、jpg、gif、bmp、tiff、ico、pdf、webp、svg
 * 支持图片缩放
 
 ### GIF Convert *GIF转换*
@@ -204,3 +208,22 @@ desc: 媒体类工具，包括色盘、拾色器、渐变色、歌词编辑器�
 * 多重滤镜叠加
 * 处理结果预览
 * 保存处理结果
+
+### QrCode Art *二维码艺术*
+* 常规二维码
+  * 指定颜色
+  * 指定Logo图片、尺寸、边框、背景
+* 艺术二维码
+  * 指定颜色
+  * 指定像素比例
+  * 指定背景颜色或图片
+  * 指定定位点样式
+* Ascii二维码
+  * 指定字符
+  * 指定尺寸
+  * 反转字符
+* Base64
+  * 指定颜色
+* Svg
+  * 指定颜色
+  * 指定Logo图片、尺寸

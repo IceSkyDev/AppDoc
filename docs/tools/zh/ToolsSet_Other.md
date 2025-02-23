@@ -7,7 +7,7 @@ desc: 其他实用工具，包括ASCII码表、Unicode符号表、Emoji、颜文
 
 ## 介绍
 
-功能包括：ASCII Table、ISO Table、Unicode Symbols、Emoji List、Emoticons、Font Viewer、Geometry Viewer、Directory Viewer、Hotkey、Cheat Sheet
+功能包括：ASCII Table、ISO Table、Unicode Symbols、Emoji List、Emoticons、Font Viewer、Geometry Viewer、Path Combine、Directory Viewer、Hotkey、Cheat Sheet
 
 ![](../assets/images/ToolsSet/ToolsSet04.png)
 
@@ -37,6 +37,8 @@ desc: 其他实用工具，包括ASCII码表、Unicode符号表、Emoji、颜文
 ### Emoji List *Emoji列表*
 * 按分类查看Emoji
 * 按名称检索Emoji
+* 复制Emoji字符及图片
+* Emoji整体及组成部分转为路径代码
 
 ### Emoticons *颜文字*
 * 按类别查看颜文字
@@ -46,13 +48,23 @@ desc: 其他实用工具，包括ASCII码表、Unicode符号表、Emoji、颜文
 * 编辑颜文字
 
 ### Font Viewer *字体查看器*
-* 指定字体
+* 指定字体及字体样式
 * 分页跳转
 * 查看内容包括：字符、十进制编码、十六进制编码、XML/CSS/JS用法、Geometry代码
 
 ### Geometry Viewer *几何路径查看器*
-* 代码转换为路径查看
+* 几何代码转换为路径查看
 * 可选择是否填充路径
+* 可设置边框及填充颜色
+* 可保存svg和png文件
+
+### Path Combine *路径组合*
+* 添加移除路径代码
+* 几何代码转为路径
+* 路径旋转、平移、缩放变换
+* 设置边框及填充颜色
+* 复制组合路径代码及svg代码
+* 可保存svg和png文件
 
 ### Directory Viewer *目录预览*
 * 查看本地文件目录

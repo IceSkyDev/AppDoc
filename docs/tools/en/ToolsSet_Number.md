@@ -89,7 +89,7 @@ Features include: Radix Converter, Convert To Text, Unit Converter, Hex Operate,
 * High and low swapping
 * Bitwise calculations
   * Format support Hex, Dec, Bin
-  * Single operand operations: Not, ShiftL, ShiftR
+  * Single operand operations: Not, ShiftL, ShiftR (with or without the sign)
   * Two operand operations: AND, OR, XOR, XNOR, NAND, NOR
 * Get the bit range value
 
@@ -109,6 +109,10 @@ Features include: Radix Converter, Convert To Text, Unit Converter, Hex Operate,
   * Root
   * Greatest Common Divisor
   * Least Common Multiple
+* Result display
+  * Normally
+  * Scientific notation
+  * Specify the number of decimal places
 * Random numbers
   * Specify the number of integer digits
   * Specify the number of decimal places

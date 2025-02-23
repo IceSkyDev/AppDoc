@@ -36,6 +36,7 @@ This tool is used for hexadecimal data manipulation, which can be converted to b
       > Click the Update Data button at the top to automatically update the value, if you modify the binary bits, you need to click the Calculate button in this area to recalculate the value
     * ShiftL: Shift the binary data to the left bits, and operate through the slider, and the data range is the same as the number of binary digits of the current data
     * ShiftR: Shifts binary data to the right bits, and the operation is the same as that of ShiftL
+      > When shift to right, you can choose whether to shift with the sign through the switch on the right, and the default is on = shift right with the sign
   * Two operand operations
     * AND
     * OR

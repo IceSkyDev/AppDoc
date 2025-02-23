@@ -7,7 +7,7 @@ desc: Media tools, including color palette, color picker, gradient color, lyrics
 
 ## Introduce
 
-Features include: Color Picker, Color Palette, HSV Palette, Gradient Color, Color Blender, Color Extractor, Image Encode, Lrc Editor, ASCII Art, Pixel Grid, 3D Picture, Image Format Convert, GIF Convert, Image Compare, Image Crop, Image Filters, Image Montage, Random Colorful, Image Watermark, Audio Split Combine, Image Pixelate
+Features include: Color Picker, Color Palette, HSV Palette, Gradient Color, Color Blender, Color Extractor, Image Encode, Lrc Editor, ASCII Art, Pixel Grid, 3D Picture, Image Format Convert, GIF Convert, Image Compare, Image Crop, Image Filters, Image Montage, Random Colorful, Image Watermark, Audio Split Combine, Image Pixelate, QrCode Art
 
 ![](../assets/images/ToolsSet/ToolsSet03.png)
 
@@ -44,6 +44,7 @@ Features include: Color Picker, Color Palette, HSV Palette, Gradient Color, Colo
   * Set the color type
   * Set the gradient type
   * Set angle or center point
+  * Specify the position and color of the gradient
 * Copy code
   * Css code
   * XAML code
@@ -94,6 +95,9 @@ Features include: Color Picker, Color Palette, HSV Palette, Gradient Color, Colo
 * Grid settings
   * Specify the number of row and column
   * Specify the grid size
+* Open the image
+  * Open the image and resize to fit the number of grids
+  * Open the image and adjust the number of grids
 * Draw settings
   * Specify the fill color
   * Specify the input text
@@ -120,8 +124,8 @@ Features include: Color Picker, Color Palette, HSV Palette, Gradient Color, Colo
   * Copy the result text
 
 ### Image Format Convert 
-* The source format supports: png, jpg, gif, bmp, tiff, ico
-* The target format supports: png, jpg, gif, bmp, tiff, ico, pdf
+* The source format supports: png, jpg, gif, bmp, tiff, ico, webp
+* The target format supports: png, jpg, gif, bmp, tiff, ico, pdf, webp, svg
 * Support resize image
 
 ### GIF Convert 
@@ -205,3 +209,21 @@ Features include: Color Picker, Color Palette, HSV Palette, Gradient Color, Colo
 * Preview result
 * Save the result
 
+### QrCode Art
+* Normal QR code
+  * Specify the color
+  * Specify the logo image, size, border, and background
+* Art QR code
+  * Specify the color
+  * Specify the pixel ratio
+  * Specify the background color or image
+  * Specify the finder point style
+* ASCII QR code
+  * Specify characters
+  * Specify the size
+  * Invert characters
+* Base64
+  * Specify the color
+* Svg
+  * Specify the color
+  * Specify the logo image and size
