@@ -185,6 +185,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/ImgMontage.html"><span class="label">Image Montage</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/ImgPixelate.html"><span class="label">Image Pixelate</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/AudioSplit.html"><span class="label">Audio Split Combine</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/QrCodeArt.html"><span class="label">QrCode Art</span><span class=""></span></a></li>
 </ul>
 </li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Other.html"><span class="label">Other</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
@@ -193,6 +194,8 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Other/Emoji.html"><span class="label">Emoji List</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Other/Emotion.html"><span class="label">Emotions</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Other/FontViewer.html"><span class="label">Font Viewer</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Other/GeoViewer.html"><span class="label">Geometry Viewer</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Other/PathCombine.html"><span class="label">Path Combine</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Other/DirViewer.html"><span class="label">Directory Viewer</span><span class=""></span></a></li>
 </ul>
 </li>
@@ -242,7 +245,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_content">
                         
                             <h2 id="Introduce">Introduce</h2>
-<p>Features include: Color Picker, Color Palette, HSV Palette, Gradient Color, Color Blender, Color Extractor, Image Encode, Lrc Editor, ASCII Art, Pixel Grid, 3D Picture, Image Format Convert, GIF Convert, Image Compare, Image Crop, Image Filters, Image Montage, Random Colorful, Image Watermark, Audio Split Combine, Image Pixelate</p>
+<p>Features include: Color Picker, Color Palette, HSV Palette, Gradient Color, Color Blender, Color Extractor, Image Encode, Lrc Editor, ASCII Art, Pixel Grid, 3D Picture, Image Format Convert, GIF Convert, Image Compare, Image Crop, Image Filters, Image Montage, Random Colorful, Image Watermark, Audio Split Combine, Image Pixelate, QrCode Art</p>
 <p><img src="../assets/images/ToolsSet/ToolsSet03.png" alt="" /></p>
 <h2 id="Features-List">Features List</h2>
 <h3 id="Color-Picker">Color Picker</h3>
@@ -285,6 +288,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li>Set the color type</li>
 <li>Set the gradient type</li>
 <li>Set angle or center point</li>
+<li>Specify the position and color of the gradient</li>
 </ul>
 </li>
 <li>Copy code<ul>
@@ -361,6 +365,11 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li>Specify the grid size</li>
 </ul>
 </li>
+<li>Open the image<ul>
+<li>Open the image and resize to fit the number of grids</li>
+<li>Open the image and adjust the number of grids</li>
+</ul>
+</li>
 <li>Draw settings<ul>
 <li>Specify the fill color</li>
 <li>Specify the input text</li>
@@ -401,8 +410,8 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 </ul>
 <h3 id="Image-Format-Convert">Image Format Convert</h3>
 <ul>
-<li>The source format supports: png, jpg, gif, bmp, tiff, ico</li>
-<li>The target format supports: png, jpg, gif, bmp, tiff, ico, pdf</li>
+<li>The source format supports: png, jpg, gif, bmp, tiff, ico, webp</li>
+<li>The target format supports: png, jpg, gif, bmp, tiff, ico, pdf, webp, svg</li>
 <li>Support resize image</li>
 </ul>
 <h3 id="GIF-Convert">GIF Convert</h3>
@@ -514,6 +523,36 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li>Multiple filter can be used</li>
 <li>Preview result</li>
 <li>Save the result</li>
+</ul>
+<h3 id="QrCode-Art">QrCode Art</h3>
+<ul>
+<li>Normal QR code<ul>
+<li>Specify the color</li>
+<li>Specify the logo image, size, border, and background</li>
+</ul>
+</li>
+<li>Art QR code<ul>
+<li>Specify the color</li>
+<li>Specify the pixel ratio</li>
+<li>Specify the background color or image</li>
+<li>Specify the finder point style</li>
+</ul>
+</li>
+<li>ASCII QR code<ul>
+<li>Specify characters</li>
+<li>Specify the size</li>
+<li>Invert characters</li>
+</ul>
+</li>
+<li>Base64<ul>
+<li>Specify the color</li>
+</ul>
+</li>
+<li>Svg<ul>
+<li>Specify the color</li>
+<li>Specify the logo image and size</li>
+</ul>
+</li>
 </ul>
 
                         

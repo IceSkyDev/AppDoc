@@ -148,6 +148,8 @@ items:
             file: ToolsSet_Media/ImgPixelate.md
         -   label: Audio Split Combine
             file: ToolsSet_Media/AudioSplit.md
+        -   label: QrCode Art
+            file: ToolsSet_Media/QrCodeArt.md
     -   label: Other
         file: ToolsSet_Other.md
         items:
@@ -161,6 +163,10 @@ items:
             file: ToolsSet_Other/Emotion.md
         -   label: Font Viewer
             file: ToolsSet_Other/FontViewer.md
+        -   label: Geometry Viewer
+            file: ToolsSet_Other/GeoViewer.md
+        -   label: Path Combine
+            file: ToolsSet_Other/PathCombine.md
         -   label: Directory Viewer
             file: ToolsSet_Other/DirViewer.md
 

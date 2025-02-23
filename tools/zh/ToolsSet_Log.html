@@ -185,6 +185,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/ImgMontage.html"><span class="label">图片拼接</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/ImgPixelate.html"><span class="label">图片像素化</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/AudioSplit.html"><span class="label">音频分割合并</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/QrCodeArt.html"><span class="label">二维码艺术</span><span class=""></span></a></li>
 </ul>
 </li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other.html"><span class="label">其他类</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
@@ -193,6 +194,8 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/Emoji.html"><span class="label">Emoji列表</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/Emotion.html"><span class="label">颜文字</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/FontViewer.html"><span class="label">字体查看器</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/GeoViewer.html"><span class="label">几何路径查看器</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/PathCombine.html"><span class="label">几何路径合并</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/DirViewer.html"><span class="label">目录预览</span><span class=""></span></a></li>
 </ul>
 </li>
@@ -242,6 +245,20 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_content">
                         
                             <ul>
+<li>1.2.7<ul>
+<li>增加路径组合功能，支持平移、缩放、旋转、自定义颜色，可以转换为SVG及图片</li>
+<li>增加自定义二维码功能，可以生成艺术二维码、ASCII二维码、Base64及SVG</li>
+<li>像素图编辑增加打开图片按像素编辑功能</li>
+<li>图片格式转换增加转换为WebP和SVG</li>
+<li>大数运算增加科学计数法显示，并可以指定小数位数</li>
+</ul>
+</li>
+<li>1.2.6<ul>
+<li>图片拼接增加自动循环重复平铺</li>
+<li>图片格式转换增加dpi和常用尺寸转换</li>
+<li>功能优化问题修复</li>
+</ul>
+</li>
 <li>1.2.5<ul>
 <li>文本批处理增加转换选项、模板片段和更多函数</li>
 <li>增加在新窗口打开工具功能</li>
@@ -250,7 +267,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 </li>
 <li>1.2.4<ul>
 <li>增加两个在线工具</li>
-<li>增加数值批处理功能</li>
+<li>增加数值批处理功能，支持数字提取及批量转换</li>
 <li>功能优化增强</li>
 </ul>
 </li>
@@ -270,7 +287,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li>1.2.1<ul>
 <li>增加更多的在线工具</li>
 <li>HSV色板升级为渐变梯度色板</li>
-<li>增加表格数据转文本工具</li>
+<li>增加表格数据转文本工具，支持Markdown、CSV、Json等多种格式</li>
 <li>比例计算增加分数比较功能</li>
 <li>增加高精度和大数字运算</li>
 </ul>

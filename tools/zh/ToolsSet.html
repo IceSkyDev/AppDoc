@@ -185,6 +185,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/ImgMontage.html"><span class="label">图片拼接</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/ImgPixelate.html"><span class="label">图片像素化</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/AudioSplit.html"><span class="label">音频分割合并</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/QrCodeArt.html"><span class="label">二维码艺术</span><span class=""></span></a></li>
 </ul>
 </li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other.html"><span class="label">其他类</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
@@ -193,6 +194,8 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/Emoji.html"><span class="label">Emoji列表</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/Emotion.html"><span class="label">颜文字</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/FontViewer.html"><span class="label">字体查看器</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/GeoViewer.html"><span class="label">几何路径查看器</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/PathCombine.html"><span class="label">几何路径合并</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/DirViewer.html"><span class="label">目录预览</span><span class=""></span></a></li>
 </ul>
 </li>
@@ -270,7 +273,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li>文本转语音和摩斯码：调用本机安装的TTS引擎将文本转换为对应语音，支持摩斯电码编解码</li>
 <li>csv编辑器：支持以表格的形式对csv文件进行编辑</li>
 <li>文本批处理工具：可以对表格中的文本进行批量处理，支持公式和模板</li>
-<li>文本分割合并：可以对文本进行分割、合并、连接、Trim以及字数统计</li>
+<li>文本分割合并：可以对文本进行分割、提取、合并、连接、Trim以及字数统计</li>
 <li>列表操作：可以对列表进行排序、过滤、长度填充、提取、去重、计数等操作</li>
 <li>表格数据转文本：可以将表格数据转换为Json、Xml、Html、Markdown等格式的文本</li>
 </ul>
@@ -286,7 +289,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li>日期计算器：可以计算阳历和阴历指定偏移时间后的时间，阴历干支转成阳历，还可以将日期转为Unix时间戳等</li>
 </ul>
 <h3 id="%3Ca-href%3D%22./ToolsSet_Media.html%22--%3E%E5%AA%92%E4%BD%93%E7%B1%BB%3C/a%3E"><a href="./ToolsSet_Media.html"  >媒体类</a></h3>
-<p>媒体类功能包括：色盘、拾色器、渐变色、颜色混合、颜色提取、图片Base64编解码、歌词编辑器、ASCII字符画、3D图片生成、像素图绘制、图片格式转换、GIF转换、图片比较、梯度色板、图片分割、图片滤镜、图片水印、生成随机色彩、图片像素化、图片拼接、音频分割拼接</p>
+<p>媒体类功能包括：色盘、拾色器、渐变色、颜色混合、颜色提取、图片Base64编解码、歌词编辑器、ASCII字符画、3D图片生成、像素图绘制、图片格式转换、GIF转换、图片比较、梯度色板、图片分割、图片滤镜、图片水印、生成随机色彩、图片像素化、图片拼接、音频分割拼接、自定义二维码</p>
 <ul>
 <li>色盘：包含中国传统色、日本传统色和系统色盘，可以查看颜色名称和颜色值</li>
 <li>拾色器：可以在拾色器中选择颜色或输入RGB HEX颜色，并将其转换为其他颜色空间，如HSV、HSL等</li>
@@ -309,9 +312,10 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li>图片像素化：将图片进行像素化转换，支持多种形状图案</li>
 <li>图片拼接：将多张图片拼接为一张</li>
 <li>音频分割拼接：景一个音频分割为多个或将多个音频拼接为一个</li>
+<li>自定义二维码：使用自定义参数生成二维码，支持ASCII二维码和SVG、Base64格式</li>
 </ul>
 <h3 id="%3Ca-href%3D%22./ToolsSet_Other.html%22--%3E%E5%85%B6%E4%BB%96%E7%B1%BB%3C/a%3E"><a href="./ToolsSet_Other.html"  >其他类</a></h3>
-<p>其他类功能包括：ASCII码表、ISO列表、Unicode符号表、Emoji列表、颜文字、字体查看器、几何路径查看器、目录预览、常用快捷键表、速查表</p>
+<p>其他类功能包括：ASCII码表、ISO列表、Unicode符号表、Emoji列表、颜文字、字体查看器、几何路径查看器、路径组合工具、目录预览、常用快捷键表、速查表</p>
 <ul>
 <li>ASCII码表：可以查看ASCII码的8进制、十进制、十六进制及HTML字符</li>
 <li>ISO列表：可以查看国际标准的国家代码、货币代码和语言代码</li>
@@ -320,6 +324,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li>颜文字：包含上千个颜文字列表，可以创建随机的颜文字，支持编辑修改</li>
 <li>字体查看器：可以查看系统安装字体中的字符及其编码，还可以转换字符为几何路径</li>
 <li>几何路径查看器：可以查看svg或xaml中几何路径生成的图形</li>
+<li>路径组合工具：可以将多个几何路径合并为一个，支持保存SVG及图片</li>
 <li>目录预览：可以查看本机目录及文件列表，可以复制目录和文件路径或名称，支持是否包含子目录选项</li>
 <li>常用快捷键表：可以查看常用软件的快捷键，包括office、VS、PS等</li>
 <li>速查表：可以查看各种常用命令及代码，包括python函数、vim命令、Linux命令、正则表达式语法等</li>

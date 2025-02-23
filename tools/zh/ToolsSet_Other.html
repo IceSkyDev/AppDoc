@@ -185,6 +185,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/ImgMontage.html"><span class="label">图片拼接</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/ImgPixelate.html"><span class="label">图片像素化</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/AudioSplit.html"><span class="label">音频分割合并</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/QrCodeArt.html"><span class="label">二维码艺术</span><span class=""></span></a></li>
 </ul>
 </li>
 <li class="active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other.html"><span class="label">其他类</span><span class="sub_indicator"></span></a><ul class="show">
@@ -193,6 +194,8 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/Emoji.html"><span class="label">Emoji列表</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/Emotion.html"><span class="label">颜文字</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/FontViewer.html"><span class="label">字体查看器</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/GeoViewer.html"><span class="label">几何路径查看器</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/PathCombine.html"><span class="label">几何路径合并</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/DirViewer.html"><span class="label">目录预览</span><span class=""></span></a></li>
 </ul>
 </li>
@@ -242,7 +245,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_content">
                         
                             <h2 id="%E4%BB%8B%E7%BB%8D">介绍</h2>
-<p>功能包括：ASCII Table、ISO Table、Unicode Symbols、Emoji List、Emoticons、Font Viewer、Geometry Viewer、Directory Viewer、Hotkey、Cheat Sheet</p>
+<p>功能包括：ASCII Table、ISO Table、Unicode Symbols、Emoji List、Emoticons、Font Viewer、Geometry Viewer、Path Combine、Directory Viewer、Hotkey、Cheat Sheet</p>
 <p><img src="../assets/images/ToolsSet/ToolsSet04.png" alt="" /></p>
 <h2 id="%E5%8A%9F%E8%83%BD%E5%88%97%E8%A1%A8">功能列表</h2>
 <h3 id="ASCII-Table-%3Cem%3EASCII%E7%A0%81%E8%A1%A8%3C/em%3E">ASCII Table <em>ASCII码表</em></h3>
@@ -277,6 +280,8 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <ul>
 <li>按分类查看Emoji</li>
 <li>按名称检索Emoji</li>
+<li>复制Emoji字符及图片</li>
+<li>Emoji整体及组成部分转为路径代码</li>
 </ul>
 <h3 id="Emoticons-%3Cem%3E%E9%A2%9C%E6%96%87%E5%AD%97%3C/em%3E">Emoticons <em>颜文字</em></h3>
 <ul>
@@ -290,14 +295,25 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 </ul>
 <h3 id="Font-Viewer-%3Cem%3E%E5%AD%97%E4%BD%93%E6%9F%A5%E7%9C%8B%E5%99%A8%3C/em%3E">Font Viewer <em>字体查看器</em></h3>
 <ul>
-<li>指定字体</li>
+<li>指定字体及字体样式</li>
 <li>分页跳转</li>
 <li>查看内容包括：字符、十进制编码、十六进制编码、XML/CSS/JS用法、Geometry代码</li>
 </ul>
 <h3 id="Geometry-Viewer-%3Cem%3E%E5%87%A0%E4%BD%95%E8%B7%AF%E5%BE%84%E6%9F%A5%E7%9C%8B%E5%99%A8%3C/em%3E">Geometry Viewer <em>几何路径查看器</em></h3>
 <ul>
-<li>代码转换为路径查看</li>
+<li>几何代码转换为路径查看</li>
 <li>可选择是否填充路径</li>
+<li>可设置边框及填充颜色</li>
+<li>可保存svg和png文件</li>
+</ul>
+<h3 id="Path-Combine-%3Cem%3E%E8%B7%AF%E5%BE%84%E7%BB%84%E5%90%88%3C/em%3E">Path Combine <em>路径组合</em></h3>
+<ul>
+<li>添加移除路径代码</li>
+<li>几何代码转为路径</li>
+<li>路径旋转、平移、缩放变换</li>
+<li>设置边框及填充颜色</li>
+<li>复制组合路径代码及svg代码</li>
+<li>可保存svg和png文件</li>
 </ul>
 <h3 id="Directory-Viewer-%3Cem%3E%E7%9B%AE%E5%BD%95%E9%A2%84%E8%A7%88%3C/em%3E">Directory Viewer <em>目录预览</em></h3>
 <ul>
@@ -321,9 +337,9 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                 <div id="previous_next">
                     <div id="previous">
                         
-                        <a href="/AppDoc/tools/zh/ToolsSet_Media/AudioSplit.html">
+                        <a href="/AppDoc/tools/zh/ToolsSet_Media/QrCodeArt.html">
                             <span class="icon"></span>
-                            <span class="label">音频分割合并</span>
+                            <span class="label">二维码艺术</span>
                         </a>
                         
                     </div>

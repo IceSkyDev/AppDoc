@@ -185,6 +185,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/ImgMontage.html"><span class="label">图片拼接</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/ImgPixelate.html"><span class="label">图片像素化</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/AudioSplit.html"><span class="label">音频分割合并</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Media/QrCodeArt.html"><span class="label">二维码艺术</span><span class=""></span></a></li>
 </ul>
 </li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other.html"><span class="label">其他类</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
@@ -193,6 +194,8 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/Emoji.html"><span class="label">Emoji列表</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/Emotion.html"><span class="label">颜文字</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/FontViewer.html"><span class="label">字体查看器</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/GeoViewer.html"><span class="label">几何路径查看器</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/PathCombine.html"><span class="label">几何路径合并</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/zh/ToolsSet_Other/DirViewer.html"><span class="label">目录预览</span><span class=""></span></a></li>
 </ul>
 </li>
@@ -246,8 +249,9 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <p><img src="../../assets/images/ToolsSet/TSNBigNumber.png" alt="" /></p>
 <h2 id="%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">使用方法</h2>
 <ul>
-<li>算数运算<br />
-在上方两个文本框中输入数值，然后在中间选择运算类型，之后点击【=】按钮即可在下方获取结果，计算结果最大位数约为3000。运算类型包括：<ol>
+<li><p>算数运算<br />
+在上方两个文本框中输入数值，然后在中间选择运算类型，之后点击【=】按钮即可在下方获取结果，计算结果最大值为 1E1073741790，位数最多约为3000。运算类型包括：</p>
+<ol>
 <li>四则运算<ul>
 <li>操作数支持不限长度的数字</li>
 <li>除法运算中除数不能为0</li>
@@ -264,7 +268,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 </li>
 <li>开方<ul>
 <li>两个操作数必须为正整数</li>
-<li>第二操作数必须小于255</li>
+<li>第二操作数必须小于10000</li>
 </ul>
 </li>
 <li>最大公约数<ul>
@@ -277,17 +281,22 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 </li>
 </ol>
 <blockquote>
-运算类型最右侧的按钮用于交换两个操作数</blockquote>
+<p>运算类型最右侧的按钮用于交换两个操作数</p>
+<p>【=】按钮右侧的开关打开后可以开启科学计数法显示，再右侧的复选框选中后可以在右侧文本框中指定结果包含的小数位数，默认为100位</p>
+</blockquote>
 </li>
-<li>随机数字<ul>
+<li><p>随机数字</p>
+<ul>
 <li>在随机数区域输入整数部分和小数部分的位数后，点击右侧的【Get】按钮，即可在右侧生成对应的数字，位数最大可以指定9999</li>
 </ul>
 </li>
-<li>获取圆周率<ul>
+<li><p>获取圆周率</p>
+<ul>
 <li>在圆周率区域输入起始位数和结束位数后，点击右侧的【Get】按钮，即可在右侧生成圆周率中对应的区域位数的数字</li>
 </ul>
 <blockquote>
-位数最大可以指定99999，每次获取支持的最大范围为10000位</blockquote>
+<p>位数最大可以指定99999，每次获取支持的最大范围为10000位</p>
+</blockquote>
 </li>
 </ul>
 <blockquote>
