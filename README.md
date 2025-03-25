@@ -233,6 +233,12 @@ Gradually improve your English listening and speaking skills from easy to diffic
 
   Provide 《雅思口语900句》 with audio and annotations
   
+* [桌面单词](https://apps.microsoft.com/detail/9MW3G76TXCMM)
+   ![Static Badge](https://img.shields.io/badge/WPF-blue?logo=microsoftstore)
+
+  Support desktop mode and notification mode, support customize the content, display style, and time
+  
+
 ### Other language learning 
 Learn the basics of Japanese and Korean
 
@@ -258,6 +264,13 @@ Learn the basics of Japanese and Korean
    ![Static Badge](https://img.shields.io/badge/WPF-blue?logo=microsoftstore)
   
   A learning tool for 50 phonetic charts in Japanese, supports sorting and memorizing by row and column and sequential testing
+
+* [Memorize Card](https://apps.microsoft.com/detail/9NP7H87ZQHBD)
+   ![Static Badge](https://img.shields.io/badge/WPF-Free-darkgreen?logo=microsoftstore)
+
+  Memory card app, support desktop mode and notification mode, support add CSV file to customize the memory content
+  
+
 
 ### Ancient Chinese Literature 
 Learn about the traditional culture that has been summarized and inherited by the Chinese nation for thousands of years
@@ -392,6 +405,11 @@ Learn about the traditional culture that has been summarized and inherited by th
   
   Multi-window video watching, support custom layout
 
+* [EdgeTTS](https://apps.microsoft.com/detail/9NDRP25RM7Q3)
+   ![Static Badge](https://img.shields.io/badge/WPF-Free-darkgreen?logo=microsoftstore)
+  
+  Text-to-speech tool, support multi-language pronunciation, can save converted audio
+
 * [流量计数器](https://apps.microsoft.com/detail/9NW2XDGDKZHM)
    ![Static Badge](https://img.shields.io/badge/WPF-blue?logo=microsoftstore)
   
@@ -426,6 +444,18 @@ Learn about the traditional culture that has been summarized and inherited by th
    ![Static Badge](https://img.shields.io/badge/WPF-blue?logo=microsoftstore)
   
   A Nonograms with random levels and hundreds of predefined levels, and supports puzzle solving functions
+
+
+* [Console Games](https://apps.microsoft.com/detail/9NHD6FTW9WSN)
+  ![Static Badge](https://img.shields.io/badge/Console-blue?logo=microsoftstore)
+
+  A collection of console games containing 12 classic games
+
+* [Yahtzee](https://apps.microsoft.com/detail/9NXDKGM9RS97)
+  ![Static Badge](https://img.shields.io/badge/Console-Free-darkgreen?logo=microsoftstore)
+
+  Play Yahtzee game on console, support play with computer and 2~4 player
+
 
 ## [Usage Document](https://iceskydev.github.io/AppDoc/en/)
 

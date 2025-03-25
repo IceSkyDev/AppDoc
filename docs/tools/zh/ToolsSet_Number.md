@@ -7,7 +7,7 @@ desc: 数值处理类工具，包括进制转换、数字文本互转、单位�
 
 ## 介绍
 
-功能包括：Radix Converter、Convert To Text、Unit Converter、Hex Operate、Ratio Calculator、Big Number
+功能包括：Radix Converter、Convert To Text、Unit Converter、Hex Operate、Ratio Calculator、Big Number、Numeric Batch
 
 ![](../assets/images/ToolsSet/ToolsSet00.png)
 

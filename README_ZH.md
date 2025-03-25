@@ -230,6 +230,11 @@
 
   提供《雅思口语900句》的真人朗诵音频及注释
   
+* [桌面单词](https://apps.microsoft.com/detail/9MW3G76TXCMM?hl=zh-cn&gl=CN)
+   ![Static Badge](https://img.shields.io/badge/WPF-blue?logo=microsoftstore)
+
+  支持桌面模式和通知模式，可以自定义背诵内容、显示样式、时间
+  
 ### 其他语言学习 
 学习日语和韩语的基础
 
@@ -256,6 +261,11 @@
   
   日语50音图的学习工具，支持按行列分类记忆及顺序测试
 
+* [Memorize Card](https://apps.microsoft.com/detail/9NP7H87ZQHBD?hl=zh-cn&gl=CN)
+   ![Static Badge](https://img.shields.io/badge/WPF-Free-darkgreen?logo=microsoftstore)
+
+  记忆卡片应用，支持桌面模式和通知模式，可以添加csv文件来自定义记忆内容
+  
 ### 经典国学 
 了解学习中华民族几千年总结延续下来的传统文化
 
@@ -389,6 +399,11 @@
   
   多窗口视频监控浏览，支持自定义布局
 
+* [EdgeTTS](https://apps.microsoft.com/detail/9NDRP25RM7Q3?hl=zh-cn&gl=CN)
+   ![Static Badge](https://img.shields.io/badge/WPF-Free-darkgreen?logo=microsoftstore)
+  
+  文本转语音工具，支持多国语音，可以保存转换的音频
+
 * [流量计数器](https://apps.microsoft.com/detail/9NW2XDGDKZHM?hl=zh-cn&gl=CN)
    ![Static Badge](https://img.shields.io/badge/WPF-blue?logo=microsoftstore)
   
@@ -423,6 +438,16 @@
    ![Static Badge](https://img.shields.io/badge/WPF-blue?logo=microsoftstore)
   
   包含随机关卡和上千预定义关卡的数织游戏，支持解迷功能
+
+* [控制台游戏](https://apps.microsoft.com/detail/9NHD6FTW9WSN?hl=zh-cn&gl=CN)
+  ![Static Badge](https://img.shields.io/badge/Console-blue?logo=microsoftstore)
+
+  控制台游戏集合，包含2048，俄罗斯方块，井字棋，翻转棋，猜数字，wordle等12款经典游戏
+
+* [快艇骰子](https://apps.microsoft.com/detail/9NXDKGM9RS97?hl=zh-cn&gl=CN)
+  ![Static Badge](https://img.shields.io/badge/Console-Free-darkgreen?logo=microsoftstore)
+
+  经典的骰子游戏，支持人机及2~4人游戏
 
 
 ## [使用说明文档](https://iceskydev.github.io/AppDoc)

@@ -7,7 +7,7 @@ desc: Numeric tools, including decimal conversion, number text conversion, unit 
 
 ## Introduce
 
-Features include: Radix Converter, Convert To Text, Unit Converter, Hex Operate, Ratio Calculator
+Features include: Radix Converter, Convert To Text, Unit Converter, Hex Operate, Ratio Calculator, Big Number, Numeric Batch
 
 ![](../assets/images/ToolsSet/ToolsSet00.png)
 
