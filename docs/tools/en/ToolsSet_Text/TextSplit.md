@@ -36,12 +36,18 @@ The left side is the text input area, and the right side is the operation area, 
 
 4. Join: Merge multiple lines of text with the specified string
    * You can specify the merged character as space, tab, or custom text, and custom text supports the "\" escape character
+   * You can specify the number of lines to be merged, and if the number is 0, it will be merged into 1 line
+   * You can specify the merge direction as By Row or By Column
 
 5. Trim: Deletes the specified string at start or end
    * You can specify the position as start, end, or both of them
    * By default the remove character is space, you can also specify it as blank or custom text, custom text supports "\" escape character
 
-6. Count: Counts the number of strings specified in the text
+6. Wrap: Use characters to wrap or unwrap the text
+   * You can select predefined wrap/unwrap characters
+   * You can set custom wrap/unwrap characters
+
+7. Count: Counts the number of strings specified in the text
    * When the input text changes, the number of characters, spaces, line breaks, English letters, words, numbers, punctuation, symbols, and Chinese will be counted
    * Click the Count button to count the number of specified strings, and the specified strings support the option to ignore case, whole word matching, and use regular expressions
    * When you click the Count button, the text box below will display the count of all Ascii characters, and the top 100 characters and their count in the entered text

@@ -7,8 +7,9 @@ desc: Json and XML tool, provides formatting, conversion, compression
 
 ## Introduce
 
-The Json tool provides Json format, compress, flatten, and convert to XML, and the XML tool provides xml
- format, compress, convert to Json and XPath search
+The Json tool provides Json format, compress, flatten, unflatten, escape, unescape and convert to XML
+
+The XML tool provides xml format, compress, escape, unescape, convert to Json and XPath search
 
 Json Tool:
 ![](../../assets/images/ToolsSet/TSTJson.png)
@@ -20,6 +21,8 @@ XML Tool:
 
 The use of both tools is very simple, just need to click the button on the toolbar
 > Supports three ways to provide input: open Json file, paste text, and enter text
+> 
+> Supports specify the indent character and whether to sort the nodes when formatting
 > 
 > Both tools support save the result to file and copy the result
 >

@@ -4,7 +4,11 @@ class: heading_no_counter
 keywords: 
 desc: 
 ---
-
+* 1.2.8
+  * The CSV editor adds real-time preview, you can set the separator, and copy the result
+  * Json and Xml tools add indentation configuration, escape, reverse escape, and node sorting functions
+  * The Split join tool adds the Wrap and Unwrap functions, and the Join operation can be merged by columns
+  * Regex test tool adds quick input of basic syntax
 * 1.2.7
   * Added path combination function, support translation, zoom, rotation, custom color, can be converted to SVG and pictures
   * Add custom QR code function, generate artistic QR code, ASCII QR code, Base64 and SVG
