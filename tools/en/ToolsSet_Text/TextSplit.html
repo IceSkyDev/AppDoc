@@ -285,12 +285,20 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li><p>Join: Merge multiple lines of text with the specified string</p>
 <ul>
 <li>You can specify the merged character as space, tab, or custom text, and custom text supports the &quot;&quot; escape character</li>
+<li>You can specify the number of lines to be merged, and if the number is 0, it will be merged into 1 line</li>
+<li>You can specify the merge direction as By Row or By Column</li>
 </ul>
 </li>
 <li><p>Trim: Deletes the specified string at start or end</p>
 <ul>
 <li>You can specify the position as start, end, or both of them</li>
 <li>By default the remove character is space, you can also specify it as blank or custom text, custom text supports &quot;&quot; escape character</li>
+</ul>
+</li>
+<li><p>Wrap: Use characters to wrap or unwrap the text</p>
+<ul>
+<li>You can select predefined wrap/unwrap characters</li>
+<li>You can set custom wrap/unwrap characters</li>
 </ul>
 </li>
 <li><p>Count: Counts the number of strings specified in the text</p>
