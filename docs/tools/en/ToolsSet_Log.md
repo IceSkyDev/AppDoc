@@ -4,6 +4,17 @@ class: heading_no_counter
 keywords: 
 desc: 
 ---
+* 1.2.10
+  * Add eight-character conversion to the lunar calendar in Datetime Calculator
+  * Add lunar display switch in Year Calendar
+  * Add symbol configuration in TTS & Morse
+  * Add full half-width space configuration and adjust the text color in Pixel Grid
+  * Other optimizations and enhancements
+* 1.2.9
+  * Image Compare add specify channel
+  * Random Colorful modify blur effect, add pattern size setting
+  * Color Extractor improvement
+  * Path Combine add auto split by line break, and transform by selection
 * 1.2.8
   * The CSV editor adds real-time preview, you can set the separator, and copy the result
   * Json and Xml tools add indentation configuration, escape, reverse escape, and node sorting functions
