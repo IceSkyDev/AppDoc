@@ -103,6 +103,8 @@ items:
             file: ToolsSet_Text/TextSplit.md
         -   label: List Operate
             file: ToolsSet_Text/ListOpt.md
+        -   label: Identicon
+            file: ToolsSet_Text/Identicon.md
     -   label: Media
         file: ToolsSet_Media.md
         items:
@@ -150,6 +152,8 @@ items:
             file: ToolsSet_Media/AudioSplit.md
         -   label: QrCode Art
             file: ToolsSet_Media/QrCodeArt.md
+        -   label: Image Resize
+            file: ToolsSet_Media/ImgResize.md
     -   label: Other
         file: ToolsSet_Other.md
         items:

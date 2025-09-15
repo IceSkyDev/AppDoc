@@ -7,10 +7,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="keywords" content="加密, 解密, Encrypt, Decrypt">
+    <meta name="keywords" content="Hash, Encrypt, Decrypt">
     
     
-    <meta name="description" content="加密解密工具，提供AES、DES、RSA加解密及Hash编码">
+    <meta name="description" content="Encryption and decryption tools provide AES, DES, RSA encryption and decryption, as well as Hash encoding.">
     
     <meta name="generator" content="teedoc">
     <meta name="theme" content="teedoc-plugin-theme-default">
@@ -50,7 +50,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
         
     
     
-    <title>加密解密 - IceSky App</title>
+    <title>Encrypt & Decrypt & Hash - IceSky App</title>
     
     <script type="text/javascript">js_vars = {}</script>
     <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
@@ -161,6 +161,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Text/TextBatch.html"><span class="label">Text Batch</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Text/TextSplit.html"><span class="label">Split Join</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Text/ListOpt.html"><span class="label">List Operate</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Text/Identicon.html"><span class="label">Identicon</span><span class=""></span></a></li>
 </ul>
 </li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media.html"><span class="label">Media</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
@@ -186,6 +187,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/ImgPixelate.html"><span class="label">Image Pixelate</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/AudioSplit.html"><span class="label">Audio Split Combine</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/QrCodeArt.html"><span class="label">QrCode Art</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/ImgResize.html"><span class="label">Image Resize</span><span class=""></span></a></li>
 </ul>
 </li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Other.html"><span class="label">Other</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
@@ -215,7 +217,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_head">
                         <div id="article_title">
                             
-                            <h1>加密解密</h1>
+                            <h1>Encrypt & Decrypt & Hash</h1>
                             
                         </div>
                         <div id="article_tags">
@@ -245,59 +247,59 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
                     <div id="article_content">
                         
                             <h2 id="Introduce">Introduce</h2>
-<p>加密解密工具，提供AES、DES、RSA加解密及多种方式的Hash编码</p>
+<p>Encryption and decryption tools, providing AES, DES, RSA encryption and decryption as well as various methods of Hash encoding.</p>
 <p><img src="../../assets/images/ToolsSet/TSTEncrypt.png" alt="" /></p>
 <h2 id="How-to-use">How to use</h2>
-<p>左侧为加解密区域，右侧为Hash编码区域</p>
-<h3 id="%E5%8A%A0%E8%A7%A3%E5%AF%86">加解密</h3>
-<p>点击右侧【Generate Key】按钮可以自动生成随机密钥</p>
+<p>The left side is the encryption and decryption area, the right side is the Hash encoding area.</p>
+<h3 id="Encrypt-%26amp%3B-Decrypt">Encrypt &amp; Decrypt</h3>
+<p>Click the 【Generate Key】 button on the right to automatically generate a random key.</p>
 <ol>
-<li><p>AES加解密</p>
+<li><p>AES</p>
 <blockquote>
-<p>密钥为32位字符串；Vector为16位字符串，可以为空</p>
+<p>The key is a 32-character string; the vector is a 16-character string and can be empty.</p>
 </blockquote>
 <ul>
-<li><p>加密</p>
-<p>在左侧输入明文，点击【Encrypt】按钮即可在右侧生成密文</p>
+<li><p>Encrypt</p>
+<p>Enter the text on the left side and click the [Encrypt] button to generate the encrypted result on the right side.</p>
 </li>
-<li><p>解密</p>
-<p>在右侧输入密文，点击【Decrypt】按钮即可在左侧生成明文</p>
+<li><p>Decrypt</p>
+<p>Enter the ciphertext on the right side and click the [Decrypt] button to generate the plaintext on the left side.</p>
 </li>
 </ul>
 </li>
-<li><p>DES加解密</p>
+<li><p>DES</p>
 <blockquote>
-<p>密钥为24位字符串</p>
+<p>The key is a 24-character string.</p>
 </blockquote>
 <ul>
-<li><p>加密</p>
-<p>在左侧输入明文，点击【Encrypt】按钮即可在右侧生成密文</p>
+<li><p>Encrypt</p>
+<p>Enter the text on the left side and click the [Encrypt] button to generate the encrypted result on the right side.</p>
 </li>
-<li><p>解密</p>
-<p>在右侧输入密文，点击【Decrypt】按钮即可在左侧生成明文</p>
+<li><p>Decrypt</p>
+<p>Enter the ciphertext on the right side and click the [Decrypt] button to generate the plaintext on the left side.</p>
 </li>
 </ul>
 </li>
-<li><p>RSA加解密</p>
+<li><p>RSA</p>
 <ul>
-<li><p>加密</p>
-<p>在左侧输入明文，点击【Encrypt】按钮即可在右侧生成密文</p>
+<li><p>Encrypt</p>
+<p>Enter the text on the left side and click the [Encrypt] button to generate the encrypted result on the right side.</p>
 </li>
-<li><p>解密</p>
-<p>在右侧输入密文，点击【Decrypt】按钮即可在左侧生成明文</p>
+<li><p>Decrypt</p>
+<p>Enter the ciphertext on the right side and click the [Decrypt] button to generate the plaintext on the left side.</p>
 </li>
-<li><p>签名</p>
-<p>在左侧输入明文，点击【Sign】按钮即可在右侧生成签名</p>
+<li><p>Sign</p>
+<p>Enter the plaintext on the left side and click the [Sign] button to generate the signature on the right side.</p>
 </li>
-<li><p>验证</p>
-<p>在右侧输入待验证字符串，点击【Verify】按钮对字符串进行验证，验证结果会弹出对话框提示</p>
+<li><p>Verify</p>
+<p>Enter the string to be verified on the right, click the 【Verify】 button to validate the string, and the verification result will pop up in a dialog box.</p>
 </li>
 </ul>
 </li>
 </ol>
-<h3 id="Hash%E7%BC%96%E7%A0%81">Hash编码</h3>
-<p>在上方文本框输入需要编码的文本，下方会自动计算出对应的Hash编码值</p>
-<p>可以在HMAC Key文本框输入字符串，可以生成带有密钥认证Hash编码</p>
+<h3 id="Hash">Hash</h3>
+<p>Enter the text to be encoded in the upper text box, and the corresponding Hash code value will be automatically calculated below.</p>
+<p>You can enter a string in the HMAC Key text box to generate a Hash code with key authentication.</p>
 
                         
                     </div>

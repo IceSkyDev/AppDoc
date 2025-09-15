@@ -161,6 +161,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Text/TextBatch.html"><span class="label">Text Batch</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Text/TextSplit.html"><span class="label">Split Join</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Text/ListOpt.html"><span class="label">List Operate</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Text/Identicon.html"><span class="label">Identicon</span><span class=""></span></a></li>
 </ul>
 </li>
 <li class="active_parent with_link"><a href="/AppDoc/tools/en/ToolsSet_Media.html"><span class="label">Media</span><span class="sub_indicator"></span></a><ul class="show">
@@ -186,6 +187,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/ImgPixelate.html"><span class="label">Image Pixelate</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/AudioSplit.html"><span class="label">Audio Split Combine</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/QrCodeArt.html"><span class="label">QrCode Art</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Media/ImgResize.html"><span class="label">Image Resize</span><span class=""></span></a></li>
 </ul>
 </li>
 <li class="not_active with_link"><a href="/AppDoc/tools/en/ToolsSet_Other.html"><span class="label">Other</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
@@ -250,13 +252,22 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <h2 id="How-to-use">How to use</h2>
 <p>The left area can extract images from Gifs, and the right area can add image sequence to generate GIF</p>
 <ul>
-<li>Click on the top left area to select the Gif image to open, after the file is opened, the frame sequence contained in it will be automatically extracted and displayed below, you can click the export button to export all the frame pictures, or click on a certain image to copy it to the clipboard</li>
-<li>The three buttons in the top left corner of the right area are: Add Image File, Paste Image, Clear List, and the two buttons on the right can preview the animation and save the Gif image<blockquote>
-When you open or paste an image, it will be automatically added to the list below, and you can select multiple files at once when opening the image<br />
-<br />
-In the image list, you can adjust the image duration through the slider below the image, the range is 0~5 seconds<br />
-<br />
-You can click the delete icon in the top right corner of the image to remove it</blockquote>
+<li><p>Click on the top left area to select the Gif image to open, after the file is opened, the frame sequence contained in it will be automatically extracted and displayed below, you can click the export button to export all the frame pictures, or click on a certain image to copy it to the clipboard</p>
+</li>
+<li><p>The three buttons in the top left corner of the right area are: Add Image File, Paste Image, Clear List, and the two buttons on the right can preview the animation and save the Gif image</p>
+<blockquote>
+<p>When you open or paste an image, it will be automatically added to the list below, and you can select multiple files at once when opening the image</p>
+<p>In the image list, you can adjust the image duration through the slider below the image, the range is 0~5 seconds</p>
+<p>You can click the delete icon in the top right corner of the image to remove it</p>
+</blockquote>
+</li>
+<li><p>Version 1.3.0 new features for creating GIF:</p>
+<ul>
+<li>Auto Reverse: Turning on this switch allows for automatic reverse playback of the image sequence.</li>
+<li>Repeats: You can input the number of loops for the GIF animation, where a value of 0 indicates infinite looping.</li>
+<li>Delay: This slider can modify all duration of the image in the image list.</li>
+<li>Background: When this switch is turned on, a specified background color can be added to the GIF; otherwise, a transparent background color will be used.</li>
+</ul>
 </li>
 </ul>
 

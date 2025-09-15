@@ -103,6 +103,8 @@ items:
             file: ToolsSet_Text/TextSplit.md
         -   label: 列表操作
             file: ToolsSet_Text/ListOpt.md
+        -   label: 哈希头像生成
+            file: ToolsSet_Text/Identicon.md
     -   label: 媒体类
         file: ToolsSet_Media.md
         items:
@@ -150,6 +152,8 @@ items:
             file: ToolsSet_Media/AudioSplit.md
         -   label: 二维码艺术
             file: ToolsSet_Media/QrCodeArt.md
+        -   label: 图片尺寸调整
+            file: ToolsSet_Media/ImgResize.md
     -   label: 其他类
         file: ToolsSet_Other.md
         items:
