@@ -7,7 +7,7 @@ desc: Media tools, including color palette, color picker, gradient color, lyrics
 
 ## Introduce
 
-Features include: Color Picker, Color Palette, HSV Palette, Gradient Color, Color Blender, Color Extractor, Image Encode, Lrc Editor, ASCII Art, Pixel Grid, 3D Picture, Image Format Convert, GIF Convert, Image Compare, Image Crop, Image Filters, Image Montage, Random Colorful, Image Watermark, Audio Split Combine, Image Pixelate, QrCode Art
+Features include: Color Picker, Color Palette, HSV Palette, Gradient Color, Color Blender, Color Extractor, Image Encode, Lrc Editor, ASCII Art, Pixel Grid, 3D Picture, Image Format Convert, GIF Convert, Image Compare, Image Crop, Image Filters, Image Montage, Random Colorful, Image Watermark, Audio Split Combine, Image Pixelate, QrCode Art, Image Resize
 
 ![](../assets/images/ToolsSet/ToolsSet03.png)
 
@@ -227,3 +227,11 @@ Features include: Color Picker, Color Palette, HSV Palette, Gradient Color, Colo
 * Svg
   * Specify the color
   * Specify the logo image and size
+
+### Image Resize
+* Predefined and custom lists
+* Specify target format
+* Specify image size, ratio, and pixels
+* Custom file name
+* Specify background color
+* Batch execute conversion

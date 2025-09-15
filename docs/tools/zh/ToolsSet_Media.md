@@ -7,7 +7,7 @@ desc: 媒体类工具，包括色盘、拾色器、渐变色、歌词编辑器�
 
 ## 介绍
 
-功能包括：Color Picker、Color Palette、Gradient Palette、Gradient Color、Color Blender、Color Extractor、Image Encode、Lrc Editor、ASCII Art、Pixel Grid、3D Picture、Image Format Convert、GIF Convert、Image Compare、Image Crop、Image Filters、Image Montage、Random Colorful、Image Watermark、Audio Split Combine、Image Pixelate、QrCode Art
+功能包括：Color Picker、Color Palette、Gradient Palette、Gradient Color、Color Blender、Color Extractor、Image Encode、Lrc Editor、ASCII Art、Pixel Grid、3D Picture、Image Format Convert、GIF Convert、Image Compare、Image Crop、Image Filters、Image Montage、Random Colorful、Image Watermark、Audio Split Combine、Image Pixelate、QrCode Art、Image Resize
 
 ![](../assets/images/ToolsSet/ToolsSet03.png)
 
@@ -227,3 +227,11 @@ desc: 媒体类工具，包括色盘、拾色器、渐变色、歌词编辑器�
 * Svg
   * 指定颜色
   * 指定Logo图片、尺寸
+
+### Image Resize *图片尺寸转换*
+* 预定义及自定义列表
+* 指定目标格式
+* 指定图片尺寸，比例及像素
+* 自定义文件名
+* 指定背景色
+* 批量执行转换
