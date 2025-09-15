@@ -7,7 +7,7 @@ desc: Text tools, encode and decode, encrypt and decrypt, text convert generate,
 
 ## Introduce
 
-Features include: Encode & Decode, Encrypt & Decrypt & Hash, Text Converter, Text Generator, Text Compare, JSON Formatter, XML Tool, Regex Test, Qr & Bar code, TTS & Morse, Csv Editor, Text Batch, Split Join, List Operate
+Features include: Encode & Decode, Encrypt & Decrypt & Hash, Text Converter, Text Generator, Text Compare, JSON Formatter, XML Tool, Regex Test, Qr & Bar code, TTS & Morse, Csv Editor, Text Batch, Split Join, List Operate, Identicon
 
 ![](../assets/images/ToolsSet/ToolsSet01.png)
 
@@ -205,4 +205,15 @@ Features include: Encode & Decode, Encrypt & Decrypt & Hash, Text Converter, Tex
   * Union with another list
   * Intersect with another list
   * Except with another list
-  
+### Identicon 
+  * Identicon
+    * Specify algorithm
+    * Specify blocks count
+    * Specify background
+    * Specify blocks color
+    * Specify blocks shape
+  * Jdenticon
+    * Specify icon hue
+    * Specify saturation
+    * Specify lightness
+    * Specify background

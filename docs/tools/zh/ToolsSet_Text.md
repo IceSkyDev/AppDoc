@@ -7,7 +7,7 @@ desc: 文本处理类工具，编码解码、加密解密、文本转换生成�
 
 ## 介绍
 
-功能包括：Encode & Decode、Encrypt & Decrypt & Hash、Text Converter、Text Generator、Text Compare、JSON Formatter、XML Tool、Regex Test、Qr & Bar code、TTS & Morse、Csv Editor、Table Convert、Text Batch、Split Join、List Operate
+功能包括：Encode & Decode、Encrypt & Decrypt & Hash、Text Converter、Text Generator、Text Compare、JSON Formatter、XML Tool、Regex Test、Qr & Bar code、TTS & Morse、Csv Editor、Table Convert、Text Batch、Split Join、List Operate、Identicon
 
 ![](../assets/images/ToolsSet/ToolsSet01.png)
 
@@ -204,4 +204,15 @@ desc: 文本处理类工具，编码解码、加密解密、文本转换生成�
   * 获取并集
   * 获取交集
   * 排除列表
-  
+### Identicon *哈希头像生成*
+* Identicon
+  * 指定哈希算法
+  * 指定行列数量
+  * 指定背景色
+  * 指定前景色
+  * 指定块形状
+* Jdenticon
+  * 指定色相
+  * 指定对比度
+  * 指定亮度
+  * 指定背景色

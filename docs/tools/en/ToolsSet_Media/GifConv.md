@@ -23,3 +23,8 @@ The left area can extract images from Gifs, and the right area can add image seq
   >
   > You can click the delete icon in the top right corner of the image to remove it
   
+* Version 1.3.0 new features for creating GIF:
+  * Auto Reverse: Turning on this switch allows for automatic reverse playback of the image sequence.
+  * Repeats: You can input the number of loops for the GIF animation, where a value of 0 indicates infinite looping.
+  * Delay: This slider can modify all duration of the image in the image list.
+  * Background: When this switch is turned on, a specified background color can be added to the GIF; otherwise, a transparent background color will be used.

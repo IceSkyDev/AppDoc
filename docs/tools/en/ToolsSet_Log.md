@@ -4,6 +4,11 @@ class: heading_no_counter
 keywords: 
 desc: 
 ---
+* 1.3.0
+  * Add text generation Identicon
+  * Add batch image size conversion
+  * Gif creation add more options
+  * Other improvements and optimizations
 * 1.2.10
   * Add eight-character conversion to the lunar calendar in Datetime Calculator
   * Add lunar display switch in Year Calendar

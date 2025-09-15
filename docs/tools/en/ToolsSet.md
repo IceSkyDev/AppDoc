@@ -39,6 +39,7 @@ Text tools include:
 * Split Join: You can split, extract, merge, concatenate, trim, and count the number of characters in the text
 * List Operat: You can sort, filter, padding in length, extract, deduplicate, and count lists
 * Table Convert: You can convert tabular data to Json, Xml, Html, Sql, Markdown formate
+* Identicon: Text can be converted into a hash avatar using a hash algorithm
 
 ### [Date tools](./ToolsSet_Date.md)
 Date tools include:
@@ -74,6 +75,7 @@ Media tools include:
 * Image Montage: Generate tables of image thumbnails
 * Audio Split Combine: Split an audio into multiple or splice multiple audios into one
 * QrCode Art: Generate QR Code with custom parameters, support ASCII QR Code and SVG, Base64 formats
+* Image Resize: Batch convert the format and size of images
 
 ### [Other Tools](./ToolsSet_Other.md)
 Other tools include:
@@ -111,7 +113,6 @@ Other tools include:
 * Music Editor: Remove vocals, cut audio tracks, change key & BPM
 * Random Choose: Random selection tool with custom options
 * Plotly Studio: Create charts and graphs online with data
-* Table Convert: Convert table data to JSON, XML, SQL, PDF, etc.
 * Emoji Mix: Combine two Emoji to one
 * Geogebra: Interactive graphing calculator and function drawing tool
 * Chart Builder: Create charts with data visualizations

@@ -1,65 +1,65 @@
 ---
-title: 加密解密
+title: Encrypt & Decrypt & Hash
 class: heading_no_counter
-keywords: 加密, 解密, Encrypt, Decrypt
-desc: 加密解密工具，提供AES、DES、RSA加解密及Hash编码
+keywords: Hash, Encrypt, Decrypt
+desc: Encryption and decryption tools provide AES, DES, RSA encryption and decryption, as well as Hash encoding.
 ---
 
 ## Introduce
 
-加密解密工具，提供AES、DES、RSA加解密及多种方式的Hash编码
+Encryption and decryption tools, providing AES, DES, RSA encryption and decryption as well as various methods of Hash encoding.
 
 ![](../../assets/images/ToolsSet/TSTEncrypt.png)
 
 ## How to use
 
-左侧为加解密区域，右侧为Hash编码区域
+The left side is the encryption and decryption area, the right side is the Hash encoding area.
 
-### 加解密
+### Encrypt & Decrypt
 
-点击右侧【Generate Key】按钮可以自动生成随机密钥
-1. AES加解密
+Click the 【Generate Key】 button on the right to automatically generate a random key.
+1. AES
   
-   > 密钥为32位字符串；Vector为16位字符串，可以为空
+   > The key is a 32-character string; the vector is a 16-character string and can be empty.
 
-   * 加密
+   * Encrypt
 
-     在左侧输入明文，点击【Encrypt】按钮即可在右侧生成密文
+     Enter the text on the left side and click the [Encrypt] button to generate the encrypted result on the right side.
 
-   * 解密
+   * Decrypt
 
-     在右侧输入密文，点击【Decrypt】按钮即可在左侧生成明文
+     Enter the ciphertext on the right side and click the [Decrypt] button to generate the plaintext on the left side.
   
-2. DES加解密
-    > 密钥为24位字符串
+2. DES
+    > The key is a 24-character string.
 
-    * 加密
+    * Encrypt
 
-      在左侧输入明文，点击【Encrypt】按钮即可在右侧生成密文
+      Enter the text on the left side and click the [Encrypt] button to generate the encrypted result on the right side.
 
-    * 解密
+    * Decrypt
 
-      在右侧输入密文，点击【Decrypt】按钮即可在左侧生成明文
+      Enter the ciphertext on the right side and click the [Decrypt] button to generate the plaintext on the left side.
 
-3. RSA加解密
-   * 加密
+3. RSA
+   * Encrypt
 
-     在左侧输入明文，点击【Encrypt】按钮即可在右侧生成密文
+     Enter the text on the left side and click the [Encrypt] button to generate the encrypted result on the right side.
 
-   * 解密
+   * Decrypt
 
-     在右侧输入密文，点击【Decrypt】按钮即可在左侧生成明文
+     Enter the ciphertext on the right side and click the [Decrypt] button to generate the plaintext on the left side.
 
-   * 签名
+   * Sign
 
-     在左侧输入明文，点击【Sign】按钮即可在右侧生成签名
+     Enter the plaintext on the left side and click the [Sign] button to generate the signature on the right side.
 
-   * 验证
+   * Verify
 
-     在右侧输入待验证字符串，点击【Verify】按钮对字符串进行验证，验证结果会弹出对话框提示
+     Enter the string to be verified on the right, click the 【Verify】 button to validate the string, and the verification result will pop up in a dialog box.
 
-### Hash编码
+### Hash
 
-在上方文本框输入需要编码的文本，下方会自动计算出对应的Hash编码值
+Enter the text to be encoded in the upper text box, and the corresponding Hash code value will be automatically calculated below.
 
-可以在HMAC Key文本框输入字符串，可以生成带有密钥认证Hash编码
+You can enter a string in the HMAC Key text box to generate a Hash code with key authentication.
