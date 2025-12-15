@@ -25,6 +25,10 @@ items:
         file: UsefulTools_EdgeTTS.md
     -   label: 流量计数器
         file: UsefulTools_Traffic.md
+    -   label: 图标路径工具
+        file: UsefulTools_IconPath.md
+    -   label: 配置文件编辑器
+        file: UsefulTools_ConfigEditor.md
 -   label: 测试类工具
     collapsed: false
     items:

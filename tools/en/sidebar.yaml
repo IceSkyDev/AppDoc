@@ -25,6 +25,10 @@ items:
         file: UsefulTools_EdgeTTS.md
     -   label: TrafficCounter
         file: UsefulTools_Traffic.md
+    -   label: IconPathTool
+        file: UsefulTools_IconPath.md
+    -   label: ConfigEditor
+        file: UsefulTools_ConfigEditor.md
 -   label: TestTools
     collapsed: false
     items:
