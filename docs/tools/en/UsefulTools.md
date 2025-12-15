@@ -30,3 +30,7 @@ A range of useful tools, includ:
 [EdgeTTS](./UsefulTools_EdgeTTS.md)
 
 [TrafficCounter](./UsefulTools_Traffic.md)
+
+[IconPathTool](./UsefulTools_IconPath.md)
+
+[ConfigEditor](./UsefulTools_ConfigEditor.md)

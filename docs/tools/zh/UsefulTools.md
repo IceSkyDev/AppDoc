@@ -30,3 +30,7 @@ desc: 一系列的实用工具，包括图片工具、配色工具、选择工�
 [EdgeTTS](./UsefulTools_EdgeTTS.md)
 
 [流量计数器](./UsefulTools_Traffic.md)
+
+[图标路径工具](./UsefulTools_IconPath.md)
+
+[Json配置文件编辑器](./UsefulTools_ConfigEditor.md)
