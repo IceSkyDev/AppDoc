@@ -217,3 +217,18 @@ Features include: Encode & Decode, Encrypt & Decrypt & Hash, Text Converter, Tex
     * Specify saturation
     * Specify lightness
     * Specify background
+
+### Text To Image
+* Text Settings
+  * Font family
+  * Font size
+  * Text color, Highlight
+  * Vertical alignment, Horizontal alignment
+  * Bold, Italic, Underline
+  * Line margin
+* Background Settings
+  * Width, Height
+  * Background color
+  * Border thickness, Border brush
+  * Corner radius, Padding
+  * Vertical alignment

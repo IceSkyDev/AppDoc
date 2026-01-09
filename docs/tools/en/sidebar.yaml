@@ -109,6 +109,8 @@ items:
             file: ToolsSet_Text/ListOpt.md
         -   label: Identicon
             file: ToolsSet_Text/Identicon.md
+        -   label: Text To Image
+            file: ToolsSet_Text/TextToImage.md
     -   label: Media
         file: ToolsSet_Media.md
         items:
@@ -177,4 +179,6 @@ items:
             file: ToolsSet_Other/PathCombine.md
         -   label: Directory Viewer
             file: ToolsSet_Other/DirViewer.md
+        -   label: Font File Viewer
+            file: ToolsSet_Other/FontFile.md
 

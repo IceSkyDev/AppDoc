@@ -52,10 +52,16 @@ desc: 其他实用工具，包括ASCII码表、Unicode符号表、Emoji、颜文
 * 分页跳转
 * 查看内容包括：字符、十进制编码、十六进制编码、XML/CSS/JS用法、Geometry代码
 
+### Font File Viewer *字体文件预览*
+* 指定字体文件，ttf或otf格式
+* 分页跳转
+* 查看内容包括：字符、十进制编码、十六进制编码、Geometry代码
+
 ### Geometry Viewer *几何路径查看器*
 * 几何代码转换为路径查看
 * 可选择是否填充路径
 * 可设置边框及填充颜色
+* 路径缩放、旋转、镜像
 * 可保存svg和png文件
 
 ### Path Combine *路径组合*

@@ -52,11 +52,17 @@ Features include: ASCII Table, ISO Table, Unicode Symbols, Emoji List, Emoticons
 * Pagination jumps
 * View content includes: characters, Dec code, Hex code, XML/CSS/JS usage, Geometry string
 
+### Font File Viewer 
+* Select font file and typeface
+* Pagination jumps
+* View content includes: characters, Dec code, Hex code, Geometry string
+
 ### Geometry Viewer 
 * String conversion to path viewing
 * Fill switch
 * Set the border and fill color
 * SVG and PNG file can be saved
+* Path scale, rotate, filp
 
 ### Path Combine
 * Add and remove path code

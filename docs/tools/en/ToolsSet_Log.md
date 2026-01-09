@@ -4,6 +4,13 @@ class: heading_no_counter
 keywords: 
 desc: 
 ---
+
+* 1.3.1
+  * Added text-to-image feature
+  * Added feature to view characters in font file
+  * Added scale, rotate, and flip to Geometry preview
+  * When copying the file name, you can choose whether to include the extension
+  * Interface Optimization and Enhancement
 * 1.3.0
   * Add text generation Identicon
   * Add batch image size conversion
