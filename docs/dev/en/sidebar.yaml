@@ -1,0 +1,7 @@
+items:
+- label: General Information
+  file: README.md
+- label: WpfMonaco
+  file: WpfMonaco.md
+- label: WpfLoading
+  file: WpfLoading.md

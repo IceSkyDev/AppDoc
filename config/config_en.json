@@ -24,6 +24,11 @@
                 "position": "left"
             },
             {
+                "url": "/dev/en/",
+                "label": "Develop",
+                "position": "left"
+            },
+            {
                 "id": "language",
                 "label": "Language: ",
                 "position": "right",

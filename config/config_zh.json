@@ -25,6 +25,11 @@
                 "position": "left"
             },
             {
+                "url": "/dev/zh/",
+                "label": "开发资源",
+                "position": "left"
+            },
+            {
                 "id": "language",
                 "label": "Language: ",
                 "position": "right",
