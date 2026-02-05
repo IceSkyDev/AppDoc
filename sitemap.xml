@@ -607,6 +607,24 @@
             <priority>1.0</priority>
         </url>
         <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/dev/zh/WpfMonaco.html</loc>
+            <lastmod>2026-02-05</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/dev/zh/index.html</loc>
+            <lastmod>2026-02-05</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/dev/zh/WpfLoading.html</loc>
+            <lastmod>2026-02-05</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
             <loc>https://IceSkyDev.github.io/AppDoc/usage/zh/index.html</loc>
             <lastmod>2022-09-01</lastmod>
             <changefreq>weekly</changefreq>
@@ -1232,6 +1250,30 @@
         </url>
         <url>
             <loc>https://IceSkyDev.github.io/AppDoc/game/en/no_translate.html</loc>
+            <lastmod>2026-02-05</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/dev/en/WpfMonaco.html</loc>
+            <lastmod>2026-02-05</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/dev/en/index.html</loc>
+            <lastmod>2026-02-05</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/dev/en/WpfLoading.html</loc>
+            <lastmod>2026-02-05</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://IceSkyDev.github.io/AppDoc/dev/en/no_translate.html</loc>
             <lastmod>2026-02-05</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>

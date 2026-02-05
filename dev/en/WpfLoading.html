@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+
+<html lang="en"  class=" heading_no_counter ">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="Wpf, Loading, Control, animate, mask">
+    
+    
+    <meta name="description" content="A WPF loading control library that includes dozens of predefined loading animations, a general-purpose loading animation control, a mask overlay control, and an ItemsControl that supports customization.">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/AppDoc/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/AppDoc/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/AppDoc/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/search/style.css" type="text/css"/>
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/bootstrap.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/animate.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>WpfLoading - IceSky App</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/AppDoc/en/">
+                
+                    <img class="site_logo" src="/AppDoc/static/image/logo.png" alt="IceSky Logo">
+                
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/AppDoc/edu/en/">Edu Apps</a></li>
+<li class=""><a  href="/AppDoc/tools/en/">Tools</a></li>
+<li class=""><a  href="/AppDoc/game/en/">Games</a></li>
+<li class="active"><a  href="/AppDoc/dev/en/">Develop</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class="sub_items "><a  >Language: English</a><ul><li class="active"><a  href="/AppDoc/dev/en/WpfLoading.html">English</a></li>
+<li class=""><a  href="/AppDoc/dev/zh/WpfLoading.html">中文 简体</a></li>
+</ul></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">Search</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">Keywords separated by space</span>
+                                <span id="search_loading_hint">Loading, wait please ...</span>
+                                <span id="search_download_err_hint">Download error, please check network and refresh again</span>
+                                <span id="search_other_docs_result_hint">Result from other docs</span>
+                                <span id="search_curr_doc_result_hint">Result from current doc</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/dev/en/index.html"><span class="label">General Information</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/dev/en/WpfMonaco.html"><span class="label">WpfMonaco</span><span class=""></span></a></li>
+<li class="active with_link"><a href="/AppDoc/dev/en/WpfLoading.html"><span class="label">WpfLoading</span><span class=""></span></a></li>
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>WpfLoading</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <h2 id="Introduce">Introduce</h2>
+<p>This is a WPF control library that includes dozens of predefined loading animations, a general-purpose loading animation control, a mask overlay control, and an ItemsControl that supports customization.</p>
+<h2 id="Loading-animations">Loading animations</h2>
+<ul>
+<li>Blink</li>
+<li>Bounce</li>
+<li>Bouncing</li>
+<li>Bricks</li>
+<li>Carousel</li>
+<li>Collision</li>
+<li>Drop</li>
+<li>Elastic</li>
+<li>Expand</li>
+<li>Falling</li>
+<li>Figure8</li>
+<li>Fire</li>
+<li>Fireworks</li>
+<li>Fish</li>
+<li>Flashing</li>
+<li>Floating</li>
+<li>Gathering</li>
+<li>Hexagon</li>
+<li>HourGlass</li>
+<li>Intersect</li>
+<li>Pinball</li>
+<li>Pulse</li>
+<li>Revolution</li>
+<li>Snake</li>
+<li>Spin</li>
+<li>Stretching</li>
+<li>Swing</li>
+<li>Triangle</li>
+<li>Wave</li>
+<li>WindMill</li>
+</ul>
+<p><img src="../assets/images/WpfLoading.gif" alt="WpfLoading" /></p>
+<h3 id="Basic-Usage">Basic Usage</h3>
+<ol>
+<li>Add reference namespace
+<pre class="language-Xml"><code class="language-Xml">xmlns:anim=&quot;clr-namespace:IceSky.WpfLoading.Animations;assembly=IceSky.WpfLoading&quot; 
+</code></pre>
+</li>
+<li>Add control in XAML file</li>
+</ol>
+
+<pre class="language-Xml"><code class="language-Xml">&lt;anim:Bounce/&gt;
+</code></pre>
+<ol start="3">
+<li>Modify configuration parameters (Optional)</li>
+</ol>
+<ul>
+<li>Color</li>
+<li>Size</li>
+<li>AnimationSpeed：Animation speed, a double value &gt; 0, specifying the multiplier for the default speed; &gt; 1 speeds up, &lt; 1 slows down</li>
+</ul>
+<h2 id="Common-loading-contorl">Common loading contorl</h2>
+<ul>
+<li>Basic settings: item width, item height, count, border radius</li>
+<li>Color settings: start and end point colors, and whether the color cycles</li>
+<li>Layout settings: curvature, arc, inner radius, spacing</li>
+<li>Rotation settings: ring rotation, discrete rotation, item rotation</li>
+<li>Transform settings: duration, delay, scale, offset, opacity</li>
+</ul>
+<p>Basic settings<br />
+<img src="../assets/images/Loading1.gif" alt="Loading1" /></p>
+<p>Color settings<br />
+<img src="../assets/images/Loading2.gif" alt="Loading2" /></p>
+<p>Layout settings:<br />
+<img src="../assets/images/Loading3.gif" alt="Loading3" /></p>
+<p>Rotation settings:<br />
+<img src="../assets/images/Loading4.gif" alt="Loading4" /></p>
+<p>Transform settings:<br />
+<img src="../assets/images/Loading5.gif" alt="Loading5" /></p>
+<h3 id="Basic-Usage">Basic Usage</h3>
+<ol>
+<li><p>Add reference namespace</p>
+
+<pre class="language-Xml"><code class="language-Xml">xmlns:anim=&quot;clr-namespace:IceSky.WpfLoading.Animations;assembly=IceSky.WpfLoading&quot; 
+</code></pre>
+</li>
+<li><p>Add control in XAML file</p>
+<p>You can set up the parameters in the designer, then click the 'Copy Code' button below the parameters to copy it, and paste it wherever you want to use it.</p>
+<blockquote>
+<p>The automatically generated code namespace may not match the one defined in the references, please check and modify it!</p>
+</blockquote>
+<p>Copied code example：</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;local:GradientLoadingControl
+  CornerRadius=&quot;6&quot;
+  Count=&quot;12&quot;
+  IsRingRotation=&quot;True&quot;
+  DelayTime=&quot;100&quot;/&gt;
+</code></pre>
+<p><a href=""  >Control Designer</a></p>
+</li>
+</ol>
+<h2 id="Mask-Layer">Mask Layer</h2>
+<ul>
+<li>Options<ul>
+<li>Blur background</li>
+<li>Mask color</li>
+<li>Mask opacity</li>
+</ul>
+</li>
+<li>Event<ul>
+<li>Open</li>
+<li>OpenWithTask</li>
+<li>Close</li>
+</ul>
+</li>
+</ul>
+<h3 id="Basic-Usage">Basic Usage</h3>
+<ol>
+<li><p>Add reference namespace（✳The namespace of this control is different from the previous）</p>
+
+<pre class="language-Xml"><code class="language-Xml">xmlns:control=&quot;clr-namespace:IceSky.WpfLoading;assembly=IceSky.WpfLoading&quot; 
+</code></pre>
+</li>
+<li><p>Add control in XAML file</p>
+
+<pre class="language-Xml"><code class="language-Xml">&lt;control:MaskPanel x:Name=&quot;maskPanel&quot;
+          TargetBlurElement=&quot;{Binding ElementName=BusinessGrid}&quot;&gt;
+          ……
+          Content in the mask layer
+          ……
+&lt;/control:MaskPanel&gt;
+</code></pre>
+<blockquote>
+<p>TargetBlurElement: the container that contains content to be blurred</p>
+</blockquote>
+</li>
+<li><p>Add open/close logic in the .cs file</p>
+
+<pre class="language-cs"><code class="language-cs">//Normal open, needs to close manually
+maskPanel.Open();
+//Close
+maskPanel.Close();
+
+//Open with task, and will automatically close when task complete or timeout
+maskPanel.OpenWithTask(task, taskCts, 3000);
+
+</code></pre>
+</li>
+</ol>
+<h2 id="Custom-ItemsControl">Custom ItemsControl</h2>
+<ul>
+<li>Layout types: Linear, Circular, Triangle, Hexagon, Rhombus</li>
+<li>Triangle and hexagon support edge layout and grid layout.</li>
+<li>Supports custom parameter animations for scaling, offset, and transparency</li>
+</ul>
+<h3 id="Basic-Usage">Basic Usage</h3>
+<ol>
+<li><p>Add reference namespace</p>
+
+<pre class="language-Xml"><code class="language-Xml">xmlns:control=&quot;clr-namespace:IceSky.WpfLoading;assembly=IceSky.WpfLoading&quot; 
+</code></pre>
+</li>
+<li><p>Add control in the XAML file and set the style</p>
+
+<pre class="language-Xml"><code class="language-Xml">&lt;control:AnimateItemsControl&gt;
+   &lt;control:AnimateItemsControl.ItemTemplate&gt;
+       &lt;DataTemplate&gt;
+           &lt;Border Background=&quot;Green&quot; Width=&quot;20&quot; Height=&quot;20&quot; BorderBrush=&quot;Red&quot; BorderThickness=&quot;1&quot;/&gt;
+       &lt;/DataTemplate&gt;
+   &lt;/control:AnimateItemsControl.ItemTemplate&gt;
+&lt;/control:AnimateItemsControl&gt;
+</code></pre>
+</li>
+</ol>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                        <a href="/AppDoc/dev/en/WpfMonaco.html">
+                            <span class="icon"></span>
+                            <span class="label">WpfMonaco</span>
+                        </a>
+                        
+                    </div>
+                    <div id="next">
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a>WeChat Official Account: IceSky</a>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a>Individual developer on Windows - IceSky</a>
+</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/AppDoc/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/AppDoc/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/AppDoc/static/js/theme_default/main.js"></script>
+    
+        <script src="/AppDoc/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/AppDoc/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/AppDoc/static/js/search/search_main.js"></script>
+    
+        <script src="/AppDoc/static/js/plugin_blog/main.js"></script>
+    
+        <script src="/AppDoc/static/js/easing.min.js"></script>
+    
+        <script src="/AppDoc/static/js/custom.js"></script>
+    
+</body>
+
+</html>

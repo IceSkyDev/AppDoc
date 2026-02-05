@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"  class=" language_zh  heading_no_counter ">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="Wpf, Monaco, control, editor, Syntax">
+    
+    
+    <meta name="description" content="微软开源编辑器Monaco editor的WPF封装，支持依赖属性绑定、常用方法和事件">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/AppDoc/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/AppDoc/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/AppDoc/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/search/style.css" type="text/css"/>
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/bootstrap.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/animate.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>WpfMonaco - IceSky App</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/AppDoc/">
+                
+                    <img class="site_logo" src="/AppDoc/static/image/logo.png" alt="IceSky Logo">
+                
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/AppDoc/edu/zh/">教育类应用</a></li>
+<li class=""><a  href="/AppDoc/tools/zh/">工具应用</a></li>
+<li class=""><a  href="/AppDoc/game/zh/">游戏</a></li>
+<li class="active"><a  href="/AppDoc/dev/zh/">开发资源</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class="sub_items "><a  >Language: 中文 简体</a><ul><li class=""><a  href="/AppDoc/dev/en/WpfMonaco.html">English</a></li>
+<li class="active"><a  href="/AppDoc/dev/zh/WpfMonaco.html">中文 简体</a></li>
+</ul></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">搜索</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">输入关键词，多关键词空格隔开</span>
+                                <span id="search_loading_hint">正在加载，请稍候。。。</span>
+                                <span id="search_download_err_hint">下载文件失败，请刷新重试或检查网络</span>
+                                <span id="search_other_docs_result_hint">来自其它文档的结果</span>
+                                <span id="search_curr_doc_result_hint">当前文档搜索结果</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/dev/zh/index.html"><span class="label">通用说明</span><span class=""></span></a></li>
+<li class="active with_link"><a href="/AppDoc/dev/zh/WpfMonaco.html"><span class="label">WpfMonaco</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/dev/zh/WpfLoading.html"><span class="label">WpfLoading</span><span class=""></span></a></li>
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>WpfMonaco</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <h2 id="%E4%BB%8B%E7%BB%8D">介绍</h2>
+<p>这是微软开源编辑器Monaco editor的WPF封装控件，支持依赖属性绑定、常用方法和事件</p>
+<p><a href="https://github.com/IceSkyDev/WPFMonaco"  target="_blank">GitHub</a></p>
+<p><strong>Monaco Editor 版本</strong> <em>v0.55.1</em></p>
+<h2 id="%E4%BE%9D%E8%B5%96%E5%B1%9E%E6%80%A7">依赖属性</h2>
+<ul>
+<li>Theme：设置编辑器主题，支持Light、Dark、HCLight、HCDark四种主题风格</li>
+<li>ModelLanguage：设置语法着色时使用的语言</li>
+<li>Text：文本内容</li>
+<li>ReadOnly：是否只读，为true时编辑器为只读模式，默认为false</li>
+<li>Fontfamily：设置编辑器字体</li>
+<li>FontSize：设置编辑器字号，默认为14</li>
+<li>MinimapEnabled：设置右侧Minimap导航是否可用，默认为true</li>
+<li>TabSize：设置Tab宽度，默认为4</li>
+<li>WordWrap：设置是否自动换行，默认为true</li>
+<li>ShowLineNumber：设置是否显示行号，默认为true</li>
+<li>LineNumbersChars：设置行号显示时的宽度，默认为5</li>
+<li>LineHeight：设置编辑器行高，默认为19</li>
+<li>Folding：设置是否显示代码折叠区，默认为true</li>
+<li>ContextMenuEnable：设置右键菜单是否可用，默认为true</li>
+<li>HorizontalScrollBarVisibility：设置水平滚动条显示方式，默认为auto</li>
+<li>VerticalScrollBarVisibility：设置垂直滚动条显示方式，默认为auto</li>
+<li>ShowStickyScroll：设置是否显示StickyScroll区，默认为true</li>
+<li>AutoClosingQuotes：设置是否自动关闭引号</li>
+<li>AutoClosingBrackets：设置是否自动关闭括号</li>
+</ul>
+<h2 id="%E6%96%B9%E6%B3%95">方法</h2>
+<ul>
+<li>GetLanguages：获取编辑器支持的语言列表</li>
+<li>GetText：获取编辑器中的文本内容</li>
+<li>UpdateOptions：设置编辑器配置参数</li>
+<li>SetText：设置编辑器中的文本内容</li>
+<li>GetPosition：获取当前光标所在位置</li>
+<li>SetPosition：设置光标到指定位置</li>
+<li>GetSelection：获取当前选择的文本内容</li>
+<li>SetSelection：设置选中指定区域的文本</li>
+<li>Focus：编辑器获得焦点</li>
+<li>Format：根据语言类型格式化编辑器的内容</li>
+<li>Clear：清空编辑器的内容</li>
+<li>SelectAll：选中编辑器的所有内容</li>
+<li>GoToLine：滚动到指定行</li>
+<li>GoToPosition：滚动到指定位置</li>
+<li>GoToRange：滚动到指定区域</li>
+<li>InsertText：在指定区域插入指定文本</li>
+<li>ExecuteTrigger：执行指定的触发器</li>
+</ul>
+<h2 id="%E4%BA%8B%E4%BB%B6">事件</h2>
+<ul>
+<li>ContentChanged：文本内容改变后执行</li>
+<li>CursorPositionChanged：光标位置改变后执行</li>
+<li>SelectionChanged：选择区域改变后执行</li>
+<li>EditorFocused：获取焦点后执行</li>
+<li>EditorBlurred：失去焦点后执行</li>
+<li>MouseDown：鼠标按键按下执行</li>
+<li>MouseUp：鼠标按键抬起执行</li>
+<li>KeyDown：键盘按键按下执行</li>
+<li>KeyUp：键盘按键抬起执行</li>
+<li>LanguageChanged：语言切换后执行</li>
+<li>ScrollChanged：滚动条位置改变后执行</li>
+<li>EditorPaste：在编辑器粘贴内容后执行</li>
+</ul>
+<h2 id="%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8">基本使用</h2>
+<ul>
+<li><p>前提条件</p>
+<ul>
+<li>.NET 6.0 以上</li>
+<li>Microsoft Edge WebView2 Runtime</li>
+<li>Visual Studio 2022 以上</li>
+</ul>
+</li>
+<li><p>添加引用</p>
+</li>
+</ul>
+
+<pre class="language-shell"><code class="language-shell">dotnet add package WPFMonaco
+</code></pre>
+<ul>
+<li>使用控件</li>
+</ul>
+
+<pre class="language-xml"><code class="language-xml">&lt;Window xmlns:editor=&quot;clr-namespace:WPFMonaco;assembly=WPFMonaco&quot;&gt;
+  ...
+  &lt;editor:MonacoEditor Text=&quot;{Binding Text}&quot;/&gt;
+  ...
+&lt;/Window&gt;
+</code></pre>
+<h3 id="%E7%A4%BA%E4%BE%8B%E6%88%AA%E5%9B%BE%EF%BC%9A">示例截图：</h3>
+<p><img src="../assets/images/WpfMonaco.gif" alt="WpfMonaco" /></p>
+<ul>
+<li><a href="https://microsoft.github.io/monaco-editor/"  target="_blank">Monaco Editor Documentation</a></li>
+<li><a href="https://docs.microsoft.com/en-us/microsoft-edge/webview2/"  target="_blank">WebView2 Documentation</a></li>
+</ul>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                        <a href="/AppDoc/dev/zh/index.html">
+                            <span class="icon"></span>
+                            <span class="label">通用说明</span>
+                        </a>
+                        
+                    </div>
+                    <div id="next">
+                        
+                        <a href="/AppDoc/dev/zh/WpfLoading.html">
+                            <span class="label">WpfLoading</span>
+                            <span class="icon"></span>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a>微信公众号：IceSky</a>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a>Windows 个人独立开发者 - IceSky</a>
+</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/AppDoc/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/AppDoc/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/AppDoc/static/js/theme_default/main.js"></script>
+    
+        <script src="/AppDoc/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/AppDoc/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/AppDoc/static/js/search/search_main.js"></script>
+    
+        <script src="/AppDoc/static/js/plugin_blog/main.js"></script>
+    
+        <script src="/AppDoc/static/js/easing.min.js"></script>
+    
+        <script src="/AppDoc/static/js/custom.js"></script>
+    
+</body>
+
+</html>

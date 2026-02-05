@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html lang="en"  class=" heading_no_counter ">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="Wpf, Monaco, control, editor">
+    
+    
+    <meta name="description" content="WPF wrapper control for Microsoft's Monaco editor (the code editor that powers VS Code), built on WebView2, provides configuration binding, common methods and events.">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/AppDoc/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/AppDoc/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/AppDoc/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/search/style.css" type="text/css"/>
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/bootstrap.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/animate.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>WpfMonaco - IceSky App</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/AppDoc/en/">
+                
+                    <img class="site_logo" src="/AppDoc/static/image/logo.png" alt="IceSky Logo">
+                
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/AppDoc/edu/en/">Edu Apps</a></li>
+<li class=""><a  href="/AppDoc/tools/en/">Tools</a></li>
+<li class=""><a  href="/AppDoc/game/en/">Games</a></li>
+<li class="active"><a  href="/AppDoc/dev/en/">Develop</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class="sub_items "><a  >Language: English</a><ul><li class="active"><a  href="/AppDoc/dev/en/WpfMonaco.html">English</a></li>
+<li class=""><a  href="/AppDoc/dev/zh/WpfMonaco.html">中文 简体</a></li>
+</ul></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">Search</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">Keywords separated by space</span>
+                                <span id="search_loading_hint">Loading, wait please ...</span>
+                                <span id="search_download_err_hint">Download error, please check network and refresh again</span>
+                                <span id="search_other_docs_result_hint">Result from other docs</span>
+                                <span id="search_curr_doc_result_hint">Result from current doc</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/dev/en/index.html"><span class="label">General Information</span><span class=""></span></a></li>
+<li class="active with_link"><a href="/AppDoc/dev/en/WpfMonaco.html"><span class="label">WpfMonaco</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/dev/en/WpfLoading.html"><span class="label">WpfLoading</span><span class=""></span></a></li>
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>WpfMonaco</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <h2 id="Introduce">Introduce</h2>
+<p>A fully-featured WPF wrapper control for Microsoft's Monaco editor (the code editor that powers VS Code), built on WebView2, provides configuration binding, common methods and events.</p>
+<p><a href="https://github.com/IceSkyDev/WPFMonaco"  target="_blank">GitHub</a></p>
+<p><strong>Monaco Editor version</strong> <em>v0.55.1</em></p>
+<h2 id="Monaco-option-%28DependencyProperty%29%3A">Monaco option (DependencyProperty):</h2>
+<ul>
+<li>Theme：Set the editor theme, include: Light, Dark, HCLight, and HCDark</li>
+<li>ModelLanguage：Set the language to use for syntax highlighting</li>
+<li>Text：Text content</li>
+<li>ReadOnly：Whether it is read-only. When true, the editor is in read-only mode, default is false</li>
+<li>Fontfamily：Set editor’s fontfamily</li>
+<li>FontSize：Set the editor's font size, default is 14</li>
+<li>MinimapEnabled：Set whether the right-side minimap navigation is enabled, default is true</li>
+<li>TabSize：Set the tab size, default is 4</li>
+<li>WordWrap：Set whether to wrap text automatically, default is true.</li>
+<li>ShowLineNumber：Set whether to display line numbers, default is true</li>
+<li>LineNumbersChars：Set the width for displaying line numbers, default is 5</li>
+<li>LineHeight：Set editor's line height, default is 19</li>
+<li>Folding：Set whether to display the fold area, default is true</li>
+<li>ContextMenuEnable：Set whether the context menu is enabled, default is true</li>
+<li>HorizontalScrollBarVisibility：Set the display mode of the horizontal scrollbar, default is auto</li>
+<li>VerticalScrollBarVisibility：Set the display mode of the vertical scrollbar, default is auto</li>
+<li>ShowStickyScroll：Set whether to display the StickyScroll area, default is true</li>
+<li>AutoClosingQuotes：Set whether to automatically close quotes</li>
+<li>AutoClosingBrackets：Set whether to automatically close brackets</li>
+</ul>
+<h2 id="Monaco-method">Monaco method</h2>
+<ul>
+<li>GetLanguages：Get the list of languages supported by the editor</li>
+<li>GetText：Get the text content from the editor</li>
+<li>UpdateOptions：Set options for the editor</li>
+<li>SetText：Set the text content in the editor</li>
+<li>GetPosition：Get the current cursor position</li>
+<li>SetPosition：Set the cursor to the specified position</li>
+<li>GetSelection：Get the currently selected text content</li>
+<li>SetSelection：Set the text of the selected area</li>
+<li>Focus：Set focus to the editor</li>
+<li>Format：Format the editor content according to the language type</li>
+<li>Clear：Clear content in the editor</li>
+<li>SelectAll：Select all content in the editor</li>
+<li>GoToLine：Scroll to the specified line</li>
+<li>GoToPosition：Scroll to the specified position</li>
+<li>GoToRange：Scroll to the specified range</li>
+<li>InsertText：Insert specified text into the designated area</li>
+<li>ExecuteTrigger：Execute the specified trigger</li>
+</ul>
+<h2 id="Monaco-event">Monaco event</h2>
+<ul>
+<li>ContentChanged：Execute when the text content changed</li>
+<li>CursorPositionChanged：Execute when cursor position changed</li>
+<li>SelectionChanged：Execute when selection changed</li>
+<li>EditorFocused：Execute when editor got focus</li>
+<li>EditorBlurred：Execute when editor lost focus</li>
+<li>MouseDown：Execute when mouse button down</li>
+<li>MouseUp：Execute when mouse button up</li>
+<li>KeyDown：Execute when the keyboard key down</li>
+<li>KeyUp：Execute when the keyboard key up</li>
+<li>LanguageChanged：Execute when model language changed</li>
+<li>ScrollChanged：Execute when the scroll bar position changed</li>
+<li>EditorPaste：Execute when paste content in the editor</li>
+</ul>
+<h2 id="Basic-Usage">Basic Usage</h2>
+<ul>
+<li><p>Prerequisites</p>
+<ul>
+<li>.NET 6.0 or later</li>
+<li>Microsoft Edge WebView2 Runtime</li>
+<li>Visual Studio 2022 or later</li>
+</ul>
+</li>
+<li><p>Add package from nuget</p>
+</li>
+</ul>
+
+<pre class="language-shell"><code class="language-shell">dotnet add package WPFMonaco
+</code></pre>
+<ul>
+<li>Use control</li>
+</ul>
+
+<pre class="language-xml"><code class="language-xml">&lt;Window xmlns:editor=&quot;clr-namespace:WPFMonaco;assembly=WPFMonaco&quot;&gt;
+  ...
+  &lt;editor:MonacoEditor Text=&quot;{Binding Text}&quot;/&gt;
+  ...
+&lt;/Window&gt;
+</code></pre>
+<h3 id="Sample-Screenshot%EF%BC%9A">Sample Screenshot：</h3>
+<p><img src="../assets/images/WpfMonaco.gif" alt="WpfMonaco" /></p>
+<h2 id="Useful-Links">Useful Links</h2>
+<ul>
+<li><a href="https://microsoft.github.io/monaco-editor/"  target="_blank">Monaco Editor Documentation</a></li>
+<li><a href="https://docs.microsoft.com/en-us/microsoft-edge/webview2/"  target="_blank">WebView2 Documentation</a></li>
+</ul>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                        <a href="/AppDoc/dev/en/index.html">
+                            <span class="icon"></span>
+                            <span class="label">General Information</span>
+                        </a>
+                        
+                    </div>
+                    <div id="next">
+                        
+                        <a href="/AppDoc/dev/en/WpfLoading.html">
+                            <span class="label">WpfLoading</span>
+                            <span class="icon"></span>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a>WeChat Official Account: IceSky</a>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a>Individual developer on Windows - IceSky</a>
+</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/AppDoc/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/AppDoc/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/AppDoc/static/js/theme_default/main.js"></script>
+    
+        <script src="/AppDoc/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/AppDoc/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/AppDoc/static/js/search/search_main.js"></script>
+    
+        <script src="/AppDoc/static/js/plugin_blog/main.js"></script>
+    
+        <script src="/AppDoc/static/js/easing.min.js"></script>
+    
+        <script src="/AppDoc/static/js/custom.js"></script>
+    
+</body>
+
+</html>
