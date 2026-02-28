@@ -155,42 +155,34 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <p>这是一个WPF Loading控件库，其中包含数十个已经定义好的加载动画、一个通用的加载动画控件、一个遮罩层控件以及一个支持自定义的ItemsControl控件</p>
 <h2 id="%E5%8A%A0%E8%BD%BD%E5%8A%A8%E7%94%BB">加载动画</h2>
 <ul>
-<li>Blink</li>
-<li>Bounce</li>
-<li>Bouncing</li>
-<li>Bricks</li>
-<li>Carousel</li>
-<li>Collision</li>
-<li>Drop</li>
-<li>Elastic</li>
-<li>Expand</li>
-<li>Falling</li>
-<li>Figure8</li>
-<li>Fire</li>
-<li>Fireworks</li>
-<li>Fish</li>
-<li>Flashing</li>
-<li>Floating</li>
-<li>Gathering</li>
-<li>Hexagon</li>
-<li>HourGlass</li>
-<li>Intersect</li>
-<li>Pinball</li>
-<li>Pulse</li>
-<li>Revolution</li>
-<li>Snake</li>
-<li>Spin</li>
-<li>Stretching</li>
-<li>Swing</li>
-<li>Triangle</li>
-<li>Wave</li>
-<li>WindMill</li>
+<li>Blink、Bounce、Bouncing、Bricks、Carousel</li>
+<li>Collision、Drop、Elastic、Expand、Falling</li>
+<li>Figure8、Fire、Fireworks、Fish、Flashing</li>
+<li>Floating、Gathering、Hexagon、HourGlass、Intersect</li>
+<li>Pinball、Pulse、Revolution、Snake、Spin</li>
+<li>Stretching、Swing、Triangle、Wave、WindMill</li>
 </ul>
 <p><img src="../assets/images/WpfLoading.gif" alt="WpfLoading" /></p>
+<ul>
+<li>BlockFlow、BlockHourglass、BlockJump、BlockScale、BlockSway</li>
+<li>BlockWave、BoxShift、Charge、Circle、Cross</li>
+<li>DiamondStar、DoubleArc、DrawStar、Flame、FourArc</li>
+<li>GradientArc、HollowStar、MovingTriangle、NenoStar、PulseTriangle</li>
+<li>Quantum、Radar、RectDraw、RectDraw2、RotateSkew</li>
+<li>RotatingBall、Satellites、SimpleArc、ThreeArc、TonePillar</li>
+</ul>
+<p><img src="../assets/images/WpfAnimation.gif" alt="WpfAnimation" /></p>
 <h3 id="%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">使用方法</h3>
 <ol>
-<li>添加引用
+<li>添加引用及资源文件
 <pre class="language-Xml"><code class="language-Xml">xmlns:anim=&quot;clr-namespace:IceSky.WpfLoading.Animations;assembly=IceSky.WpfLoading&quot; 
+&lt;Window.Resources&gt;
+   &lt;ResourceDictionary&gt;
+      &lt;ResourceDictionary.MergedDictionaries&gt;
+            &lt;ResourceDictionary Source=&quot;pack://application:,,,/IceSky.WpfLoading;component/Generic.xaml&quot;/&gt;
+      &lt;/ResourceDictionary.MergedDictionaries&gt;
+   &lt;/ResourceDictionary&gt;
+&lt;/Window.Resources&gt;
 </code></pre>
 </li>
 <li>在Xaml文件中添加控件</li>
@@ -198,12 +190,12 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 
 <pre class="language-Xml"><code class="language-Xml">&lt;anim:Bounce Color=&quot;#4F46E5&quot;/&gt;
 </code></pre>
-<ol start="3">
-<li>配置参数（可选）</li>
+<ol>
+<li>配置参数</li>
 </ol>
 <ul>
-<li>Color：颜色</li>
-<li>Size：尺寸</li>
+<li>点动画参数： Color（颜色）、Size（尺寸）</li>
+<li>其他形状动画参数（不同动画可能部分参数无效）：Fill（填充颜色）、Stroke（描边颜色）、StrokeThickness（描边宽度）</li>
 <li>AnimationSpeed：动画速度，&gt;0 的double数值，指定默认速度的倍率，大于1加速，小于1减速</li>
 </ul>
 <h2 id="%E9%80%9A%E7%94%A8%E5%8A%A0%E8%BD%BD%E5%8A%A8%E7%94%BB%E6%8E%A7%E4%BB%B6">通用加载动画控件</h2>
@@ -226,9 +218,16 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <img src="../assets/images/Loading5.gif" alt="Loading5" /></p>
 <h3 id="%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">使用方法</h3>
 <ol>
-<li><p>添加引用</p>
+<li><p>添加引用及资源文件</p>
 
 <pre class="language-Xml"><code class="language-Xml">xmlns:anim=&quot;clr-namespace:IceSky.WpfLoading.Animations;assembly=IceSky.WpfLoading&quot; 
+&lt;Window.Resources&gt;
+   &lt;ResourceDictionary&gt;
+      &lt;ResourceDictionary.MergedDictionaries&gt;
+            &lt;ResourceDictionary Source=&quot;pack://application:,,,/IceSky.WpfLoading;component/Generic.xaml&quot;/&gt;
+      &lt;/ResourceDictionary.MergedDictionaries&gt;
+   &lt;/ResourceDictionary&gt;
+&lt;/Window.Resources&gt;
 </code></pre>
 </li>
 <li><p>在Xaml文件中添加控件</p>
@@ -239,12 +238,51 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <p>复制的代码示例：</p>
 
 <pre class="language-xml"><code class="language-xml">&lt;local:GradientLoadingControl
-  CornerRadius=&quot;6&quot;
-  Count=&quot;12&quot;
-  IsRingRotation=&quot;True&quot;
-  DelayTime=&quot;100&quot;/&gt;
+   CornerRadius=&quot;6&quot;
+   Count=&quot;12&quot;
+   IsRingRotation=&quot;True&quot;
+   DelayTime=&quot;100&quot;/&gt;
 </code></pre>
-<p><a href=""  >设计器地址</a></p>
+<p><a href="https://github.com/IceSkyDev/IceSky.WpfLoading.Sample"  target="_blank">设计器地址</a></p>
+</li>
+</ol>
+<h2 id="%E6%96%87%E6%9C%AC%E5%8A%A8%E7%94%BB">文本动画</h2>
+<ul>
+<li>基本参数：文本内容、字体、字号、颜色</li>
+<li>动画参数：透明度、旋转角度、X/Y偏移、X/Y倾斜</li>
+<li>变换参数：时长、延迟、自动反转、重复次数</li>
+</ul>
+<p><img src="../assets/images/TextLoading.gif" alt="TextLoading" /></p>
+<h3 id="%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">使用方法</h3>
+<ol>
+<li><p>添加引用及资源文件</p>
+
+<pre class="language-Xml"><code class="language-Xml">xmlns:anim=&quot;clr-namespace:IceSky.WpfLoading.Animations;assembly=IceSky.WpfLoading&quot; 
+&lt;Window.Resources&gt;
+   &lt;ResourceDictionary&gt;
+      &lt;ResourceDictionary.MergedDictionaries&gt;
+            &lt;ResourceDictionary Source=&quot;pack://application:,,,/IceSky.WpfLoading;component/Generic.xaml&quot;/&gt;
+      &lt;/ResourceDictionary.MergedDictionaries&gt;
+   &lt;/ResourceDictionary&gt;
+&lt;/Window.Resources&gt;
+</code></pre>
+</li>
+<li><p>在Xaml文件中添加控件</p>
+<p>可以在设计工具中配置好参数之后点击参数下方的复制代码按钮进行复制，然后粘贴到要使用的地方即可。</p>
+<blockquote>
+<p>自动生成的代码命名空间可能和引用中定义的不一致，注意修改！</p>
+</blockquote>
+<p>复制的代码示例：</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;anim:TextLoadingControl
+   TextColor=&quot;#FFFF3300&quot;
+   FontFamily=&quot;Arial&quot;
+   FontSize=&quot;25&quot;
+   OpacityFrom=&quot;0.2&quot;
+   RotateFrom=&quot;-30&quot;
+   TranslateYFrom=&quot;-9&quot;
+   CharacterDelay=&quot;150&quot;/&gt;
+</code></pre>
 </li>
 </ol>
 <h2 id="%E9%81%AE%E7%BD%A9%E5%B1%82">遮罩层</h2>
@@ -264,9 +302,16 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 </ul>
 <h3 id="%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">使用方法</h3>
 <ol>
-<li><p>添加引用（✳此控件的命名空间和前面的不一样）</p>
+<li><p>添加引用及资源文件（✳此控件的命名空间和前面的不一样）</p>
 
 <pre class="language-Xml"><code class="language-Xml">xmlns:control=&quot;clr-namespace:IceSky.WpfLoading;assembly=IceSky.WpfLoading&quot; 
+&lt;Window.Resources&gt;
+   &lt;ResourceDictionary&gt;
+      &lt;ResourceDictionary.MergedDictionaries&gt;
+            &lt;ResourceDictionary Source=&quot;pack://application:,,,/IceSky.WpfLoading;component/Generic.xaml&quot;/&gt;
+      &lt;/ResourceDictionary.MergedDictionaries&gt;
+   &lt;/ResourceDictionary&gt;
+&lt;/Window.Resources&gt;
 </code></pre>
 </li>
 <li><p>在Xaml文件中添加控件</p>
@@ -284,7 +329,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 </li>
 <li><p>在后台中增加显示隐藏逻辑</p>
 
-<pre class="language-cs"><code class="language-cs">//普通显示，需手动关闭
+<pre class="language-csharp"><code class="language-csharp">//普通显示，需手动关闭
 maskPanel.Open();
 //关闭
 maskPanel.Close();
@@ -301,11 +346,22 @@ maskPanel.OpenWithTask(task, taskCts, 3000);
 <li>三角形和六边形支持沿边布局和网格布局</li>
 <li>支持缩放、偏移、透明度自定义参数动画</li>
 </ul>
+<p>环形布局：<br />
+<img src="../assets/images/EdgeLoading.gif" alt="EdgeLoading" /></p>
+<p>六边形网格布局：<br />
+<img src="../assets/images/GridLoading.gif" alt="GridLoading" /></p>
 <h3 id="%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">使用方法</h3>
 <ol>
-<li><p>添加引用</p>
+<li><p>添加引用及资源文件</p>
 
 <pre class="language-Xml"><code class="language-Xml">xmlns:control=&quot;clr-namespace:IceSky.WpfLoading;assembly=IceSky.WpfLoading&quot; 
+&lt;Window.Resources&gt;
+   &lt;ResourceDictionary&gt;
+      &lt;ResourceDictionary.MergedDictionaries&gt;
+            &lt;ResourceDictionary Source=&quot;pack://application:,,,/IceSky.WpfLoading;component/Generic.xaml&quot;/&gt;
+      &lt;/ResourceDictionary.MergedDictionaries&gt;
+   &lt;/ResourceDictionary&gt;
+&lt;/Window.Resources&gt;
 </code></pre>
 </li>
 <li><p>在Xaml文件中添加控件并设置元素样式，默认样式为蓝色正方形</p>

@@ -155,42 +155,34 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <p>This is a WPF control library that includes dozens of predefined loading animations, a general-purpose loading animation control, a mask overlay control, and an ItemsControl that supports customization.</p>
 <h2 id="Loading-animations">Loading animations</h2>
 <ul>
-<li>Blink</li>
-<li>Bounce</li>
-<li>Bouncing</li>
-<li>Bricks</li>
-<li>Carousel</li>
-<li>Collision</li>
-<li>Drop</li>
-<li>Elastic</li>
-<li>Expand</li>
-<li>Falling</li>
-<li>Figure8</li>
-<li>Fire</li>
-<li>Fireworks</li>
-<li>Fish</li>
-<li>Flashing</li>
-<li>Floating</li>
-<li>Gathering</li>
-<li>Hexagon</li>
-<li>HourGlass</li>
-<li>Intersect</li>
-<li>Pinball</li>
-<li>Pulse</li>
-<li>Revolution</li>
-<li>Snake</li>
-<li>Spin</li>
-<li>Stretching</li>
-<li>Swing</li>
-<li>Triangle</li>
-<li>Wave</li>
-<li>WindMill</li>
+<li>Blink, Bounce, Bouncing, Bricks, Carousel</li>
+<li>Collision, Drop, Elastic, Expand, Falling</li>
+<li>Figure8, Fire, Fireworks, Fish, Flashing</li>
+<li>Floating, Gathering, Hexagon, HourGlass, Intersect</li>
+<li>Pinball, Pulse, Revolution, Snake, Spin</li>
+<li>Stretching, Swing, Triangle, Wave, WindMill</li>
 </ul>
 <p><img src="../assets/images/WpfLoading.gif" alt="WpfLoading" /></p>
+<ul>
+<li>BlockFlow, BlockHourglass, BlockJump, BlockScale, BlockSway</li>
+<li>BlockWave, BoxShift, Charge, Circle, Cross</li>
+<li>DiamondStar, DoubleArc, DrawStar, Flame, FourArc</li>
+<li>GradientArc, HollowStar, MovingTriangle, NenoStar, PulseTriangle</li>
+<li>Quantum, Radar, RectDraw, RectDraw2, RotateSkew</li>
+<li>RotatingBall, Satellites, SimpleArc, ThreeArc, TonePillar</li>
+</ul>
+<p><img src="../assets/images/WpfAnimation.gif" alt="WpfAnimation" /></p>
 <h3 id="Basic-Usage">Basic Usage</h3>
 <ol>
-<li>Add reference namespace
+<li>Add reference namespace and resource file
 <pre class="language-Xml"><code class="language-Xml">xmlns:anim=&quot;clr-namespace:IceSky.WpfLoading.Animations;assembly=IceSky.WpfLoading&quot; 
+&lt;Window.Resources&gt;
+   &lt;ResourceDictionary&gt;
+      &lt;ResourceDictionary.MergedDictionaries&gt;
+            &lt;ResourceDictionary Source=&quot;pack://application:,,,/IceSky.WpfLoading;component/Generic.xaml&quot;/&gt;
+      &lt;/ResourceDictionary.MergedDictionaries&gt;
+   &lt;/ResourceDictionary&gt;
+&lt;/Window.Resources&gt;
 </code></pre>
 </li>
 <li>Add control in XAML file</li>
@@ -198,12 +190,12 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 
 <pre class="language-Xml"><code class="language-Xml">&lt;anim:Bounce/&gt;
 </code></pre>
-<ol start="3">
-<li>Modify configuration parameters (Optional)</li>
+<ol>
+<li>Modify configuration parameters</li>
 </ol>
 <ul>
-<li>Color</li>
-<li>Size</li>
+<li>Dot animation settings: Color, Size</li>
+<li>Shape animation settings: Fill, Stroke, StrokeThickness, (certain parameters may be invalid for different animations)</li>
 <li>AnimationSpeed：Animation speed, a double value &gt; 0, specifying the multiplier for the default speed; &gt; 1 speeds up, &lt; 1 slows down</li>
 </ul>
 <h2 id="Common-loading-contorl">Common loading contorl</h2>
@@ -226,9 +218,16 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 <img src="../assets/images/Loading5.gif" alt="Loading5" /></p>
 <h3 id="Basic-Usage">Basic Usage</h3>
 <ol>
-<li><p>Add reference namespace</p>
+<li><p>Add reference namespace and resource file</p>
 
 <pre class="language-Xml"><code class="language-Xml">xmlns:anim=&quot;clr-namespace:IceSky.WpfLoading.Animations;assembly=IceSky.WpfLoading&quot; 
+&lt;Window.Resources&gt;
+   &lt;ResourceDictionary&gt;
+      &lt;ResourceDictionary.MergedDictionaries&gt;
+            &lt;ResourceDictionary Source=&quot;pack://application:,,,/IceSky.WpfLoading;component/Generic.xaml&quot;/&gt;
+      &lt;/ResourceDictionary.MergedDictionaries&gt;
+   &lt;/ResourceDictionary&gt;
+&lt;/Window.Resources&gt;
 </code></pre>
 </li>
 <li><p>Add control in XAML file</p>
@@ -244,7 +243,46 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
   IsRingRotation=&quot;True&quot;
   DelayTime=&quot;100&quot;/&gt;
 </code></pre>
-<p><a href=""  >Control Designer</a></p>
+<p><a href="https://github.com/IceSkyDev/IceSky.WpfLoading.Sample"  target="_blank">Loading Designer</a></p>
+</li>
+</ol>
+<h2 id="TextAnimations">TextAnimations</h2>
+<ul>
+<li>Basic settings: Text, FontFamily, FontSize, Color</li>
+<li>Transform settings: Opacity, Rotation, Scale, Offset, Skew</li>
+<li>Animation settings: Duration, Delay, AutoReserve, RepeatCount</li>
+</ul>
+<p><img src="../assets/images/TextLoading.gif" alt="TextLoading" /></p>
+<h3 id="Basic-Usage">Basic Usage</h3>
+<ol>
+<li><p>Add reference namespace and resource file</p>
+
+<pre class="language-Xml"><code class="language-Xml">xmlns:anim=&quot;clr-namespace:IceSky.WpfLoading.Animations;assembly=IceSky.WpfLoading&quot; 
+&lt;Window.Resources&gt;
+   &lt;ResourceDictionary&gt;
+      &lt;ResourceDictionary.MergedDictionaries&gt;
+            &lt;ResourceDictionary Source=&quot;pack://application:,,,/IceSky.WpfLoading;component/Generic.xaml&quot;/&gt;
+      &lt;/ResourceDictionary.MergedDictionaries&gt;
+   &lt;/ResourceDictionary&gt;
+&lt;/Window.Resources&gt;
+</code></pre>
+</li>
+<li><p>Add control in XAML file</p>
+<p>You can set up the parameters in the designer, then click the 'Copy Code' button below the parameters to copy it, and paste it wherever you want to use it.</p>
+<blockquote>
+<p>The automatically generated code namespace may not match the one defined in the references, please check and modify it!</p>
+</blockquote>
+<p>Copied code example：</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;anim:TextLoadingControl
+   TextColor=&quot;#FFFF3300&quot;
+   FontFamily=&quot;Arial&quot;
+   FontSize=&quot;25&quot;
+   OpacityFrom=&quot;0.2&quot;
+   RotateFrom=&quot;-30&quot;
+   TranslateYFrom=&quot;-9&quot;
+   CharacterDelay=&quot;150&quot;/&gt;
+</code></pre>
 </li>
 </ol>
 <h2 id="Mask-Layer">Mask Layer</h2>
@@ -264,9 +302,16 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 </ul>
 <h3 id="Basic-Usage">Basic Usage</h3>
 <ol>
-<li><p>Add reference namespace（✳The namespace of this control is different from the previous）</p>
+<li><p>Add reference namespace and resource file（✳The namespace of this control is different from the previous）</p>
 
 <pre class="language-Xml"><code class="language-Xml">xmlns:control=&quot;clr-namespace:IceSky.WpfLoading;assembly=IceSky.WpfLoading&quot; 
+&lt;Window.Resources&gt;
+   &lt;ResourceDictionary&gt;
+      &lt;ResourceDictionary.MergedDictionaries&gt;
+            &lt;ResourceDictionary Source=&quot;pack://application:,,,/IceSky.WpfLoading;component/Generic.xaml&quot;/&gt;
+      &lt;/ResourceDictionary.MergedDictionaries&gt;
+   &lt;/ResourceDictionary&gt;
+&lt;/Window.Resources&gt;
 </code></pre>
 </li>
 <li><p>Add control in XAML file</p>
@@ -284,7 +329,7 @@ MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"]
 </li>
 <li><p>Add open/close logic in the .cs file</p>
 
-<pre class="language-cs"><code class="language-cs">//Normal open, needs to close manually
+<pre class="language-csharp"><code class="language-csharp">//Normal open, needs to close manually
 maskPanel.Open();
 //Close
 maskPanel.Close();
@@ -301,11 +346,22 @@ maskPanel.OpenWithTask(task, taskCts, 3000);
 <li>Triangle and hexagon support edge layout and grid layout.</li>
 <li>Supports custom parameter animations for scaling, offset, and transparency</li>
 </ul>
+<p>Circular Layout:<br />
+<img src="../assets/images/EdgeLoading.gif" alt="EdgeLoading" /></p>
+<p>Hexagon Grid Layout:<br />
+<img src="../assets/images/GridLoading.gif" alt="GridLoading" /></p>
 <h3 id="Basic-Usage">Basic Usage</h3>
 <ol>
-<li><p>Add reference namespace</p>
+<li><p>Add reference namespace and resource file</p>
 
 <pre class="language-Xml"><code class="language-Xml">xmlns:control=&quot;clr-namespace:IceSky.WpfLoading;assembly=IceSky.WpfLoading&quot; 
+&lt;Window.Resources&gt;
+   &lt;ResourceDictionary&gt;
+      &lt;ResourceDictionary.MergedDictionaries&gt;
+            &lt;ResourceDictionary Source=&quot;pack://application:,,,/IceSky.WpfLoading;component/Generic.xaml&quot;/&gt;
+      &lt;/ResourceDictionary.MergedDictionaries&gt;
+   &lt;/ResourceDictionary&gt;
+&lt;/Window.Resources&gt;
 </code></pre>
 </li>
 <li><p>Add control in the XAML file and set the style</p>
