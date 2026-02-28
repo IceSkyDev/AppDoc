@@ -17,7 +17,8 @@ The top is the audio split area, and the bottom is the audio combine area
   * Open audio file: Click the Open File button in the top toolbar to select the audio file in MP3 or WAV format
   * Audio playback: You can click the play, pause, and stop buttons in the toolbar to control it
   * Split audio: Click the mouse on the spectrogram to set the split position, and then click the orange [Split] button in the toolbar to add a split marker, and the split audio start and end time and duration will be displayed in the list below
-  * Adjust the segment: When you need to adjust, you can click the red [Clear] button on the toolbar to clear all and add them again, or you can click the delete button in the top right corner of the segmentation list item to delete a segment
+  * Adjust the segment: When you need to adjust, you can delete and re-add the split, or drag the solid line below the divider to move its position.
+  * Delete segment: You can click the red [Clear] button on the toolbar to clear all segments, or you can click the delete button in the top right corner of the segmentation list item to delete a segment
   * Save result: Click the [Save] button on the right side of the toolbar to save the split result as an MP3 file
   > The position adjustment on the spectrogram can only be clicked, not support dragged
   >

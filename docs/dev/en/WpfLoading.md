@@ -9,52 +9,43 @@ desc: A WPF loading control library that includes dozens of predefined loading a
 This is a WPF control library that includes dozens of predefined loading animations, a general-purpose loading animation control, a mask overlay control, and an ItemsControl that supports customization.
 
 ## Loading animations
-* Blink
-* Bounce
-* Bouncing
-* Bricks
-* Carousel
-* Collision
-* Drop
-* Elastic
-* Expand
-* Falling
-* Figure8
-* Fire
-* Fireworks
-* Fish
-* Flashing
-* Floating
-* Gathering
-* Hexagon
-* HourGlass
-* Intersect
-* Pinball
-* Pulse
-* Revolution
-* Snake
-* Spin
-* Stretching
-* Swing
-* Triangle
-* Wave
-* WindMill
+* Blink, Bounce, Bouncing, Bricks, Carousel
+* Collision, Drop, Elastic, Expand, Falling
+* Figure8, Fire, Fireworks, Fish, Flashing
+* Floating, Gathering, Hexagon, HourGlass, Intersect
+* Pinball, Pulse, Revolution, Snake, Spin
+* Stretching, Swing, Triangle, Wave, WindMill
 
 ![WpfLoading](../assets/images/WpfLoading.gif)
 
+* BlockFlow, BlockHourglass, BlockJump, BlockScale, BlockSway
+* BlockWave, BoxShift, Charge, Circle, Cross
+* DiamondStar, DoubleArc, DrawStar, Flame, FourArc
+* GradientArc, HollowStar, MovingTriangle, NenoStar, PulseTriangle
+* Quantum, Radar, RectDraw, RectDraw2, RotateSkew
+* RotatingBall, Satellites, SimpleArc, ThreeArc, TonePillar
+
+![WpfAnimation](../assets/images/WpfAnimation.gif)
 
 ### Basic Usage
-1. Add reference namespace
+1. Add reference namespace and resource file
    ```Xml
    xmlns:anim="clr-namespace:IceSky.WpfLoading.Animations;assembly=IceSky.WpfLoading" 
+   <Window.Resources>
+      <ResourceDictionary>
+         <ResourceDictionary.MergedDictionaries>
+               <ResourceDictionary Source="pack://application:,,,/IceSky.WpfLoading;component/Generic.xaml"/>
+         </ResourceDictionary.MergedDictionaries>
+      </ResourceDictionary>
+   </Window.Resources>
    ```
 2. Add control in XAML file
   ```Xml
   <anim:Bounce/>
   ```
-3. Modify configuration parameters (Optional)
-  * Color
-  * Size
+1. Modify configuration parameters
+  * Dot animation settings: Color, Size
+  * Shape animation settings: Fill, Stroke, StrokeThickness, (certain parameters may be invalid for different animations)
   * AnimationSpeed：Animation speed, a double value > 0, specifying the multiplier for the default speed; > 1 speeds up, < 1 slows down
 
 
@@ -82,9 +73,16 @@ Transform settings:
 
 ### Basic Usage
 
-1. Add reference namespace
+1. Add reference namespace and resource file
    ```Xml
    xmlns:anim="clr-namespace:IceSky.WpfLoading.Animations;assembly=IceSky.WpfLoading" 
+   <Window.Resources>
+      <ResourceDictionary>
+         <ResourceDictionary.MergedDictionaries>
+               <ResourceDictionary Source="pack://application:,,,/IceSky.WpfLoading;component/Generic.xaml"/>
+         </ResourceDictionary.MergedDictionaries>
+      </ResourceDictionary>
+   </Window.Resources>
    ```
 2. Add control in XAML file
    
@@ -99,7 +97,44 @@ Transform settings:
 	 IsRingRotation="True"
 	 DelayTime="100"/>
    ```
-   [Control Designer]()
+   [Loading Designer](https://github.com/IceSkyDev/IceSky.WpfLoading.Sample)
+
+   
+## TextAnimations
+* Basic settings: Text, FontFamily, FontSize, Color
+* Transform settings: Opacity, Rotation, Scale, Offset, Skew
+* Animation settings: Duration, Delay, AutoReserve, RepeatCount
+  
+![TextLoading](../assets/images/TextLoading.gif)
+
+### Basic Usage
+1. Add reference namespace and resource file
+   ```Xml
+   xmlns:anim="clr-namespace:IceSky.WpfLoading.Animations;assembly=IceSky.WpfLoading" 
+   <Window.Resources>
+      <ResourceDictionary>
+         <ResourceDictionary.MergedDictionaries>
+               <ResourceDictionary Source="pack://application:,,,/IceSky.WpfLoading;component/Generic.xaml"/>
+         </ResourceDictionary.MergedDictionaries>
+      </ResourceDictionary>
+   </Window.Resources>
+   ```
+2. Add control in XAML file
+
+   You can set up the parameters in the designer, then click the 'Copy Code' button below the parameters to copy it, and paste it wherever you want to use it.
+    > The automatically generated code namespace may not match the one defined in the references, please check and modify it!
+  
+   Copied code example：
+   ```xml
+   <anim:TextLoadingControl
+      TextColor="#FFFF3300"
+      FontFamily="Arial"
+      FontSize="25"
+      OpacityFrom="0.2"
+      RotateFrom="-30"
+      TranslateYFrom="-9"
+      CharacterDelay="150"/>
+   ```
 
 ## Mask Layer
 * Options
@@ -113,9 +148,16 @@ Transform settings:
 
 ### Basic Usage
 
-1. Add reference namespace（✳The namespace of this control is different from the previous）
+1. Add reference namespace and resource file（✳The namespace of this control is different from the previous）
    ```Xml
    xmlns:control="clr-namespace:IceSky.WpfLoading;assembly=IceSky.WpfLoading" 
+   <Window.Resources>
+      <ResourceDictionary>
+         <ResourceDictionary.MergedDictionaries>
+               <ResourceDictionary Source="pack://application:,,,/IceSky.WpfLoading;component/Generic.xaml"/>
+         </ResourceDictionary.MergedDictionaries>
+      </ResourceDictionary>
+   </Window.Resources>
    ```
 2. Add control in XAML file
    ```Xml
@@ -129,7 +171,7 @@ Transform settings:
    > TargetBlurElement: the container that contains content to be blurred
 
 3. Add open/close logic in the .cs file
-   ``` cs
+   ```csharp
    //Normal open, needs to close manually
    maskPanel.Open();
    //Close
@@ -145,11 +187,25 @@ Transform settings:
 * Triangle and hexagon support edge layout and grid layout.
 * Supports custom parameter animations for scaling, offset, and transparency
 
+Circular Layout:
+![EdgeLoading](../assets/images/EdgeLoading.gif)
+
+Hexagon Grid Layout:
+![GridLoading](../assets/images/GridLoading.gif)
+
+
 ### Basic Usage
 
-1. Add reference namespace
+1. Add reference namespace and resource file
    ```Xml
    xmlns:control="clr-namespace:IceSky.WpfLoading;assembly=IceSky.WpfLoading" 
+   <Window.Resources>
+      <ResourceDictionary>
+         <ResourceDictionary.MergedDictionaries>
+               <ResourceDictionary Source="pack://application:,,,/IceSky.WpfLoading;component/Generic.xaml"/>
+         </ResourceDictionary.MergedDictionaries>
+      </ResourceDictionary>
+   </Window.Resources>
    ```
 
 2. Add control in the XAML file and set the style
