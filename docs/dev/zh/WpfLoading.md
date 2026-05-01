@@ -8,6 +8,9 @@ desc: WPF Loading控件库，包含数十个已经定义好的加载动画、一
 ## 介绍
 这是一个WPF Loading控件库，其中包含数十个已经定义好的加载动画、一个通用的加载动画控件、一个遮罩层控件以及一个支持自定义的ItemsControl控件
 
+
+**[点击查看示例代码](https://github.com/IceSkyDev/IceSky.WpfLoading.Sample)**
+
 ## 加载动画
 * Blink、Bounce、Bouncing、Bricks、Carousel
 * Collision、Drop、Elastic、Expand、Falling

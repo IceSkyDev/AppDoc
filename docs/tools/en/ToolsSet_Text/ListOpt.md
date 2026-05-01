@@ -26,8 +26,10 @@ Provides a variety of operations on text list, include sort, find, pad, take, an
     * The character judgment starts from the starting position, and you can specify whether the judgment method is equal or unequal
   * Below these is the operation of no parameter or one list parameter, and the list parameter can be entered in the text box below
     * Distinct: Removes duplicates from the list
+    * Count: counts the number of items in the list
+    * Reverse: Reverse character order of each item in the list
+    * ReverseWord: Reverse words order of each item in the list
     * Union: Merge two lists
     * Intersect: Gets the intersection of two lists, i.e., items that exist in both lists
     * Except: Gets items that exist in the first list and do not exist in the second list
-    * Count: counts the number of items in the list
-    * Reverse: Reverse character order of each item in the list
+    * OrderBy：Reorder the items in the first list according to the order in the second list

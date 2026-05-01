@@ -5,3 +5,9 @@ items:
   file: WpfMonaco.md
 - label: WpfLoading
   file: WpfLoading.md
+- label: WpfAnimation
+  file: WpfAnimation.md
+- label: Extensions
+  file: Extensions.md
+- label: WpfConverters
+  file: WpfConverters.md

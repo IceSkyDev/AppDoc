@@ -8,6 +8,8 @@ desc: A WPF loading control library that includes dozens of predefined loading a
 ## Introduce
 This is a WPF control library that includes dozens of predefined loading animations, a general-purpose loading animation control, a mask overlay control, and an ItemsControl that supports customization.
 
+**You can view samples at the following path: [IceSky.WpfLoading.Sample](https://github.com/IceSkyDev/IceSky.WpfLoading.Sample)**
+
 ## Loading animations
 * Blink, Bounce, Bouncing, Bricks, Carousel
 * Collision, Drop, Elastic, Expand, Falling
