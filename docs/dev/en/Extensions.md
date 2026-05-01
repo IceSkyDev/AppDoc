@@ -1,5 +1,5 @@
 ---
-title: WpfMonaco
+title: C# & WPF Extensions
 class: heading_no_counter
 keywords: Wpf, Extensions, byte, number, string, c#
 desc: General extension methods for C# and WPF, including various types such as Number, Byte, String, Collection, etc.
