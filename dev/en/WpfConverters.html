@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+
+<html lang="en"  class=" heading_no_counter ">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="Wpf, Value converter, bool, expression, method">
+    
+    
+    <meta name="description" content="A ValueConverter library used in WPF, includes value converters for various types such as Bool, Number, String, Object, etc.">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/AppDoc/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/AppDoc/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/AppDoc/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/search/style.css" type="text/css"/>
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/bootstrap.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/animate.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>WpfConverters - IceSky App</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/AppDoc/en/">
+                
+                    <img class="site_logo" src="/AppDoc/static/image/logo.png" alt="IceSky Logo">
+                
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/AppDoc/edu/en/">Edu Apps</a></li>
+<li class=""><a  href="/AppDoc/tools/en/">Tools</a></li>
+<li class=""><a  href="/AppDoc/game/en/">Games</a></li>
+<li class="active"><a  href="/AppDoc/dev/en/">Development</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class="sub_items "><a  >Language: English</a><ul><li class="active"><a  href="/AppDoc/dev/en/WpfConverters.html">English</a></li>
+<li class=""><a  href="/AppDoc/dev/zh/WpfConverters.html">中文 简体</a></li>
+</ul></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">Search</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">Keywords separated by space</span>
+                                <span id="search_loading_hint">Loading, wait please ...</span>
+                                <span id="search_download_err_hint">Download error, please check network and refresh again</span>
+                                <span id="search_other_docs_result_hint">Result from other docs</span>
+                                <span id="search_curr_doc_result_hint">Result from current doc</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/dev/en/index.html"><span class="label">General Information</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/dev/en/WpfMonaco.html"><span class="label">WpfMonaco</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/dev/en/WpfLoading.html"><span class="label">WpfLoading</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/dev/en/WpfAnimation.html"><span class="label">WpfAnimation</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/dev/en/Extensions.html"><span class="label">Extensions</span><span class=""></span></a></li>
+<li class="active with_link"><a href="/AppDoc/dev/en/WpfConverters.html"><span class="label">WpfConverters</span><span class=""></span></a></li>
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>WpfConverters</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <h2 id="Introduce">Introduce</h2>
+<p>A ValueConverter library used in WPF, includes value converters for various types such as Bool, Number, String, Object, etc.</p>
+<p><strong>You can view samples at the following path: <a href="https://github.com/IceSkyDev/IceSky.WpfConverters.Sample"  target="_blank">IceSky.WpfConverters.Sample</a></strong></p>
+<h2 id="Basic-Usage">Basic Usage</h2>
+<ul>
+<li><p>Add reference</p>
+
+<pre class="language-shell"><code class="language-shell">dotnet add package IceSky.WpfConverters
+</code></pre>
+</li>
+<li><p>Add namespace</p>
+
+<pre class="language-xml"><code class="language-xml">xmlns:conv=&quot;clr-namespace:IceSky.WpfConverters.Converters;assembly=IceSky.WpfConverters&quot;
+</code></pre>
+</li>
+<li><p>Common converters have already been defined in the resource file and can be referenced in Resources in the following way</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;ResourceDictionary.MergedDictionaries&gt;
+    &lt;ResourceDictionary Source=&quot;pack://application:,,,/IceSky.WpfConverters;component/Converters.  xaml&quot;/&gt;
+&lt;/ResourceDictionary.MergedDictionaries&gt;
+</code></pre>
+</li>
+</ul>
+<h3 id="Number-Converter">Number Converter</h3>
+<ul>
+<li>NegatvieNumberConverter: Perform negation operation on numeric parameters
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding Text, Converter={StaticResource NegatvieNumberConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>RoundConverter: Perform rounding operations on numeric parameters, allowing the specification of rounding mode and decimal places
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding Text, Converter={StaticResource Round2DecimalsConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>NumberToBoolConverter: 0 is false, not 0 is true
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding Text, Converter={StaticResource NumberToBoolConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>NumberToRatioIntConverter: Multiply numeric parameters by a ratio and round off, you can specify the scale ratio
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding Text, Converter={StaticResource NumberToDoubleIntConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>RangeMapConverter: Map a value from one range to another, specifying the source range and the target range
+<pre class="language-xml"><code class="language-xml">&lt;Border Width=&quot;{Binding Value Converter={conv:RangeMapConverter FromMin=0,FromMax=100,ToMin=100,ToMax=300}}&quot;&gt;
+</code></pre>
+</li>
+<li>PercentConverter: Map the numerical value from a specified range to 0~100, allowing the minimum and maximum values of the range to be specified
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding Text, Converter={conv:PercentConverter Maximum=1000},StringFormat={}{0} %}&quot;/&gt;
+</code></pre>
+</li>
+<li>InRangeConverter: Determine whether a value is within the [Min, Max] range, and you can specify whether to include the start or end value
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding Text, Converter={conv:InRangeConverter Min=-100,Max=100}}&quot;/&gt;
+&lt;!--Reversed--&gt;
+&lt;TextBlock Text=&quot;{Binding Text, Converter={conv:InRangeConverter Min=-100,Max=100,IsReversed=True}}&quot;/&gt;
+&lt;!--Exclude Min--&gt;
+&lt;TextBlock Text=&quot;{Binding Text, Converter={conv:InRangeConverter Min=-100,Max=100,IncludeMin=False}}&quot;/&gt;
+</code></pre>
+</li>
+<li>FileSizeConverter: Convert an integer to the file's byte size
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding Text, Converter={StaticResource FileSizeConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>IntToStringConverter: Split the string by the specified separator, return the string at the specified integer index. You can specify the separator, whether to trim whitespace, and the default value
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding Value,Converter={conv:IntToStringConverter Source='Unknow,Active,Inactive',Default=Out of range}}&quot; /&gt;
+</code></pre>
+</li>
+<li>InterpolateNumberConverter: Specify three of the start value, end value, step value, and quantity to automatically generate a list of interpolate. Setting ClampToBounds=True can restrict the values within the specified range
+<pre class="language-xml"><code class="language-xml">&lt;!--Result is 0,25,50,75,100--&gt;
+&lt;ListBox ItemsSource=&quot;{Binding Converter={conv:InterpolateNumberConverter Start=0, End=100, Count=5}}&quot;/&gt;
+&lt;!--Result is 10,15,20,25,30--&gt;
+&lt;ListBox ItemsSource=&quot;{Binding Converter={conv:InterpolateNumberConverter Start=10, Step=5, Count=5}}&quot;/&gt;
+&lt;!--Result is 0,-2.8,-5.6,-8.4,-10--&gt;
+&lt;ListBox ItemsSource=&quot;{Binding Converter={conv:InterpolateNumberConverter Start=0, End=-10, Step=-2.8, ClampToBounds=True&quot;/&gt;
+</code></pre>
+</li>
+</ul>
+<h3 id="Bool-Converter">Bool Converter</h3>
+<ul>
+<li>InvertBoolConverter: Invert the bool parameter
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding IsChecked,Converter={conv:InvertBoolConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>IsNullOrEmptyConverter: Determine whether the parameter is empty. Returns true by default when it is empty. You can set IsInverted=True to invert the result
+<pre class="language-xml"><code class="language-xml">&lt;CheckBox IsChecked=&quot;{Binding Text,Converter={StaticResource IsNullOrEmptyConverter}}&quot;/&gt;
+&lt;!--Inverted--&gt;
+&lt;CheckBox IsChecked=&quot;{Binding Text,Converter={StaticResource InvertedNullOrEmptyConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>BoolToVisibleConverter: Default true = Visible, false = Collapsed. You can use UseHidden=True to set false = Hidden, and set IsInverted=True to invert the result
+<pre class="language-xml"><code class="language-xml">&lt;Border Visibility=&quot;{Binding IsChecked, Converter={StaticResource BoolToVisibleConverter}}&quot;/&gt;
+&lt;!--Inverted--&gt;
+&lt;Border Visibility=&quot;{Binding IsChecked, Converter={StaticResource InvertBoolToVisibleConverter}}&quot;/&gt;
+&lt;!--False to Hidden--&gt;
+&lt;Border Visibility=&quot;{Binding IsChecked, Converter={StaticResource FalseToHiddenConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>BoolToObjectConverter: Convert a bool parameter to any object, allowing you to set the TrueValue and FalseValue
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding IsChecked,Converter={conv:BoolToObjectConverter TrueValue=Man, FalseValue=Woman}}&quot;/&gt;
+&lt;!--With null value--&gt;
+&lt;TextBlock Text=&quot;{Binding IsChecked,Converter={conv:BoolToObjectConverter TrueValue=运行, FalseValue=停止, NullValue=未知}}&quot;/&gt;
+&lt;!--BoolToColor, True is Green, False is Red--&gt;
+&lt;Border Background=&quot;{Binding IsChecked Converter={StaticResource BoolToColorConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>CompareToConverter: Compare the parameter and the target value using the specified operator, return the comparison result, and you can set IsInverted=True to reverse the result. Operator include: Equal, NotEqual, Greater, Less, GreaterOrEqual, LessOrEqual, In, NotIn, StartsWith, EndsWith, Contains
+<pre class="language-xml"><code class="language-xml">&lt;!-- &gt;10 is true--&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:CompareToConverter TargetValue=10,Operator=Greater}}&quot;/&gt;
+&lt;!--Inverted, &gt;10 is false--&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:CompareToConverter TargetValue=10,Operator=Greater,IsInverted=True}}&quot;/&gt;
+&lt;!-- StartsWith 'a' is true--&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:CompareToConverter TargetValue=a,Operator=StartsWith}}&quot;/&gt;
+&lt;!--Contains 'a' or 'A' is true--&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:CompareToConverter TargetValue=a,Operator=Contains,IgnoreCase=True}}&quot;/&gt;
+&lt;!--'12' or 'ab' or 'at' is true--&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:CompareToConverter TargetValue='12, ab, at',Operator=In}}&quot;/&gt;
+</code></pre>
+</li>
+<li>MultiLogicConverter: By default, multiple values are evaluated using AND. You can set UseOr=True to evaluate using OR.
+<pre class="language-xml"><code class="language-xml">&lt;Button&gt;
+  &lt;Button.IsEnabled&gt;
+    &lt;MultiBinding Converter=&quot;{conv:MultiLogicConverter}&quot;&gt;
+      &lt;Binding Path=&quot;IsChecked&quot; ElementName=&quot;Chk1&quot;/&gt;
+      &lt;Binding Path=&quot;IsChecked&quot; ElementName=&quot;Chk2&quot;/&gt;
+      &lt;Binding Path=&quot;IsChecked&quot; ElementName=&quot;Chk3&quot;/&gt;
+    &lt;/MultiBinding&gt;
+  &lt;/Button.IsEnabled&gt;
+&lt;/Button&gt;
+&lt;!--Use or--&gt;
+&lt;MultiBinding Converter=&quot;{conv:MultiLogicConverter UseOr=True}&quot;&gt;
+ ...
+&lt;/MultiBinding&gt;
+</code></pre>
+</li>
+</ul>
+<h3 id="String-Converter">String Converter</h3>
+<ul>
+<li>DateFormatConverter: Can convert DateTime, DateTimeOffset, TimeSpan to string in a specified format
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding Date, Converter={StaticResource StandardDateTimeConverter}}&quot;/&gt;
+&lt;!--Universal format--&gt;
+&lt;TextBlock Text=&quot;{Binding Date, Converter={StaticResource StringFormatConverter Format={}{0:u}}}&quot;/&gt;
+&lt;!--Chinese format--&gt;
+&lt;TextBlock Text=&quot;{Binding Date, Converter={StaticResource StringFormatConverter Format={}{0:yyyy年MM月dd日}}}&quot;/&gt;
+</code></pre>
+</li>
+<li>StringFormatConverter: Can convert string in a specified format
+<pre class="language-xml"><code class="language-xml">&lt;!--Right align--&gt;
+&lt;TextBlock Text=&quot;{Binding Text, Converter={conv:StringFormatConverter Format='|{0,10}|'}}&quot;/&gt;
+</code></pre>
+</li>
+<li>StringCaseConverter: Defaults to lowercase, can set ToUpper=True to convert to uppercase
+<pre class="language-xml"><code class="language-xml">&lt;!--UpperCase--&gt;
+&lt;TextBlock Text=&quot;{Binding Text, Converter={StaticResource UpperCaseConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>TextTruncateConverter: Truncate the string to the specified length
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding Text, Converter={StaticResource Max20LengthConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>MaskFormatterConverter: Mask a specified position of the string
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding Text, Converter={StaticResource StringMaskConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>StringToListConverter: Convert a string into a list using a specified separator
+<pre class="language-xml"><code class="language-xml">&lt;ComboBox ItemsSource=&quot;{Binding Text, Converter={conv:StringToListConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>StringToDictionaryConverter: Convert a string to a dictionary using the specified separator
+<pre class="language-xml"><code class="language-xml">&lt;ComboBox ItemsSource=&quot;{Binding Text, Converter={conv:StringToDictionaryConverter}}&quot; DisplayMemberPath=&quot;Key&quot; SelectedValuePath=&quot;Value&quot;/&gt;
+</code></pre>
+</li>
+<li>MultiStringConcatConverter: Join multiple parameters using a specified separator
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock&gt;
+  &lt;TextBlock.Text&gt;
+    &lt;MultiBinding Converter=&quot;{conv:MultiStringConcatConverter Separator=', '}&quot;&gt;
+      &lt;Binding ElementName=&quot;txtStr1&quot; Path=&quot;Text&quot;/&gt;
+      &lt;Binding ElementName=&quot;txtMaskStr&quot; Path=&quot;Text&quot;/&gt;
+    &lt;/MultiBinding&gt;
+  &lt;/TextBlock.Text&gt;
+&lt;/TextBlock&gt;
+</code></pre>
+</li>
+</ul>
+<h3 id="Object-Converter">Object Converter</h3>
+<ul>
+<li>NullOrEmptyToObjectConverter: Convert empty value to a specified object, you can set IsInverted=True to reverse the judgment
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:NullOrEmptyToObjectConverter EmptyValue=is empty}}&quot; 
+         Foreground=&quot;{Binding Text,Converter={conv:NullOrEmptyToObjectConverter EmptyValue=Red, NonEmptyValue=Green}}&quot;
+         FontWeight=&quot;{Binding Text,Converter={conv:NullOrEmptyToObjectConverter EmptyValue=Bold,NonEmptyValue=Normal}}&quot;/&gt;
+</code></pre>
+</li>
+<li>NullOrEmptyToInvisibleConverter: By default, empty value are converted to Collapsed. You can use UseHidden=True to set empty value to Hidden, and set IsInverted=True to invert the judgment
+<pre class="language-xml"><code class="language-xml">&lt;Button Visibility=&quot;{Binding Text, Converter={StaticResource NullOrEmptyToHiddenConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>InvertVisibilityConverter: By default, Visible is converted to Collapsed. You can use UseHidden=True to set it to Hidden
+<pre class="language-xml"><code class="language-xml">&lt;Border Visibility=&quot;{Binding Visibility,Converter={StaticResource InvertVisibilityConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>EqualsToBoolConverter: Use Equals to compare with the target value; if equal, it is true. You can set IsInverted=True to invert the judgment
+<pre class="language-xml"><code class="language-xml">&lt;!--Text=0 is true--&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={StaticResource IsZeroConverter}}&quot;/&gt;
+&lt;!--SelectedIndex!=2 is true--&gt;
+&lt;TextBlock Text=&quot;{Binding SelectedIndex,Converter={conv:EqualsToBoolConverter TargetValue={t:Int 2},IsInverted=True}}&quot;/&gt;
+</code></pre>
+</li>
+<li>SwitchConverter: You can use dictionary types to set branch conditions for matching, supporting IgnoreCase
+<pre class="language-xml"><code class="language-xml">&lt;!-- SwitchConverter use Cases from another converter --&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:SwitchConverter Cases={conv:ConverterProperty FromConverter={conv:StringToDictionaryConverter Source='a=1,b=2,c=3'}},IgnoreCase=True,DefaultValue=0}}&quot;/&gt;
+</code></pre>
+</li>
+<li>WhenThenConverter: You can define conditions in the Xaml file and return result based on the conditions
+<pre class="language-xml"><code class="language-xml">&lt;!--Resource--&gt;
+&lt;conv:WhenThenConverter x:Key=&quot;StatusSwitchConverter&quot; DefaultValue=&quot;未知状态&quot;&gt;
+  &lt;conv:WhenThenConverter.Cases&gt;
+    &lt;conv:SwitchCase When=&quot;Active&quot; Then=&quot;激活&quot;/&gt;
+    &lt;conv:SwitchCase When=&quot;Inactive&quot; Then=&quot;未激活&quot;/&gt;
+  &lt;/conv:WhenThenConverter.Cases&gt;
+&lt;/conv:WhenThenConverter&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={StaticResource StatusSwitchConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>StringMappingConverter: Map by string separation, the conversion result is a string
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:StringMappingConverter MappingString='1=⏳,2=✅,3=🚚,4=📦,5=❌', DefaultValue=-}}&quot;/&gt;
+</code></pre>
+</li>
+<li>IndexToObjectConverter: Convert the specified index in the object list
+<pre class="language-xml"><code class="language-xml">&lt;!--Define list in resource--&gt;
+&lt;x:Array Type=&quot;sys:String&quot; x:Key=&quot;StringSource&quot;&gt;
+  &lt;sys:String&gt;first&lt;/sys:String&gt;
+  &lt;sys:String&gt;second&lt;/sys:String&gt;
+  &lt;sys:String&gt;third&lt;/sys:String&gt;
+&lt;/x:Array&gt;
+&lt;TextBlock Text=&quot;{Binding SelectedIndex,Converter={conv:IndexToObjectConverter OptionList={StaticResource StringSource},DefaultValue=-}}&quot;/&gt;
+</code></pre>
+</li>
+<li>TypeCastConverter: Convert the parameter to the target type, and you can specify a default value if the conversion fails
+<pre class="language-xml"><code class="language-xml">&lt;conv:TypeCastConverter x:Key=&quot;tc&quot; TargetType=&quot;sys:Int16&quot; DefaultValue=&quot;{t:Int 2}&quot;/&gt;
+</code></pre>
+</li>
+<li>EnumToListConverter: By default, the enum name is used as the list value. You can use UseDescription=True to specify using the description as the list value, and use ExcludeValue to specify the enum values to be excluded. Multiple values can be separated by ','
+<pre class="language-xml"><code class="language-xml">&lt;ComboBox ItemsSource=&quot;{Binding Source={x:Type local:TestEnum}, Converter={conv:EnumToListConverter UseDescription=True, ExcludeValue='0,2'}}&quot;/&gt;
+</code></pre>
+</li>
+<li>EnumToDictionaryConverter: The dictionary's key is the value of the enum. By default, the enum name is used as the dictionary's value. You can use UseDescription=True to specify using the description as the dictionary's value, and use ExcludeValue to specify enum values to exclude, with multiple values separated by ','
+<pre class="language-xml"><code class="language-xml">&lt;ComboBox ItemsSource=&quot;{Binding Source={x:Type local:TestEnum}, Converter={conv:EnumToDictionaryConverter UseDescription=True}}&quot; DisplayMemberPath=&quot;Value&quot; SelectedValuePath=&quot;Key&quot;/&gt;
+</code></pre>
+</li>
+</ul>
+<h3 id="Color-Converter">Color Converter</h3>
+<ul>
+<li>ColorAutoConverter: Supports mutual conversion among String, Color, and Brush
+<pre class="language-xml"><code class="language-xml">&lt;Border Background=&quot;{Binding Text, Converter={StaticResource ColorAutoConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>ColorToTupleConverter: Supports RGB and HSL modes, default is RGB mode, can set ToHsl=True to specify HSL mode
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding Text,Converter={StaticResource Color2RgbConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>ValueToRangeColorConverter: You can convert numerical values proportionally to colors within a specified range. You can set ToHsl=True to specify HSL mode. The default is: 0~100 corresponds to red to green
+<pre class="language-xml"><code class="language-xml">&lt;Border Background=&quot;{Binding Value, Converter={StaticResource DefaultValueToRangeRgbConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>BrightnessConverter: Adjust the brightness of the color according to the specified factor, with the default factor being 0.5
+<pre class="language-xml"><code class="language-xml">&lt;Border Background=&quot;{Binding Text, Converter={conv:BrightnessConverter Factor=0.2}}&quot;/&gt;
+</code></pre>
+</li>
+<li>InterpolateColorConverter: Automatically generate a list of interpolate colors by specifying the starting color, ending color, and quantity. The default is RGB mode, and you can set UseHsl=True to specify HSL mode
+<pre class="language-xml"><code class="language-xml">&lt;!--RGB mode--&gt;
+&lt;ItemsControl ItemsSource=&quot;{Binding Converter={conv:InterpolateColorConverter StartValue=Red,EndValue=Green,Count=10}}&quot;/&gt;
+&lt;!--HSL mode--&gt;
+&lt;ItemsControl ItemsSource=&quot;{Binding Converter={conv:InterpolateColorConverter StartValue=Blue,EndValue=Orange,Count=10,UseHsl=True}}&quot;&gt;
+</code></pre>
+</li>
+<li>ValuesToColorConverter: Convert three or four values to a color, the fourth value represents opacity, default is RGB mode, can set ToHsl=True to specify HSL mode
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock&gt;
+  &lt;TextBlock.Text&gt;
+    &lt;MultiBinding Converter=&quot;{conv:ValuesToColorConverter IsHsl=True}&quot;&gt;
+      &lt;Binding ElementName=&quot;sldH&quot; Path=&quot;Value&quot;/&gt;
+      &lt;Binding ElementName=&quot;sldS&quot; Path=&quot;Value&quot;/&gt;
+      &lt;Binding ElementName=&quot;sldL&quot; Path=&quot;Value&quot;/&gt;
+      &lt;Binding ElementName=&quot;sldA&quot; Path=&quot;Value&quot;/&gt;
+    &lt;/MultiBinding&gt;
+  &lt;/TextBlock.Text&gt;
+&lt;/TextBlock&gt;
+</code></pre>
+</li>
+</ul>
+<h3 id="Expression-Converter">Expression Converter</h3>
+<p>Using '#' as a variable placeholder, string parameters can be placed in single quotes, and the supported operations include:</p>
+<ul>
+<li>Arithmetic operations: supports +, -, ×, ÷, % (Mod) operations
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:ExpressionConverter Formula='#+2'}}&quot;/&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:ExpressionConverter Formula='#/4'}}&quot;/&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:ExpressionConverter Formula='#%5'}}&quot;&gt;
+</code></pre>
+</li>
+<li>Logic operations: Supports And, Or, Not operations
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding IsChecked,Converter={conv:ExpressionConverter Formula=# and true}}&quot;/&gt;
+&lt;TextBlock Text=&quot;{Binding IsChecked,Converter={conv:ExpressionConverter Formula=# or false}}&quot;/&gt;
+&lt;TextBlock Text=&quot;{Binding IsChecked,Converter={conv:ExpressionConverter Formula=not #}}&quot;&gt;
+&lt;TextBlock Text=&quot;{Binding IsChecked,Converter={conv:ExpressionConverter Formula='iif(#,\'yes\',\'no\')'}}&quot;&gt;
+</code></pre>
+</li>
+<li>Comparison operations: Support &gt;, &lt;, &gt;=, &lt;=, &lt;&gt;, =. &gt; and &lt; need to be escaped as &gt; and &lt; in XAML
+<pre class="language-xml"><code class="language-xml">&lt;!-- &gt;2 --&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:ExpressionConverter Formula=#&gt;2}}&quot;/&gt;
+&lt;!-- &lt;=3 --&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:ExpressionConverter Formula='# &amp;lt;=3'}}&quot;/&gt;
+&lt;!-- &lt;&gt;5 --&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:ExpressionConverter Formula=# &amp;lt;&amp;gt;5}}&quot;/&gt;
+&lt;!-- &gt;=60 &amp;&amp; &lt;=100 --&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:ExpressionConverter Formula='# &amp;gt;= 60 AND # &amp;lt;= 100'}}&quot;/&gt;
+</code></pre>
+</li>
+<li>String operations: Supports methods such as Len(expression), Trim(expression), Substring(expression, start, length), and IIF(expression, truevalue, falsevalue)
+<pre class="language-xml"><code class="language-xml">&lt;!-- Len --&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:ExpressionConverter Formula='len(\'#\')'}}&quot;/&gt;
+&lt;!-- Trim --&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:ExpressionConverter Formula='trim(\'#\')'}}&quot;/&gt;
+&lt;!-- Concat --&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:ExpressionConverter Formula='#+\'abc\''}}&quot;/&gt;
+&lt;!-- Substring --&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:ExpressionConverter Formula='substring(\'#\',2,3)'}}&quot;/&gt;
+&lt;!-- IIF --&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:ExpressionConverter Formula='iif(#&gt;5,\'是\', \'否\')'}}&quot;/&gt;
+</code></pre>
+</li>
+</ul>
+<h3 id="Method-Converter">Method Converter</h3>
+<p>You can use instance methods, static methods, or extension methods for conversion. You can use ParameterStr to specify method parameters, separate multiple parameters with ',', and set IgnoreCase=True to make the method name case-insensitive.</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;!-- ToUpper --&gt;
+&lt;TextBlock Text=&quot;{Binding Text, Converter={conv:MethodConverter MethodName=ToUpper}}&quot;/&gt;
+&lt;!-- Replace --&gt;
+&lt;TextBlock Text=&quot;{Binding Text, Converter={conv:MethodConverter MethodName=Replace,ParameterStr='a,b'}}&quot;/&gt;
+&lt;!-- Static method: Math.Abs --&gt;
+&lt;TextBlock Text=&quot;{Binding Text, Converter={conv:MethodConverter TargetType={x:Type sys:Math}, MethodName=abs, IgnoreCase=True}}&quot;/&gt;
+&lt;!-- Custom string extension method: ExtractDigits --&gt;
+&lt;TextBlock Text=&quot;{Binding Text, Converter={conv:MethodConverter TargetType={x:Type ext:StringExtensions},MethodName=ExtractDigits}}&quot;/&gt;
+</code></pre>
+<h3 id="Chain-Mode">Chain Mode</h3>
+<p>All converters in the library support chained conversion, and the FromConverter parameter can specify using another converter as input</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;!-- Triple rounding and to currency --&gt;
+&lt;TextBlock Text=&quot;{Binding Text, Converter={conv:StringFormatConverter Format={}{0:C}, FromConverter={conv:NumberToRatioIntConverter Ratio=3}}}&quot;/&gt;
+&lt;!-- SwitchConverter use Cases from another converter --&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:SwitchConverter Cases={conv:ConverterProperty FromConverter={conv:StringToDictionaryConverter Source='1=⏳,2=✅,3=🚚,4=📦,5=❌'}}}}&quot;/&gt;
+&lt;!-- Calculate the sin value after convert the angle to radians --&gt;
+&lt;TextBlock Text=&quot;{Binding Value, Converter={conv:MethodConverter TargetType={x:Type sys:Math},MethodName=Sin, FromConverter={conv:MethodConverter TargetType={x:Type ext:NumberExtensions},MethodName=ToRadians}}}&quot;/&gt;
+</code></pre>
+<h3 id="Type-Parameter-Markup-Extension">Type Parameter Markup Extension</h3>
+<p>This library contains type markup extensions for basic data types, which can serve as shorthand for writing primitive type values in XAML, including basic numeric types, Char, String, Bool, Date, Time, DateTime, TimeSpan, DateTimeOffset, Guid, Enum, EnumValues, Point, Size, Rect, Vector, Color, HSLColor, Brush, StringList, IntList, DoubleList, you need to add namespace when using it:</p>
+
+<pre class="language-xml"><code class="language-xml">xmlns:t=&quot;clr-namespace:IceSky.WpfConverters;assembly=IceSky.WpfConverters&quot;
+</code></pre>
+<ul>
+<li>Usage example
+<pre class="language-xml"><code class="language-xml">&lt;Slider Value=&quot;{t:Double 5}&quot;/&gt;
+&lt;TextBlock Text=&quot;{Binding Source={t:Enum local:TestEnum,Option1}}&quot;/&gt;
+&lt;ComboBox ItemsSource=&quot;{t:EnumValues local:TestEnum}&quot;/&gt;
+&lt;ComboBox ItemsSource=&quot;{t:IntList '1,2,3'}&quot;/&gt;
+&lt;TextBlock Text=&quot;{Binding Source={t:Point 10,20}}&quot;/&gt;
+&lt;TextBlock Text=&quot;{Binding Source={t:Size 100,200}}&quot;/&gt;
+&lt;TextBlock Text=&quot;{Binding Source={t:Rect 0,0,100,100}}&quot;/&gt;
+&lt;TextBlock Text=&quot;{Binding Source={t:Vector 5,10}}&quot;/&gt;
+&lt;Ellipse Fill=&quot;{t:Brush red}&quot;/&gt;
+&lt;Ellipse Fill=&quot;{t:Brush {t:Color 200,100,100,0.5}}&quot;/&gt;
+&lt;Ellipse Fill=&quot;{t:Brush {t:HSLColor 180,1,0.5,0.5}}&quot;/&gt;
+</code></pre>
+</li>
+</ul>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                        <a href="/AppDoc/dev/en/Extensions.html">
+                            <span class="icon"></span>
+                            <span class="label">Extensions</span>
+                        </a>
+                        
+                    </div>
+                    <div id="next">
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a>WeChat Official Account: IceSky</a>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a>Individual developer on Windows - IceSky</a>
+</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/AppDoc/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/AppDoc/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/AppDoc/static/js/theme_default/main.js"></script>
+    
+        <script src="/AppDoc/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/AppDoc/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/AppDoc/static/js/search/search_main.js"></script>
+    
+        <script src="/AppDoc/static/js/plugin_blog/main.js"></script>
+    
+        <script src="/AppDoc/static/js/easing.min.js"></script>
+    
+        <script src="/AppDoc/static/js/custom.js"></script>
+    
+</body>
+
+</html>

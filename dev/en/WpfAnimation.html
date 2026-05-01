@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+
+<html lang="en"  class=" heading_no_counter ">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="Wpf, Animation, animated number, continuous path, path flow, geometry morph">
+    
+    
+    <meta name="description" content="a WPF animation library that includes several animation components">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/AppDoc/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/AppDoc/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/AppDoc/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/search/style.css" type="text/css"/>
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/bootstrap.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/animate.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>WpfAnimation - IceSky App</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/AppDoc/en/">
+                
+                    <img class="site_logo" src="/AppDoc/static/image/logo.png" alt="IceSky Logo">
+                
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/AppDoc/edu/en/">Edu Apps</a></li>
+<li class=""><a  href="/AppDoc/tools/en/">Tools</a></li>
+<li class=""><a  href="/AppDoc/game/en/">Games</a></li>
+<li class="active"><a  href="/AppDoc/dev/en/">Development</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class="sub_items "><a  >Language: English</a><ul><li class="active"><a  href="/AppDoc/dev/en/WpfAnimation.html">English</a></li>
+<li class=""><a  href="/AppDoc/dev/zh/WpfAnimation.html">中文 简体</a></li>
+</ul></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">Search</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">Keywords separated by space</span>
+                                <span id="search_loading_hint">Loading, wait please ...</span>
+                                <span id="search_download_err_hint">Download error, please check network and refresh again</span>
+                                <span id="search_other_docs_result_hint">Result from other docs</span>
+                                <span id="search_curr_doc_result_hint">Result from current doc</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/dev/en/index.html"><span class="label">General Information</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/dev/en/WpfMonaco.html"><span class="label">WpfMonaco</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/dev/en/WpfLoading.html"><span class="label">WpfLoading</span><span class=""></span></a></li>
+<li class="active with_link"><a href="/AppDoc/dev/en/WpfAnimation.html"><span class="label">WpfAnimation</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/dev/en/Extensions.html"><span class="label">Extensions</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/dev/en/WpfConverters.html"><span class="label">WpfConverters</span><span class=""></span></a></li>
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>WpfAnimation</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <h2 id="Introduce">Introduce</h2>
+<p>This is a WPF animation library that includes several animation components, such as common animation components, animated number control, continuous path animation control, path flow animation control, geometry morph animation control, particle animation control and grid animation control.</p>
+<p>Using the animation components requires adding references and resource files</p>
+
+<pre class="language-Xml"><code class="language-Xml">xmlns:ctrl=&quot;clr-namespace:IceSky.WpfAnimation.Controls;assembly=IceSky.WpfAnimation&quot;
+xmlns:anim=&quot;clr-namespace:IceSky.WpfAnimation.GridAnimations;assembly=IceSky.WpfAnimation&quot;
+&lt;Window.Resources&gt;
+   &lt;ResourceDictionary&gt;
+      &lt;ResourceDictionary.MergedDictionaries&gt;
+            &lt;ResourceDictionary Source=&quot;pack://application:,,,/IceSky.WpfAnimation;component/Generic.xaml&quot;/&gt;
+      &lt;/ResourceDictionary.MergedDictionaries&gt;
+   &lt;/ResourceDictionary&gt;
+&lt;/Window.Resources&gt;
+</code></pre>
+<p><strong>You can view samples at the following path: <a href="https://github.com/IceSkyDev/IceSky.WpfAnimation.Sample/"  target="_blank">IceSky.WpfAnimation.Sample</a></strong></p>
+<h2 id="Common-animation-components">Common animation components</h2>
+<p>This component is an encapsulation of common animation types, which can reduce the code when defining animations, support the combination of multiple animations, and the library contains a large number of predefined animation definitions that can be used directly. It also allows specifying the animation trigger method.</p>
+<h3 id="Basic-Usage">Basic Usage</h3>
+<ol>
+<li><p>Add namespace</p>
+
+<pre class="language-none"><code class="language-none">xmlns:cfg=&quot;clr-namespace:IceSky.WpfAnimation.Models;assembly=IceSky.WpfAnimation&quot;
+</code></pre>
+</li>
+<li><p>Add animation properties to the controls that need animation in the Xaml file. Some basic animations have already been added to the resource dictionary, and can be used according to the resource name.</p>
+</li>
+</ol>
+
+<pre class="language-Xml"><code class="language-Xml">&lt;TextBlock Text=&quot;Animation&quot; cfg:AnimatedElement.Trigger=&quot;Loaded&quot;&gt;
+  &lt;cfg:AnimatedElement.Animations&gt;
+      &lt;cfg:AnimationCollection&gt;
+          &lt;cfg:AnimationSetting BasedOn=&quot;{StaticResource AS_SkewX}&quot; RepeatBehavior=&quot;Forever&quot;
+              AutoReverse=&quot;True&quot;/&gt;
+      &lt;/cfg:AnimationCollection&gt;
+  &lt;/cfg:AnimatedElement.Animations&gt;
+&lt;/TextBlock&gt;
+</code></pre>
+<ol>
+<li><p>Configuration Parameter</p>
+<ul>
+<li><p>Trigger: supports methods such as Loaded, MouseDown, MouseEnter, MouseLeave, MouseOver, KeyDown, DataTrigger, etc.</p>
+<ul>
+<li>MouseDown can specify the mouse button</li>
+<li>KeyDown can specify a keyboard key</li>
+<li>DataTrigger can specify the trigger data value</li>
+</ul>
+<blockquote>
+<p>MouseOver method will trigger the animation when enter and automatically execute the reverse animation when the mouse leave</p>
+<p>The sample code for specifying a key when use KeyDown trigger:</p>
+</blockquote>
+
+<pre class="language-xml"><code class="language-xml">&lt;Button cfg:AnimatedElement.Trigger=&quot;KeyDown&quot; cfg:AnimatedElement.TriggerKey=&quot;X&quot; cfg:AnimatedElement.TriggerModifierKeys=&quot;Ctrl&quot;/&gt;
+</code></pre>
+<blockquote>
+<p>DataTrigger with bool value:</p>
+</blockquote>
+
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock cfg:AnimatedElement.Trigger=&quot;DataTrigger&quot; cfg:AnimatedElement.DataTriggerValue=&quot;{Binding ElementName=chkPlay,Path=IsChecked}&quot;/&gt;
+</code></pre>
+<blockquote>
+<p>DataTrigger with text:</p>
+</blockquote>
+
+<pre class="language-xml"><code class="language-xml">&lt;Ellipse cfg:AnimatedElement.Trigger=&quot;DataTrigger&quot; cfg:AnimatedElement.DataTriggerValue=&quot;{Binding ElementName=txtDataTrigger,Path=Text}&quot; 
+  cfg:AnimatedElement.TriggerStartValue=&quot;start&quot; cfg:AnimatedElement.TriggerStopValue=&quot;stop&quot;/&gt;
+</code></pre>
+</li>
+<li><p>You can use AnimationCompleted to set an animation completion event, for example:</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;Button cfg:AnimatedElement.AnimationCompleted=&quot;AnimationCompleted&quot; cfg:AnimatedElement.Trigger=&quot;MouseClick&quot;/&gt;
+</code></pre>
+</li>
+<li><p>AnimationType: supports Double, Color, Thickness, Point, CornerRadius</p>
+<blockquote>
+<p>The Color type can specify shape fill, shape stroke, control foreground, control background, and border color. You can specify them using simple property names, and the corresponding target property names when setting them are: FillColor, StrokeColor, Background, Foreground, BorderColor</p>
+<p>You need to set either one value or four values for CornerRadius animation. One value indicates that all four corner radius are the same. If you want to specify them individually, you must provide four values, representing top-left, top-right, bottom-right, and bottom-left, respectively. For example, ToValue=&quot;0 15 0 0&quot; means setting the top-right corner radius to 15, with no radius on the other corners.</p>
+</blockquote>
+</li>
+<li><p>TargetProperty: Set the target property that the animation changes, which needs to match the AnimationType</p>
+<blockquote>
+<p>Animation support animating Blur and Shadow Effects. The Blur Effect can only animate the blur radius, with the property name is: Blur; the Shadow Effect can animate the blur radius, opacity, depth, and direction, with the property names are: ShadowBlur, ShadowOpacity, ShadowDepth, ShadowDirection</p>
+<p>The Point type can animate gradient brushes, includ StartPoint and EndPoint of LinearGradientBrush, and GradientOrigin of RadialGradientBrush, when animating these, the property names need to be specified completely, like: Fill.(LinearGradientBrush.StartPoint), Fill.(LinearGradientBrush.EndPoint), Fill.(RadialGradientBrush.GradientOrigin)</p>
+</blockquote>
+</li>
+<li><p>Animation parameters: include FromValue, ToValue, ByValue, Duration(ms), BeginTime(ms), CenterX, CenterY, EasingType, EasingMode, RepeatBehavior, AutoReverse, UseMidSwing</p>
+<blockquote>
+<p>If you need the animation of RenderTransform to be based on the center of the element, you need to explicitly specify RenderTransformOrigin=&quot;.5 .5&quot;; if not specified, the default value is the top-left corner</p>
+<p>Set UseMidSwing to True allows swinging between From and To, with the end value being the middle value of From and To</p>
+<p>AnimationSetting can use BasedOn for inheritance, and after inheritance, animation parameters can be overridden</p>
+<p>Child elements of AnimationCollection can use a combination of AnimationCollection and AnimationSetting, but AnimationCollection cannot use BasedOn for inheritance</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>Configuration Examples</p>
+</li>
+</ol>
+<details>
+<summary>Click to expand</summary>
+<div class="details-content"><p>FadeIn:</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;cfg:AnimationSetting 
+ AnimationType=&quot;Double&quot; TargetProperty=&quot;Opacity&quot;
+ FromValue=&quot;0&quot; ToValue=&quot;1&quot; Duration=&quot;1000&quot;/&gt;
+</code></pre>
+<p><img src="../assets/images/Animations/Common/FadeIn.gif" alt="FadeIn" /></p>
+<p>FadeOut:</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;cfg:AnimationSetting 
+ AnimationType=&quot;Double&quot; TargetProperty=&quot;Opacity&quot;
+ FromValue=&quot;1&quot; ToValue=&quot;0&quot; Duration=&quot;1000&quot;/&gt;
+</code></pre>
+<p><img src="../assets/images/Animations/Common/FadeOut.gif" alt="FadeOut" /></p>
+<p>FromLeft:</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;cfg:AnimationSetting 
+ AnimationType=&quot;Double&quot; TargetProperty=&quot;X&quot;
+ FromValue=&quot;-100&quot; ToValue=&quot;0&quot; Duration=&quot;1000&quot;/&gt;
+</code></pre>
+<p><img src="../assets/images/Animations/Common/FromLeft.gif" alt="FromLeft" /></p>
+<p>ToRight:</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;cfg:AnimationSetting 
+ AnimationType=&quot;Double&quot; TargetProperty=&quot;X&quot;
+ FromValue=&quot;0&quot; ToValue=&quot;100&quot; Duration=&quot;1000&quot;/&gt;
+</code></pre>
+<p><img src="../assets/images/Animations/Common/ToRight.gif" alt="ToRight" /></p>
+<p>FlipX:</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;cfg:AnimationSetting 
+ AnimationType=&quot;Double&quot; TargetProperty=&quot;ScaleX&quot;
+ FromValue=&quot;-1&quot; ToValue=&quot;1&quot; Duration=&quot;1000&quot;/&gt;
+</code></pre>
+<p><img src="../assets/images/Animations/Common/FlipX.gif" alt="FlipX" /></p>
+<p>SkewX:</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;cfg:AnimationSetting 
+ AnimationType=&quot;Double&quot; TargetProperty=&quot;AngleX&quot;
+ FromValue=&quot;-30&quot; ToValue=&quot;30&quot; Duration=&quot;1000&quot;/&gt;
+</code></pre>
+<p><img src="../assets/images/Animations/Common/SkewX.gif" alt="SkewX" /></p>
+<p>ShakeY:</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;cfg:AnimationSetting  UseMidSwing=&quot;True&quot;
+ AnimationType=&quot;Double&quot; TargetProperty=&quot;Y&quot;
+ FromValue=&quot;-5&quot; ToValue=&quot;5&quot; Duration=&quot;1000&quot;
+ AutoReverse=&quot;True&quot; RepeatBehavior=&quot;4x&quot;/&gt;
+</code></pre>
+<p><img src="../assets/images/Animations/Common/ShakeY.gif" alt="ShakeY" /></p>
+<p>Foreground:</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;cfg:AnimationSetting 
+ AnimationType=&quot;Color&quot; TargetProperty=&quot;Foreground&quot;
+ FromValue=&quot;Orange&quot; ToValue=&quot;DodgerBlue&quot; Duration=&quot;1000&quot;/&gt;
+</code></pre>
+<p><img src="../assets/images/Animations/Common/Foreground.gif" alt="Foreground" /></p>
+<p>Background:</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;cfg:AnimationSetting 
+ AnimationType=&quot;Color&quot; TargetProperty=&quot;Background&quot;
+ FromValue=&quot;Orange&quot; ToValue=&quot;Purple&quot; Duration=&quot;1000&quot;/&gt;
+</code></pre>
+<p><img src="../assets/images/Animations/Common/Background.gif" alt="Background" /></p>
+<p>MarginGrow:</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;cfg:AnimationSetting 
+ AnimationType=&quot;Thickness&quot; TargetProperty=&quot;Margin&quot;
+ ByValue=&quot;10&quot; Duration=&quot;1000&quot;/&gt;
+</code></pre>
+<p><img src="../assets/images/Animations/Common/MarginGrow.gif" alt="MarginGrow" /></p>
+<p>BorderGrow:</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;cfg:AnimationSetting 
+ AnimationType=&quot;Thickness&quot; TargetProperty=&quot;BorderThickness&quot;
+ ByValue=&quot;10&quot; Duration=&quot;1000&quot;/&gt;
+</code></pre>
+<p><img src="../assets/images/Animations/Common/BorderGrow.gif" alt="BorderGrow" /></p>
+<p>Shadow:</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;cfg:AnimationSetting 
+ AnimationType=&quot;Double&quot; TargetProperty=&quot;ShadowDirection&quot;
+ FromValue=&quot;0&quot; ToValue=&quot;360&quot; Duration=&quot;1000&quot;/&gt;
+</code></pre>
+<p><img src="../assets/images/Animations/Common/Shadow.gif" alt="Shadow" /></p>
+<p>Blur:</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;cfg:AnimationSetting 
+ AnimationType=&quot;Double&quot; TargetProperty=&quot;Blur&quot;
+ FromValue=&quot;0&quot; ToValue=&quot;5&quot; Duration=&quot;1000&quot;/&gt;
+</code></pre>
+<p><img src="../assets/images/Animations/Common/Blur.gif" alt="Blur" /></p>
+<p>BounceIn:</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;cfg:AnimationCollection&gt;
+  &lt;StaticResource ResourceKey=&quot;AS_BounceInX&quot;/&gt;
+  &lt;StaticResource ResourceKey=&quot;AS_BounceInY&quot;/&gt;
+&lt;/cfg:AnimationCollection&gt;
+</code></pre>
+<p><img src="../assets/images/Animations/Common/BounceIn.gif" alt="BounceIn" /></p>
+<p>Pulse:</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;cfg:AnimationCollection&gt;
+  &lt;StaticResource ResourceKey=&quot;AS_PulseX&quot;/&gt;
+  &lt;StaticResource ResourceKey=&quot;AS_PulseY&quot;/&gt;
+&lt;/cfg:AnimationCollection&gt;
+</code></pre>
+<p><img src="../assets/images/Animations/Common/Pulse.gif" alt="Pulse" /></p>
+<p>RotateIn:</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;cfg:AnimationCollection&gt;
+  &lt;StaticResource ResourceKey=&quot;AC_ScaleIn&quot;/&gt;
+  &lt;StaticResource ResourceKey=&quot;AS_RotateCW&quot;/&gt;
+&lt;/cfg:AnimationCollection&gt;
+</code></pre>
+<p><img src="../assets/images/Animations/Common/RotateIn.gif" alt="RotateIn" /></p>
+<p>ScaleOut:</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;cfg:AnimationCollection&gt;
+  &lt;StaticResource ResourceKey=&quot;AS_FadeOut&quot;/&gt;
+  &lt;StaticResource ResourceKey=&quot;AC_ScaleOut&quot;/&gt;
+&lt;/cfg:AnimationCollection&gt;
+</code></pre>
+<p><img src="../assets/images/Animations/Common/ScaleOut.gif" alt="ScaleOut" /></p>
+<p>SwingIn:</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;cfg:AnimationCollection&gt;
+  &lt;cfg:AnimationSetting BasedOn=&quot;{StaticResource AS_RotateCW}&quot; FromValue=&quot;-10&quot; ToValue=&quot;10&quot; UseMidSwing=&quot;True&quot; RepeatBehavior=&quot;3x&quot; Duration=&quot;1000&quot;/&gt;
+&lt;/cfg:AnimationCollection&gt;
+</code></pre>
+<p><img src="../assets/images/Animations/Common/SwingIn.gif" alt="SwingIn" /></p>
+<p>BackInDown:</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;cfg:AnimationCollection&gt;
+  &lt;cfg:AnimationSetting BasedOn=&quot;{StaticResource AS_FadeIn}&quot;/&gt;
+  &lt;cfg:AnimationSetting BasedOn=&quot;{StaticResource AS_MoveFromUp}&quot;/&gt;
+  &lt;cfg:AnimationSetting BasedOn=&quot;{StaticResource AS_ScaleInX}&quot; FromValue=&quot;1&quot; ToValue=&quot;1.2&quot;BeginTime=&quot;500&quot;/&gt;
+  &lt;cfg:AnimationSetting BasedOn=&quot;{StaticResource AS_ScaleInY}&quot; FromValue=&quot;1&quot; ToValue=&quot;1.2&quot;BeginTime=&quot;500&quot;/&gt;
+&lt;/cfg:AnimationCollection&gt;
+</code></pre>
+<p><img src="../assets/images/Animations/Common/BackInDown.gif" alt="BackInDown" /></p>
+<p>SweepToRight:</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;cfg:AnimationCollection&gt;
+  &lt;cfg:AnimationSetting BasedOn=&quot;{StaticResource AS_WidthGrow}&quot; FromValue=&quot;0&quot; ByValue=&quot;{x:Null}&quot; AutoReverse=&quot;True&quot; EasingType=&quot;SineEase&quot;/&gt;
+  &lt;cfg:AnimationSetting BasedOn=&quot;{StaticResource AS_BackgroundColor}&quot; FromValue=&quot;#038f&quot; ToValue=&quot;#38f&quot; AutoReverse=&quot;True&quot;/&gt;
+&lt;/cfg:AnimationCollection&gt;
+</code></pre>
+<p><img src="../assets/images/Animations/Common/SweepToR.gif" alt="SweepToR" /></p>
+<p>SpeedIn:</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;cfg:AnimationCollection&gt;
+  &lt;cfg:AnimationSetting BasedOn=&quot;{StaticResource AS_MoveFromLeft}&quot;/&gt;
+  &lt;cfg:AnimationSetting BasedOn=&quot;{StaticResource AS_SkewX}&quot; FromValue=&quot;30&quot; ToValue=&quot;0&quot;/&gt;
+  &lt;cfg:AnimationSetting BasedOn=&quot;{StaticResource AS_SkewX}&quot; FromValue=&quot;0&quot; ToValue=&quot;-20&quot;BeginTime=&quot;500&quot; Duration=&quot;200&quot;/&gt;
+  &lt;cfg:AnimationSetting BasedOn=&quot;{StaticResource AS_FadeIn}&quot; Duration=&quot;300&quot;/&gt;
+  &lt;cfg:AnimationSetting BasedOn=&quot;{StaticResource AS_SkewX}&quot; FromValue=&quot;-20&quot; ToValue=&quot;0&quot; BeginTime=&quot;700&quot; Duration=&quot;200&quot;/&gt;
+&lt;/cfg:AnimationCollection&gt;
+</code></pre>
+<p><img src="../assets/images/Animations/Common/SpeedIn.gif" alt="SpeedIn" /></p>
+<p>OutLine:</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;cfg:AnimationCollection&gt;
+  &lt;cfg:AnimationSetting BasedOn=&quot;{StaticResource AS_BorderGrow}&quot; FromValue=&quot;0&quot; ToValue=&quot;5 0 0 0&quot; Duration=&quot;200&quot;/&gt;
+  &lt;cfg:AnimationSetting BasedOn=&quot;{StaticResource AS_BorderGrow}&quot; FromValue=&quot;5 0 0 0&quot; ToValue=&quot;5 5 0 0&quot; Duration=&quot;200&quot; BeginTime=&quot;200&quot;/&gt;
+  &lt;cfg:AnimationSetting BasedOn=&quot;{StaticResource AS_BorderGrow}&quot; FromValue=&quot;5 5 0 0&quot; ToValue=&quot;5 5 5 0&quot; Duration=&quot;200&quot; BeginTime=&quot;400&quot;/&gt;
+  &lt;cfg:AnimationSetting BasedOn=&quot;{StaticResource AS_BorderGrow}&quot; FromValue=&quot;5 5 5 0&quot; ToValue=&quot;5&quot; Duration=&quot;200&quot; BeginTime=&quot;600&quot;/&gt;
+&lt;/cfg:AnimationCollection&gt;
+</code></pre>
+<p><img src="../assets/images/Animations/Common/OutLine.gif" alt="OutLine" /></p>
+</div>
+</details>
+<h2 id="Animated-number-control">Animated number control</h2>
+<p>Animated number control implements a smooth transition animation for number: when the target value changes, the number will automatically smoothly increment/decrement from the old value to the new value, supporting custom animation duration and number display format.</p>
+<p><img src="../assets/images/Animations/AnimatedNumber.gif" alt="Animated Number" /></p>
+<h3 id="Basic-Usage">Basic Usage</h3>
+<ol>
+<li><p>Add namespace</p>
+
+<pre class="language-none"><code class="language-none">xmlns:control=&quot;clr-namespace:IceSky.WpfAnimation.Controls;assembly=IceSky.WpfAnimation&quot;
+</code></pre>
+</li>
+<li><p>Use control in xaml</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;control:AnimatedNumber AnimationDuration=&quot;1000&quot; TargetValue=&quot;{Binding Text}&quot;/&gt;
+</code></pre>
+</li>
+<li><p>Parameters (all parameters support data binding)</p>
+<ul>
+<li>TargetValue: The animation runs automatically when the target value changes</li>
+<li>AnimationDuration: Animation duration (milliseconds)</li>
+<li>NumberFormat: The default format is 'F0', supporting C: currency format, E: scientific notation, F: fixed-point format, N: number format. A number can be added after the format to indicate the number of decimal places.</li>
+<li>EasingPower: Animation easing intensity (the larger the value, the slower the ending), range 1~7</li>
+</ul>
+</li>
+</ol>
+<h2 id="Continuous-path-animation-control">Continuous path animation control</h2>
+<p>Continuous path support allows any control to move continuously along one or more paths, while combined path support provides an automatic segmentation feature.</p>
+<p><img src="../assets/images/Animations/PathAnimate.gif" alt="PathAnimate" /></p>
+<h3 id="Basic-Usage">Basic Usage</h3>
+<ol>
+<li><p>Add namespace</p>
+
+<pre class="language-none"><code class="language-none">xmlns:control=&quot;clr-namespace:IceSky.WpfAnimation.Controls;assembly=IceSky.WpfAnimation&quot;
+</code></pre>
+</li>
+<li><p>Use control in xaml</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;control:PathAnimationControl AnimationDuration=&quot;2000&quot; 
+                           PathData=&quot;{Binding Text}&quot; &gt;
+   &lt;!--Code for controls that need to move along a path--&gt;
+   ………
+&lt;/control:PathAnimationControl&gt;
+</code></pre>
+</li>
+<li><p>Parameters (all parameters support data binding)</p>
+<ul>
+<li>PathData: supports PathData and GeometryGroup for a single path, the setting method for GeometryGroup:
+<pre class="language-xml"><code class="language-xml">&lt;control:PathAnimationControl.PathData&gt;
+    &lt;GeometryGroup&gt;
+       &lt;PathGeometry Figures=&quot;M50,100 C150,50 250,150 350,100&quot;/&gt;
+       &lt;PathGeometry Figures=&quot;M50,150 L150,150&quot;/&gt;
+       &lt;PathGeometry Figures=&quot;M50,200 A150,50 0 1 1 350,200&quot;/&gt;
+    &lt;/GeometryGroup&gt;
+&lt;/control:PathAnimationControl.PathData&gt;
+</code></pre>
+</li>
+<li>AnimationDuration: Path animation duration (milliseconds), if SplitFigures is true, it is the animation duration for each segment of the path</li>
+<li>PathSpeed: Effective when the AnimationDuration is 0, the larger the value, the faster the speed, the minimum value is 1</li>
+<li>PathDelay: The interval time between multiple paths (milliseconds). If there is only one path, it is the interval time for the looping animation</li>
+<li>AutoRotate: Whether to automatically rotate angle when moving along the path</li>
+<li>RepeatCount: Number of animation loops, 0 means infinite looping</li>
+<li>ShowPath: Whether to display the path, default is false, meaning it is not displayed</li>
+<li>SplitFigures: Whether to automatically split paths. If the path code is a GeometryGroup, it will automatically split according to its Children; otherwise, it will be determined whether to split its figures based on this parameter.</li>
+</ul>
+</li>
+<li><p>Animation control method</p>
+<ul>
+<li>StartAnimation</li>
+<li>StopAnimation</li>
+</ul>
+</li>
+</ol>
+<h2 id="Geometry-morph-animation-control">Geometry morph animation control</h2>
+<p>This control implements morph animation for two or a group of shapes, supports defining shapes using paths, and allows specifying the animation direction</p>
+<p><img src="../assets/images/Animations/MorphAnimate.gif" alt="MorphAnimate" /></p>
+<h3 id="Basic-Usage">Basic Usage</h3>
+<ol>
+<li><p>Add namespace</p>
+
+<pre class="language-none"><code class="language-none">xmlns:control=&quot;clr-namespace:IceSky.WpfAnimation.Controls;assembly=IceSky.WpfAnimation&quot;
+</code></pre>
+</li>
+<li><p>Use control in xaml</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;control:GeometryMorphControl 
+     FromGeometry=&quot;{Binding From}&quot;
+     ToGeometry=&quot;{Binding To}&quot;/&gt;
+</code></pre>
+</li>
+<li><p>Parameters (all parameters support data binding)</p>
+<ul>
+<li><p>FromGeometry: Start Shape Path</p>
+</li>
+<li><p>ToGeometry: End shape path</p>
+</li>
+<li><p>AutoPlay: Whether to automatically play the animation when loaded, default is false</p>
+</li>
+<li><p>IsLooping: Whether to loop the animation, default is false</p>
+</li>
+<li><p>AnimationDirection: Include Forward (default), Reverse, Alternate</p>
+</li>
+<li><p>HoldEnd: Whether to maintain the end shape when the animation ends</p>
+</li>
+<li><p>BeginTime: Delay time at the start of the animation (milliseconds), set the interval time between animations</p>
+</li>
+<li><p>AnimationDuration: Duration of an animation (milliseconds)</p>
+</li>
+<li><p>Fill: Set Fill of Shape</p>
+</li>
+<li><p>Stroke: Set Strok of Shapee</p>
+</li>
+<li><p>StrokeThickness: Set StrokeThickness of Shape</p>
+</li>
+<li><p>EasingFunction: Set the animation easing function</p>
+</li>
+<li><p>GeometryList: Set the shape list, can be defined using resources in the Xaml file:</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;x:Array x:Key=&quot;StandardShapes&quot; Type=&quot;{x:Type sys:String}&quot;&gt;
+    &lt;sys:String&gt;M0,0 L100,0 L100,100 L0,100 Z&lt;/sys:String&gt;
+    &lt;sys:String&gt;M50,0 A50,50 0 1 0 50,100 A50,50 0 1 0 50,0 Z&lt;/sys:String&gt;
+&lt;/x:Array&gt;
+</code></pre>
+<p>then use the resource in the control</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;control:GeometryMorphControl GeometryList=&quot;{StaticResource StandardShapes}&quot;/&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>Animation control method</p>
+<ul>
+<li>StartMorphAnimation: Start one Morph animation</li>
+<li>StopAllAnimations</li>
+<li>StartPlayList: Start animation for shape list</li>
+<li>PauseAnimation</li>
+<li>ResumeAnimation</li>
+<li>Previous: Switch to the previous shape in the list</li>
+<li>Next: Switch to the next shape in the list</li>
+</ul>
+</li>
+</ol>
+<h2 id="Particle-animation-control">Particle animation control</h2>
+<p>This is a common particle animation control with a large number of parameters, supporting the setting of particle templates, contour shapes, various motion modes, and animation effects.</p>
+<p><img src="../assets/images/Animations/DefaultParticle.gif" alt="DefaultParticle" /></p>
+<h3 id="Basic-Usage">Basic Usage</h3>
+<ol>
+<li><p>Add namespace</p>
+
+<pre class="language-none"><code class="language-none">xmlns:control=&quot;clr-namespace:IceSky.WpfAnimation.Controls;assembly=IceSky.WpfAnimation&quot;
+</code></pre>
+</li>
+<li><p>Use control in xaml</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;control:ParticleVisualHost ParticleCount=&quot;100&quot;/&gt;
+</code></pre>
+</li>
+<li><p>Parameters (all parameters support data binding)</p>
+<ul>
+<li>ParticleCount: Number of particles</li>
+<li>ParticleShape: Built-in particle shapes, include Circle (default), Square, Triangle</li>
+<li>ParticleTemplate: Specify the particle template, default is null, which means using the built-in particle shape. You can use DataTemplate to define the particle template. Using a custom template will consume more resources, so the number of particles should be reduced</li>
+<li>ContourPath: Particle area contour shape path, default is null, indicating that the default circular contour is used. You can use Geometry to define the contour path</li>
+<li>DurationSeconds: Particle Duration (seconds)</li>
+<li>MinParticleSize: Minimum particle size</li>
+<li>MaxParticleSize: Maximum particle size</li>
+<li>SpawnPosition: Particle generation position, include Center (default), Surround, EvenlyDistributed, Line</li>
+<li>MoveDirection: Particle motion direction, include ToSurround (default), ToCenter, SpecifiedDirection, Rotation, ScatterFrom, GatherTo</li>
+<li>MoveSpeedMin: Minimum particle velocity</li>
+<li>MoveSpeedMax: Maximum particle velocity</li>
+<li>AnimationDistance: Particle movement distance, this setting is related to particle speed and particle duration. If the particle dies too early, it will not reach this distance. When the value is 0, the particle movement distance will be determined by DurationSeconds and speed.</li>
+<li>IsCollisionEnabled: Whether to enable collision bounce. When enabled, reaching the edge of the container will cause a collision and bounce, default is false</li>
+<li>IsAutoAnimation: Whether to automatically start the animation</li>
+<li>IsContinuous: Whether it is a continuous animation, when is ture, particles will continue to be generated</li>
+<li>IsInfiniteLoop: Whether to loop infinitely. When enabled, the animation will loop infinitely; otherwise, it will play only once. The default is true</li>
+<li>InnerRangeSize: The boundary when the SpawnPosition is Center</li>
+<li>OuterRangeSize: The boundary when the SpawnPosition is Surround</li>
+<li>ParticleHorizontalAlignment: Horizontal alignment of the particle area</li>
+<li>ParticleVerticalAlignment: Vertical alignment of the particle area</li>
+<li>SpawnOffsetX: The offsetX of SpawnPosition</li>
+<li>SpawnOffsetY: The offsetY of SpawnPosition</li>
+<li>MinColor: Minimum color of the particles</li>
+<li>MaxColor: Maximum color of the particles</li>
+<li>MinOpacity: Minimum opacity of the particles</li>
+<li>MaxOpacity: Maximum opacity of the particles</li>
+<li>ScaleStart: Scale ratio when particle generated</li>
+<li>ScaleEnd: Scale ratio when particle disappear</li>
+<li>ScaleSpeedFactor: The larger the value, the slower the change</li>
+<li>XJitterRange: The range of X-axis jitter</li>
+<li>YJitterRange: The range of Y-axis jitter</li>
+<li>JitterSpeed: Jitter speed factor, the larger the value, the faster the jitter, and the range will become smaller.</li>
+<li>IsFixedRotationCenter: Whether the rotation center is fixed when rotating as a whole. By default, it is not fixed and rotates around the center of the interface. Otherwise, you can set GlobalRotationCenterX and GlobalRotationCenterY to specify the rotation center.</li>
+<li>GlobalRotationSpeed: Overall rotation speed, the larger the value, the faster the rotation. The default is 0, which means no overall rotation.</li>
+<li>Different motion parameters can be set according to the direction of movement<ul>
+<li>When the direction is set to Rotation, you can set RotateAngularSpeed (the larger the value, the faster the speed) and IsClockwise (rotation direction, default is true for clockwise).</li>
+<li>When the direction is set to SpecifiedDirection, you can set SpecifiedDirectionAngle (translation direction, the value is an integer representing the angle: 0 right, 90 down, 180 left, 270 up)</li>
+<li>When the direction is set to ScatterFrom and GatherTo, you can set ManualTargetX (specified position X coordinate) and ManualTargetY (specified position Y coordinate).</li>
+</ul>
+</li>
+<li>When the generation position is set to Line, you can set LineLength and LineAngle (0 is horizontal, 90 is vertical)</li>
+</ul>
+</li>
+<li><p>Animation control method</p>
+<ul>
+<li>StartAnimation</li>
+<li>StopAnimation</li>
+</ul>
+</li>
+</ol>
+<p>Snow:<br />
+<img src="../assets/images/Animations/FallParticle.gif" alt="FallParticle" /><br />
+Rotating Starry Sky:<br />
+<img src="../assets/images/Animations/RotateParticle.gif" alt="RotateParticle" /><br />
+Star contour and star elements:<br />
+<img src="../assets/images/Animations/StarParticle.gif" alt="StarParticle" /><br />
+Custom contour and triangle elements:<br />
+<img src="../assets/images/Animations/HeartParticle.gif" alt="HeartParticle" /></p>
+<h2 id="Path-flow-animation-control">Path flow animation control</h2>
+<p>This control that can make any control flow along a specified path, allowing you to specify the element template and the flow direction.</p>
+<p><img src="../assets/images/Animations/PathFlow.gif" alt="PathFlow" /></p>
+<h3 id="Basic-Usage">Basic Usage</h3>
+<ol>
+<li><p>Add namespace</p>
+
+<pre class="language-none"><code class="language-none">xmlns:control=&quot;clr-namespace:IceSky.WpfAnimation.Controls;assembly=IceSky.WpfAnimation&quot;
+</code></pre>
+</li>
+<li><p>Use control in xaml</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;control:PathFlowControl Data=&quot;{Binding Text}&quot;/&gt;
+</code></pre>
+</li>
+<li><p>Parameters (all parameters support data binding)</p>
+<ul>
+<li>Data: The data of path</li>
+<li>Stroke: Stroke of path, effective when ElementTemplate is null</li>
+<li>StrokeThickness: StrokeThickness of path, effective when ElementTemplate is null</li>
+<li>StrokeDashArray: StrokeDashArray of path, effective when ElementTemplate is null</li>
+<li>StrokeDashOffset: StrokeDashOffset of path, effective when ElementTemplate is null</li>
+<li>StrokeStartLineCap: Path start point style</li>
+<li>StrokeEndLineCap: Path end point style</li>
+<li>AnimationSpeed: Unit is second</li>
+<li>Direction: Animation direction, can be set to Forward, Reverse, or Alternate.</li>
+<li>IsLoop: Default is true, when set to false, it only runs once</li>
+<li>ElementTemplate: Custom element template, default is null, use dashed lines to display animation, can use DataTemplate to set element template</li>
+<li>ElementCount: Number of custom elements, effective after setting ElementTemplate</li>
+<li>ElementSpacingRatio: Custom element spacing ratio: when =1, the elements are tightly adjacent with zero spacing; when &lt;1, the elements overlap; when &gt;1, there is blank spacing between the elements</li>
+<li>ShowPathOutline: Whether to show path outline</li>
+<li>FlowProgress: Get or set animation progress</li>
+</ul>
+</li>
+<li><p>Animation control method</p>
+<ul>
+<li>StartAnimation</li>
+<li>StopAnimation</li>
+<li>PauseAnimation</li>
+<li>ResumeAnimation</li>
+</ul>
+</li>
+</ol>
+<p>Progress Control Example:<br />
+<img src="../assets/images/Animations/PathFlow1.gif" alt="PathFlow1" /></p>
+<h2 id="Grid-animation-control">Grid animation control</h2>
+<p>This is a control for animating grid layout elements, supporting custom grid element styles, layouts, and animation parameters, and it also allows custom animation functions</p>
+<p><img src="../assets/images/Animations/GridAnimate1.gif" alt="GridAnimate1" /></p>
+<h3 id="Basic-Usage">Basic Usage</h3>
+<ol>
+<li><p>Add namespace</p>
+
+<pre class="language-none"><code class="language-none">xmlns:control=&quot;clr-namespace:IceSky.WpfAnimation.Controls;assembly=IceSky.WpfAnimation&quot;
+</code></pre>
+</li>
+<li><p>Use control in xaml</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;control:GridElementControl RowCount=&quot;10&quot; ColumnCount=&quot;10&quot;/&gt;
+</code></pre>
+</li>
+<li><p>Parameters (all parameters support data binding)</p>
+<ul>
+<li><p>RowCount: Number of grid rows</p>
+</li>
+<li><p>ColumnCount: Number of grid columns</p>
+</li>
+<li><p>ElementWidth</p>
+</li>
+<li><p>ElementHeight</p>
+</li>
+<li><p>HorizontalSpacing</p>
+</li>
+<li><p>VerticalSpacing</p>
+</li>
+<li><p>RowOffsetStep: Horizontal offset</p>
+</li>
+<li><p>ColumnOffsetStep: Vertical offset</p>
+</li>
+<li><p>ContainerPath: You can use Geometry to specify the contour shape</p>
+</li>
+<li><p>FillElementTemplateConfig: Styles of elements within the container</p>
+<ul>
+<li>Defining element styles requires adding namespace</li>
+</ul>
+
+<pre class="language-xml"><code class="language-xml">xmlns:model=&quot;clr-namespace:IceSky.WpfAnimation.Models;assembly=IceSky.WpfAnimation&quot;
+</code></pre>
+<ul>
+<li>Custom Style Example</li>
+</ul>
+
+<pre class="language-xml"><code class="language-xml">&lt;control:GridElementControl.FillElementTemplateConfig&gt;
+  &lt;model:ElementTemplateConfig ShapeType=&quot;Rectangle&quot;&gt;
+     &lt;model:ElementTemplateConfig.ElementStyle&gt;
+       &lt;Style TargetType=&quot;Shape&quot;&gt;
+          &lt;Setter Property=&quot;Fill&quot; Value=&quot;#2A90E2&quot;/&gt;
+       &lt;/Style&gt;
+     &lt;/model:ElementTemplateConfig.ElementStyle&gt;
+  &lt;/model:ElementTemplateConfig&gt;
+&lt;/control:GridElementControl.FillElementTemplateConfig&gt;
+</code></pre>
+</li>
+<li><p>BackgroundElementTemplateConfig: The styles of elements that exceed the container, effective when container path is not null</p>
+</li>
+<li><p>Animation: Animation type, you can use custom animations inherited from GridAnimation, and the animation parameters include:</p>
+<ul>
+<li>Duration: Animation Duration (seconds)</li>
+<li>IsLoop</li>
+<li>MaxScale: Maximum scale of the element</li>
+<li>MinScale: Minimum scale of the element</li>
+<li>MinOpacity: Minimum opacity of the element</li>
+<li>ItemRotateSpeed: The angle of the element rotates per second</li>
+<li>CenterX: The X parameter of RenderTransformOrigin</li>
+<li>CenterY: The Y parameter of RenderTransformOrigin</li>
+</ul>
+</li>
+<li><p>AutoStartAnimation: Whether to start automatically</p>
+</li>
+<li><p>AnimationCenterX: The X coordinate of the animation center</p>
+</li>
+<li><p>AnimationCenterY: The Y coordinate of the animation center</p>
+</li>
+</ul>
+</li>
+<li><p>Animation control method</p>
+<ul>
+<li>StartAnimation: The parameter is the animation object that needs to be executed</li>
+<li>StopAnimation</li>
+<li>PauseAnimation</li>
+<li>ResumeAnimation</li>
+</ul>
+</li>
+<li><p>Custom Animation<br />
+The control library contains multiple predefined grid animations, and each animation has several parameters that can be set, such as:</p>
+<ul>
+<li>CircleWaveAnimation:  WaveSpeed, WaveAmplitude</li>
+<li>SineWaveAnimation: WaveSpacing, RowOffsetDistance, VerticalAmplitude</li>
+<li>ShockwaveAnimation: WaveWidth</li>
+<li>PerspectiveWaveAnimation: WaveSpeed, PerspectiveIntensity, Amplitude</li>
+<li>ScanLineAnimation: ScanLineCount, ScanLineWidth, IsCrossScan, RotateAngle</li>
+<li>PolygonPulseAnimation: PolygonType, PulseCount, PulseWidth, IsRotatePulse, IsAlternateRotateDir</li>
+<li>SpiralRotateAnimation: SpiralCount, SpiralWidth, SpiralSpacing, CenterRadius, Clockwise</li>
+<li>RadiationRayAnimation: RayCount, RayWidth, DashSpacing, RotateSpeed, Outside</li>
+</ul>
+<p>The control supports the use of custom animations. When creating a custom animation, you need to inherit from GridAnimation and implement the following steps:</p>
+<ul>
+<li>Override the abstract method GetElementParams, and in this method return animation parameters of the GridAnimationParams type, including: ScaleX, ScaleY, Offset, Opacity, and Rotation angles. This method will apply transformations to elements at the specified coordinates during each frame update. You can use Progress (the accumulated progress of the animation) or _totalElapsedTime (the total elapsed time of the animation in seconds) for calculations within the method</li>
+<li>Add custom attributes as needed</li>
+<li>Instantiate the animation object in the usage code of this control and set it as a parameter to the StartAnimation</li>
+</ul>
+</li>
+</ol>
+<p>ScanLineAnimation:<br />
+<img src="../assets/images/Animations/ScanLineAnim.gif" alt="ScanLineAnim" /></p>
+<p>RotatePulseAnimation:<br />
+<img src="../assets/images/Animations/PulseAnim1.gif" alt="PulseAnim1" /></p>
+<p>XCrossPulseAnimation:<br />
+<img src="../assets/images/Animations/PulseAnim2.gif" alt="PulseAnim2" /></p>
+<p>SpiralAnimation:<br />
+<img src="../assets/images/Animations/SpiralAnim.gif" alt="SpiralAnim" /></p>
+<p>RayAnimation:<br />
+<img src="../assets/images/Animations/RayAnim.gif" alt="RayAnim" /></p>
+<p>WaveAnimation:<br />
+<img src="../assets/images/Animations/WaveAnim.gif" alt="WaveAnim" /></p>
+<h2 id="Items-Animation">Items Animation</h2>
+<p>Items animation include two ways to use: AnimatedPanel and ItemsControl animation. AnimatedPanel can animate multiple control elements within a panel by specifying PanelAnimations as common animation component, animation for ItemsControl can be implemented by specifying ItemsPanelTemplate as AnimatedPanel or by adding common animation components to ItemsControl in the ItemTemplate.</p>
+<p><img src="../assets/images/Animations/ItemsAnimate.gif" alt="ItemsAnimate" /></p>
+<h3 id="Basic-Usage">Basic Usage</h3>
+<ol>
+<li><p>Add namespace</p>
+
+<pre class="language-none"><code class="language-none">xmlns:control=&quot;clr-namespace:IceSky.WpfAnimation.Controls;assembly=IceSky.WpfAnimation&quot;
+xmlns:cfg=&quot;clr-namespace:IceSky.WpfAnimation.Models;assembly=IceSky.WpfAnimation&quot;
+</code></pre>
+</li>
+<li><p>Use control in xaml</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;!--AnimatedPanel--&gt;
+&lt;ctrl:AnimatedVerticalStackPanel x:Name=&quot;panelW&quot; RenderTransformOrigin=&quot;.5 .5&quot; AnimationDelay=&quot;50&quot;&gt;
+  &lt;ctrl:AnimatedVerticalStackPanel.PanelAnimations&gt;
+    &lt;cfg:AnimationCollection&gt;
+      &lt;StaticResource ResourceKey=&quot;AC_ScaleFadeIn&quot;&gt;&lt;/StaticResource&gt;
+    &lt;/cfg:AnimationCollection&gt;
+  &lt;/ctrl:AnimatedVerticalStackPanel.PanelAnimations&gt;
+&lt;/ctrl:AnimatedVerticalStackPanel&gt;
+
+&lt;!--ItemTemplate--&gt;
+&lt;ListBox.ItemTemplate&gt;
+  &lt;DataTemplate&gt;
+    &lt;TextBlock Text=&quot;{Binding}&quot; cfg:AnimatedElement.Trigger=&quot;VisibleChanged&quot; cfg:AnimatedElement.AnimationDelay=&quot;50&quot;&gt;
+      &lt;cfg:AnimatedElement.Animations&gt;
+        &lt;cfg:AnimationCollection&gt;
+          &lt;cfg:AnimationSetting BasedOn=&quot;{StaticResource AS_MoveFromLeft}&quot; FromValue=&quot;-10&quot;/&gt;
+          &lt;cfg:AnimationSetting BasedOn=&quot;{StaticResource AS_FadeIn}&quot; Duration=&quot;500&quot;/&gt;
+        &lt;/cfg:AnimationCollection&gt;
+      &lt;/cfg:AnimatedElement.Animations&gt;
+    &lt;/TextBlock&gt;
+  &lt;/DataTemplate&gt;
+&lt;/ListBox.ItemTemplate&gt;
+</code></pre>
+</li>
+<li><p>Parameters</p>
+<ul>
+<li>AnimatedPanel type include: AnimatedVerticalStackPanel、AnimatedHorizontalStackPanel、AnimatedWrapPanel、AnimatedUniformGrid，Parameters include PanelAnimations (specifies the common animation component), AnimationDelay (the delay time for each element's animation, in milliseconds), AnimatedOnScrollChanged (whether to animate when the scrollbar changes)</li>
+<li>When adding a common animation component to ItemsControl in ItemTemplate, you can use cfg:AnimatedElement.AnimationDelay to set the animation delay between each element (in milliseconds), and setting cfg:AnimatedElement.Trigger to VisibleChanged allows the animation to occur every time it is displayed</li>
+</ul>
+</li>
+</ol>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                        <a href="/AppDoc/dev/en/WpfLoading.html">
+                            <span class="icon"></span>
+                            <span class="label">WpfLoading</span>
+                        </a>
+                        
+                    </div>
+                    <div id="next">
+                        
+                        <a href="/AppDoc/dev/en/Extensions.html">
+                            <span class="label">Extensions</span>
+                            <span class="icon"></span>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a>WeChat Official Account: IceSky</a>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a>Individual developer on Windows - IceSky</a>
+</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/AppDoc/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/AppDoc/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/AppDoc/static/js/theme_default/main.js"></script>
+    
+        <script src="/AppDoc/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/AppDoc/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/AppDoc/static/js/search/search_main.js"></script>
+    
+        <script src="/AppDoc/static/js/plugin_blog/main.js"></script>
+    
+        <script src="/AppDoc/static/js/easing.min.js"></script>
+    
+        <script src="/AppDoc/static/js/custom.js"></script>
+    
+</body>
+
+</html>

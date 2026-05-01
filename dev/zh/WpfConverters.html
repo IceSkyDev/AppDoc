@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"  class=" language_zh  heading_no_counter ">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="Wpf, Value converter, bool, expression, method">
+    
+    
+    <meta name="description" content="WPF使用的ValueConverter库，其中包含Bool、Number、String、Object等多种类型的值转换器">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/AppDoc/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/AppDoc/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/AppDoc/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/search/style.css" type="text/css"/>
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/bootstrap.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/animate.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/AppDoc/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>WpfMonaco - IceSky App</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "heading_no_counter"}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/AppDoc/">
+                
+                    <img class="site_logo" src="/AppDoc/static/image/logo.png" alt="IceSky Logo">
+                
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/AppDoc/edu/zh/">教育类应用</a></li>
+<li class=""><a  href="/AppDoc/tools/zh/">工具应用</a></li>
+<li class=""><a  href="/AppDoc/game/zh/">游戏</a></li>
+<li class="active"><a  href="/AppDoc/dev/zh/">开发资源</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class="sub_items "><a  >Language: 中文 简体</a><ul><li class=""><a  href="/AppDoc/dev/en/WpfConverters.html">English</a></li>
+<li class="active"><a  href="/AppDoc/dev/zh/WpfConverters.html">中文 简体</a></li>
+</ul></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">搜索</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">输入关键词，多关键词空格隔开</span>
+                                <span id="search_loading_hint">正在加载，请稍候。。。</span>
+                                <span id="search_download_err_hint">下载文件失败，请刷新重试或检查网络</span>
+                                <span id="search_other_docs_result_hint">来自其它文档的结果</span>
+                                <span id="search_curr_doc_result_hint">当前文档搜索结果</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="show">
+<li class="not_active with_link"><a href="/AppDoc/dev/zh/index.html"><span class="label">通用说明</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/dev/zh/WpfMonaco.html"><span class="label">WpfMonaco</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/dev/zh/WpfLoading.html"><span class="label">WpfLoading</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/dev/zh/WpfAnimation.html"><span class="label">WpfAnimation</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/AppDoc/dev/zh/Extensions.html"><span class="label">Extensions</span><span class=""></span></a></li>
+<li class="active with_link"><a href="/AppDoc/dev/zh/WpfConverters.html"><span class="label">WpfConverters</span><span class=""></span></a></li>
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>WpfMonaco</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <h2 id="%E4%BB%8B%E7%BB%8D">介绍</h2>
+<p>这是一个用于WPF开发的值转换库，其中包含Bool、Number、String、Object等多种类型的值转换器</p>
+<p><strong><a href="https://github.com/IceSkyDev/IceSky.WpfConverters.Sample"  target="_blank">点击查看示例代码</a></strong></p>
+<h2 id="%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8">基本使用</h2>
+<ul>
+<li><p>添加引用</p>
+
+<pre class="language-shell"><code class="language-shell">dotnet add package IceSky.WpfConverters
+</code></pre>
+</li>
+<li><p>添加命名空间</p>
+
+<pre class="language-xml"><code class="language-xml">xmlns:conv=&quot;clr-namespace:IceSky.WpfConverters.Converters;assembly=IceSky.WpfConverters&quot;
+</code></pre>
+</li>
+<li><p>常用转换器已经定义在资源文件中了，可以在Resources中用如下方式进行引用</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;ResourceDictionary.MergedDictionaries&gt;
+    &lt;ResourceDictionary Source=&quot;pack://application:,,,/IceSky.WpfConverters;component/Converters.  xaml&quot;/&gt;
+&lt;/ResourceDictionary.MergedDictionaries&gt;
+</code></pre>
+</li>
+</ul>
+<h3 id="%E6%95%B0%E5%80%BC%E8%BD%AC%E6%8D%A2%E5%99%A8">数值转换器</h3>
+<ul>
+<li>NegatvieNumberConverter：负数转换器，对数值参数执行取负操作
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding Text, Converter={StaticResource NegatvieNumberConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>RoundConverter：舍入转换器，对数值参数执行舍入操作，可以指定舍入模式和小数位数
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding Text, Converter={StaticResource Round2DecimalsConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>NumberToBoolConverter：数值转bool转换器，0为false，非0为true
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding Text, Converter={StaticResource NumberToBoolConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>NumberToRatioIntConverter：数值比例转换器，将数值参数乘以比例系数并取整，可以指定比例系数
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding Text, Converter={StaticResource NumberToDoubleIntConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>RangeMapConverter：范围映射转换器，将数值从一个范围映射到另一个范围，可以指定源范围和目标范围
+<pre class="language-xml"><code class="language-xml">&lt;Border Width=&quot;{Binding Value Converter={conv:RangeMapConverter FromMin=0,FromMax=100,ToMin=100,ToMax=300}}&quot;&gt;
+</code></pre>
+</li>
+<li>PercentConverter：百分比转换器，将数值从指定范围映射到0~100，可以指定范围最小值和最大值
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding Text, Converter={conv:PercentConverter Maximum=1000},StringFormat={}{0} %}&quot;/&gt;
+</code></pre>
+</li>
+<li>InRangeConverter：范围判断转换器，判断值是否在 [Min, Max] 区间内，可以指定是否包含起始或结束值
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding Text, Converter={conv:InRangeConverter Min=-100,Max=100}}&quot;/&gt;
+&lt;!--Reversed--&gt;
+&lt;TextBlock Text=&quot;{Binding Text, Converter={conv:InRangeConverter Min=-100,Max=100,IsReversed=True}}&quot;/&gt;
+&lt;!--Exclude Min--&gt;
+&lt;TextBlock Text=&quot;{Binding Text, Converter={conv:InRangeConverter Min=-100,Max=100,IncludeMin=False}}&quot;/&gt;
+</code></pre>
+</li>
+<li>FileSizeConverter：文件大小转换器，将整数转换为文件的字节大小
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding Text, Converter={StaticResource FileSizeConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>IntToStringConverter：整数转字符串转换器，将字符串按指定分隔符分割后，返回整数指定索引的字符串，可以指定分隔符、是否删除空白、默认值
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding Value,Converter={conv:IntToStringConverter Source='Unknow,Active,Inactive',Default=Out of range}}&quot; /&gt;
+</code></pre>
+</li>
+<li>InterpolateNumberConverter：数值插值转换器，指定起始值、结束值、步进值、数量中的三个来自动生成中间值列表，设置ClampToBounds=True可以将值限制在指定范围内
+<pre class="language-xml"><code class="language-xml">&lt;!--Result is 0,25,50,75,100--&gt;
+&lt;ListBox ItemsSource=&quot;{Binding Converter={conv:InterpolateNumberConverter Start=0, End=100, Count=5}}&quot;/&gt;
+&lt;!--Result is 10,15,20,25,30--&gt;
+&lt;ListBox ItemsSource=&quot;{Binding Converter={conv:InterpolateNumberConverter Start=10, Step=5, Count=5}}&quot;/&gt;
+&lt;!--Result is 0,-2.8,-5.6,-8.4,-10--&gt;
+&lt;ListBox ItemsSource=&quot;{Binding Converter={conv:InterpolateNumberConverter Start=0, End=-10, Step=-2.8, ClampToBounds=True&quot;/&gt;
+</code></pre>
+</li>
+</ul>
+<h3 id="%E5%B8%83%E5%B0%94%E8%BD%AC%E6%8D%A2%E5%99%A8">布尔转换器</h3>
+<ul>
+<li>InvertBoolConverter：bool取反转换器，将bool参数取反
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding IsChecked,Converter={conv:InvertBoolConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>IsNullOrEmptyConverter：空值判断转换器，判断参数是否为空，默认为空时返回true，可以设置IsInverted=True反转判断
+<pre class="language-xml"><code class="language-xml">&lt;CheckBox IsChecked=&quot;{Binding Text,Converter={StaticResource IsNullOrEmptyConverter}}&quot;/&gt;
+&lt;!--Inverted--&gt;
+&lt;CheckBox IsChecked=&quot;{Binding Text,Converter={StaticResource InvertedNullOrEmptyConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>BoolToVisibleConverter：bool转可见性转换器，默认true=Visible，false=Collapsed，可以使用UseHidden=True来设置false=Hidden，设置IsInverted=True反转判断
+<pre class="language-xml"><code class="language-xml">&lt;Border Visibility=&quot;{Binding IsChecked, Converter={StaticResource BoolToVisibleConverter}}&quot;/&gt;
+&lt;!--Inverted--&gt;
+&lt;Border Visibility=&quot;{Binding IsChecked, Converter={StaticResource InvertBoolToVisibleConverter}}&quot;/&gt;
+&lt;!--False to Hidden--&gt;
+&lt;Border Visibility=&quot;{Binding IsChecked, Converter={StaticResource FalseToHiddenConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>BoolToObjectConverter：bool转对象转换器，将bool参数转为任意对象，可以分别设置true和false所对应的值
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding IsChecked,Converter={conv:BoolToObjectConverter TrueValue=Man, FalseValue=Woman}}&quot;/&gt;
+&lt;!--With null value--&gt;
+&lt;TextBlock Text=&quot;{Binding IsChecked,Converter={conv:BoolToObjectConverter TrueValue=运行, FalseValue=停止, NullValue=未知}}&quot;/&gt;
+&lt;!--BoolToColor, True is Green, False is Red--&gt;
+&lt;Border Background=&quot;{Binding IsChecked Converter={StaticResource BoolToColorConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>CompareToConverter：比较转换器，将参数和目标值按指定运算符进行比较，返回比较结果，可以设置IsInverted=True反转判断，比较方式包括：Equal, NotEqual, Greater, Less, GreaterOrEqual, LessOrEqual, In, NotIn, StartsWith, EndsWith, Contains
+<pre class="language-xml"><code class="language-xml">&lt;!-- &gt;10 is true--&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:CompareToConverter TargetValue=10,Operator=Greater}}&quot;/&gt;
+&lt;!--Inverted, &gt;10 is false--&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:CompareToConverter TargetValue=10,Operator=Greater,IsInverted=True}}&quot;/&gt;
+&lt;!-- StartsWith 'a' is true--&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:CompareToConverter TargetValue=a,Operator=StartsWith}}&quot;/&gt;
+&lt;!--Contains 'a' or 'A' is true--&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:CompareToConverter TargetValue=a,Operator=Contains,IgnoreCase=True}}&quot;/&gt;
+&lt;!--'12' or 'ab' or 'at' is true--&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:CompareToConverter TargetValue='12, ab, at',Operator=In}}&quot;/&gt;
+</code></pre>
+</li>
+<li>MultiLogicConverter：多值逻辑转换器，默认对多个值进行And判断，可以设置UseOr=True进行Or判断
+<pre class="language-xml"><code class="language-xml">&lt;Button&gt;
+  &lt;Button.IsEnabled&gt;
+    &lt;MultiBinding Converter=&quot;{conv:MultiLogicConverter}&quot;&gt;
+      &lt;Binding Path=&quot;IsChecked&quot; ElementName=&quot;Chk1&quot;/&gt;
+      &lt;Binding Path=&quot;IsChecked&quot; ElementName=&quot;Chk2&quot;/&gt;
+      &lt;Binding Path=&quot;IsChecked&quot; ElementName=&quot;Chk3&quot;/&gt;
+    &lt;/MultiBinding&gt;
+  &lt;/Button.IsEnabled&gt;
+&lt;/Button&gt;
+&lt;!--Use or--&gt;
+&lt;MultiBinding Converter=&quot;{conv:MultiLogicConverter UseOr=True}&quot;&gt;
+ ...
+&lt;/MultiBinding&gt;
+</code></pre>
+</li>
+</ul>
+<h3 id="%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E5%99%A8">字符串转换器</h3>
+<ul>
+<li>DateFormatConverter：日期格式转换器，可以按指定格式转换DateTime、DateTimeOffset、TimeSpan为字符串
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding Date, Converter={StaticResource StandardDateTimeConverter}}&quot;/&gt;
+&lt;!--Universal format--&gt;
+&lt;TextBlock Text=&quot;{Binding Date, Converter={StaticResource StringFormatConverter Format={}{0:u}}}&quot;/&gt;
+&lt;!--Chinese format--&gt;
+&lt;TextBlock Text=&quot;{Binding Date, Converter={StaticResource StringFormatConverter Format={}{0:yyyy年MM月dd日}}}&quot;/&gt;
+</code></pre>
+</li>
+<li>StringFormatConverter：字符串格式转换器，可以按指定格式转换字符串
+<pre class="language-xml"><code class="language-xml">&lt;!--Right align--&gt;
+&lt;TextBlock Text=&quot;{Binding Text, Converter={conv:StringFormatConverter Format='|{0,10}|'}}&quot;/&gt;
+</code></pre>
+</li>
+<li>StringCaseConverter：字符串大小写转换器，默认转为小写，可以设置ToUpper=True来转为大写
+<pre class="language-xml"><code class="language-xml">&lt;!--UpperCase--&gt;
+&lt;TextBlock Text=&quot;{Binding Text, Converter={StaticResource UpperCaseConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>TextTruncateConverter：字符串截断转换器，将字符串按指定长度进行截断
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding Text, Converter={StaticResource Max20LengthConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>MaskFormatterConverter：字符串掩码转换器，对字符串指定位置进行掩码
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding Text, Converter={StaticResource StringMaskConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>StringToListConverter：字符串转列表转换器，将字符串按指定分隔符转为列表
+<pre class="language-xml"><code class="language-xml">&lt;ComboBox ItemsSource=&quot;{Binding Text, Converter={conv:StringToListConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>StringToDictionaryConverter：字符串转字典转换器，将字符串按指定分隔符转为字典
+<pre class="language-xml"><code class="language-xml">&lt;ComboBox ItemsSource=&quot;{Binding Text, Converter={conv:StringToDictionaryConverter}}&quot; DisplayMemberPath=&quot;Key&quot; SelectedValuePath=&quot;Value&quot;/&gt;
+</code></pre>
+</li>
+<li>MultiStringConcatConverter：多个字符串连接转换器，将多个参数使用指定分隔符进行连接
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock&gt;
+  &lt;TextBlock.Text&gt;
+    &lt;MultiBinding Converter=&quot;{conv:MultiStringConcatConverter Separator=', '}&quot;&gt;
+      &lt;Binding ElementName=&quot;txtStr1&quot; Path=&quot;Text&quot;/&gt;
+      &lt;Binding ElementName=&quot;txtMaskStr&quot; Path=&quot;Text&quot;/&gt;
+    &lt;/MultiBinding&gt;
+  &lt;/TextBlock.Text&gt;
+&lt;/TextBlock&gt;
+</code></pre>
+</li>
+</ul>
+<h3 id="%E5%AF%B9%E8%B1%A1%E8%BD%AC%E6%8D%A2%E5%99%A8">对象转换器</h3>
+<ul>
+<li>NullOrEmptyToObjectConverter：空转对象转换器，将空值转为指定对象，可以设置IsInverted=True反转判断
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:NullOrEmptyToObjectConverter EmptyValue=is empty}}&quot; 
+         Foreground=&quot;{Binding Text,Converter={conv:NullOrEmptyToObjectConverter EmptyValue=Red, NonEmptyValue=Green}}&quot;
+         FontWeight=&quot;{Binding Text,Converter={conv:NullOrEmptyToObjectConverter EmptyValue=Bold,NonEmptyValue=Normal}}&quot;/&gt;
+</code></pre>
+</li>
+<li>NullOrEmptyToInvisibleConverter：空转不可见转换器，默认将空值转为Collapsed，可以使用UseHidden=True来设置空值=Hidden，设置IsInverted=True反转判断
+<pre class="language-xml"><code class="language-xml">&lt;Button Visibility=&quot;{Binding Text, Converter={StaticResource NullOrEmptyToHiddenConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>InvertVisibilityConverter：Visibility反转转换器，默认将Visible转为Collapsed，可以使用UseHidden=True来设置转为Hidden
+<pre class="language-xml"><code class="language-xml">&lt;Border Visibility=&quot;{Binding Visibility,Converter={StaticResource InvertVisibilityConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>EqualsToBoolConverter：相等转bool转换器，使用Equals和目标值比较，若相等则为true，可以设置IsInverted=True反转判断
+<pre class="language-xml"><code class="language-xml">&lt;!--Text=0 is true--&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={StaticResource IsZeroConverter}}&quot;/&gt;
+&lt;!--SelectedIndex!=2 is true--&gt;
+&lt;TextBlock Text=&quot;{Binding SelectedIndex,Converter={conv:EqualsToBoolConverter TargetValue={t:Int 2},IsInverted=True}}&quot;/&gt;
+</code></pre>
+</li>
+<li>SwitchConverter：分支转换器，可以设置字典类型的分支条件进行匹配，支持忽略大小写
+<pre class="language-xml"><code class="language-xml">&lt;!-- SwitchConverter use Cases from another converter --&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:SwitchConverter Cases={conv:ConverterProperty FromConverter={conv:StringToDictionaryConverter Source='a=1,b=2,c=3'}},IgnoreCase=True,DefaultValue=0}}&quot;/&gt;
+</code></pre>
+</li>
+<li>WhenThenConverter：条件转换器，可以在Xaml文件中定义条件，根据条件返回结果
+<pre class="language-xml"><code class="language-xml">&lt;!--Resource--&gt;
+&lt;conv:WhenThenConverter x:Key=&quot;StatusSwitchConverter&quot; DefaultValue=&quot;未知状态&quot;&gt;
+  &lt;conv:WhenThenConverter.Cases&gt;
+    &lt;conv:SwitchCase When=&quot;Active&quot; Then=&quot;激活&quot;/&gt;
+    &lt;conv:SwitchCase When=&quot;Inactive&quot; Then=&quot;未激活&quot;/&gt;
+  &lt;/conv:WhenThenConverter.Cases&gt;
+&lt;/conv:WhenThenConverter&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={StaticResource StatusSwitchConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>StringMappingConverter：字符串映射转换器，按字符串进行分隔映射，转换结果为字符串
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:StringMappingConverter MappingString='1=⏳,2=✅,3=🚚,4=📦,5=❌', DefaultValue=-}}&quot;/&gt;
+</code></pre>
+</li>
+<li>IndexToObjectConverter：索引转对象转换器，转换对象列表中的指定索引
+<pre class="language-xml"><code class="language-xml">&lt;!--Define list in resource--&gt;
+&lt;x:Array Type=&quot;sys:String&quot; x:Key=&quot;StringSource&quot;&gt;
+  &lt;sys:String&gt;first&lt;/sys:String&gt;
+  &lt;sys:String&gt;second&lt;/sys:String&gt;
+  &lt;sys:String&gt;third&lt;/sys:String&gt;
+&lt;/x:Array&gt;
+&lt;TextBlock Text=&quot;{Binding SelectedIndex,Converter={conv:IndexToObjectConverter OptionList={StaticResource StringSource},DefaultValue=-}}&quot;/&gt;
+</code></pre>
+</li>
+<li>TypeCastConverter：类型转换器，将参数转为目标类型，可以指定转换失败的默认值
+<pre class="language-xml"><code class="language-xml">&lt;conv:TypeCastConverter x:Key=&quot;tc&quot; TargetType=&quot;sys:Int16&quot; DefaultValue=&quot;{t:Int 2}&quot;/&gt;
+</code></pre>
+</li>
+<li>EnumToListConverter：枚举转列表转换器，默认使用枚举名称作为列表值，可以使用UseDescription=True指定使用描述作为列表值，使用ExcludeValue指定要排除的枚举值，多个可以用','分隔
+<pre class="language-xml"><code class="language-xml">&lt;ComboBox ItemsSource=&quot;{Binding Source={x:Type local:TestEnum}, Converter={conv:EnumToListConverter UseDescription=True, ExcludeValue='0,2'}}&quot;/&gt;
+</code></pre>
+</li>
+<li>EnumToDictionaryConverter：枚举转字典转换器，字典的Key为枚举的值，默认使用枚举名称作为字典的Value，可以使用UseDescription=True指定使用描述作为字典的Value，使用ExcludeValue指定要排除的枚举值，多个可以用','分隔
+<pre class="language-xml"><code class="language-xml">&lt;ComboBox ItemsSource=&quot;{Binding Source={x:Type local:TestEnum}, Converter={conv:EnumToDictionaryConverter UseDescription=True}}&quot; DisplayMemberPath=&quot;Value&quot; SelectedValuePath=&quot;Key&quot;/&gt;
+</code></pre>
+</li>
+</ul>
+<h3 id="%E9%A2%9C%E8%89%B2%E8%BD%AC%E6%8D%A2%E5%99%A8">颜色转换器</h3>
+<ul>
+<li>ColorAutoConverter：颜色转换器，支持String、Color和Brush三者的互相转换
+<pre class="language-xml"><code class="language-xml">&lt;Border Background=&quot;{Binding Text, Converter={StaticResource ColorAutoConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>ColorToTupleConverter：颜色转Tuple转换器，支持RGB和HSL两种方式，默认为RGB模式，可以设置ToHsl=True指定为HSL模式
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding Text,Converter={StaticResource Color2RgbConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>ValueToRangeColorConverter：值转范围颜色转换器，可以将数值按比例转为指定颜色范围中间的颜色，可以设置ToHsl=True指定为HSL模式，默认值为：0~100对应红色到绿色
+<pre class="language-xml"><code class="language-xml">&lt;Border Background=&quot;{Binding Value, Converter={StaticResource DefaultValueToRangeRgbConverter}}&quot;/&gt;
+</code></pre>
+</li>
+<li>BrightnessConverter：颜色亮度转换器，将颜色按指定系数调整亮度，默认系数为0.5
+<pre class="language-xml"><code class="language-xml">&lt;Border Background=&quot;{Binding Text, Converter={conv:BrightnessConverter Factor=0.2}}&quot;/&gt;
+</code></pre>
+</li>
+<li>InterpolateColorConverter：颜色插值转换器，指定起始、结束颜色和数量自动生成中间颜色列表，默认为RGB模式，可以设置UseHsl=True指定为HSL模式
+<pre class="language-xml"><code class="language-xml">&lt;!--RGB mode--&gt;
+&lt;ItemsControl ItemsSource=&quot;{Binding Converter={conv:InterpolateColorConverter StartValue=Red,EndValue=Green,Count=10}}&quot;/&gt;
+&lt;!--HSL mode--&gt;
+&lt;ItemsControl ItemsSource=&quot;{Binding Converter={conv:InterpolateColorConverter StartValue=Blue,EndValue=Orange,Count=10,UseHsl=True}}&quot;&gt;
+</code></pre>
+</li>
+<li>ValuesToColorConverter：将三个或四个数值转为颜色，第四个数值表示不透明度，默认为RGB模式，可以设置ToHsl=True指定为HSL模式
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock&gt;
+  &lt;TextBlock.Text&gt;
+    &lt;MultiBinding Converter=&quot;{conv:ValuesToColorConverter IsHsl=True}&quot;&gt;
+      &lt;Binding ElementName=&quot;sldH&quot; Path=&quot;Value&quot;/&gt;
+      &lt;Binding ElementName=&quot;sldS&quot; Path=&quot;Value&quot;/&gt;
+      &lt;Binding ElementName=&quot;sldL&quot; Path=&quot;Value&quot;/&gt;
+      &lt;Binding ElementName=&quot;sldA&quot; Path=&quot;Value&quot;/&gt;
+    &lt;/MultiBinding&gt;
+  &lt;/TextBlock.Text&gt;
+&lt;/TextBlock&gt;
+</code></pre>
+</li>
+</ul>
+<h3 id="%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%BD%AC%E6%8D%A2%E5%99%A8">表达式转换器</h3>
+<p>ExpressionConverter，使用‘#’作为变量占位符，可以将字符串参数放在单引号中，支持的运算包括：</p>
+<ul>
+<li>四则运算：支持+、-、×、÷、%（取模）运算
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:ExpressionConverter Formula='#+2'}}&quot;/&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:ExpressionConverter Formula='#/4'}}&quot;/&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:ExpressionConverter Formula='#%5'}}&quot;&gt;
+</code></pre>
+</li>
+<li>逻辑运算：支持And、Or、Not运算
+<pre class="language-xml"><code class="language-xml">&lt;TextBlock Text=&quot;{Binding IsChecked,Converter={conv:ExpressionConverter Formula=# and true}}&quot;/&gt;
+&lt;TextBlock Text=&quot;{Binding IsChecked,Converter={conv:ExpressionConverter Formula=# or false}}&quot;/&gt;
+&lt;TextBlock Text=&quot;{Binding IsChecked,Converter={conv:ExpressionConverter Formula=not #}}&quot;&gt;
+&lt;TextBlock Text=&quot;{Binding IsChecked,Converter={conv:ExpressionConverter Formula='iif(#,\'yes\',\'no\')'}}&quot;&gt;
+</code></pre>
+</li>
+<li>比较运算：支持&gt;、&lt;、&gt;=、&lt;=、&lt;&gt;、=，&gt;和&lt;在xaml中需要用&gt;和&lt;进行转义
+<pre class="language-xml"><code class="language-xml">&lt;!-- &gt;2 --&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:ExpressionConverter Formula=#&gt;2}}&quot;/&gt;
+&lt;!-- &lt;=3 --&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:ExpressionConverter Formula='# &amp;lt;=3'}}&quot;/&gt;
+&lt;!-- &lt;&gt;5 --&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:ExpressionConverter Formula=# &amp;lt;&amp;gt;5}}&quot;/&gt;
+&lt;!-- &gt;=60 &amp;&amp; &lt;=100 --&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:ExpressionConverter Formula='# &amp;gt;= 60 AND # &amp;lt;= 100'}}&quot;/&gt;
+</code></pre>
+</li>
+<li>字符串运算：支持Len(expression)、Trim(expression)、Substring(expression, start, length)、和IIF(expression, truevalue, falsevalue)等方法
+<pre class="language-xml"><code class="language-xml">&lt;!-- Len --&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:ExpressionConverter Formula='len(\'#\')'}}&quot;/&gt;
+&lt;!-- Trim --&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:ExpressionConverter Formula='trim(\'#\')'}}&quot;/&gt;
+&lt;!-- Concat --&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:ExpressionConverter Formula='#+\'abc\''}}&quot;/&gt;
+&lt;!-- Substring --&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:ExpressionConverter Formula='substring(\'#\',2,3)'}}&quot;/&gt;
+&lt;!-- IIF --&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:ExpressionConverter Formula='iif(#&gt;5,\'是\', \'否\')'}}&quot;/&gt;
+</code></pre>
+</li>
+</ul>
+<h3 id="%E6%96%B9%E6%B3%95%E8%BD%AC%E6%8D%A2%E5%99%A8">方法转换器</h3>
+<p>MethodConverter，可以使用实例方法、静态方法或扩展方法进行转换，可以用ParameterStr来指定方法参数，多个参数用','分隔，设置IgnoreCase=True可以指定方法名不区分大小写</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;!-- ToUpper --&gt;
+&lt;TextBlock Text=&quot;{Binding Text, Converter={conv:MethodConverter MethodName=ToUpper}}&quot;/&gt;
+&lt;!-- Replace --&gt;
+&lt;TextBlock Text=&quot;{Binding Text, Converter={conv:MethodConverter MethodName=Replace,ParameterStr='a,b'}}&quot;/&gt;
+&lt;!-- Static method: Math.Abs --&gt;
+&lt;TextBlock Text=&quot;{Binding Text, Converter={conv:MethodConverter TargetType={x:Type sys:Math}, MethodName=abs, IgnoreCase=True}}&quot;/&gt;
+&lt;!-- Custom string extension method: ExtractDigits --&gt;
+&lt;TextBlock Text=&quot;{Binding Text, Converter={conv:MethodConverter TargetType={x:Type ext:StringExtensions},MethodName=ExtractDigits}}&quot;/&gt;
+</code></pre>
+<h3 id="%E9%93%BE%E5%BC%8F%E8%BD%AC%E6%8D%A2%E5%99%A8">链式转换器</h3>
+<p>库中所有的转换器都支持链式转换，包含FromConverter参数可以指定使用其他转换器作为输入</p>
+
+<pre class="language-xml"><code class="language-xml">&lt;!-- Triple rounding and to currency --&gt;
+&lt;TextBlock Text=&quot;{Binding Text, Converter={conv:StringFormatConverter Format={}{0:C}, FromConverter={conv:NumberToRatioIntConverter Ratio=3}}}&quot;/&gt;
+&lt;!-- SwitchConverter use Cases from another converter --&gt;
+&lt;TextBlock Text=&quot;{Binding Text,Converter={conv:SwitchConverter Cases={conv:ConverterProperty FromConverter={conv:StringToDictionaryConverter Source='1=⏳,2=✅,3=🚚,4=📦,5=❌'}}}}&quot;/&gt;
+&lt;!-- Calculate the sin value after convert the angle to radians --&gt;
+&lt;TextBlock Text=&quot;{Binding Value, Converter={conv:MethodConverter TargetType={x:Type sys:Math},MethodName=Sin, FromConverter={conv:MethodConverter TargetType={x:Type ext:NumberExtensions},MethodName=ToRadians}}}&quot;/&gt;
+</code></pre>
+<h3 id="%E7%B1%BB%E5%9E%8B%E5%8C%96%E5%8F%82%E6%95%B0%E6%A0%87%E8%AE%B0%E6%89%A9%E5%B1%95">类型化参数标记扩展</h3>
+<p>此库中包含了基本数据类型的类型化参数标记扩展，可以作为在XAML中写入原始类型值的简写，其中包括了基本的数值类型、Char、String、Bool、Date、Time、DateTime、TimeSpan、DateTimeOffset、Guid、Enum、EnumValues、Point、Size、Rect、Vector、Color、HSLColor、Brush、StringList、IntList、DoubleList,使用时需要添加命名空间：</p>
+
+<pre class="language-xml"><code class="language-xml">xmlns:t=&quot;clr-namespace:IceSky.WpfConverters;assembly=IceSky.WpfConverters&quot;
+</code></pre>
+<ul>
+<li>使用示例
+<pre class="language-xml"><code class="language-xml">&lt;Slider Value=&quot;{t:Double 5}&quot;/&gt;
+&lt;TextBlock Text=&quot;{Binding Source={t:Enum local:TestEnum,Option1}}&quot;/&gt;
+&lt;ComboBox ItemsSource=&quot;{t:EnumValues local:TestEnum}&quot;/&gt;
+&lt;ComboBox ItemsSource=&quot;{t:IntList '1,2,3'}&quot;/&gt;
+&lt;TextBlock Text=&quot;{Binding Source={t:Point 10,20}}&quot;/&gt;
+&lt;TextBlock Text=&quot;{Binding Source={t:Size 100,200}}&quot;/&gt;
+&lt;TextBlock Text=&quot;{Binding Source={t:Rect 0,0,100,100}}&quot;/&gt;
+&lt;TextBlock Text=&quot;{Binding Source={t:Vector 5,10}}&quot;/&gt;
+&lt;Ellipse Fill=&quot;{t:Brush red}&quot;/&gt;
+&lt;Ellipse Fill=&quot;{t:Brush {t:Color 200,100,100,0.5}}&quot;/&gt;
+&lt;Ellipse Fill=&quot;{t:Brush {t:HSLColor 180,1,0.5,0.5}}&quot;/&gt;
+</code></pre>
+</li>
+</ul>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                        <a href="/AppDoc/dev/zh/Extensions.html">
+                            <span class="icon"></span>
+                            <span class="label">Extensions</span>
+                        </a>
+                        
+                    </div>
+                    <div id="next">
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a>微信公众号：IceSky</a>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a>Windows 个人独立开发者 - IceSky</a>
+</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/AppDoc/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/AppDoc/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/AppDoc/static/js/theme_default/main.js"></script>
+    
+        <script src="/AppDoc/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/AppDoc/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/AppDoc/static/js/search/search_main.js"></script>
+    
+        <script src="/AppDoc/static/js/plugin_blog/main.js"></script>
+    
+        <script src="/AppDoc/static/js/easing.min.js"></script>
+    
+        <script src="/AppDoc/static/js/custom.js"></script>
+    
+</body>
+
+</html>
