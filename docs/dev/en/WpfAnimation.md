@@ -287,7 +287,7 @@ This component is an encapsulation of common animation types, which can reduce t
      <cfg:AnimationSetting BasedOn="{StaticResource AS_BorderGrow}" FromValue="5 5 5 0" ToValue="5" Duration="200" BeginTime="600"/>
    </cfg:AnimationCollection>
    ```
-   ![OutLine](<../assets/images/Animations/Common/OutLine.gif>)
+   ![Outline](<../assets/images/Animations/Common/Outline.gif>)
 
 
 ## Animated number control

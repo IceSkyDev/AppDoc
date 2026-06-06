@@ -284,7 +284,7 @@ desc: 用于WPF开发的动画控件库，包含通用动画组件、数值变�
      <cfg:AnimationSetting BasedOn="{StaticResource AS_BorderGrow}" FromValue="5 5 5 0" ToValue="5" Duration="200" BeginTime="600"/>
    </cfg:AnimationCollection>
    ```
-   ![OutLine](<../assets/images/Animations/Common/OutLine.gif>)
+   ![Outline](<../assets/images/Animations/Common/Outline.gif>)
 
 
 ## 数字动画文本控件

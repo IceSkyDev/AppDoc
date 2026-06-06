@@ -5,6 +5,12 @@ keywords:
 desc: 
 ---
 
+* 1.3.2
+  * Geometry viewer adds the function to calculate path length and center point, supports path scaling and automatic position adjustment
+  * List operation search adds case sensitivity option
+  * Hex editor adds settings for byte count and byte order swapping
+  * Text to image adds background image settings
+  * Fixed color issue in Text To Image
 * 1.3.1
   * Added text-to-image feature
   * Added feature to view characters in font file

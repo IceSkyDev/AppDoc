@@ -28,5 +28,12 @@ A text-to-image tool that can convert formatted rich text content into an image 
   * Highlight color: Set the background color of the text by selection; when not enabled, there is no highlight.
   * Border color: Set the color of the border by selection; visible when border width is greater than 0, no border when not enabled.
   * Background color: Set the background color of the output image; transparent when not enabled.
+  * Background Image: Set the background image for the text area. When the switch above is turned on, you can add a background image. Below is the background image operation area, where operations include:
+    * Open the image file
+    * Set the image to be centered at its original size
+    * Set the image to stretch and fill
+    * Set the text area size to the image size
+    * Set the image to stretch uniform
+    * The preview area below allows you to drag the image with the mouse to adjust its position and use the scroll wheel to adjust the image size
 * You can edit text at the bottom of the interface
 * Click the save button on the toolbar above to save the edited text as an image file

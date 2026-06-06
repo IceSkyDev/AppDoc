@@ -13,12 +13,10 @@ This tool is used for hexadecimal data manipulation, which can be converted to b
 
 ## How to use
 
-* Operand setting: You can enter hexadecimal number in the top text box, the right side is the endian switch, the switch can be turned on to reverse the bytes order, and after the operand set, you need to click the right button to update the value to the binary data area below
-  > The number in the input box is 4 digits by default, and it is converted to binary is 16 bits, the number of digits in the binary region can be changed by changing the number of digits in the hexadecimal data
+* Operand setting: Select the number of bytes from the dropdown on the top left. You can enter hexadecimal digits in the text box. On the right is the byte order switch; turning it on can reverse the order of hexadecimal bytes. On the far right, you can set the byte sorting method, choosing to swap positions by byte, word, or double word.
+  > The number in the input box is 4 digits by default, and it is converted to binary is 16 bits, by changing the number of bytes, the number of bits in the binary area can be changed
   >
-  > For example, if you enter a 5-digit hexadecimal number, the number of digits in the binary region will become 32 bits, and the hexadecimal data will be automatically filled to 8 bits
-  >
-  > Enter the 9-digit hexadecimal number, the number of digits in the binary region will become 64 bits, and the hexadecimal data will be automatically filled to 16 bits; The same can be done to reduce the number of digits
+  > Setting the byte order only affects the arrangement in the binary area below and does not affect the original hexadecimal value
   >
   > Hexadecimal data supports up to 16 bits, i.e. up to 64 binary bits
 
